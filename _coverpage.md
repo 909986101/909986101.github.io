@@ -10,8 +10,8 @@
 - No statically built html files
 - Multiple themes
 
-[GitHub](https://github.com/909986101/docs/)
-[Blog](https://ilxy.tech)
+[GitHub](https://github.com/909986101/909986101.github.io/)
+[Blog](https://ilxy.tech/blog)
 
 
 <!-- background image -->
