@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](https://docsify.js.org/_media/icon.svg)
+![logo](_media/Tiger25.jpg)
 
 # haona_li's docs <small>2020</small> :cn:
 
