@@ -6,4 +6,4 @@
   * [HA](/oracle/ha/)
 * Linux
   * [Base](/linux/base)
-  * [shell](/linux/shell)
+  * [Shell](/linux/shell)
