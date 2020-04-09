@@ -12,6 +12,7 @@
 
 [GitHub](https://github.com/909986101/909986101.github.io/)
 [Blog](https://ilxy.tech/blog)
+[Docs](README)
 
 
 <!-- background image -->
