@@ -7,3 +7,5 @@
 * Linux
   * [Base](/linux/base)
   * [Shell](/linux/shell)
+* lyt
+  * [Stady](/lyt/) 
