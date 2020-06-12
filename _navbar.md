@@ -3,7 +3,7 @@
 
 * Oracle
   * [OCP](/oracle/ocp/)
-  * [HA](/oracle/ha/)
+  * [OCM](/oracle/ocm/)
 * Linux
   * [Kernel](/linux/kernel/)
   * [Base](/linux/base/)
