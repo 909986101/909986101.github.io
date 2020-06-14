@@ -1,6 +1,7 @@
 <!-- _navbar.md -->
 
-
+* Microsoft
+  * [Windows](/microsoft/windows/)
 * Oracle
   * [OCP](/oracle/ocp/)
   * [OCM](/oracle/ocm/)
