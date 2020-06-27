@@ -5,6 +5,7 @@
   - [01 - 使用 Oracle 设计关系数据库](/oracle/ocp/ocp-12c/ocp-12c-0101)
   - [02 - 使用 SQL SELECT 语句检索数据](/oracle/ocp/ocp-12c/ocp-12c-0102)
   - [03 - 限定和排序数据](/oracle/ocp/ocp-12c/ocp-12c-0103)
+  - [04 - 单行函数](/oracle/ocp/ocp-12c/ocp-12c-0104)
 
 - OCA 12c 安装与管理
 
