@@ -1,0 +1,1 @@
+- [SQL 优化核心思想](/oracle/sql/sql-tuning/)

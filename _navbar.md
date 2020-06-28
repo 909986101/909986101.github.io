@@ -5,6 +5,7 @@
 * Oracle
   * [OCP](/oracle/ocp/)
   * [OCM](/oracle/ocm/)
+  * [SQL](/oracle/sql/)
 * Linux
   * [Kernel](/linux/kernel/)
   * [Base](/linux/base/)
