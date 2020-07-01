@@ -120,3 +120,111 @@ WHERE selectivity >= 20
 ```
 
 ## 直方图（HISTOGRAM）
+
+如果没有对基数低的列收集直方图统计信息，基于成本的优化器（CBO）会认为该列数据分布是均衡的。执行计划里面的 Rows 是假的。执行计划中的 Rows 是根据统计信息以及一些数学公式计算出来的。
+
+在做 SQL 优化的时候，经常需要做的工作就是帮助 CBO 计算出比较准确的 Rows。我们说的是比较准确的 Rows。CBO 永远不可能计算得到精确的 Rows。
+
+如果 CBO 每次都能计算得到精确的 Rows，那么相信我们这个时候只需要关心业务逻辑、表设计、SQL 写法以及如何建立索引了，再也不用担心 SQL 会走错执行计划了。
+
+现在我们对 owner 列收集直方图
+
+```sql
+BEGIN
+     DBMS_STATS.GATHER_TABLE_STATS(ownname             =>   'SCOTT',
+                                   tabname             =>   'TEST',
+                                   estimate_percent    =>   100,
+                                   method_opt          =>   'for columns owner size skewonly',
+                                   no_invalidate       =>   FALSE,
+                                   degree              =>   1,
+                                   cascade             =>   TRUE);
+END;
+```
+
+查看一下 owner 列的直方图信息
+
+```sql
+SELECT a.column_name,
+     b.num_rows,
+     a.num_distinct Cardinality,
+     round(a.num_distinct / b.num_rows * 100, 2) selectivity,
+     a.histogram,
+     a.num_buckets
+FROM dba_tab_col_statistics a, dba_tables b
+WHERE a.owner = b.owner
+     AND a.table_name = b.table_name
+     AND a.owner = 'SCOTT'
+     AND a.table_name = 'TEST'
+```
+
+如果 SQL 使用了绑定变量，绑定变量的列收集了直方图，那么该 SQL 就会引起绑定变量窥探。Oracle 11g 引入了自适应游标共享（Adaptive Cursor Sharing）,基本上解决了绑定变量窥探问题，但是自适应游标共享也会引起一些新问题。
+
+当我们遇到一个 SQL 有绑定变量怎么办？其实很简单，我们只需要运行一下语句。
+
+`SELECT 列, count(*) FROM test GROUP BY 列 ORDER BY 2 DESC;`
+
+读者只需要知道直方图是用来帮助 CBO 在对基数很低、数据分布不均衡的列进行 Rows 估算的时候，可以得到更精确的 Rows 就够了。
+
+当列出现在 WHERE 条件中，列的选择性小于 1% 并且该列没有收集过直方图，这样的列就应该收集直方图。
+
+### 抓出必须创建直方图的列
+
+全书第二个全自动化优化脚本
+
+```sql
+SELECT a.owner,
+     a.table_name,
+     a.column_name,
+     b.num_rows,
+     a.num_distinct,
+     trunc(num_distinct / num_rows * 100, 2) selectivity,
+     'Need Gather Histogram' notice
+FROM dba_tab_col_statistics a, dba_tables b
+WHERE a.owner = 'SCOTT'
+     AND a.table_name = 'TEST'
+     AND a.owner = b.owner
+     AND a.table_name = b.table_name
+     AND num_distinct / num_rows < 0.01
+     AND (a.owner, a.table_name, a.column_name) IN
+          (SELECT r.name owner, o.name table_name, c.name column_name
+           FROM sys.col_usage$ u, sys.obj$ o, sys.col$ c, sys.user$ r
+           WHERE o.obj# = u.obj#
+               AND c.obj# = u.obj#
+               AND c.col# = u.intcol#
+               AND r.name = 'SCOTT'
+               AND o.name = 'TEST')
+     AND a.histogram = 'NONE';
+```
+
+## 回表（TABLE ACCESS BY INDEX ROWID）
+
+当对一个列创建索引之后，索引会包含该列的键值以及键值对应行所在的 rowid。
+
+通过索引中记录的 rowid 访问表中的数据就叫回表。回表一般是单块读，回表次数太多会严重影响 SQL 性能，如果回表次数太多，就不应该走索引扫描了，应该直接走全表扫描。
+
+在进行 SQL 优化的时候，一定要注意回表次数！特别是要注意回表的物理 I/O 次数。
+
+为了消除 arraysize 参数对逻辑读的影响，设置 arraysize=5000。arraysize 表示 Oracle 服务器每次传输多少行数据到客户端，默认为 15。设置了 arraysize=5000 之后，就不会发生一个块被读多次的问题了。
+
+```sql
+SET ARRAYSIZE 5000
+SET AUTOT TRACE
+SELECT owner FROM test WHERE owner='SYS'
+SELECT * FROM test WHERE owner='SYS'
+```
+
+返回表中 5% 以内的数据走索引，超过表中 5% 的数据走全表扫描。根本原因在于回表。
+
+在无法避免回表的情况下，走索引如果返回数据量太多，必然会导致回表次数太多，从而导致性能严重下降。
+
+Oracle 12c 的新功能批量回表（TABLE ACCESS BY INDEX ROWID BATCHED）在一定程度上改善了单行回表的性能。
+
+`SELECT * FROM table WHERE ...`，这样的 SQL 必须回表，所以我们必须严禁使用 `SELECT *`。
+
+`SELECT COUNT(*) FROM table`，这样的 SQL 就不需要回表。当要查询的列也包含在索引中，这个时候就不需要回表了，所以我们往往会建立组合索引来消除回表，从而提升查询性能。
+
+当一个 SQL 有多个过滤条件但是只在一个列或者部分列建立了索引，这个时候会发生回表再过滤（TABLE ACCESS BY INDEX ROWID 前面有“*”），也需要创建组合索引，进而消除回表再过滤，从而提升查询性能。
+
+## 集群因子（CLUSTERING FACTOR）
+
+集群因子用于判断索引回表需要消耗的物理 I/O 次数。
