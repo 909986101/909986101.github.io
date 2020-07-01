@@ -6,6 +6,7 @@
   - [02 - 使用 SQL SELECT 语句检索数据](/oracle/ocp/ocp-12c/ocp-12c-0102)
   - [03 - 限定和排序数据](/oracle/ocp/ocp-12c/ocp-12c-0103)
   - [04 - 单行函数](/oracle/ocp/ocp-12c/ocp-12c-0104)
+  - [05 - 使用转换函数和条件表达式](/oracle/ocp/ocp-12c/ocp-12c-0105)
 
 - OCA 12c 安装与管理
 
