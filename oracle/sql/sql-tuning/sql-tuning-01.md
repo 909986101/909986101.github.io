@@ -209,7 +209,10 @@ WHERE a.owner = 'SCOTT'
 ```sql
 SET ARRAYSIZE 5000
 SET AUTOT TRACE
+
+
 SELECT owner FROM test WHERE owner='SYS'
+
 SELECT * FROM test WHERE owner='SYS'
 ```
 
@@ -228,3 +231,88 @@ Oracle 12c 的新功能批量回表（TABLE ACCESS BY INDEX ROWID BATCHED）在�
 ## 集群因子（CLUSTERING FACTOR）
 
 集群因子用于判断索引回表需要消耗的物理 I/O 次数。
+
+```sql
+--我们先对测试表 test 的 object_id 列创建一个索引 idx_id
+CREATE INDEX IDX_ID ON TEST(OBJECT_ID);
+
+
+--然后我们查看该索引的集群因子
+SELECT OWNER, INDEX_NAME, CLUSTERING_FACTOR
+FROM DBA_INDEXES
+WHERE OWNER = 'SCOTT'
+     AND INDEX_NAME = 'IDX_ID'
+--集群因子
+OWNER      INDEX_NAME CLUSTERING_FACTOR
+---------- ---------- -----------------
+SCOTT      IDX_ID                  1094
+
+
+--索引 IDX_ID 的叶子块中有序的存储了索引的键值以及键值对应行所在的 ROWID
+SELECT * FROM(SELECT OBJECT_ID, ROWID
+               FROM TEST
+               WHERE OBJECT_ID IS NOT NULL
+               ORDER BY OBJECT_ID)
+WHERE ROWNUM <= 5
+```
+
+集群因子的算法，根据索引列的有序列值进行计算，相邻的列值所对应的 ROWID 是否在同一个数据块。如果在同一个数据块，集群因子不变；如果不在同一个数据块，那么集群因子加一。
+
+根据算法我们知道**“集群因子介于表的块数和表行数之间”**。
+- **如果集群因子与块数接近，说明表的数据基本上是有序的，而且其顺序基本与索引顺序一样。这样在进行索引范围或者索引全扫描的时候，回表只需要读取少量的数据块就能完成。**
+- **如果集群因子与表记录数接近，说明表的数据和索引顺序差异很大，在进行索引范围扫描或者索引全扫描的时候，回表会读取更多的数据块。**
+
+集群因子只会影响索引范围扫描（INDEX RANGE SCAN）以及索引全扫描（INDEX FULL SCAN），因为只有这两种索引扫描方式会有大量数据回表。
+
+集群因子不会影响索引唯一扫描（INDEX UNIQUE SCAN），因为索引唯一扫描只返回一条数据。集群因子更不会影响索引快速全扫描（INDEX FAST FULL SCAN），因为索引快速全扫描不回表。
+
+**集群因子影响的是索引回表的物理 I/O 次数。**
+
+重建索引不能降低集群因子，因为表中的数据顺序始终没变。唯一能降低集群因子的办法就是根据索引列排序对表进行重建，但是在实际操作中是不可取的，因为我们无法照顾到每一个索引。
+
+**当索引范围扫描或者索引全扫描不回表，或者返回数据量很少的时候，不管集群因子多大，对 SQL 查询性能几乎没有任何影响。**
+
+当我们把表中所有的数据块缓存在 buffer cache 中，这个时候不管集群因子多大，对 SQL 查询性能也没有多大影响，因为这时不需要物理 I/O，数据块全在内存中访问速度是非常快的。
+
+## 表与表之间关系
+
+表与表之间存在 3 中关系。一对一、一对多和多对多关系。搞懂表与表之间关系，对于 SQL 优化、SQL 等价改写、表设计优化以及分表分库都有巨大帮助。
+
+两表在进行关联的时候，如果两表属于一对一关系，关联之后返回的结果也是属于“一”的关系，数据不会重复。如果两表属于一对多关系，关联之后返回的结果集属于“多”的关系。如果两表属于多对多关系，关联之后返回的结果集会产生局部范围的笛卡尔积，多对多关系一般不存在内/外连接中，只能存在于半连接或者反连接中。
+
+如果不知道业务，不知道数据字典，怎么判断两表是说明关系
+
+```sql
+SELECT * FROM EMP E, DEPT D WHERE E.DEPTNO = D.DEPTNO;
+
+
+--只需要对两表关联列进行汇总统计就能知道两表是说明关系
+SELECT DEPTNO, COUNT(*) FROM EMP GROUP BY DEPTNO ORDER BY 2 DESC;
+
+    DEPTNO   COUNT(*)
+---------- ----------
+        30          6
+        20          5
+        10          3
+
+SELECT DEPTNO, COUNT(*) FROM DEPT GROUP BY DEPTNO ORDER BY 2 DESC;
+
+    DEPTNO   COUNT(*)
+---------- ----------
+        10          1
+        40          1
+        30          1
+        20          1
+```
+
+从上面查询可以知道两表 emp 和 dept 是多对一关系。
+
+案例
+
+`SELECT COUNT(*) FROM A LEFT JOIN B ON A.ID=B.ID;`
+
+a 与 b 是一对一关系。因为 a 与 b 是使用外连接进行关联，不管 a 与 b 是否关联上，始终都会返回 a 的数据。SQL 语句中求得是两表关联后的总行数，因为两表是一对一关系，关联之后数据不会翻番，那么该 SQL 等价于如下文本。
+
+`SELECT COUNT(*) FROM A;`
+
+如果 a 与 b 是多对一关系，也可以将 b 表去掉，因为两表关联之后数据不会翻番。如果 a 与 b 是一对多关系，就不能去掉 b 表，因为关联之后数据量会翻番。

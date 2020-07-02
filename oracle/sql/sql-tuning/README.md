@@ -2,3 +2,19 @@ SQL 优化核心思想
 - 罗炳森 黄超 钟侥 著
   
 对于该书的学习笔记
+
+**本书约定**
+
+- 安装好 Oracle 数据库并配置好示例账户 Scott
+- 数据库使用的版本是 Oracle 11gR2
+
+```sql
+SELECT * FROM V$VERSION WHERE ROWNUM=1;
+
+GRANT DBA to SCOTT;
+ALTER USER SCOTT ACCOUNT UNLOCK;
+ALTER USER SCOTT IDENTIFIED BY TIGER;
+
+CONN SCOTT/TIGER
+CREATE TABLE TEST AS SELECT * FROM DBA_OBJECTS;
+```
