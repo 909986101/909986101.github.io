@@ -8,6 +8,7 @@
   - [04 - 单行函数](/oracle/ocp/ocp-12c/ocp-12c-0104)
   - [05 - 使用转换函数和条件表达式](/oracle/ocp/ocp-12c/ocp-12c-0105)
   - [06 - 使用分组函数报告聚会数据](/oracle/ocp/ocp-12c/ocp-12c-0106)
+  - [07 - 显示多个表中的数据](/oracle/ocp/ocp-12c/ocp-12c-0107)
 
 - OCA 12c 安装与管理
 
