@@ -10,6 +10,7 @@
   - [06 使用分组函数报告聚会数据](/oracle/ocp/ocp-12c/ocp-12c-0106)
   - [07 显示多个表中的数据](/oracle/ocp/ocp-12c/ocp-12c-0107)
   - [08 使用子查询解决问题](/oracle/ocp/ocp-12c/ocp-12c-0108)
+  - [09 使用集合运算符](/oracle/ocp/ocp-12c/ocp-12c-0109)
 
 - OCA 12c 安装与管理
 
