@@ -90,3 +90,7 @@ MakeWinPEMedia 会将 WinPE 驱动器格式化为 FAT32。 如果希望能够在
 1. 尝试清理与已装载映像关联的资源
 
        dism /Cleanup-Mountpoints
+
+## 在脱机 Windows 映像中添加和删除驱动程序
+
+>https://docs.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image
