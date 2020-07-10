@@ -11,10 +11,11 @@
   - [07 显示多个表中的数据](/oracle/ocp/ocp-12c/ocp-12c-0107)
   - [08 使用子查询解决问题](/oracle/ocp/ocp-12c/ocp-12c-0108)
   - [09 使用集合运算符](/oracle/ocp/ocp-12c/ocp-12c-0109)
+  - [10 操作数据](/oracle/ocp/ocp-12c/ocp-12c-0110)
 
 - OCA 12c 安装与管理
 
-  - [Come Sooning](/oracle/ocp/ocp-12c/ocp-12c-0201)
+  - [Come Sooning](/oracle/ocp/ocp-12c/ocp-12c-02)
   
 - OCP 12c 高级管理
 
