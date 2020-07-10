@@ -149,3 +149,92 @@ END;
 - cascade：表示在收集表的统计信息的时候，是否级联收集索引的统计信息，默认值为 DBMS_STATS.AUTO_CASCADE，表示让 Oracle 自己判断是否级联收集索引的统计信息。一般将其设置为 TRUE，在收集表的统计信息的时候，级联收集索引的统计信息。
 
 ## 检查统计信息是否过期
+
+收集完表的统计信息之后，如果表中有大量数据发生变化，这时表的统计信息就过期来，需要重新收集表的统计信息。如果不重新收集，可能会导致执行计划走偏。
+
+可以使用下面方法检查表统计信息是否过期，先刷新数据库监控信息。
+
+```sql
+BEGIN
+    DBMS_STATS.FLUSH_DATABASE_MONITORING_INFO;
+END;
+/
+```
+
+```sql
+SELECT OWNER, TABLE_NAME, OBJECT_TYPE, STALE_STATS, LAST_ANALYZED
+FROM DBA_TAB_STATISTICS
+WHERE OWNER_NAME = 'SCOTT'
+    AND TABLE_NAME = 'T_STATS';
+
+OWNER      TABLE_NAME      OBJECT_TYPE     STALE_STATS     LAST_ANALYZED
+---------- --------------- --------------- --------------- -------------
+SCOTT      T_STATS         TABLE           YES             24-MAY-17
+```
+
+STALE_STATS 显示为 YES 表示表的统计信息过期来。如果 STALE_STATS 显示为 NO，表示表的统计信息没有过期。
+
+通过下面的查询找出统计信息过期的原因。
+
+```sql
+SELECT TABLE_OWNER, TABLE_NAME, INSERTS, UPDATES, DELETES, TIMESTAMP
+FROM ALL_TAB_MODIFICATIONS
+WHERE TABLE_OWNER = 'SCOTT'
+    AND TABLE_NAME = 'T_STATS';
+
+TABLE_OWNER     TABLE_NAME         INSERTS    UPDATES    DELETES TIMESTAMP
+--------------- --------------- ---------- ---------- ---------- ---------
+SCOTT           T_STATS                  0       9709          0 24-MAY-17
+```
+
+从查询结果可以看到，从上一次收集统计信息到现在，表被更新来 9700 行数据，所以统计信息过期来。
+
+Oracle 是怎么判断一个表的统计信息过期来呢？当表中超过 10% 的数据发生变化（INSERT、UPDATE、DELETE），就会引起统计信息过期。
+
+数据字典 ALL_TAB_MODIFICATIONS 还可以用来判断哪些表需要定期降低高水位，比如一个表经常进行 insert、delete，那么这个表应该定期降低高水位，这个表的索引也应该定期重建。除此之外，ALL_TAB_MODIFICATIONS 还可以用来判断系统中哪些表是业务核心表、表的数据每天增长量等。
+
+如果一个 SQL 有多个表关联或者有视图套视图等，怎么快速检查 SQL 语句中所有的表统计信息是否过期呢？
+
+```sql
+-- 有如下 SQL
+SELECT * FROM EMP E, DEPT D WHERE E.DEPTNO=D.DEPTNO;
+
+
+-- 可以先用 explain plan for 命令，在 plan_table 中生产 SQL 的执行计划
+EXPLAIN PLAN FOR SELECT * FROM EMP E, DEPT D WHERE E.DEPTNO=D.DEPTNO;
+
+
+-- 然后使用下面脚本检查 SQL 语句中所有的表的统计信息是否过期
+SELECT OWNER, TABLE_NAME, OBJECT_TYPE, STALE_STATS, LAST_ANALYZED
+FROM DBA_TAB_STATISTICS
+WHERE (OWNER, TABLE_NAME) IN (SELECT OBJECT_OWNER, OBJECT_NAME
+                              FROM PLAN_TABLE
+                              WHERE OBJECT_TYPE LIKE '%TABLE%'
+                              UNION
+                              SELECT TABLE_OWNER, TABLE_NAME
+                              FROM DBA_INDEXES
+                              WHERE (OWNER, INDEX_NAME) IN (SELECT OBJECT_OWNER, OBJECT_NAME
+                                                            FROM PLAN_TABLE
+                                                            WHERE OBJECT_TYPE LIKE '%INDEX%'));
+
+OWNER      TABLE_NAME OBJECT_TYP STALE_STATS     LAST_ANALYZED
+---------- ---------- ---------- --------------- -------------
+SCOTT      DEPT       TABLE      NO              05-DEC-16
+SCOTT      EMP        TABLE      YES             22-OCT-16
+
+
+-- 最后使用下面脚本检查 SQL 语句统计信息的过期原因
+SELECT *
+FROM ALL_TAB_MODIFICATIONS
+WHERE (TABLE_OWNER, TABLE_NAME) IN (SELECT OBJECT_OWNER, OBJECT_NAME
+                                    FROM OBJECT_TYPE
+                                    WHERE OBJECT_TYPE LIKE '%TABLE%'
+                                    UNION
+                                    SELECT TABLE_OWNER, TABLE_NAME
+                                    FROM DBA_INDEXES
+                                    WHERE (OWNER, INDEX_NAME) IN (SELECT OBJECT_OWNER, OBJECT_NAME
+                                                                  FROM PLAN_TABLE
+                                                                  WHERE OBJECT_TYPE LIKE '%INDEX%'));
+```
+
+## 扩展统计信息
