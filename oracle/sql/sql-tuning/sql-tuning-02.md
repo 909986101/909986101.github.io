@@ -143,10 +143,10 @@ END;
   `method_opt => 'for all columns size repeat'` 表示当前有哪些列收集列直方图，现在就对哪些列收集直方图。  
   `method_opt => 'for columns object_type size skewonly'` 表示单独对 OBJECT_TYPE 列收集直方图，对于其余列，如果之前收集过直方图，现在也收集直方图。
 
-  在实际工作中，需要对列收集直方图就收集直方图，需要删除某列直方图就删除其直方图，当系统趋于稳定之后，使用 REPEAT 方式收集直方图
-- no_invalidate：表示共享池中涉及到该表的游标是否立即失效，默认值为 DBMS_STATS.AUTO_INVALIDATE，表示让 Oracle 自己决定是否立即失效。建议将 no_invalidate 参数设置为 FALSE，立即失效。因为有时候 SQL 执行缓慢是因为统计信息过期导致，重新收集统计信息之后执行计划还是没有改变，原因就在于没有将这个参数设置为 FALSE。
-- degree：表示收集统计信息的并行度，默认为 NULL。如果表没有设置 degree，收集统计信息的时候就不开并行；如果表设置了 degree，收集统计信息的时候就按照表的 degree 来开并行。可以查询 DBA_TABLES.degree 来查看表的 degree，一般情况下，表的 degree 都为 1.建议可以根据当时系统的负载、系统中 CPU 的个数以及表大小来综合判断设置并行度。
-- cascade：表示在收集表的统计信息的时候，是否级联收集索引的统计信息，默认值为 DBMS_STATS.AUTO_CASCADE，表示让 Oracle 自己判断是否级联收集索引的统计信息。一般将其设置为 TRUE，在收集表的统计信息的时候，级联收集索引的统计信息。
+  在实际工作中，需要对列收集直方图就收集直方图，需要删除某列直方图就删除其直方图，当系统趋于稳定之后，使用 REPEAT 方式收集直方图。
+- no_invalidate：表示共享池中涉及到该表的游标是否立即失效，默认值为 `DBMS_STATS.AUTO_INVALIDATE`，表示让 Oracle 自己决定是否立即失效。建议将 no_invalidate 参数设置为 FALSE，立即失效。因为有时候 SQL 执行缓慢是因为统计信息过期导致，重新收集统计信息之后执行计划还是没有改变，原因就在于没有将这个参数设置为 FALSE。
+- degree：表示收集统计信息的并行度，默认为 NULL。如果表没有设置 degree，收集统计信息的时候就不开并行；如果表设置了 degree，收集统计信息的时候就按照表的 degree 来开并行。可以查询 `DBA_TABLES.degree` 来查看表的 degree，一般情况下，表的 degree 都为 1。建议可以根据当时系统的负载、系统中 CPU 的个数以及表大小来综合判断设置并行度。
+- cascade：表示在收集表的统计信息的时候，是否级联收集索引的统计信息，默认值为 `DBMS_STATS.AUTO_CASCADE`，表示让 Oracle 自己判断是否级联收集索引的统计信息。一般将其设置为 TRUE，在收集表的统计信息的时候，级联收集索引的统计信息。
 
 ## 检查统计信息是否过期
 
@@ -238,3 +238,103 @@ WHERE (TABLE_OWNER, TABLE_NAME) IN (SELECT OBJECT_OWNER, OBJECT_NAME
 ```
 
 ## 扩展统计信息
+
+当 WHERE 条件中有多个谓语过滤条件，但是这些谓语过滤条件彼此是有关系的而不是相互独立的，这时可能需要收集扩展统计信息以便优化器能够估算出较为准确的行数（Rows）。
+
+```sql
+-- 创建一个表 T
+CREATE TABLE T AS
+SELECT LEVEL AS ID, LEVEL || 'a' AS a, LEVEL || LEVEL || 'b' AS b
+FROM DUAL
+CONNECT BY LEVEL < 100;
+
+-- 在 T 表中，知道 A 列的值就知道 B 列的值，A 和 B 这样的列就叫做相关列。
+
+
+-- 一直执行 INSERT INTO T SELECT * FROM T; 直到 T 表中有 3244032 行数据。
+
+
+-- 对 T 表收集统计信息
+-- 使用 DBMS_STATS.GATHER_TABLE_STATS 进行收集，其中 method_opt 的参数使用 'for all columns size skewonly'
+-- 代码略
+
+
+-- 查看 T 表的统计信息
+-- 代码略
+
+
+-- 创建两个索引
+CREATE INDEX IDX1 ON T(a);
+CREATE INDEX IDX2 ON T(a, b);
+
+
+-- 使用如下 SQL 及其执行计划
+SELECT * FROM T WHERE a='1a' AND b='11b';
+32768 rows selected.
+
+Execution Plan
+------------------------------------------------------------------
+Plan hash values: 2303463401
+-----------------------------------------------------------------------------------
+| Id  | Operation                   | Name |  Rows | Bytes | Cost (%CPU)| Time     |
+-----------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT            |      |   331 |  4303 |    84   (0)| 00:00:02 | 
+|   1 |  TABLE ACCESS BY INDEX ROWID| T    |   331 |  4303 |    84   (0)| 00:00:02 |
+|*  2 |   INDEX RANGE SCAN          | IDX2 |   331 |       |     3   (0)| 00:00:01 |
+-----------------------------------------------------------------------------------
+
+Predicate Information (identified by operation id):
+---------------------------------------------------
+
+   2 - access("A"='1a' AND "B"='11b')
+
+Statistics
+---------------------------------------------------------------------------
+部分略
+  ... ...
+  ... ...
+     32768  rows precessed
+
+-- 优化器估算返回 331 行数据，但是实际上返回了 32768 行数据。
+-- 因为优化器不知道 A 与 B 的关系，所以在估算返回行数的时候采用的是：
+-- 总行数 * A 的选择性 * B 的选择。
+SELECT ROUND(1/99/99*3244032) FROM DUAL;
+
+round(1/99/99*3211032)
+----------------------
+                   331
+
+-- 因为 A 列的值可以决定 B 列的值，所以上述 SQL 可以去掉 B 列的过滤条件
+SELECT * FROM T WHERE a='1a';
+
+32768 rows selected.
+
+-- 这时优化器能正确的估算返回的 Rows。
+
+
+-- 如果不改写 SQL，而且还能让优化器得到比较准确的 Rows。
+--在 Oracle 11g 之前可以使用动态采样（至少 Level 4）。
+ALTER SESSION SET OPTIMIZER_DYNAMIC_SAMPLING=4;
+-- 执行 SQL 并返回其执行化
+-- 代码略
+-- 使用动态采样 Level 4 采样之后，优化器估算返回 33845 行数据，实际返回了 32768 行数据，这已经比较精确了。
+-- 在 Oracle 11g 以后，可以使用扩展统计信息将相关的列结合成一个列。
+SELECT DBMS_STATS.CREATE_EXTENDED_STATS(USER, 'T', '(A, B') FROM DUAL;
+
+DBMS_STATS.CREATE_EXTENDED_STATS(USER, 'T', '(A, B')
+--------------------------------------------------------------------------------
+SYS_STUNA$6DVXJXTP05EH56DTIR0X
+
+-- 对表重新收集统计信息
+-- method_opt 的参数使用 'for columns SYS_STUNA$6DVXJXTP05EH56DTIR0X size skewonly'
+
+-- 查看 T 表的统计信息
+-- 代码略
+-- 重新收集统计信息之后，扩展列 SYS_STUNA$6DVXJXTP05EH56DTIR0X 也收集了直方图。
+
+-- 再次执行 SQL
+-- 代码略
+-- 优化器就能够估算出较为准确的 Rows。
+```
+
+需要注意的是，扩展统计信息只能用于等值查询，不能用于非等值查询。
