@@ -16,7 +16,8 @@
 
 - OCA 12c 安装与管理
 
-  - [01 安装 Oracle 数据库软件](/oracle/ocp/ocp-12c/2/ocp-12c-02)
+  - [01 安装 Oracle 数据库软件](/oracle/ocp/ocp-12c/2/ocp-12c-0201)
+  - [02 使用 DBCA 创建 Oracle 数据库](/oracle/ocp/ocp-12c/2/ocp-12c-0202)
   
 - OCP 12c 高级管理
 
