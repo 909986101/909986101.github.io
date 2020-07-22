@@ -338,3 +338,123 @@ SYS_STUNA$6DVXJXTP05EH56DTIR0X
 ```
 
 需要注意的是，扩展统计信息只能用于等值查询，不能用于非等值查询。
+
+## 动态采样
+
+如果一个表从来没有收集过统计信息，默认情况下 Oracle 会对表进行动态采样（Level=2）以便优化器估算出较为准确的 Rows，**动态采样的最终目的就是为了让优化器能够评估出较为准确的 Rows**。
+
+```sql
+-- 创建一个测试表
+CREATE TABLE T_DYNA AS SELECT * FROM DBA_OBJECT;
+
+
+-- 执行下面 SQL 并且查看执行计划
+SELECT COUNT(*) FROM T_DYNA;
+
+Execution Plan
+------------------------------------------------------------
+    ... ...
+    ... ...
+------------------------------------------------------------
+
+Note
+-----
+   - dynamic sampling used for the statement (level=2)
+```
+
+因为表 T_DYNA 是才创建的新表，没有收集过统计信息，所以会启动动态采样。执行计划中 `dynamic sampling used for the statement (level=2)` 表示启用了动态采样，level 表示采样级别，默认情况下采样级别为 2。
+
+动态采用的级别分为 11 级
+- level 0：不启用动态采样。
+- level 1：当表（非分区表）没有收集过统计信息并且这个表要与另外的表进行关联（不能是单表访问），同时该表没有索引，表的数据块必须大于 32 个，满足这些条件的时候，Oracle 会随机扫描表中 32 个数据块，然后评估返回的 Rows。
+- level 2：对没有收集过统计信息的表启用动态采样，采样的块数为 64 个。如果表的块数小于 64 个，则采样全部的块。
+- level 3：对没有收集过统计信息的表启用动态采样，采样的块数为 64 个。如果表已经收集过统计信息，但是优化器不能准确的估算出返回的 Rows，而是靠猜，比如 `WHERE SUBSTR(OWNER, 1, 3)`，这时会随机扫描 64 个数据块进行采样。
+- level 4：对没有收集过统计信息的表启用动态采样，采样的块数为 64 个。如果表已经收集过统计信息，但是表有两个（及）以上过滤条件（AND/OR），这时会随机扫描 64 个数据块进行采样，相关列问题就必须启用至少 level 4 进行动态采样。level 4 采样包含了 level 3 的采样数据。
+- level 5：收集满足 level 4 采样条件的数据，采样的块数为 128 个。
+- level 6：收集满足 level 4 采样条件的数据，采样的块数为 256 个。
+- level 7：收集满足 level 4 采样条件的数据，采样的块数为 512 个。
+- level 8：收集满足 level 4 采样条件的数据，采样的块数为 1024 个。
+- level 9：收集满足 level 4 采样条件的数据，采样的块数为 4096 个。
+- level 10：收集满足 level 4 采样条件的数据，采样表中所有的数据块。
+- level 11：Oracle 自动判断如何采样，采样的块数由 Oracle 自动判定。
+
+启动动态采样
+
+```sql
+-- 将动态采样 level 设置为 3
+ALTER SESSION SET OPTIMIZER_DYNAMIC_SAMPLING=3
+```
+
+添加 HINT 启用动态采样
+
+```sql
+SELECT /*+ DYNAMIC_SAMPLING(3) */ * FROM T_DYNA WHERE SUBSTR(OWNER, 4, 3)='LIC';
+```
+
+如果表已经收集过统计信息并且优化器能够准确的估算出返回的 Rows，即使添加了动态采样的 HINT 或者是设置了动态采样的参数为 level 3，也不会启用动态采样。
+
+当系统中有全局临时表，就需要使用动态采样，因为全局临时表无法收集统计信息，建议对全局临时表至少启用 level 4 进行采样。
+
+**当执行计划中表的 Rows 估算有严重偏差的时候，例如相关列问题，或者两表关联有多个连接列，关联之后 Rows 算少，或者是 WHERE 过滤条件中对列使用了 SUBSTR、INSTR、LIKE，又或者是 WHERE 过滤条件中有非等值过滤，或者 GROUP BY 之后导致 Rows 估算错误，此时可以考虑使用动态采样，同样，建议动态采样至少设置为 level 4。**
+
+在数据仓库系统中，有些报表 SQL 的过滤条件太复杂，有大量的 AND 和 OR 过滤条件，同时也可能有大量的 WHERE 子查询过滤条件，从而导致优化器不能估算出较为准确的 Rows 而产生了错误的执行计划。可以考虑启用动态采样 level 6 观察性能是否改善。
+
+不要在系统级更改动态采样级别，默认为 2 就行。如果某个表需要启用动态采样，直接在 SQL 语句中添加 HINT 即可。
+
+## 定制统计信息收集策略
+
+要确保统计信息的准确性。优化器在计算执行计划的成本时依赖于统计信息，没有收集统计信息，或者统计信息过期，那么优化器就会出现严重偏差，从而导致性能问题。
+
+数据库自带有 JOB 每天晚上定时收集数据库中所有表的统计信息，如果数据库特别大，自带的 JOB 无法完成全库统计信息收集。可以关闭数据库自带的统计信息收集 JOB，根据实际情况自己定制收集统计信息策略。
+
+```sql
+-- 脚本用于收集 SCOTT 账户下统计信息过期或者从未收集过统计信息的表的统计信息，
+-- 采样率也根据表的段大小做出了相应调整
+DECLARE
+    CURSOR STALE_TABLE IS
+        SELECT OWNER,
+               SEAMENT_NAME,
+               CASE
+                 WHEN SEGMENT_SIZE < 1 THEN
+                    100
+                 WHEN SEGMENT_SIZE >= 1 AND SEGMENT_SIZE <= 5 THEN
+                    50
+                 WHEN SEGMENT_SIZE > 5 THEN
+                    30
+               END AS PERCENT,
+               6 AS DEGREE
+        FROM (SELECT OWNER,
+                     SEGMENT_NAME,
+                     SUM(BYTES / 1024 / 1024 / 1024) SEGMENT_SIZE
+              FROM DBA_SEGMENTS
+              WHERE OWNER = 'SCOTT' -- SCOTT 账户
+                    AND SEGMENT_NAME IN (SELECT TABLE_NAME
+                                         FROM DBA_TAB_STATISTICS
+                                         WHERE (LAST_ANALYZED IS NULL OR STALE_STATS = 'YES')
+                                               AND OWNER = 'SCOTT') -- SCOTT 账户
+                                         GROUP BY OWNER, SEGMENT_NAME);
+BEGIN
+    DBMS_STATS.FLUSH_DATABASE_MONITORING_INFO;
+    FOR STALE IN STALE_TABLE LOOP
+        DBMS_STATS.GATHER_TABLE_STATS(OWNNAME          => STALE.OWNER,
+                                      TABNAME          => STALE.SEGMENT_NAME,
+                                      ESTIMATE_PERCENT => STALE.PERCENT,
+                                      METHOD_OPT       => 'for all columns size repeat',
+                                      degree           => STALE.DEGREE,
+                                      CASCADE          => TRUE);
+    END LOOP;
+END;
+/
+```
+
+全局临时表无法收集统计信息，可以抓出系统中的全局临时表，抓出系统中使用到全局临时表的 SQL，然后根据实际情况，对全局临时表进行动态采样，或者是人工对全局临时表设置统计信息（DBMS_STATS.SET_TABLE_STATS）。
+
+```sql
+-- 脚本抓出系统中使用到全局临时表的 SQL
+SELECT B.OBJECT_OWNER, B.OBJECT_NAME, A.TEMPORART, SQL_TEXT
+FROM DBA_TABLES A, V$SQL_PLAN B, V$SQL C
+WHERE A.OWNER = B.OBJECT_OWNER
+      AND A.TEMPORARY = 'Y'
+      AND A.TABLE_NAME = B.OBJECT_NAME
+      AND B.SQL_ID = C.SQL_ID;
+```
