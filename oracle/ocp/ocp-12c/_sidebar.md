@@ -18,6 +18,7 @@
 
   - [01 安装 Oracle 数据库软件](/oracle/ocp/ocp-12c/2/ocp-12c-0201)
   - [02 使用 DBCA 创建 Oracle 数据库](/oracle/ocp/ocp-12c/2/ocp-12c-0202)
+  - [03 了解 Oracle 数据库体系结构](/oracle/ocp/ocp-12c/2/ocp-12c-0203)
   
 - OCP 12c 高级管理
 
