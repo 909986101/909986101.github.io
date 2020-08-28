@@ -76,3 +76,86 @@ SQL> select count(*) from emp;
   **做 SQL 优化应最关注这部分数据，根据 SQL 返回到行数判断整个 SQL 应该是走 HASH 连接（`rows processed` 很大）还是嵌套循环（`rows processed` 很小）。**
 
 ### 使用 EXPLAIN PLAN FOR 查看执行计划
+
+使用 explain plan for 查看执行计划，用法：
+
+```sql
+explain plan for SQL 语句
+select * from table(dbms_xplan.display);
+```
+
+查看高级（ADVANCED）执行计划，用法：
+
+```sql
+explain plan for SQL 语句
+select * from table(dbms_xplan.display(NULL, NULL, 'advanced -projection'));
+```
+
+高级执行计划使用情景，可能使用
+- 当需要控制半连接/反连接执行计划当时候
+- 使用 `SQL PROFILE` 固定执行计划
+
+高级执行计划比普通执行计划多了 `Query Block Name/Object Alias` 和 `Outline Data`。
+
+- `Query Block Name` 表示查询块名称。一条 SQL 语句中的每个子查询在执行计划内部是一个 `Query Block`。Oracle 会给同一个 SQL 中的子查询取别名，这个名字就是 `Query Block Name`。
+
+- `Object Alias` 表示对象别名。
+
+- `Outline Data` 表示 SQL 内部当 `HINT`。可以使用 `HINT`：`qb_name`（别名）给子查询取别名。
+
+### 查看带有 A-TIME 的执行计划
+
+查看带有 A-TIME 的执行计划用法：
+
+```sql
+alter session set statistics_level=all;
+-- 或者
+-- 在 SQL 语句中添加 
+-- hint:/*+ gather_plan_statistics */
+```
+
+运行完 SQL 语句，执行下面查询语句即可获取带有 A-TIME 的执行计划。
+
+```sql
+select * from table(dbms_xplan.display_cursor(null, null, 'allstats last'));
+```
+
+示例
+
+```
+-- （略）
+```
+
+- `Starts` 表示这个操作执行的次数。
+- `E-Rows` 表示优化器估算的行数，就是普通执行计划中的 Rows。
+- `A-Rows` 表示真实的行数。
+- `A-Time` 表示累加的总时间。执行计划中的 Time 是假的，而 A-Time 是真实的。
+- `Buffers` 表示累加的逻辑读。
+- `Reads` 表示累加的物理读。
+
+### 3 种查看执行计划的方法
+
+`PLAN_TABLE` 是一个会话级的临时表，里面的执行计划不是真实的执行计划，是优化器估算出来的。`AUTOTRACE` 和 `EXPLAIN PLAN FOR` 获取的执行计划来自该表。
+
+`V$SQL_PLAN`，SQL 执行过的执行计划存在于**共享池**中，具体存在于数据字典 `V$SQL_PLAN` 中，是真实的执行计划。带有 A-Time 的执行计划来自于 `V$SQL_PLAN`。
+
+### 查看正在执行的 SQL 的执行计划
+
+抓取正在运行的 SQL 的执行计划，需要先获取 SQL 的 `SQL_ID` 和 `CHILD_NUMBER`，然后将其带入下面的 SQL。
+
+```sql
+select * from table(dbms_xplan.display_cursor('sql_id', child_number));
+```
+
+示例（获取 SQL 的 `SQL_ID` 和 `CHILD_NUMBER`）
+
+```sql
+select a.sid, a.event, a.sql_id, a.sql_child_number, b.sql_text
+  from v$session a, v$sql b
+ where a.sql_address=b.address
+   and a.sql_hash_value=b.hash_value
+   and a.sql_child_number=b.child_number
+ order by 1 desc;
+```
+
+## 定制执行计划
