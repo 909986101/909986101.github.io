@@ -22,6 +22,28 @@
 |`WhateverGreen`|https://github.com/acidanthera/WhateverGreen||
 |`AppleALC`|https://github.com/acidanthera/AppleALC||
 |`VoodooPS2`|https://github.com/acidanthera/VoodooPS2||
+|`RealtekRTL8111`|https://github.com/Mieze/RTL8111_driver_for_OS_X||
 ||||
 ||||
-||||
+
+## 工具
+
+### gibMacOS
+
+https://github.com/corpnewt/gibMacOS
+
+### MountEFI
+
+https://github.com/corpnewt/MountEFI
+
+### MaciASL
+
+https://github.com/acidanthera/MaciASL
+
+### ProperTree
+
+https://github.com/corpnewt/ProperTree
+
+### GenSMBIOS
+
+https://github.com/corpnewt/GenSMBIOS
