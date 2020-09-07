@@ -23,8 +23,8 @@
 |`AppleALC`|https://github.com/acidanthera/AppleALC||
 |`VoodooPS2`|https://github.com/acidanthera/VoodooPS2||
 |`RealtekRTL8111`|https://github.com/Mieze/RTL8111_driver_for_OS_X||
-||||
-||||
+|`itlwm/itlwmx`|https://github.com/OpenIntelWireless/itlwm||
+|`heliport`|https://github.com/OpenIntelWireless/HeliPort||
 
 ## 工具
 
