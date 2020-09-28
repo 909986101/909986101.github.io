@@ -25,6 +25,7 @@
 |`RealtekRTL8111`|https://github.com/Mieze/RTL8111_driver_for_OS_X||
 |`itlwm/itlwmx`|https://github.com/OpenIntelWireless/itlwm||
 |`heliport`|https://github.com/OpenIntelWireless/HeliPort||
+|`IntelBluetoothFirmware`|https://github.com/OpenIntelWireless/IntelBluetoothFirmware|
 
 ## 工具
 
