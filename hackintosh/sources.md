@@ -36,3 +36,4 @@
 |`MaciASL`|https://github.com/acidanthera/MaciASL||
 |`ProperTree`|https://github.com/corpnewt/ProperTree||
 |`GenSMBIOS`|https://github.com/corpnewt/GenSMBIOS||
+|`Hackintool`|https://github.com/headkaze/Hackintool||
