@@ -12,9 +12,10 @@
    - 亮黑色：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913396&decision=sku
    - 釉白色：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913394&decision=sku
    - 秘银色：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913398&decision=sku
-   - 绿色：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913392&decision=sku
-   - 黄色：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913390&decision=sku
-
+   - ~~绿色：`https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913392&decision=sku`~~
+   - ~~黄色：`https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4485149913390&decision=sku`~~
+   - 夏日胡杨：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4664765683848&decision=sku
+   - 秋日胡杨：https://main.m.taobao.com/order/index.html?quantity=1&itemId=629304006937&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4664765683846&decision=sku
 
 # MATE 40 PRO+
 
