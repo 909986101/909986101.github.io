@@ -67,3 +67,4 @@
 
    典藏版 12+512G
    - 陶瓷黑：https://main.m.taobao.com/order/index.html?quantity=1&itemId=630374242978&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4480837928765&decision=sku
+   - 陶瓷白：https://main.m.taobao.com/order/index.html?quantity=1&itemId=630374242978&fav_status=true&spm=a211a6.13488898.goods.1&skuId=4480837928764&decision=sku
