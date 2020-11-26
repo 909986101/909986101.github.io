@@ -39,3 +39,5 @@
 |`ProperTree`|https://github.com/corpnewt/ProperTree||
 |`GenSMBIOS`|https://github.com/corpnewt/GenSMBIOS||
 |`Hackintool`|https://github.com/headkaze/Hackintool||
+|`gfxutil`|https://github.com/acidanthera/gfxutil||
+|`IORegistryExplorer`|https://github.com/khronokernel/IORegistryClone||
