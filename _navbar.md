@@ -12,5 +12,3 @@
   * [Shell](/linux/shell/)
 * lyt
   * [Stady](/lyt/)
-* 黑苹果
-  * [Hackintosh](/hackintosh/)
