@@ -10,7 +10,7 @@
 - No statically built html files
 - Multiple themes
 
-[GitHub](https://github.com/909986101/909986101.github.io/)
+[Hackintosh](https://ilxy.tech/hackintosh/)
 [Blog](https://ilxy.tech/blog)
 [Docs](README)
 
