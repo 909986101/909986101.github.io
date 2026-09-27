@@ -1207,8 +1207,25 @@ $\require{AMScd}$
 
 在本例中， "very long label"自动延长了它所在箭头以及对应箭头的长度。
 
+- 例子
+```
+$$
+\require{AMDcd}
+\begin{CD}
+    \rm{RCOHR^{'}SO_3Na} @>{\large\text{Hydrolysis, $\Delta$, Dil.HCl}}>> \rm{(RCOR^{'})+NaCl+SO_2+ H_2O}
+\end{CD}
+$$
+```
 
-#八、一些特殊的注意事项
+- 显示：
+$$
+\require{AMDcd}
+\begin{CD}
+    \rm{RCOHR^{'}SO_3Na} @>{\large\text{Hydrolysis, $\Delta$, Dil.HCl}}>> \rm{(RCOR^{'})+NaCl+SO_2+ H_2O}
+\end{CD}
+$$
+
+# 八、一些特殊的注意事项
 
 |**!! 本段内容为个人翻译，可能有不准确之处 !!**|
 |:--:|
