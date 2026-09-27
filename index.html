@@ -19,12 +19,12 @@
     data-sheet="core-dark-auto"
   />
   
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"> -->
-  
   <!-- KaTeX 样式（必须） -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   
+  <!-- footer 插件样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
 </head>
 <body class="sidebar-group-box sidebar-chevron-left">
@@ -48,28 +48,6 @@
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
       onlyCover: true,
 
-      /*
-      markdown: {
-        renderer: {
-          code: function(code, lang) {
-            if (lang === "mermaid") {
-              return (
-                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-              );
-            }
-            return this.origin.code.apply(this, arguments);
-          }
-        }
-      },
-      */
-      
-      /*footer: {
-        copy: '<span>&copy; 2020</span>',
-        auth: 'by haona_li',
-        pre: '<hr>',
-        style: 'text-align: right;',
-        style: 'className'
-      },*/
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
       },
@@ -94,7 +72,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/dist/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!-- <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.js"></script>
   
   <!-- 引入 Mermaid.js -->
@@ -102,11 +79,11 @@
   <!-- 使用 ES Module 方式引入 Mermaid v10+ -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
+    mermaid.initialize({ startOnLoad: false });
     window.mermaid = mermaid;
   </script>
   <!-- 引入 docsify-mermaid 插件 -->
-  <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+  <script src="//unpkg.com/docsify-mermaid/dist/docsify-mermaid.js"></script>
 
   <!-- KaTeX 样式（必须） -->
   <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>

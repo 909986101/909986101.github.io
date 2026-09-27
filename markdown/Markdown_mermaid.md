@@ -10,7 +10,7 @@
 ...mermaid
 ```
 
-# 流程图
+## 流程图
 
 流程图方向
 
@@ -126,44 +126,45 @@ graph TB
     end
 ```
 
-# 时序图 sequence diagram
+## 时序图 sequence diagram
 
-## 标准时序图
+### 标准时序图
 
 基本语法：
 
 ||说明|
 |:-|:-|
-|Title:标题 |指定时序图的标题|
+|accTitle:标题 |指定时序图的标题|
 |Note direction of 对象:描述 |在对象的某一侧添加描述。<br>direction 可以为 right/left/over；<br>对象 可以是多个对象，以“逗号”（,）作为分隔符|
 |participant 对象 |创建一个对象|
 |loop...end |创建一个循环体|
 |对象A->对象B:描述 |绘制A与B之间的对话，以实线连接<br>-> 实线实心箭头指向<br>--> 虚线实心箭头指向<br>->> 实线小箭头指向<br>-->> 虚线小箭头指向|
 
 ```
-...sequence
-Title:时序图示例
-客户端->服务端: 我想找你拿下数据 SYN
-服务端-->客户端: 我收到你的请求啦 ACK+SYN
-客户端->>服务端: 我收到你的确认啦，我们开始通信吧 ACK
-Note right of 服务端: 我是一个服务端
-Note left of 客户端: 我是一个客户端
-Note over 服务端,客户端: TCP 三次握手
-participant 观察者
+sequenceDiagram
+    accTitle:时序图示例
+    客户端->服务端: 我想找你拿下数据 SYN
+    服务端-->客户端: 我收到你的请求啦 ACK+SYN
+    客户端->>服务端: 我收到你的确认啦，我们开始通信吧 ACK
+    Note right of 服务端: 我是一个服务端
+    Note left of 客户端: 我是一个客户端
+    Note over 服务端,客户端: TCP 三次握手
+    participant 观察者
 ```
 
-```sequence
-Title:时序图示例
-客户端->服务端: 我想找你拿下数据 SYN
-服务端-->客户端: 我收到你的请求啦 ACK+SYN
-客户端->>服务端: 我收到你的确认啦，我们开始通信吧 ACK
-Note right of 服务端: 我是一个服务端
-Note left of 客户端: 我是一个客户端
-Note over 服务端,客户端: TCP 三次握手
-participant 观察者
+```mermaid
+sequenceDiagram
+    accTitle:时序图示例
+    客户端->服务端: 我想找你拿下数据 SYN
+    服务端-->客户端: 我收到你的请求啦 ACK+SYN
+    客户端->>服务端: 我收到你的确认啦，我们开始通信吧 ACK
+    Note right of 服务端: 我是一个服务端
+    Note left of 客户端: 我是一个客户端
+    Note over 服务端,客户端: TCP 三次握手
+    participant 观察者
 ```
 
-## 带样式时序图
+### 带样式时序图
 
 基本语法同标准时序图，不同的是
 - 需要使用 mermaid 解析，并在开头使用关键字 sequenceDiagram 指明
@@ -306,9 +307,9 @@ sequenceDiagram
   John -->> -Alice: I feel greate!
 ```
 
-# Class diagrams
+## Class diagrams
 
->|"In software engineering, a class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects." Wikipedia
+>"In software engineering, a class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system's classes, their attributes, operations (or methods), and the relationships among objects." Wikipedia
 
 The class diagram is the main building block of object-oriented modeling. It is used for general conceptual modeling of the structure of the application, and for detailed modeling translating the models into programming code. Class diagrams can also be used for data modeling. The classes in a class diagram represent both the main elements, interactions in the application, and the classes to be programmed.
 
@@ -336,9 +337,9 @@ classDiagram
       }
 ```
 
-# State diagrams
+## State diagrams
 
->|"A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a finite number of states; sometimes, this is indeed the case, while at other times this is a reasonable abstraction." Wikipedia
+>"A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a finite number of states; sometimes, this is indeed the case, while at other times this is a reasonable abstraction." Wikipedia
 
 Mermaid can render state diagrams. The syntax tries to be compliant with the syntax used in plantUml as this will make it easier for users to share diagrams between mermaid and plantUml.
 
@@ -353,7 +354,7 @@ stateDiagram
     Crash --> [*]
 ```
 
-# gantt甘特图
+## gantt甘特图
 
 基本语法：
 - 使用 mermaid 解析语言，在开头使用关键字 gantt 指明
@@ -414,7 +415,7 @@ gantt
 |Future|后续待处理|
 |crit|关键阶段|
 
-# 饼图
+## 饼图
 
 ```
 pie
@@ -434,119 +435,144 @@ pie
 ```
 
 
-# 流程图
+## 流程图
 
-## 标准流程图
+>graph 和 flowchart 功能基本一致，flowchart 是较新的关键字，支持更多形状和语法。
 
-节点类型
-
-|节点|说明|
-|:-|:-|
-|start |流程开始，以圆角矩形绘制|
-|opearation |操作，以直角矩形绘制|
-|condition |条件判断，以菱形绘制|
-|subroutine |子流程，以左右带空白框的矩形绘制|
-|parallel |多输出操作（矩形）|
-|inputoutput |输入输出，以平行四边形绘制|
-|end |流程结束，以圆角矩形绘制|
-
-### 基本语法：
-
-节点定义 
-- “描述”的前面必须有空格，“=>” 两端不能有空格
-
+节点形状
+>Mermaid v11.3.0+ 还支持通过 A@{ shape: rect, label: "文本" } 的通用语法定义 30+ 种新形状
 ```
-id=>关键字: 描述
+flowchart TD
+    A[矩形] --> B(圆角矩形)
+    B --> C([体育场形])
+    C --> D[[子程序]]
+    D --> E[(数据库)]
+    E --> F((圆形))
+    F --> G>不对称形]
+    G --> H{菱形}
+    H --> I{{六边形}}
+    I --> J[/平行四边形/]
+    J --> K[\反平行四边形\]
+    K --> L[/梯形\]
+    L --> M[\倒梯形/]
+    M --> N(((双圆)))
 ```
-
-
-节点间的流向：
-- `模块1 id->模块2 id` ：一般的箭头指向
-- `条件模块id (描述)->模块id(direction)` ：条件模块跳转到对应的执行模块，并指定对应分支的布局方向
-
-- `变量名1->变量名2->...->变量名n`
-
-连线样式
-- 设置变量m和变量n之间连线的样式，具体样式由变量n后面key-value控制，需要两个变量之间有直接连线。语法中的连接符为（@>）。
-
-```
-变量名m@>变量名n({"key":"value"})
-```
-
-- key、value
-  - yes/true：condition类型变量连接时，用于分别表示yes条件的流向
-  - no/false：同上，表示否定条件的流向
-  - left/right：表示连线出口在节点位置（默认下面是出口，如op3），可以跟condition变量一起用：cond(yes,right)
-  - path1/path2/path3：parallel变量的三个出口路径（默认下面是出口）
-
-节点状态
-- 为节点设置不同的状态，可以通过不同的颜色显示，其中状态包括下面6个，含义如英文所示，不过CSDN中好像目前还不支持：
-  - past
-  - current
-  - future
-  - approved
-  - rejected
-  - invalid
-
-示例：
-
-```
-flowchat
-st=>start: 开始
-ipt=>inputoutput: 输入一个x
-op=>operation: 处理加工x+1
-cond=>condition: 溢出（是或否？）
-sub=>subroutine: 子流程
-io=>inputoutput: 输出x
-ed=>end: 结束
+```mermaid
+flowchart TD
+    A[矩形] --> B(圆角矩形)
+    B --> C([体育场形])
+    C --> D[[子程序]]
+    D --> E[(数据库)]
+    E --> F((圆形))
+    F --> G>不对称形]
+    G --> H{菱形}
+    H --> I{{六边形}}
+    I --> J[/平行四边形/]
+    J --> K[\反平行四边形\]
+    K --> L[/梯形\]
+    L --> M[\倒梯形/]
+    M --> N(((双圆)))
 ```
 
-```
-flowchat
-st=>start: 开始
-ipt=>inputoutput: 输入一个x
-op=>operation: 处理加工x+1
-cond=>condition: 溢出（是或否？）
-sub=>subroutine: 子流程
-io=>inputoutput: 输出x
-ed=>end: 结束
-```
-
-
-# UML流程图
+连线类型
 
 ```
-...flow
-st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes or No?|approved:>http://www.baidu.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|request
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e
+flowchart LR
+    A --> B
+    B --- C
+    C -.-> D
+    D ==> E
+    E -- 带文字 --> F
+    F -. 虚线文字 .-> G
+    G == 粗线文字 ==> H
 ```
-```flow
-st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes or No?|approved:>http://www.baidu.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|request
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e
+```mermaid
+flowchart LR
+    A --> B
+    B --- C
+    C -.-> D
+    D ==> E
+    E -- 带文字 --> F
+    F -. 虚线文字 .-> G
+    G == 粗线文字 ==> H
 ```
 
-未完待续... ...
+|语法|含义|
+|-->|实线箭头|
+|---|实线无箭头|
+|-.->|虚线箭头|
+|==>|粗线箭头|
+|-- 文字 -->|实线带文字|
+|-. 文字 .->|虚线带文字|
+
+子图（Subgraph）
+
+```
+flowchart TB
+    subgraph 前端
+        A[页面] --> B[组件]
+    end
+    subgraph 后端
+        C[API] --> D[数据库]
+    end
+    B --> C
+```
+```mermaid
+flowchart TB
+    subgraph 前端
+        A[页面] --> B[组件]
+    end
+    subgraph 后端
+        C[API] --> D[数据库]
+    end
+    B --> C
+```
+
+条件分支
+
+```
+flowchart TD
+    A[开始] --> B{是否登录?}
+    B -->|是| C[进入首页]
+    B -->|否| D[跳转登录页]
+    C --> E[结束]
+    D --> E
+```
+```mermaid
+flowchart TD
+    A[开始] --> B{是否登录?}
+    B -->|是| C[进入首页]
+    B -->|否| D[跳转登录页]
+    C --> E[结束]
+    D --> E
+```
+
+示例
+```
+flowchart TD
+    A([用户访问注册页]) --> B[填写表单]
+    B --> C{表单校验}
+    C -->|不通过| D[提示错误信息]
+    D --> B
+    C -->|通过| E[提交到服务器]
+    E --> F{邮箱是否已存在?}
+    F -->|是| G[提示邮箱已注册]
+    G --> B
+    F -->|否| H[创建账号]
+    H --> I[发送验证邮件]
+    I --> J([注册完成])
+```
+```mermaid
+flowchart TD
+    A([用户访问注册页]) --> B[填写表单]
+    B --> C{表单校验}
+    C -->|不通过| D[提示错误信息]
+    D --> B
+    C -->|通过| E[提交到服务器]
+    E --> F{邮箱是否已存在?}
+    F -->|是| G[提示邮箱已注册]
+    G --> B
+    F -->|否| H[创建账号]
+    H --> I[发送验证邮件]
+    I --> J([注册完成])
+```
