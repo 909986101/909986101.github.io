@@ -20,7 +20,7 @@
   />
   
   <!-- KaTeX 样式（必须） -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css"/> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
 
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   
@@ -48,10 +48,10 @@
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
       onlyCover: true,
 
-      latex: {
+      /*latex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],    // 行内公式，默认值
         displayMath: [['$$', '$$']]                  // 块级公式，默认值
-      },
+      },*/
 
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
@@ -90,14 +90,17 @@
   <!-- 引入 docsify-mermaid 插件 -->
   <script src="//unpkg.com/docsify-mermaid/dist/docsify-mermaid.js"></script>
 
+  <!-- 引入 KaTeX -->
+  <script src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+
+  <!-- docsify-katex 插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex/dist/docsify-katex.js"></script>
+  
   <!-- 引入 MathJax -->
-  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 
   <!-- 引入 docsify-latex 插件 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-latex"></script>
-  
-  <!-- docsify-katex 插件 -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex/dist/docsify-katex.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-latex"></script> -->
   
   <!-- docsify-toc 插件 -->
   <!-- <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->

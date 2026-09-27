@@ -286,7 +286,7 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |\int|$\int$|\iint|$\iint$|\iiint|$\iiint$|
-|\iiiint|$\iiiint$|\oint|$\oint$|\prime|$\prime$|
+|\iiint|$\iiint$|\oint|$\oint$|\prime|$\prime$|
 |\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$|
 
 ### (6)．逻辑运算符
@@ -1250,12 +1250,14 @@ e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\
 ```
 
 - 显示：
+$$
 \begin{array}{cc}
 \mathrm{Bad} & \mathrm{Better} \\
 \hline \\
 e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\
 \int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\
 \end{array}
+$$
 
 The `|` symbol has the wrong spacing when it is used as a divider, for example in set comprehensions. Use `\mid` instead:
 
@@ -1271,11 +1273,13 @@ The `|` symbol has the wrong spacing when it is used as a divider, for example i
 ```
 
 - 显示：
+$$
 \begin{array}{cc}
 \mathrm{Bad} & \mathrm{Better} \\
 \hline \\
 \{x|x^2\in\Bbb Z\} & \{x\mid x^2\in\Bbb Z\} \\
 \end{array}
+$$
 
 For double and triple integrals, don't use `\int\int` or `\int\int\int`. Instead use the special forms `\iint` and `\iiint`:
 
@@ -1292,12 +1296,14 @@ For double and triple integrals, don't use `\int\int` or `\int\int\int`. Instead
 ```
 
 - 显示：
+$$
 \begin{array}{cc}
 \mathrm{Bad} & \mathrm{Better} \\
 \hline \\
 \int\int_S f(x)\,dy\,dx & \iint_S f(x)\,dy\,dx \\
 \int\int\int_V f(x)\,dz\,dy\,dx & \iiint_V f(x)\,dz\,dy\,dx
 \end{array}
+$$
 
 $$无限次积分：\int \cdots \int$$
 
@@ -1315,11 +1321,13 @@ Use `\,`, to insert a thin space before differentials; without this $\TeX$ will 
 ```
 
 - 显示：
+$$
 \begin{array}{cc}
 \mathrm{Bad} & \mathrm{Better} \\
 \hline \\
 \iiint_V f(x){\rm d}z {\rm d}y {\rm d}x & \iiint_V f(x)\,{\rm d}z\,{\rm d}y\,{\rm d}x
 \end{array}
+$$
 
 ---
 
