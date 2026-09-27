@@ -20,7 +20,7 @@
   />
   
   <!-- KaTeX 样式（必须） -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css"/> -->
 
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   
@@ -48,6 +48,11 @@
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
       onlyCover: true,
 
+      latex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],    // 行内公式，默认值
+        displayMath: [['$$', '$$']]                  // 块级公式，默认值
+      },
+
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
       },
@@ -68,7 +73,7 @@
     }
   </script>
   <!-- Docsify resource -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/dist/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/dist/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
@@ -85,12 +90,15 @@
   <!-- 引入 docsify-mermaid 插件 -->
   <script src="//unpkg.com/docsify-mermaid/dist/docsify-mermaid.js"></script>
 
+  <!-- 引入 MathJax -->
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- 引入 docsify-latex 插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex"></script>
+  
   <!-- KaTeX 样式（必须） -->
-  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <!-- marked（解析数学语法需要） -->
-  <script src="//cdn.jsdelivr.net/npm/marked"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script> -->
   <!-- docsify-katex 插件 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex/dist/docsify-katex.js"></script> -->
   
   <!-- docsify-toc 插件 -->
   <!-- <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
