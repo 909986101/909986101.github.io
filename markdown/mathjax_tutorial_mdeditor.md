@@ -26,108 +26,94 @@
 
 $\TeX$ 的数学公式有两种：行中公式和独立公式。行中公式放在文中与其它文字混编，独立公式单独成行。
 
-### 行中公式和独立公式
+**行中公式和独立公式**
 
-- 行中公式
-  ```
-  $ 表达式 $
-  ```
+行中公式
+```
+$ 表达式 $
+```
 
-- 独立公式
+独立公式
+```
+$$ 表达式 $$
+```
 
-  ```
-  $$ 表达式 $$
-  ```
+```
+$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
+```
+显示：
+$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 
-### 公式编号
+```
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+```
+显示：
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
 
-- 自动
+**公式编号**
 
-  ```
-  \begin{equation}
-    表达式
-    \label{eq:当前公式名}
-  \end{equation}
-  ```
+自动
+```
+\begin{equation}
+  表达式
+  \label{eq:当前公式名}
+\end{equation}
+```
 
-  自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。
+```
+在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。
 
-- 手动
+\begin{equation}
+  E=mc^2 \text{，自动编号公式示例}
+  \label{eq:Sample}
+\end{equation}
+```
 
-  若需要手动编号，可在公式后使用 `\tag{编号}` 语句。
+显示：
+$$ 在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。 $$
 
-- 不编号
-
-  ```
-  \begin{equation*}
-    表达式
-  \end{equation*}
-  ```
-
-### 示例
-
-- 行内公式示例
-  ```
-  $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
-  ```
-  显示：
-
-  $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
-
-- 独立公式示例
-  ```
-  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
-  ```
-  显示：
-  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
-
-- 手动公式编号示例
-  ```
-  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
-  ```
-
-  显示：
-  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
-
-- 自动编号公式示例
-  ```
-  在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。
-
-  \begin{equation}
-    E=mc^2 \text{，自动编号公式示例}
-    \label{eq:Sample}
-  \end{equation}
-  ```
-
-  显示：
-  $$ 在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。 $$
-
-  $$
+$$
   \begin{equation}
     E=mc^2 \text{，自动编号公式示例}
     \label{eq:sample}
   \end{equation}
-  $$
+$$
+
+自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。
+
+手动
+
+若需要手动编号，可在公式后使用 `\tag{编号}` 语句。
+```
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
+```
+显示：
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
+
+不编号
+```
+\begin{equation*}
+  表达式
+\end{equation*}
+```
 
 ## 2．如何输入上下标
 
 `^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
 
+```
+$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+```
+
+显示：$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+
 另外，如果要在左右两边都有上下标，可以用 `\sideset` 命令。
+```
+$$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
+```
 
-- 例子：
-  ```
-  $$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
-  ```
-
-  显示：$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
-
-- 例子：
-  ```
-  $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
-  ```
-  显示：
-  $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
+显示：
+$$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
 
 ## 3．如何输入括号和分隔符
 
@@ -135,113 +121,120 @@ $\TeX$ 的数学公式有两种：行中公式和独立公式。行中公式放�
 
 一些特殊的括号：
 |输入|显示|输入|显示|
-|:--:|:--:|:--:|:--:|
+|--:|:--|--:|:--|
 |\langle|$\langle$|\rangle|$\rangle$|
 |\lceil|$\lceil$|\rceil|$\rceil$|
 |\lfloor|$\lfloor$|\rfloor|$\rfloor$|
 |\lbrace|$\lbrace$|\rbrace|$\rbrace$|
+|\lvert|$\lvert$|\rvert|$\rvert$|	
+|\lVert|$\lVert$|\rVert|$\rVert$|
 
-
-- 例子：
+>@lymd 有时，我们需要在行内使用两个竖杠表示向量间的某种空间距离，可以这样写：
+\lVert \boldsymbol{X}_i - \boldsymbol{S}_j \rVert^2 → $\lVert \boldsymbol{X}_i - \boldsymbol{S}_j \rVert^2$
 
 ```
 $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 ```
-- 显示：$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
+显示：$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 有时候要用 `\left.` 或 `\right.` 进行匹配而不显示本身。
 
-- 例子：
 ```
 $$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 ```
-- 显示：$$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
+显示：$$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 
 ## 4．如何输入分数
 
 通常使用 `\frac {分子} {分母}` 命令产生一个分数，分数可嵌套。
-便捷情况可直接输入 `\frac ab` 来快速生成一个 $\frac ab$ 。
-如果分式很复杂，亦可使用 `分子 \over 分母` 命令，此时分数仅有一层。
 
-- 例子：
+若分数只有一层，也可使用 `分子 \over 分母` 命令。
+
+本例内 `\quad` `\mid` `\`, 等均为空格或分隔符号，为方便公式格式对比而添加，请注意辨别。详见[在字符间加入空格](#3在字符间加入空格)。
+
 ```
 $$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
 ```
-- 显示：$$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
+显示：$$\frac{a-1}{b-1} \quad and \quad {a+1\over b+1}$$
+
+当分式 **仅有两个字符时** 可直接输入 `\frac ab` 来快速生成一个 $\frac ab$ 。
+
+```
+$$ \frac 12,\frac 1a,\frac a2 \quad \mid \quad \text{2 letters only:} \quad \frac 12a \,, k\frac q{r^2} $$
+```
+显示：
+$$ \frac 12,\frac 1a,\frac a2 \quad \mid \quad \text{2 letters only:} \quad \frac 12a \,, k\frac q{r^2} $$
 
 ## 5．如何输入开方
 
 使用 `\sqrt [根指数，省略时为2] {被开方数}` 命令输入开方。
 
-- 例子：
+本例内 \quad 均为空格符号，为方便公式格式对比而添加，请注意辨别。详见[在字符间加入空格](#3在字符间加入空格)。
 ```
 $$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
 ```
-- 显示：$$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
+显示：$$\sqrt{2} \quad and \quad \sqrt[n]{3}$$
 
 ## 6．如何输入省略号
 
 数学公式中常见的省略号有两种，`\ldots` 表示与文本底线对齐的省略号，`\cdots` 表示与文本中线对齐的省略号。
 
-- 例子：
 ```
 $$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
 ```
-- 显示：$$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
+显示：$$f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2$$
 
 ## 7．如何输入矢量
 
 使用 `\vec{矢量}` 来自动产生一个矢量。也可以使用 `\overrightarrow` 等命令自定义字母上方的符号。
 
-- 例子：
 ```
 $$\vec{a} \cdot \vec{b}=0$$
 ```
 
-- 显示：$$\vec{a} \cdot \vec{b}=0$$
+显示：$$\vec{a} \cdot \vec{b}=0$$
 
-- 例子：
+也可以使用 `\overrightarrow` 等命令自定义字母上方的符号。
 ```
-$$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}$$
+$$ xy \text{ with arrows:} \quad \overleftarrow{xy} \; \mid \; \overleftrightarrow{xy} \; \mid \; \overrightarrow{xy} $$
 ```
-- 显示：$$\overleftarrow{xy} \quad and \quad \overleftrightarrow{xy} \quad and \quad \overrightarrow{xy}$$
+显示：$$ xy \text{ with arrows:} \quad \overleftarrow{xy} \; \mid \; \overleftrightarrow{xy} \; \mid \; \overrightarrow{xy} $$
 
 ## 8．如何输入积分
 
 使用 `\int_积分下限^积分上限 {被积表达式}` 来输入一个积分。
 
-例子：
 ```
 $$\int_0^1 {x^2} \,{\rm d}x$$
 ```
 显示：$$\int_0^1 {x^2} \,{\rm d}x$$
 
-本例中 `\,` 和 `{\rm d}` 部分可省略，但建议加入，能使式子更美观。
+本例中 `\,` 和 `{\rm d}` 部分可省略，但建议加入，能使式子更美观，详见[在字符间加入空格](#3在字符间加入空格)及[如何进行字体转换](#13如何进行字体转换)。
 
 ## 9．如何输入极限运算
 
 使用 `\lim_{变量 \to 表达式} 表达式` 来输入一个极限。如有需求，可以更改 `\to` 符号至任意符号。
 
-例子：
 ```
 $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)} $$
 ```
-
 
 显示：$$\lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}$$
 
 ## 10．如何输入累加、累乘运算
 
 使用 `\sum_{下标表达式}^{上标表达式} {累加表达式}` 来输入一个累加。
-与之类似，使用 `\prod` `\bigcup` `\bigcap` 来分别输入累乘、并集和交集。
-此类符号在行内显示时上下标表达式将会移至右上角和右下角。
+与之类似，使用 `\prod` `\bigcup` `\bigcap` 来分别输入累乘、并集和交集，更多符号可参考“[其它特殊字符](#12如何输入其它特殊字符)”。
 
-- 例子：
+此类符号在行内显示时上下标表达式将会移至右上角和右下角，如 `\sum_{i=1}^n \frac{1}{i^2}` 显示为 $\sum_{i=1}^n \frac{1}{i^2}$；或
+
+>@woria 在行内可使用 \sum\limits_{下标表达式}^{上标表达式} {累加表达式} 使上下标仍在正上正下方。如 `\sum\limits_{i=1}^n \frac{1}{i^2}` 显示为 $\sum\limits_{i=1}^n \frac{1}{i^2}$。
+
 ```
-$$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} R$$
+$$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} \Bbb{R} $$
 ```
 
-- 显示：$$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} R$$
+显示：$$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} \Bbb{R} $$
 
 ## 11．如何输入希腊字母
 
