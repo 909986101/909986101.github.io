@@ -24,79 +24,110 @@
 
 ## 1．如何插入公式
 
-$\LaTeX$ 的数学公式有两种：行中公式和独立公式。行中公式放在文中与其它文字混编，独立公式单独成行。
+$\TeX$ 的数学公式有两种：行中公式和独立公式。行中公式放在文中与其它文字混编，独立公式单独成行。
 
-行中公式可以用如下方法表示：
+### 行中公式和独立公式
 
-:        $ 数学公式 $
+- 行中公式
+  ```
+  $ 表达式 $
+  ```
 
-独立公式可以用如下方法表示：
+- 独立公式
 
-:        $$ 数学公式 $$
+  ```
+  $$ 表达式 $$
+  ```
 
-自动编号的公式可以用如下方法表示：
-:    若需要手动编号，参见 [大括号和行标的使用](#14大括号和行标的使用) 。
+### 公式编号
 
-:       \begin{equation}
-数学公式
-\label{eq:当前公式名}
-\end{equation}
+- 自动
 
-**自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。**
+  ```
+  \begin{equation}
+    表达式
+    \label{eq:当前公式名}
+  \end{equation}
+  ```
 
-- 例子：
-```
-$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
-```
-- 显示：$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
+  自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。
 
-- 例子：
-```
-$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
-```
-- 显示：$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+- 手动
 
-- 例子：
-```
-在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。
+  若需要手动编号，可在公式后使用 `\tag{编号}` 语句。
 
-\begin{equation}
-E=mc^2 \text{，自动编号公式示例}
-\label{eq:Sample}
-\end{equation}
-```
+- 不编号
 
-- 显示：
+  ```
+  \begin{equation*}
+    表达式
+  \end{equation*}
+  ```
 
+### 示例
 
+- 行内公式示例
+  ```
+  $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
+  ```
+  显示：
 
-$$ 在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。 $$
+  $ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，行内公式示例} $
 
-$$
-\begin{equation}
-E=mc^2 \text{，自动编号公式示例}
-\label{eq:sample}
-\end{equation}
-$$
+- 独立公式示例
+  ```
+  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+  ```
+  显示：
+  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+
+- 手动公式编号示例
+  ```
+  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
+  ```
+
+  显示：
+  $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
+
+- 自动编号公式示例
+  ```
+  在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。
+
+  \begin{equation}
+    E=mc^2 \text{，自动编号公式示例}
+    \label{eq:Sample}
+  \end{equation}
+  ```
+
+  显示：
+  $$ 在公式 \eqref{eq:sample} 中，我们看到了这个被自动编号的公式。 $$
+
+  $$
+  \begin{equation}
+    E=mc^2 \text{，自动编号公式示例}
+    \label{eq:sample}
+  \end{equation}
+  $$
 
 ## 2．如何输入上下标
 
 `^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
 
-- 例子：
-```
-$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
-```
-
-- 显示：$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
-
 另外，如果要在左右两边都有上下标，可以用 `\sideset` 命令。
 
 - 例子：
-```
-$$ \sideset{^1_2}{^3_4}\bigotimes $$
-```
-- 显示：$$\sideset{^1_2}{^3_4}\bigotimes$$
+  ```
+  $$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+  ```
+
+  显示：$$ x^{y^z}=(1+{\rm e}^x)^{-2xy^w} $$
+
+- 例子：
+  ```
+  $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
+  ```
+  显示：
+  $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
 
 ## 3．如何输入括号和分隔符
 
