@@ -52,6 +52,16 @@ $$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\l
 
 **公式编号**
 
+手动
+
+若需要手动编号，可在公式后使用 `\tag{编号}` 语句。
+```
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
+```
+显示：
+
+$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 tag 手动编号} \tag{0.1} $$
+
 自动
 ```
 \begin{equation}
@@ -80,15 +90,6 @@ $$
 $$
 
 自动编号后的公式可在全文任意处使用 `\eqref{eq:公式名}` 语句引用。
-
-手动
-
-若需要手动编号，可在公式后使用 `\tag{编号}` 语句。
-```
-$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
-```
-显示：
-$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text{，独立公式示例，使用 \tag 手动编号} \tag{0.1} $$
 
 不编号
 ```
@@ -239,6 +240,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 ## 11．如何输入希腊字母
 
 输入 `\小写希腊字母英文全称` 和 `\首字母大写希腊字母英文全称` 来分别输入小写和大写希腊字母。
+
 **对于大写希腊字母与现有字母相同的，直接输入大写字母即可。**
 
 |输入|显示|输入|显示|输入|显示|输入|显示|
@@ -268,8 +270,12 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 
 ## 12．如何输入其它特殊字符
 
-> **若需要显示更大或更小的字符，在符号前插入 `\large` 或 `\small` 命令。**
-
+> **完整的 $\LaTeX$ 可用符号列表可以在 [这份文档](https://mirror.its.dal.ca/ctan/info/symbols/comprehensive/symbols-a4.pdf) 中查阅（极长，共 348 页），大部分常用符号可以参阅 [这份精简版文档](https://pic.plover.com/MISC/symbols.pdf) 查询。** 需要注意的是， 符号并不保证在 MathJax v2.2 中可用，即在 Cmd Markdown 编辑阅读器中可能并不支持所输入的特定命令。
+>
+> 若需要显示更大或更小的字符，在符号前插入 `\large` 或 `\small` 命令。
+>
+>MathJax 针对任意元素均提供从小至大 `\tiny` `\Tiny` `\scriptsize` `\small` `*默认值 \normalsize` `\large` `\Large` `\LARGE` `\huge` `\Huge` 共十种渲染大小，详见[官方文档](http://docs.mathjax.org/en/latest/input/tex/extensions/textmacros.html#size-control)。
+>
 > 若找不到需要的符号，使用 [$\rm{Detexify^2}$](http://detexify.kirelabs.org/classify.html) 来画出想要的符号。
 
 ### (1)．关系运算符
@@ -290,6 +296,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\subset|$\subset$|\supset|$\supset$|\subseteq|$\subseteq$|
 |\supseteq|$\supseteq$|\bigcap|$\bigcap$|\bigcup|$\bigcup$|
 |\bigvee|$\bigvee$|\bigwedge|$\bigwedge$|\biguplus|$\biguplus$|
+|\top|$\top$|\bot|$\bot$|\complement|$\complement$|
 
 ### (3)．对数运算符
 
@@ -310,25 +317,54 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |\int|$\int$|\iint|$\iint$|\iiint|$\iiint$|
-|\iiint|$\iiint$|\oint|$\oint$|\prime|$\prime$|
+|\partial|$\partial$|\oint|$\oint$|\prime|$\prime$|
 |\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$|
 
 ### (6)．逻辑运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|\because|$\because$|\therefore|$\therefore$|
+|\because|$\because$|\therefore|$\therefore$|\neg|$\neg$|
 |\forall|$\forall$|\exists|$\exists$|\not\subset|$\not\subset$|
 |\not<|$\not<$|\not>|$\not>$|\not=|$\not=$|
 
+> @xiaobanni  
+>`\vdash` 显示为 $ \vdash $
+
 ### (7)．戴帽符号
 
-|输入|显示|输入|显示|
-|:--:|:--:|:--:|:--:|
-|\hat{xy}|$\hat{xy}$|\widehat{xyz}|$\widehat{xyz}$|
-|\tilde{xy}|$\tilde{xy}$|\widetilde{xyz}|$\widetilde{xyz}$|
-|\check{x}|$\check{x}$|\breve{y}|$\breve{y}$|
-|\grave{x}|$\grave{x}$|\acute{y}|$\acute{y}$|
+|输入|显示|输入|显示|输入|显示|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\hat{xy}|$\hat{xy}$|\bar{y}|$\bar{y}$|\breve{y}|$\breve{y}$|
+|\tilde{xy}|$\tilde{xy}$|\acute{y}|$\acute{y}$|\dot{x}|$\dot{x}$|
+|\widehat{xyz}|$\widehat{xyz}$|\check{x}|$\check{x}$|\ddot{x}|$\ddot{x}$|
+|\widetilde{xyz}|$\widetilde{xyz}$|\grave{x}|$\grave{x}$|\dddot{x}|$\dddot{x}$|
+
+若需要在特定文字顶部\底部放置内容，可使用 `\overset{顶部内容}{正常内容}` 和 `\underset{底部内容}{正常内容}` 命令。
+例内 `\qquad` `\quad` `\mid` `\;` `\,` 等均为空格或分隔符号，为方便公式格式对比而添加，请注意辨别。详见[在字符间加入空格](#3在字符间加入空格)。
+
+```
+$$ \verb+\overset{above}{level}+ \qquad \overset{xx}{ABC} \;\; \mid \quad \overset{x^2}{\longmapsto}\ \, \mid \quad \overset{\bullet\circ\circ\bullet}{T} $$
+```
+显示：
+$$ \verb+\overset{above}{level}+ \qquad \overset{xx}{ABC} \;\; \mid \quad \overset{x^2}{\longmapsto}\ \, \mid \quad \overset{\bullet\circ\circ\bullet}{T} $$
+
+```
+$$ \verb+\underset{below}{level}+ \qquad \underset{xx}{ABC} \;\; \mid \quad \underset{x^2}{\longmapsto}\ \, \mid \quad \underset{\bullet\circ\circ\bullet}{T} $$
+```
+显示：
+$$ \verb+\underset{below}{level}+ \qquad \underset{xx}{ABC} \;\; \mid \quad \underset{x^2}{\longmapsto}\ \, \mid \quad \underset{\bullet\circ\circ\bullet}{T} $$
+
+此命令可叠加嵌套使用，生成类似化学反应式的多重条件符号，
+如 `\overset{H_2}{\underset{1300℃}{\Longleftrightarrow}}`：
+
+$$\overset{H_2}{\underset{1300℃}{\Longleftrightarrow}}$$
+
+和 `\overset{Surface/bulk}{\underset{diffusion}{\longleftrightarrow}}`：
+
+$$\overset{Surface/bulk}{\underset{diffusion}{\longleftrightarrow}}$$
+
+在书写化学方程式时可声明 `\require{AMDcd}` 语句，使用 MathJax 内置的交换图表功能，具体例子可[参见下文](#1如何输入一个交换图表)。
 
 
 
@@ -348,18 +384,16 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\underbrace{a+b+c+d}_{Sample}|$\underbrace{a+b+c+d}_{Sample}$|
 |\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}|$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$|
 |\underbrace{a\cdot a\cdots a}_{b\text{ times}}|$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$|
-|\underrightarrow{1℃/min} | $\underrightarrow{1℃/min}$ |
 
 ### (9)．箭头符号
 
-- 推荐使用符号：
+推荐使用符号：
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|\to|$\to$|\mapsto|$\mapsto$|
+|\to|$\to$|\mapsto|$\mapsto$|\underrightarrow{1℃/min}|$\underrightarrow{1℃/min}$|
 |\implies|$\implies$|\iff|$\iff$|\impliedby|$\impliedby$|
 
-
-- 其它可用符号：
+其它可用符号：
 |输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|
 |\uparrow|$\uparrow$|\Uparrow|$\Uparrow$|
@@ -378,42 +412,95 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 示例中 **全部大写** 的字体仅大写可用。
 
 |输入|说明|显示|输入|说明|显示|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|\rm|罗马体|$\rm{Sample}$|\cal|花体|$\cal{SAMPLE}$|
-|\it|意大利体|$\it{Sample}$|\Bbb|黑板粗体|$\Bbb{SAMPLE}$|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|\rm|罗马体|$\rm{Sample}$|\mathcal|花体（数学符号等）|$\mathcal{SAMPLE}$|
+|\it|意大利体|$\it{Sample}$|\mathbb|黑板粗体（定义域等）|$\mathbb{SAMPLE}$|
 |\bf|粗体|$\bf{Sample}$|\mit|数学斜体|$\mit{SAMPLE}$|
 |\sf|等线体|$\sf{Sample}$|\scr|手写体|$\scr{SAMPLE}$|
-|\tt|打字机体|$\tt{Sample}$|
-|\frak|旧德式字体|$\frak{Sample}$|
+|\tt|打字机体|$\tt{Sample}$|\cal|等同于 \mathcal|$\cal{ABCXYZ}$|
+|\frak|旧德式字体|$\frak{Sample}$|\Bbb|等同于 \mathbb|$\Bbb{ABCXYZ}$|
 
+> @lymd `\boldsymbol{\alpha}` 用来表示向量或者矩阵的加粗斜体，如向量 $\boldsymbol{\alpha}$ 。
 
 转换字体十分常用，例如在积分中：
 
-- 例子：
 ```
 \begin{array}{cc}
-\mathrm{Bad} & \mathrm{Better} \\
-\hline \\
-\int_0^1 x^2 dx & \int_0^1 x^2 \,{\rm d}x
+  \mathrm{Bad} & \mathrm{Better} \\
+  \hline \\
+  \int_0^1 x^2 dx & \int_0^1 x^2 \,{\rm d}x
 \end{array}
 ```
 
-- 显示：
+显示：
+$$
 \begin{array}{cc}
-\mathrm{Bad} & \mathrm{Better} \\
-\hline \\
-\int_0^1 x^2 dx & \int_0^1 x^2 \,{\rm d}x
+  \mathrm{Bad} & \mathrm{Better} \\
+  \hline \\
+  \int_0^1 x^2 dx & \int_0^1 x^2 \,{\rm d}x
 \end{array}
+$$
 
 注意比较两个式子间 $dx$ 与 ${\rm d} x$ 的不同。
+
 使用 `\operatorname` 命令也可以达到相同的效果，详见 [定义新的符号 \operatorname](#1定义新的符号-operatorname) 。
 
-## 14．大括号和行标的使用
+## 14. 如何高亮一行公式
 
-使用 `\left` 和 `\right` 来创建自动匹配高度的 (圆括号)，[方括号] 和 {花括号} 。
-在每个公式末尾前使用 `\tag{行标}` 来实现行标。
+使用 `\bbox[底色, (可选)边距, (可选)边框 border: 框宽度 框类型 框颜色]` 命令来高亮一行公式。
 
-- 例子：
+底色和框颜色支持详见“[更改文字颜色](#4更改文字颜色)”，边距及框宽度支持 `绝对像素 px` 或 `相对大小 em`，框类型支持 `实线 solid` 或 `虚线 dashed`。
+
+```
+$$
+\bbox[yellow]{
+    e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)
+}
+$$
+```
+显示：
+$$
+\bbox[yellow]{
+    e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)
+}
+$$
+
+```
+$$
+\bbox[#9ff, 5px]{ % 此处向外添加 5 像素的边距
+    e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)
+}
+$$
+```
+显示：
+$$
+\bbox[#9ff, 5px]{ % 此处向外添加 5 像素的边距
+    e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)
+}
+$$
+
+```
+$$
+% 此处使用 0.5 倍行高作为边距，附加 2 像素的实线边框（Ctrl+Alt+Y 可见）
+\bbox[#2f3542, 0.5em, border:2px solid #f1f2f6]{
+    \color{#f1f2f6}{e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)}
+}
+$$
+```
+显示：
+$$
+% 此处使用 0.5 倍行高作为边距，附加 2 像素的实线边框（Ctrl+Alt+Y 可见）
+\bbox[#2f3542, 0.5em, border:2px solid #f1f2f6]{
+    \color{#f1f2f6}{e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n \qquad (1)}
+}
+$$
+
+## 15．大括号和行标的使用
+
+在 `\left` 和 `\right` 之后加上要使用的括号来创建自动匹配高度的圆括号 `(` `)`，方括号 `[` `]` 和花括号 `\{` `\}`。
+
+在每个公式末尾前使用 `\tag {行标}` 来实现行标。
+
 ```
 $$
 f\left(
@@ -432,7 +519,7 @@ f\left(
 $$
 ```
 
-- 显示：
+显示：
 $$
 f\left(
    \left[ 
@@ -449,93 +536,151 @@ f\left(
 \tag{行标}
 $$
 
-如果你需要在不同的行显示对应括号，可以在每一行对应处使用 `\left.` 或 `\right.` 来放一个"影子"括号：
+如果你需要在不同的行显示对应括号，可以在每一行对应处使用 `\left.` 或 `\right.` 来放一个“不存在的括号”。
 
-- 例子：
 ```
 $$
-\begin{aligned}
-a=&\left(1+2+3+  \cdots \right. \\
-& \cdots+ \left. \infty-2+\infty-1+\infty\right)
-\end{aligned}
+\begin{align*}
+    a=&\left(1+2+3+ \cdots \right. \\
+      &\cdots+\left. \infty-2+\infty-1+\infty\right)
+\end{align*}
 $$
 ```
 
-- 显示：
+显示：
 $$
-\begin{aligned}
-a=&\left(1+2+3+  \cdots \right. \\
-& \cdots+ \left. \infty-2+\infty-1+\infty\right)
-\end{aligned}
+\begin{align*}
+    a=&\left(1+2+3+ \cdots \right. \\
+      &\cdots+\left. \infty-2+\infty-1+\infty\right)
+\end{align*}
 $$
 
-如果你需要将行内显示的分隔符也变大，可以使用 `\middle` 命令：
+如果你需要将大括号里面显示的分隔符也变大，可以使用 `\middle` 命令，此处分别使用单竖线 `|` 和双竖线 `\|` 。
 
-- 例子：
 ```
 $$
 \left\langle  
-  q
-\middle\|
-  \frac{\frac{x}{y}}{\frac{u}{v}}
-\middle| 
-   p 
+    q \; \middle|
+        \frac{\frac xy}{\frac uv}
+    \middle\| p 
 \right\rangle
 $$
 ```
 
-- 显示：
+显示：
 $$
 \left\langle  
-  q
-\middle\|
-  \frac{\frac{x}{y}}{\frac{u}{v}}
-\middle| 
-   p 
+    q \; \middle|
+        \frac{\frac xy}{\frac uv}
+    \middle\| p 
 \right\rangle
 $$
 
-## 15．其它命令
+## 16．其它命令
 
 ### (1)．定义新的符号 \operatorname
 
-查询 [关于此命令的定义](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077) 和 [关于此命令的讨论](http://meta.math.stackexchange.com/search?q=operatorname) 来进一步了解此命令。
+当需要使用的运算符不在 MathJax 的内置库中时，程序可能会报错或产生错误的渲染结果。此时可以使用 `\operatorname` 命令定义一个新的运算符号。
 
-- 例子： 
 ```
 $$ \operatorname{Symbol} A $$
 ```
 
-- 显示： $$\operatorname{Symbol} A$$
+显示： $$\operatorname{Symbol} A$$
+
+反例
+```
+\begin{array}{c|c}
+    \mathrm{Error} & \text{Wrong rendering} \\
+    \hline \\
+    \arsinh(x) & arsinh(x) \\
+    \Res_{z=1} & Res_{z=1}{\frac{1}{z^2-z}=1} \\
+\end{array}
+```
+显示：
+$$
+\begin{array}{c|c}
+    \mathrm{Error} & \text{Wrong rendering} \\
+    \hline \\
+    \arsinh(x) & arsinh(x) \\
+    \Res_{z=1} & Res_{z=1}{\frac{1}{z^2-z}=1} \\
+\end{array}
+$$
+
+使用 `\operatorname{运算符}{式子}` 来生成一个普通运算，或使用 `\operatorname*{运算符}_{下标}^{上标}{式子}` 来生成一个含上下标的自定义运算。
+
+```
+\begin{array}{c|c}
+    \text{Normal Operator} & \text{Operator with label above and below} \\
+    \hline \\
+    \scriptsize\text{\operatorname{arsinh}{x}} & \scriptsize\text{\operatorname*{Res}_{z=1}{\frac{1}{z^2-z}=1}} \\
+    \operatorname{arsinh}{x} & \operatorname*{Res}_{z=1}{\frac{1}{z^2-z}=1} \\
+\end{array}
+```
+显示：
+$$
+\begin{array}{c|c}
+    \text{Normal Operator} & \text{Operator with label above and below} \\
+    \hline \\
+    \scriptsize\text{\operatorname{arsinh}{x}} & \scriptsize\text{\operatorname*{Res}_{z=1}{\frac{1}{z^2-z}=1}} \\
+    \operatorname{arsinh}{x} & \operatorname*{Res}_{z=1}{\frac{1}{z^2-z}=1} \\
+\end{array}
+$$
+
+查询[关于此命令的定义](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077)和[关于此命令的讨论](http://meta.math.stackexchange.com/search?q=operatorname)来进一步了解此命令。
 
 ### (2)．添加注释文字 \text
 
 在 `\text {文字}` 中仍可以使用 `$公式$` 插入其它公式。
 
-- 例子：
 ```
 $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is odd} \end{cases} $$
 ```
 
-- 显示：
+显示：
 $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is odd} \end{cases} $$
 
 ### (3)．在字符间加入空格
 
-有四种宽度的空格可以使用： `\,`、`\;`、`\quad` 和 `\qquad` 。
+有四种宽度的空格可以使用： `\,`、`\;`、`\quad` 和 `\qquad` ，灵活使用 `\text{n个空格}` 也可以在任意位置实现空格。
 
-- 例子：
+同时存在一种负空格 `\!` 用来减小字符间距，一般在物理单位中使用。
+
+**重复使用 `\!` 命令能够实现不同元素的叠加渲染，如 和 **
+
 ```
-$$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
+\begin{array}{c|c}
+    \text{Spaces} & \text{Negative Space in Units} \\
+    \hline \\
+    \overbrace{a \! b}^{\text{\!}} \mid \underbrace{ab}_{\rm{default}} \mid \overbrace{a \, b}^{\text{\,}} \mid \underbrace{a \; b}_{\text{\;}} \mid \overbrace{a \quad b}^{\text{\quad}} \mid \underbrace{a \qquad b}_{\text{\qquad}} & \mathrm{N}\!\cdot\!\mathrm{m} \mid \mathrm{s}\!\cdot\!\mathrm{A} \mid \mathrm{kg}\!\cdot\!\mathrm{m}^2 \\ 
+\end{array}
 ```
 
-- 显示：$$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
+显示：
+$$
+\begin{array}{c|c}
+    \text{Spaces} & \text{Negative Space in Units} \\
+    \hline \\
+    \overbrace{a \! b}^{\text{\!}} \mid \underbrace{ab}_{\rm{default}} \mid \overbrace{a \, b}^{\text{\,}} \mid \underbrace{a \; b}_{\text{\;}} \mid \overbrace{a \quad b}^{\text{\quad}} \mid \underbrace{a \qquad b}_{\text{\qquad}} & \mathrm{N}\!\cdot\!\mathrm{m} \mid \mathrm{s}\!\cdot\!\mathrm{A} \mid \mathrm{kg}\!\cdot\!\mathrm{m}^2 \\ 
+\end{array}
+$$
 
-当然，使用 `\text {n个空格}` 也可以达到同样效果。
+一些常见的公式单位可表达如下：
+
+```
+$$ \mu_0=4\pi\times10^{-7} \ \left.\mathrm{\mathrm{T}\!\cdot\!\mathrm{m}}\middle/\mathrm{A}\right. $$
+$$ 180^\circ=\pi \ \mathrm{rad} $$
+$$ \mathrm{N_A} = 6.022\times10^{23} \ \mathrm{mol}^{-1} $$
+```
+显示：
+$$ \mu_0=4\pi\times10^{-7} \ \left.\mathrm{\mathrm{T}\!\cdot\!\mathrm{m}}\middle/\mathrm{A}\right. $$
+$$ 180^\circ=\pi \ \mathrm{rad} $$
+$$ \mathrm{N_A} = 6.022\times10^{23} \ \mathrm{mol}^{-1} $$
 
 ### (4)．更改文字颜色
 
 使用 `\color{颜色}{文字}` 来更改特定的文字颜色。
+
 更改文字颜色 **需要浏览器支持** ，如果浏览器不知道你所需的颜色，那么文字将被渲染为黑色。
 
 对于较旧的浏览器（HTML4与CSS2），以下颜色是被支持的：
@@ -551,11 +696,10 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 |blue|$\color{blue}{text}$|navy|$\color{navy}{text}$|
 |purple|$\color{purple}{text}$|fuchsia|$\color{fuchsia}{text}$|
 
-对于较新的浏览器（HTML5与CSS3），额外的124种颜色将被支持：
+对于较新的浏览器（HTML5与CSS3），HEX 颜色将被支持：
 
 输入 `\color {#rgb} {text}` 来自定义更多的颜色，其中 `#rgb` 的 `r` `g` `b` 可输入 `0-9` 和 `a-f` 来表示红色、绿色和蓝色的纯度（饱和度）。
 
-- 例子：
 ```
 \begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ & \color{#000}{text} & & &
@@ -570,7 +714,8 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 \end{array}
 ```
 
-- 显示：
+显示：
+$$
 \begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ & \color{#000}{text} & & &
 \verb+#00F+ & \color{#00F}{text} & & \\
@@ -582,8 +727,8 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 & & \verb+#FFF+ & \color{#FFF}{text}\\
 \hline
 \end{array}
+$$
 
-- 例子：
 ```
 \begin{array}{|rrrrrrrr|}
 \hline
@@ -605,7 +750,8 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 \end{array}
 ```
 
-- 显示：
+显示：
+$$
 \begin{array}{|rrrrrrrr|}
 \hline
 \verb+#000+ & \color{#000}{text} & \verb+#005+ & \color{#005}{text} & \verb+#00A+ & \color{#00A}{text} & \verb+#00F+ & \color{#00F}{text}  \\
@@ -624,71 +770,118 @@ $$ a \, b \mid a \; b \mid a \quad b \mid a \qquad b $$
 \verb+#FF0+ & \color{#FF0}{text} & \verb+#FF5+ & \color{#FF5}{text} & \verb+#FFA+ & \color{#FFA}{text} & \verb+#FFF+ & \color{#FFF}{text}  \\
 \hline
 \end{array}
+$$
 
 ### (5)．添加删除线
 
 使用删除线功能必须声明 `$$` 符号。
 
 在公式内使用 `\require{cancel}` 来允许 **片段删除线** 的显示。
+
 声明片段删除线后，使用 `\cancel{字符}`、`\bcancel{字符}`、`\xcancel{字符}` 和 `\cancelto{字符}` 来实现各种片段删除线效果。
 
-- 例子：
 ```
-$$
-\require{cancel}\begin{array}{rl}
-\verb|y+\cancel{x}| & y+\cancel{x}\\
-\verb|\cancel{y+x}| & \cancel{y+x}\\
-\verb|y+\bcancel{x}| & y+\bcancel{x}\\
-\verb|y+\xcancel{x}| & y+\xcancel{x}\\
-\verb|y+\cancelto{0}{x}| & y+\cancelto{0}{x}\\
-\verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\
-\end{array}
-$$
-```
-
-- 显示：
 $$
 \require{cancel}
 \begin{array}{rl}
-\verb|y+\cancel{x}| & y+\cancel{x}\\
-\verb|\cancel{y+x}| & \cancel{y+x}\\
-\verb|y+\bcancel{x}| & y+\bcancel{x}\\
-\verb|y+\xcancel{x}| & y+\xcancel{x}\\
-\verb|y+\cancelto{0}{x}| & y+\cancelto{0}{x}\\
-\verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\
+    \verb|y+\cancel{x}| & y+\cancel{x} \\
+    \verb|\cancel{y+x}| & \cancel{y+x} \\
+    \verb|y+\bcancel{x}| & y+\bcancel{x} \\
+    \verb|y+\xcancel{x}| & y+\xcancel{x} \\
+    \verb|y+\cancelto{0}{x}| & y+\cancelto{0}{x} \\
+    \verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\
 \end{array}
 $$
+```
+
+显示：
+$$
+\require{cancel}
+\begin{array}{rl}
+    \verb|y+\cancel{x}| & y+\cancel{x} \\
+    \verb|\cancel{y+x}| & \cancel{y+x} \\
+    \verb|y+\bcancel{x}| & y+\bcancel{x} \\
+    \verb|y+\xcancel{x}| & y+\xcancel{x} \\
+    \verb|y+\cancelto{0}{x}| & y+\cancelto{0}{x} \\
+    \verb+\frac{1\cancel9}{\cancel95} = \frac15+& \frac{1\cancel9}{\cancel95} = \frac15 \\
+\end{array}
+$$
+
 
 使用 `\require{enclose}` 来允许 **整段删除线** 的显示。
+
 声明整段删除线后，使用 `\enclose{删除线效果}{字符}` 来实现各种整段删除线效果。
+
 其中，删除线效果有 `horizontalstrike`、`verticalstrike`、`updiagonalstrike` 和 `downdiagonalstrike`，可叠加使用。
 
-- 例子：
 ```
 $$
-\require{enclose}\begin{array}{rl}
-\verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y}\\
-\verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy}\\
-\verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y}\\
-\verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y}\\
-\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y}\\
+\require{enclose}
+\begin{array}{rl}
+    \verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y} \\
+    \verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy} \\
+    \verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y} \\
+    \verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y} \\
+    \verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y} \\
 \end{array}
 $$
 ```
 
-- 显示：
+显示：
 $$
-\require{enclose}\begin{array}{rl}
-\verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y}\\
-\verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy}\\
-\verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y}\\
-\verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y}\\
-\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y}\\
+\require{enclose}
+\begin{array}{rl}
+    \verb|\enclose{horizontalstrike}{x+y}| & \enclose{horizontalstrike}{x+y} \\
+    \verb|\enclose{verticalstrike}{\frac xy}| & \enclose{verticalstrike}{\frac xy} \\
+    \verb|\enclose{updiagonalstrike}{x+y}| & \enclose{updiagonalstrike}{x+y} \\
+    \verb|\enclose{downdiagonalstrike}{x+y}| & \enclose{downdiagonalstrike}{x+y} \\
+    \verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}| & \enclose{horizontalstrike,updiagonalstrike}{x+y} \\
 \end{array}
 $$
 
 此外， `\enclose` 命令还可以产生包围的边框和圆等，参见 [MathML Menclose Documentation](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose) 以查看更多效果。
 
+分别使用 `circle` 和 `roundedbox` 包围的公式
+```
+$$
+\require{enclose}
+\begin{array}{c}
+    \enclose{circle}{f(\top),\, f^2(\top),\, f^3(\top) \,\cdots\, f^n(\top)} \\
+    \enclose{roundedbox}{f(\bot),\, f^2(\bot),\, f^3(\bot) \,\cdots\, f^n(\bot)} \\
+\end{array}
+$$
+```
+$$
+\require{enclose}
+\begin{array}{c}
+    \enclose{circle}{f(\top),\, f^2(\top),\, f^3(\top) \,\cdots\, f^n(\top)} \\
+    \enclose{roundedbox}{f(\bot),\, f^2(\bot),\, f^3(\bot) \,\cdots\, f^n(\bot)} \\
+\end{array}
+$$
+
+使用 `box` 框住所有公式
+```
+$$
+\require{enclose}
+\enclose{box}{
+    \begin{array}{c}
+        f(\top),\, f^2(\top),\, f^3(\top) \,\cdots\, f^n(\top) \\
+        f(\bot),\, f^2(\bot),\, f^3(\bot) \,\cdots\, f^n(\bot) \\
+    \end{array}
+}
+$$
+```
+$$
+\require{enclose}
+\enclose{box}{
+    \begin{array}{c}
+        f(\top),\, f^2(\top),\, f^3(\top) \,\cdots\, f^n(\top) \\
+        f(\bot),\, f^2(\bot),\, f^3(\bot) \,\cdots\, f^n(\bot) \\
+    \end{array}
+}
+$$
+
+此例语法可参见[如何输入一个数组或表格](#五数组与表格使用参考)。
 
 # 二、矩阵使用参考
 
@@ -913,7 +1106,9 @@ $$
 
 在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[2ex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
 
+```
 - 例子：
+
 |不适配[2ex]|
 |:--:|
 |
@@ -962,6 +1157,7 @@ $$|
 
 **一个 `[ex]` 指一个 "X-Height"，即x字母高度。可以根据情况指定多个 `[ex]`，如 `[3ex]`、`[4ex]` 等。**
 其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
+```
 
 # 五、数组与表格使用参考
 
