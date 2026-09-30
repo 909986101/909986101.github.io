@@ -45,14 +45,20 @@
   <!-- KaTeX 样式（必须） -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css" /> -->
 
-  <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
-  
   <!-- footer 插件样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
 </head>
 <body class="sidebar-group-box sidebar-chevron-left">
   <div id="app"></div>
 
+  <script>
+    window.MathJax = {
+      tex: {
+        tags: 'ams',
+      }
+    }
+  </script>
+  
   <script>
     var num = 0;
     //mermaid.initialize({ startOnLoad: false });
@@ -79,20 +85,6 @@
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
       },
-      
-      /*toc: {
-        scope: '.markdown-section',
-        headings: 'h2, h3',
-        title: 'Table of Contents',
-      },*/
-      /*'page-toc': {
-        tocMaxLevel: 3,          // 目录显示的最大标题深度
-        target: 'h2, h3'         // 要纳入目录的标题选择器
-      },*/
-      /*toc: {
-        tocMaxLevel: 3,
-        target: 'h2, h3'
-      },*/
     }
   </script>
   <!-- Docsify resource -->
@@ -125,11 +117,6 @@
 
   <!-- 引入 docsify-latex 插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-latex"></script>
-  
-  <!-- docsify-toc 插件 -->
-  <!-- <script src="//unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> -->
-  <!-- <script src="//unpkg.com/docsify-page-toc/dist/docsify-page-toc.js"></script> -->
-  <!-- <script src="//unpkg.com/docsify-plugin-toc"></script> -->
 
   <!-- PrismJS 语法高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
