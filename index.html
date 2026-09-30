@@ -34,6 +34,14 @@
     disabled
   />
 
+  <style>
+  /* 让 markdown 中的表格宽度占满内容区域 */
+    .markdown-section table {
+      /*width: 100% ;*/
+      display: table; /* 防止某些主题将表格设为 block 导致宽度异常 */
+    }
+  </style>
+
   <!-- KaTeX 样式（必须） -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css" /> -->
 

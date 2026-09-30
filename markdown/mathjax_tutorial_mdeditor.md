@@ -1,7 +1,7 @@
 
 ---
 
-#Cmd Markdown 公式指导手册
+# Cmd Markdown 公式指导手册
 
 标签： Tutorial
 
@@ -16,13 +16,11 @@
 
 > 右键点击每一个公式，选择 **[Show Math As] → [TeX Commands]** 以查看该公式的命令详情。
 
-[TOC]
-
 ---
 
-# 一、公式使用参考
+## 一、公式使用参考
 
-## 1．如何插入公式
+### 1．如何插入公式
 
 $\TeX$ 的数学公式有两种：行中公式和独立公式。行中公式放在文中与其它文字混编，独立公式单独成行。
 
@@ -104,7 +102,7 @@ $$
 \end{equation*}
 ```
 
-## 2．如何输入上下标
+### 2．如何输入上下标
 
 `^` 表示上标, `_` 表示下标。如果上下标的内容多于一个字符，需要用 `{}` 将这些内容括成一个整体。上下标可以嵌套，也可以同时使用。
 
@@ -122,7 +120,7 @@ $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
 显示：
 $$ \sideset{^1_2}{^3_4}\bigotimes \quad or \quad {^1_2}\bigotimes {^3_4} $$
 
-## 3．如何输入括号和分隔符
+### 3．如何输入括号和分隔符
 
 `()`、`[]` 和 `|` 表示符号本身，使用 `\{\}` 来表示 `{}` 。当要显示大号的括号或分隔符时，要用 `\left` 和 `\right` 命令。
 
@@ -151,7 +149,7 @@ $$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 ```
 显示：$$ \left. \frac{{\rm d}u}{{\rm d}x} \right| _{x=0} $$
 
-## 4．如何输入分数
+### 4．如何输入分数
 
 通常使用 `\frac {分子} {分母}` 命令产生一个分数，分数可嵌套。
 
@@ -172,7 +170,7 @@ $$ \frac 12,\frac 1a,\frac a2 \quad \mid \quad \text{2 letters only:} \quad \fra
 显示：
 $$ \frac 12,\frac 1a,\frac a2 \quad \mid \quad \text{2 letters only:} \quad \frac 12a \,, k\frac q{r^2} $$
 
-## 5．如何输入开方
+### 5．如何输入开方
 
 使用 `\sqrt [根指数，省略时为2] {被开方数}` 命令输入开方。
 
@@ -182,7 +180,7 @@ $$ \sqrt{2} \quad and \quad \sqrt[n]{3} $$
 ```
 显示：$$ \sqrt{2} \quad and \quad \sqrt[n]{3} $$
 
-## 6．如何输入省略号
+### 6．如何输入省略号
 
 数学公式中常见的省略号有两种，`\ldots` 表示与文本底线对齐的省略号，`\cdots` 表示与文本中线对齐的省略号。
 
@@ -191,7 +189,7 @@ $$ f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace
 ```
 显示：$$ f(x_1,x_2,\underbrace{\ldots}_{\rm ldots} ,x_n) = x_1^2 + x_2^2 + \underbrace{\cdots}_{\rm cdots} + x_n^2 $$
 
-## 7．如何输入矢量
+### 7．如何输入矢量
 
 使用 `\vec{矢量}` 来自动产生一个矢量。也可以使用 `\overrightarrow` 等命令自定义字母上方的符号。
 
@@ -207,7 +205,7 @@ $$ xy \text{ with arrows:} \quad \overleftarrow{xy} \; \mid \; \overleftrightarr
 ```
 显示：$$ xy \text{ with arrows:} \quad \overleftarrow{xy} \; \mid \; \overleftrightarrow{xy} \; \mid \; \overrightarrow{xy} $$
 
-## 8．如何输入积分
+### 8．如何输入积分
 
 使用 `\int_积分下限^积分上限 {被积表达式}` 来输入一个积分。
 
@@ -218,7 +216,7 @@ $$ \int_0^1 {x^2} \,{\rm d}x $$
 
 本例中 `\,` 和 `{\rm d}` 部分可省略，但建议加入，能使式子更美观，详见[在字符间加入空格](#3在字符间加入空格)及[如何进行字体转换](#13如何进行字体转换)。
 
-## 9．如何输入极限运算
+### 9．如何输入极限运算
 
 使用 `\lim_{变量 \to 表达式} 表达式` 来输入一个极限。如有需求，可以更改 `\to` 符号至任意符号。
 
@@ -228,7 +226,7 @@ $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示�
 
 显示：$$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)} $$
 
-## 10．如何输入累加、累乘运算
+### 10．如何输入累加、累乘运算
 
 使用 `\sum_{下标表达式}^{上标表达式} {累加表达式}` 来输入一个累加。
 与之类似，使用 `\prod` `\bigcup` `\bigcap` 来分别输入累乘、并集和交集，更多符号可参考“[其它特殊字符](#12如何输入其它特殊字符)”。
@@ -243,7 +241,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 
 显示：$$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad and \quad \bigcup_{i=1}^{2} \Bbb{R} $$
 
-## 11．如何输入希腊字母
+### 11．如何输入希腊字母
 
 输入 `\小写希腊字母英文全称` 和 `\首字母大写希腊字母英文全称` 来分别输入小写和大写希腊字母。
 
@@ -274,7 +272,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\sigma|\Sigma|\varsigma|$\sigma \mid \Sigma \mid \varsigma$|
 |\phi|\Phi|\varphi|$\phi \mid \Phi \mid \varphi$|
 
-## 12．如何输入其它特殊字符
+### 12．如何输入其它特殊字符
 
 > **完整的 $\LaTeX$ 可用符号列表可以在 [这份文档](https://mirror.its.dal.ca/ctan/info/symbols/comprehensive/symbols-a4.pdf) 中查阅（极长，共 348 页），大部分常用符号可以参阅 [这份精简版文档](https://pic.plover.com/MISC/symbols.pdf) 查询。** 需要注意的是， 符号并不保证在 MathJax v2.2 中可用，即在 Cmd Markdown 编辑阅读器中可能并不支持所输入的特定命令。
 >
@@ -284,7 +282,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 >
 > 若找不到需要的符号，使用 [$\rm{Detexify^2}$](http://detexify.kirelabs.org/classify.html) 来画出想要的符号。
 
-### (1)．关系运算符
+#### (1)．关系运算符
 
 |输入|显示|输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -294,7 +292,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\geq|$\geq$|\neq|$\neq$|\approx|$\approx$|\equiv|$\equiv$|
 |\sum|$\sum$|\prod|$\prod$|\coprod|$\coprod$|\backslash|$\backslash$|
 
-### (2)．集合运算符
+#### (2)．集合运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -304,13 +302,13 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\bigvee|$\bigvee$|\bigwedge|$\bigwedge$|\biguplus|$\biguplus$|
 |\top|$\top$|\bot|$\bot$|\complement|$\complement$|
 
-### (3)．对数运算符
+#### (3)．对数运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |\log|$\log$|\lg|$\lg$|\ln|$\ln$|
 
-### (4)．三角运算符
+#### (4)．三角运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -318,7 +316,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\sin|$\sin$|\cos|$\cos$|\tan|$\tan$|
 |\csc|$\csc$|\sec|$\sec$|\cot|$\cot$|
 
-### (5)．微积分运算符
+#### (5)．微积分运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -326,7 +324,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 |\partial|$\partial$|\oint|$\oint$|\prime|$\prime$|
 |\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$|
 
-### (6)．逻辑运算符
+#### (6)．逻辑运算符
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -337,7 +335,7 @@ $$ \sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad 
 > @xiaobanni  
 > `\vdash` 显示为 $ \vdash $
 
-### (7)．戴帽符号
+#### (7)．戴帽符号
 
 |输入|显示|输入|显示|输入|显示|
 |:--:|:--:|:--:|:--:|:--:|:--:|
@@ -372,7 +370,7 @@ $$ \overset{Surface/bulk}{\underset{diffusion}{\longleftrightarrow}} $$
 
 在书写化学方程式时可声明 `\require{AMDcd}` 语句，使用 MathJax 内置的交换图表功能，具体例子可[参见下文](#1如何输入一个交换图表)。
 
-### (8)．连线符号
+#### (8)．连线符号
 |输入|显示|
 |:--:|:--:|
 |\fbox{a+b+c+d}|$\fbox{a+b+c+d}$|
@@ -389,7 +387,7 @@ $$ \overset{Surface/bulk}{\underset{diffusion}{\longleftrightarrow}} $$
 |\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}|$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$|
 |\underbrace{a\cdot a\cdots a}_{b\text{ times}}|$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$|
 
-### (9)．箭头符号
+#### (9)．箭头符号
 
 推荐使用符号：
 |输入|显示|输入|显示|输入|显示|
@@ -409,7 +407,7 @@ $$ \overset{Surface/bulk}{\underset{diffusion}{\longleftrightarrow}} $$
 |\longrightarrow|$\longrightarrow$|\Longrightarrow|$\Longrightarrow$|
 |\longleftrightarrow|$\longleftrightarrow$|\Longleftrightarrow|$\Longleftrightarrow$|
 
-## 13．如何进行字体转换
+### 13．如何进行字体转换
 
 若要对公式的某一部分字符进行字体转换，可以用 `{\字体 {需转换的部分字符}}` 命令，其中 `\字体` 部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体 $italic$ 。
 
@@ -451,7 +449,7 @@ $$
 
 使用 `\operatorname` 命令也可以达到相同的效果，详见 [定义新的符号 \operatorname](#1定义新的符号-operatorname) 。
 
-## 14. 如何高亮一行公式
+### 14. 如何高亮一行公式
 
 使用 `\bbox[底色, (可选)边距, (可选)边框 border: 框宽度 框类型 框颜色]` 命令来高亮一行公式。
 
@@ -502,7 +500,7 @@ $$
 }
 $$
 
-## 15．大括号和行标的使用
+### 15．大括号和行标的使用
 
 在 `\left` 和 `\right` 之后加上要使用的括号来创建自动匹配高度的圆括号 `(` `)`，方括号 `[` `]` 和花括号 `\{` `\}`。
 
@@ -583,9 +581,9 @@ $$
 \right\rangle
 $$
 
-## 16．其它命令
+### 16．其它命令
 
-### (1)．定义新的符号 \operatorname
+#### (1)．定义新的符号 \operatorname
 
 当需要使用的运算符不在 MathJax 的内置库中时，程序可能会报错或产生错误的渲染结果。此时可以使用 `\operatorname` 命令定义一个新的运算符号。
 
@@ -640,7 +638,7 @@ $$
 
 查询[关于此命令的定义](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/15077#15077)和[关于此命令的讨论](http://meta.math.stackexchange.com/search?q=operatorname)来进一步了解此命令。
 
-### (2)．添加注释文字 \text
+#### (2)．添加注释文字 \text
 
 在 `\text {文字}` 中仍可以使用 `$公式$` 插入其它公式。
 
@@ -651,7 +649,7 @@ $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is 
 显示：
 $$ f(n)= \begin{cases} n/2, & \text {if $n$ is even} \\ 3n+1, & \text{if $n$ is odd} \end{cases} $$
 
-### (3)．在字符间加入空格
+#### (3)．在字符间加入空格
 
 有四种宽度的空格可以使用： `\,`、`\;`、`\quad` 和 `\qquad` ，灵活使用 `\text{n个空格}` 也可以在任意位置实现空格。
 
@@ -690,7 +688,7 @@ $$ \mu_0=4\pi\times10^{-7} \ \left.\mathrm{\mathrm{T}\!\cdot\!\mathrm{m}}\middle
 $$ 180^\circ=\pi \ \mathrm{rad} $$
 $$ \mathrm{N_A} = 6.022\times10^{23} \ \mathrm{mol}^{-1} $$
 
-### (4)．更改文字颜色
+#### (4)．更改文字颜色
 
 使用 `\color{颜色}{文字}` 来更改特定的文字颜色。
 
@@ -789,7 +787,7 @@ $$
 \end{array}
 $$
 
-### (5)．添加删除线
+#### (5)．添加删除线
 
 使用删除线功能必须声明 `$$` 符号。
 
@@ -899,9 +897,9 @@ $$
 
 此例语法可参见[如何输入一个数组或表格](#五数组与表格使用参考)。
 
-# 二、矩阵使用参考
+## 二、矩阵使用参考
 
-## 1．如何输入无框矩阵
+### 1．如何输入无框矩阵
 
 在开头使用 `\begin{matrix}`，在结尾使用 `\end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\` 。
 
@@ -926,7 +924,7 @@ $$
 \end{matrix}
 $$
 
-## 2．如何输入边框矩阵
+### 2．如何输入边框矩阵
 
 在开头将 `matrix` 替换为 `pmatrix` `bmatrix` `Bmatrix` `vmatrix` `Vmatrix` 。
 
@@ -944,7 +942,7 @@ $ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $|$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $|$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $|$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $|$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $|$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $|
 　　　　
-## 3．如何输入带省略符号的矩阵
+### 3．如何输入带省略符号的矩阵
 
 使用 `\cdots` $\cdots$ , `\ddots` $\ddots$ , `\vdots` $\vdots$ 来输入省略符号。
 
@@ -969,7 +967,7 @@ $$
 \end{pmatrix}
 $$
 
-## 4．如何输入带分割符号的矩阵
+### 4．如何输入带分割符号的矩阵
 
 详见"[数组使用参考](#五数组与表格使用参考)"。
 
@@ -996,7 +994,7 @@ $$
 
 其中 `cc|c` 代表在一个三列矩阵中的第二和第三列之间插入分割线。
 
-## 5．如何输入行中矩阵
+### 5．如何输入行中矩阵
 
 若想在一行内显示矩阵，可使用 `\bigl(\begin{smallmatrix} 表达式 \end{smallmatrix}\bigr)`
 
@@ -1006,9 +1004,9 @@ $$
 
 显示：这是一个行中矩阵的示例 $ \bigl(\begin{smallmatrix} a & b \\ c & d \end{smallmatrix}\bigr) $ 。
 
-# 三、方程式序列使用参考
+## 三、方程式序列使用参考
 
-## 1．如何输入一个方程式序列
+### 1．如何输入一个方程式序列
 
 人们经常想要一列整齐且居中的方程式序列。使用 `\begin{align}…\end{align}` 来创造一列方程式，其中在每行结尾处使用 `\\` 。
 
@@ -1039,7 +1037,7 @@ $$
 
 本例中每行公式的编号续自 [如何插入公式](#1如何插入公式) 中的自动编号公式 \eqref{eq:sample} 。
 
-## 2．在一个方程式序列的每一行中注明原因
+### 2．在一个方程式序列的每一行中注明原因
 
 在 `{align}` 中后添加 `&` 符号来自动对齐后面的内容，可灵活组合 `\text` 和 `\tag` 语句。`\tag` 语句编号优先级高于自动编号。
 
@@ -1065,9 +1063,9 @@ $$
 > @joyphys 如何引用 \tag 标记的公式？
 > 使用 `\tag{yourtag}` 来标记公式，然后在 `\tag` 之后加上 `\label{yourlabel}`
 
-# 四、条件表达式使用参考
+## 四、条件表达式使用参考
 
-## 1．如何输入一个条件表达式
+### 1．如何输入一个条件表达式
 
 使用 `\begin{cases}…\end{cases}` 来创造一组条件表达式，在每一行条件中插入 `&` 来指定需要对齐的内容，并在每一行结尾处使用 `\\`。
 
@@ -1092,7 +1090,7 @@ $$
 
 > @Sherlockk 用 markdown+math 编辑时 `\text` 内需用 `\(equation\)`
 
-## 2．如何输入一个左侧对齐的条件表达式
+### 2．如何输入一个左侧对齐的条件表达式
 
 若想让文字在 **左侧对齐显示** ，则有如下方式：
 
@@ -1119,7 +1117,7 @@ $$
     =f(n)
 $$
 
-## 3．如何使条件表达式适配行高
+### 3．如何使条件表达式适配行高
 
 在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[2ex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
 
@@ -1169,9 +1167,9 @@ $$|适配[2ex]|
 
 其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
 
-# 五、数组与表格使用参考
+## 五、数组与表格使用参考
 
-## 1．如何输入一个数组或表格
+### 1．如何输入一个数组或表格
 
 通常，一个格式化后的表格比单纯的文字或排版后的文字更具有可读性。
 
@@ -1202,7 +1200,7 @@ $$
 \end{array}
 $$
 
-## 2．如何输入一个嵌套的数组或表格
+### 2．如何输入一个嵌套的数组或表格
 
 多个数组/表格可 **互相嵌套** 并组成一组数组/一组表格。
 
@@ -1277,7 +1275,7 @@ $$
 \end{array} % 总表格结束
 $$
 
-## 3．如何输入一个方程组
+### 3．如何输入一个方程组
 
 使用 `\begin{array}…\end{array}` 和 `\left\{…\right.` 来创建一个方程组。
 
@@ -1323,9 +1321,9 @@ $$
 \end{cases}
 $$
 
-# 六、连分数使用参考
+## 六、连分数使用参考
 
-## 1．如何输入一个连分式
+### 1．如何输入一个连分式
 
 就像输入分式时使用 `\frac` 一样，使用 `\cfrac` 来创建一个连分数。
 
@@ -1408,9 +1406,9 @@ $$
 
 连分数通常都太大以至于不易排版，所以建议在连分数前后声明 `$$` 符号，或使用像 `[a0;a1,a2,a3,…]` 一样的紧缩记法。
 
-# 七、交换图表使用参考
+## 七、交换图表使用参考
 
-## 1．如何输入一个交换图表
+### 1．如何输入一个交换图表
 
 > 推荐使用 Cmd Markdown 自带的各种图功能，详见 [Cmd Markdown 高阶语法手册](https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图)。
 
@@ -1483,7 +1481,7 @@ $$
 \end{CD}
 $$
 
-# 八、一些特殊的注意事项
+## 八、一些特殊的注意事项
 
 |**!! 本段内容为个人翻译，可能有不准确之处 !!**|
 |:--:|
