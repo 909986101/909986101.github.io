@@ -175,6 +175,10 @@ Windows "Listen" option can disturb Voicemeeter routing, so be sure that this op
 
 If your input level is too weak (or too loud), check the level of the selected input device. (Adjust possible pre-amp gain if any).
 
+|||
+|:--|:--|
+|![](VoicemeeterPotato_UserManual/potato-15-3.jpg) |![](VoicemeeterPotato_UserManual/potato-15-4.jpg) |
+
 15 本页有 4 张图
 
 ## Selecting Input Devices
@@ -227,13 +231,13 @@ Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 cl
 
 **For Recording Applications, take care about the loop back! You might have MUTED outputs or disable monitoring otherwise output signal will come back on input infinitely.**
 
-Configure DAW Application
+|||
+|:--|:--|
+|Configure DAW Application |Configure Musical Instrument |
+|Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO ||
+|![](VoicemeeterPotato_UserManual/potato-19-2.jpg) |![](VoicemeeterPotato_UserManual/potato-19-3.jpg) |
 
-Configure Musical Instrument
-
-Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO
-
-19 本页有 2 张图
+19 本页有 3 张图
 
 ## Audio Controls.
 
@@ -1151,6 +1155,8 @@ The 3 first Windows audio settings dialog box are not present under Windows 7 bu
 
 VAIO latency are now stored as system parameter and recalled on each Audio Engine Start.
 
+![](VoicemeeterPotato_UserManual/potato-56-1.jpg)
+
 RIGHT + CLICK on Virtual Input caption to display the latency menu.
 
 VAIO must have an internal latency not below 3x time the buffer size used by Voicemeeter Audio Engine and the Applications connected to the Virtual I/O.
@@ -1166,6 +1172,8 @@ It means the latency is applied to the
 If you modify the latency for Voicemeeter input for example, it will be modified for the output B1 too.
 
 Select Show Control Panel to display the VAIO control panel (here below)
+
+![](VoicemeeterPotato_UserManual/potato-56-2.jpg)
 
 56 本页有 2 张图
 
@@ -2514,15 +2522,21 @@ If you own several licenses, take care to select the right line, related to the 
 
 The dialog box to get certificate will appear and will first ask you to confirm data.
 
+![](VoicemeeterPotato_UserManual/potato-115-1.jpg)
+
 Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now"
 
 Then you get your certificate in this box
+
+![](VoicemeeterPotato_UserManual/potato-115-2.jpg)
 
 Simply copy / paste it in the application License activation box and click on "Activate" button.
 
 REM: The certificate start with the char '>' and finishes with the char '<'.
 
 This certificate will be store in your computer to authenticate your license (internet is not needed).
+
+![](VoicemeeterPotato_UserManual/potato-115-3.jpg)
 
 115 本页有 3 张图
 
