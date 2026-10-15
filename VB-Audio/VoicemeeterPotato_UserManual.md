@@ -1,28 +1,24 @@
-
-
 # VOICEMEETER Potato USER MANUAL
 
 > The Ultimate Virtual Audio Device Mixer for Windows
 
-> OFFICIAL WEBSITE [www.voicemeeter.com](www.voicemeeter.com)
+![](VoicemeeterPotato_UserManual/potato-1-1.jpg)
+
+> OFFICIAL WEBSITE [www.voicemeeter.com](https://www.voicemeeter.com)
 
 > Official package URL is only based on download. vb-audio.com (and Microsoft Store), DO NOT DOWNLOAD VOICEMEETER FROM OTHER LOCATION.
-
-1 本页有 1 张图
 
 This Document explains the additional functions added in Voicemeeter Potato (Voicemeeter 8) .
 
 If you are not familiar with Voicemeeter, we recommend to read first the User Manual of Voicemeeter Standard or Banana version.
 
-[www.voicemeeter.com](www.voicemeeter.com)
+[www.voicemeeter.com](https://www.voicemeeter.com)
 
 ## INSTALLATION
 
 - Run setup program and follow instructions.
 
 - Reboot after installation or uninstallation
-
-ONLINE SUPPORT [https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm)
 
 ### FIRST INSTALLATION
 
@@ -44,7 +40,7 @@ ONLINE SUPPORT [https://vb-audio.com/Services/support.htm](https://vb-audio.com/
 
 2. REBOOT AFTER (IMPORTANT)
 
-**Before re-installing you may check different points**
+#### Before re-installing you may check different points
 
 - In Windows Device Manager you may check that all voicemeeter virtual audio drivers are removed (from the game controller section and from the audio I/O section) - if still present you will have to uninstall them manually from there (right click to get menu option).
 
@@ -52,13 +48,13 @@ ONLINE SUPPORT [https://vb-audio.com/Services/support.htm](https://vb-audio.com/
 
 more info on our forum: [https://forum.vb-audio.com/viewtopic.php?f=7&t=688](https://forum.vb-audio.com/viewtopic.php?f=7&t=688)
 
-**THEN RE-INSTALL**
+#### THEN RE-INSTALL
 
 3. Run the Setup program and push the button INSTALL.
 
 4. REBOOT AFTER (IMPORTANT)
 
-**Then you may**
+#### Then you may
 
 5. Check Windows audio parameters (default playback device, default recording device...)
 
@@ -67,6 +63,10 @@ more info on our forum: [https://forum.vb-audio.com/viewtopic.php?f=7&t=688](htt
 7. Run the wanted Voicemeeter version and reply to firewall authorization (if VBAN service is running).
 
 8. Possibly re-check some option in menu (System Tray, Run at Startup, Show App on Startup...).
+
+## ONLINE SUPPORT 
+
+[https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm)
 
 ## Fair Trade, Affordable For Everyone
 
@@ -87,27 +87,31 @@ Windows XP (SP2), VISTA, WIN7, WIN8, WIN8.1, WIN10 32/64 bits (MME, DX, WDM/WASA
 
 Voicemeeter Potato is an advanced virtual mixing console able to manage 8 audio inputs (5 physicals and 3 virtual) and 8 audio outputs (5 physicals and 3 virtual) through 8 multichannel busses (A1, A2, A3, A4, A5 & B1, B2, B3).
 
+![](VoicemeeterPotato_UserManual/potato-9-1.jpg)
+
 As Mixing Console, Voicemeeter offers large amount of use case combinations: To mix in real time your voice with your music, your movie, your video game or web radio and share it on internet through VOIP or Streaming applications. Voicemeeter is also able to let you manage 5 Headsets and create new VOIP experiences …
 
 Voicemeeter Potato integrates the same recorder than Voicemeeter Banana and a new internal FX section offering a Reverb and a Multitap Delay through a regular Send / Return function. Potato also offers two true aux to manage external FX with an ASIO device (ASIO channel must be assigned to SEND / RETURN functions in system settings dialog box).
 
-Voicemeeter Potato also offers a 6 cells full parametric EQ on every BUS, with the possibility to make independent equalization on each channel (1-to 8). This is made to correct your P.A. System from mono to 7.1 setup. In conjunction with Stereo Repeat Mode, it ‘s also possible to use this Equalizer as stereo Cross Over to drive 2, 3, or 4 ways active speakers system.
+Voicemeeter Potato also offers a 6 cells full parametric EQ on every BUS, with the possibility to make independent equalization on each channel (1-to 8). This is made to correct your P.A. System from mono to 7.1 setup. In conjunction with Stereo Repeat Mode, it 's also possible to use this Equalizer as stereo Cross Over to drive 2, 3, or 4 ways active speakers system.
 
 Finally Voicemeeter Potato displays applications connected on its virtual input and gives you the same volume and mute control than the Windows volume mixer.
 
-9 本页有 1 张图
-
 Voicemeeter Potato implements a full 8x8 matrix to let you mix your 8 possible inputs strip into 8 possible BUS outputs. BUS Assignation per strip work like on Banana but the SEL button per BUS allows setting input level for a particular BUS only. Then it is possible to define a MIX per BUS independently.
+
+![](VoicemeeterPotato_UserManual/potato-10-1.jpg)
 
 Voicemeeter Potato General Diagram (8 inputs / 8 Buses / 8 outputs Mixing Console)
 
-10 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-10-2.jpg)
 
 ### Voicemeeter Banana as Universal Virtual Audio Device
 
-Voicemeeter offers Virtual Audio Point on Input #6, #7 & #8 and on BUS B1, B2 and B3. These Virtual Audio I/O’s (VAIO) support all possible Audio Interfaces and allows connecting any audio applications, including audio pro DAW or musical instrument working with ASIO devices.
+Voicemeeter offers Virtual Audio Point on Input #6, #7 & #8 and on BUS B1, B2 and B3. These Virtual Audio I/O's (VAIO) support all possible Audio Interfaces and allows connecting any audio applications, including audio pro DAW or musical instrument working with ASIO devices.
 
 Audio interfaces type supported by Voicemeeter Virtual audio I/O (Voicemeeter VAIO). 
+
+![](VoicemeeterPotato_UserManual/potato-11-1.jpg)
 
 |Interface |Type Description |
 |:--|:-|
@@ -118,11 +122,11 @@ Audio interfaces type supported by Voicemeeter Virtual audio I/O (Voicemeeter VA
 |Direct-X |Direct-X Audio Interface is used by Video Game and some audio software. Latency is usually comparable to MME, |
 |ASIO |Audio Stream Input/Output (ASIO) is a computer sound card driver protocol for digital audio specified by Steinberg, providing a low-latency and high fidelity interface between a software application and a computer's sound card.|
 
-11 本页有 1 张图
-
 ### Voicemeeter as Audio HUB and Next Gen Audio Engine
 
 Voicemeeter now includes VBAN features and Voicemeeter Remote API. VBAN allows to send / receive audio stream to / from any computers of a local network. Voicemeeter Remote API allows developing client applications and taking advantage of all Voicemeeter features, inter connection with all audio interfaces type, audio device aggregation, mixing/routing functions, MIDI and VBAN features, to create new powerful audio applications.
+
+![](VoicemeeterPotato_UserManual/potato-12-1.jpg)
 
 Voicemeeter is installed with Macro Buttons Application offering programmable buttons to act on Voicemeeter by simple request script
 
@@ -131,11 +135,11 @@ Voicemeeter package also installs VoicemeeterRemote.dll and VoicemeeterRemote64.
 More information and SDK download on our forum:  
 [https://forum.vb-audio.com/viewtopic.php?f=8&t=346](https://forum.vb-audio.com/viewtopic.php?f=8&t=346)
 
-12 本页有 1 张图
-
 ## Quick Startup Guide
 
 Voicemeeter is a virtual audio mixer intended to replace the Windows Mixer. The quickest way to configure Voicemeeter is to simply use it as default device and connect it to your main playback device. Then all PC sounds will go through Voicemeeter before playing back to your speakers.
+
+![](VoicemeeterPotato_UserManual/potato-13-1.jpg)
 
 ### Remarks in case of problem
 
@@ -143,9 +147,7 @@ Installing Voicemeeter means installing audio driver. In some cases, the system 
 
 Windows System Audio Configuration is mainly located in Windows Control Panel / Sound Dialog Box. This is where you have to go to check or set what is your default playback device and what is your default recording device (and the Communications option has to be set to "Do Nothing" if you use Voicemeeter with VOIP applications).
 
-In all cases, all is a question of audio configuration and it does not need to remove Voicemeeter in case of problem. Voicemeeter is a simple Application endowed with an audio device driver, if you don’t use it, there is no way to get trouble. But if you do, you need to avoid possible audio device conflict and connect everything to Voicemeeter (to prevent other application to use audio playback device already used by Voicemeeter).
-
-13 本页有 1 张图
+In all cases, all is a question of audio configuration and it does not need to remove Voicemeeter in case of problem. Voicemeeter is a simple Application endowed with an audio device driver, if you don't use it, there is no way to get trouble. But if you do, you need to avoid possible audio device conflict and connect everything to Voicemeeter (to prevent other application to use audio playback device already used by Voicemeeter).
 
 ## Connecting Voicemeeter to Audio device
 
@@ -153,19 +155,23 @@ Voicemeeter can now work without audio device by running on its own internal clo
 
 Just click on A1 button to select the main output device used for BUS A (A1). We recommend to select first ASIO (if exists) or WDM device type to get best Latency. WDM / KS playback device are used in exclusive mode per default, bypassing the windows mixer and possibly its Volume Control.
 
+![](VoicemeeterPotato_UserManual/potato-14-1.jpg)
+
 The device selector is now displaying your different audio devices by audio interface (WDM, KS, MME and ASIO) and driver name sorted by alphabetic order. Icons also help to find quickly the right device to select.
 
 The main audio output device (A1) can work in 32 kHz, 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz or 192 kHz. This will also be the main sample rate of the entire mixing process and Virtual ASIO points (Voicemeeter will support any sample rate on other inputs or outputs points).
 
-14 本页有 1 张图
-
-“Open Windows Sound” button will open the Windows Sound Dialog Box to let you configure some audio system aspect and adjust the audio format of your audio devices.
+"Open Windows Sound" button will open the Windows Sound Dialog Box to let you configure some audio system aspect and adjust the audio format of your audio devices.
 
 ### Windows Sound Panel / Sound Properties to configure device sound format
 
+|||
+|:--|:--|
+|![](VoicemeeterPotato_UserManual/potato-15-1.jpg) |![](VoicemeeterPotato_UserManual/potato-15-2.jpg) |
+
 ### Windows Sound Panel / Input level and Listen option
 
-Windows “Listen” option can disturb Voicemeeter routing, so be sure that this option is disabled or makes sense for you. 
+Windows "Listen" option can disturb Voicemeeter routing, so be sure that this option is disabled or makes sense for you. 
 
 If your input level is too weak (or too loud), check the level of the selected input device. (Adjust possible pre-amp gain if any).
 
@@ -175,15 +181,17 @@ If your input level is too weak (or too loud), check the level of the selected i
 
 An audio device can be selected for every physical strip by clicking on Stereo input area. Select audio input device on strip #1, for example your microphone! Then you will be able to listen to your voice in real time.
 
+![](VoicemeeterPotato_UserManual/potato-16-1.jpg)
+
 If you remove selection, Input strip can still get audio from VBAN stream or ASIO input from the ASIO device selected as output A1.
 
-REM: it’s better to select WDM driver (present since Windows VISTA) to get best latency and audio performances. If using MME driver you might have a bigger delay between input and output. Use MME driver only if WDM are not present or does not work correctly with your audio hardware configuration.
-
-16 本页有 1 张图
+REM: it's better to select WDM driver (present since Windows VISTA) to get best latency and audio performances. If using MME driver you might have a bigger delay between input and output. Use MME driver only if WDM are not present or does not work correctly with your audio hardware configuration.
 
 ## Understanding Voicemeeter Virtual I/O in one picture
 
 Virtual I/O are connected to virtual audio devices installed with Voicemeeter. Playback devices are used as virtual inputs while recording devices are fed with output B1, B2 and B3.
+
+![](VoicemeeterPotato_UserManual/potato-17-1.jpg)
 
 Voicemeeter VAIO: Playback Devices: 
 |Virtual Audio Device Name |Description |Connected to |
@@ -199,21 +207,23 @@ Voicemeeter VAIO: Recording Devices:
 |Voicemeeter Aux Output |Installed with Voicemeeter Banana |BUS B2 |
 |Voicemeeter VAIO3 Output |Installed with Voicemeeter Potato |BUS B3|
 
-17 本页有 1 张图
-
 ### Understanding new Voicemeeter VAIOs driver (Win10 or higher)
 
 Voicemeeter now offers up to 8 Virtual I/O. I/O 1 to 5 are VAIO extension. Voicemeeter input, AUX and VAIO3 are also the Virtual input 6, 7 and 8.
 
-Voicemeeter output is now called “Voicemeeter out B1” (Virtual output 6) Voicemeeter AUX output is now called “Voicemeeter.out B2” (Virtual output 7). Voicemeeter VAIO3 output is now called “Voicemeeter.out B3” (Virtual output 8).
+![](VoicemeeterPotato_UserManual/potato-18-1.jpg)
+
+Voicemeeter output is now called "Voicemeeter out B1" (Virtual output 6) Voicemeeter AUX output is now called "Voicemeeter.out B2" (Virtual output 7). Voicemeeter VAIO3 output is now called "Voicemeeter.out B3" (Virtual output 8).
+
+![](VoicemeeterPotato_UserManual/potato-18-2.jpg)
 
 VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
-
-18 本页有 2 张图
 
 ### Voicemeeter Virtual ASIO driver
 
 Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) BUS B2 (for Voicemeeter AUX virtual ASIO) or BUS B3 (for Voicemeeter VAIO3 virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
+
+![](VoicemeeterPotato_UserManual/potato-19-1.jpg)
 
 **For Recording Applications, take care about the loop back! You might have MUTED outputs or disable monitoring otherwise output signal will come back on input infinitely.**
 
@@ -229,6 +239,8 @@ Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO
 
 While you are talking you can tweak your voice in real time with different controls; 2D Panel, Audibility knobs or simple 3 bands Equalizer…
 
+![](VoicemeeterPotato_UserManual/potato-20-1.jpg)
+
 ### INTELLIPAN COLOR PANEL
 
 Based on basic equalizer, this panel will allow you to change the color of your voice in a quick way.
@@ -239,11 +251,13 @@ It gives a spectral identity to your voice by acting on 3 frequency bands and a 
 
 If you right click on panel you can switch to another effect able to position audio sources with a simple room effect (works in stereo only).
 
+![](VoicemeeterPotato_UserManual/potato-20-2.jpg)
+
 Voicemeeter includes a binaural effect able to give a spatial identity to audio sources and then increase dialog intelligibility (especially when everyone is talking in the same time).
 
 This effect works in stereo, so can be used when recording a stereo stream to improve the sound of the global mix. This also can be used to simply enhance your voice to stereo.
 
-This kind of “psycho acoustic” effect is used a lot since decades in audio production to create a better “audio scene” by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.
+This kind of "psycho acoustic" effect is used a lot since decades in audio production to create a better "audio scene" by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.
 
 20 本页有 2 张图
 
@@ -251,15 +265,21 @@ This kind of “psycho acoustic” effect is used a lot since decades in audio p
 
 If you right click on 2D Panel you can also get the Modulation panel below.
 
+![](VoicemeeterPotato_UserManual/potato-21-1.jpg)
+
 Based on Chorus effect, this panel allows to make various effects. Just experiment by placing cursor wherever you want. Basically chorus / phasing effect are on the bottom while modulations are on the top. Modulations with feedback are on the left side while simple modulation is on the right side. Depth is given by the distance to the middle of the panel.
 
 ### INTELLIPAN INDICATOR
 
 On the top of this panel you now can see 3x points indicating if the effect is in use or not. First point becomes orange if the Color Panel is not in neutral position. Second point becomes orange if the Modulation Panel is not in neutral position. Third point becomes orange if the 3D Panel is not in neutral position.
 
+![](VoicemeeterPotato_UserManual/potato-21-2.jpg)
+
 ### Equalization / 5.1 Pan Pot
 
 On both Virtual input strips, there is a simple 3 bands Equalizer and 5.1 Pan Pot.
+
+![](VoicemeeterPotato_UserManual/potato-21-3.jpg)
 
 **EQUALIZER**
 
@@ -267,7 +287,7 @@ On both Virtual input strips, there is a simple 3 bands Equalizer and 5.1 Pan Po
 
 **5.1 Pan POT**
 
-Below the Equalizer a small 2D Panel allows 5.1 balance. It’s a simple process to position the sound source in one of your 5 speakers:
+Below the Equalizer a small 2D Panel allows 5.1 balance. It's a simple process to position the sound source in one of your 5 speakers:
 
 - front left
 - Front Center
@@ -291,11 +311,15 @@ Repeat STEREO mode is duplicating the left+right channels into 6 others, 2 y 2. 
 
 Mix Down, Up Mix and Only modes work like BUS Modes (see BUS mode to get detailed processing in next pages).
 
+![](VoicemeeterPotato_UserManual/potato-22-1.jpg)
+
 ### Compressor / Gate / Denoiser
 
 On each hardware input strip, there are three knobs to set simplified Compression effect, simplified Gate effect and a Denoiser knob to reduce or remove the noise floor.
 
-Compression is made with “auto make up”. Consequently it gives a big boost to your voice while compressing it. Then you can adjust the level by decreasing the fader gain.
+![](VoicemeeterPotato_UserManual/potato-22-2.jpg)
+
+Compression is made with "auto make up". Consequently it gives a big boost to your voice while compressing it. Then you can adjust the level by decreasing the fader gain.
 
 Denoiser knb will help you to reduce or remove the noise floor according the amount (0 to 10). If not zero, the Denoiser effect will add some latency to this strip.
 
@@ -308,6 +332,8 @@ Right click again will switch back the view to original Voicemeeter Potato Strip
 The Compressor / Gate detailed view show the compressor transfer graph on top (in place of the INTELLIPAN panel). Horizontal level meters show input levels, red meters shows gain reduction (due to compression or gate closing).
 
 22 本页有 2 张图
+
+![](VoicemeeterPotato_UserManual/potato-23-1.jpg)
 
 #### Compressor Details
 
@@ -347,6 +373,8 @@ REM: CTRL+ RIGHT CLICK to edit parameter value.
 
 23 本页有 1 张图
 
+![](VoicemeeterPotato_UserManual/potato-24-1.jpg)
+
 SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
 
 CTRL+ RIGHT CLICK on parameter to edit its value
@@ -355,9 +383,13 @@ RIGHT CLICK: to switch back to original view.
 
 CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
 
+![](VoicemeeterPotato_UserManual/potato-24-2.jpg)
+
 PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
 
 To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
+
+![](VoicemeeterPotato_UserManual/potato-26-1.jpg)
 
 #### Denoiser Details
 
@@ -389,6 +421,8 @@ REM: CTRL+ RIGHT CLICK to edit parameter value.
 
 ---
 
+![](VoicemeeterPotato_UserManual/potato-26-2.jpg)
+
 PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
 
 To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
@@ -396,6 +430,8 @@ To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob 
 26 本页有 2 张图
 
 ### Strip Limiter
+
+![](VoicemeeterPotato_UserManual/potato-24-3.jpg)
 
 With Voicemeeter Banana comes a Brick-Wall Limiter on each physical or virtual strip to define a threshold for each audio source. Click directly in the meter bar to set the limit by the mouse or right click to enter the value directly (-40 to +12 dB).
 
@@ -409,15 +445,19 @@ With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the o
 
 24 本页有 3 张图
 
+![](VoicemeeterPotato_UserManual/potato-25-1.jpg)
+
 The green Limiter is also a Brick-Wall Limiter but with a 5ms integration time (this predictive time introduces 5ms latency). This is made to avoid distortion and remove any crackling.
 
-Noise attack is usually not hearable on a full audio track, but if the sound is a single instrument (e.g. guitar or bass) or a voice from a Soft-Phone or any sound without treble (nothing above 5kHz), then yellow limiter can produce hearable attack noise. That’s why we now offering the Green Limiter.
+Noise attack is usually not hearable on a full audio track, but if the sound is a single instrument (e.g. guitar or bass) or a voice from a Soft-Phone or any sound without treble (nothing above 5kHz), then yellow limiter can produce hearable attack noise. That's why we now offering the Green Limiter.
 
 #### What is Limiter noise attack?
 
+![](VoicemeeterPotato_UserManual/potato-25-2.jpg)
+
 Without limiter, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
 
-The yellow limiter tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it’s a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
+The yellow limiter tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
 
 Green Limiter is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
 
@@ -425,7 +465,9 @@ Green Limiter is expected to be perfect because it uses a 5ms latency as integra
 
 With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
 
-Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (because directly outputting to audio device). REM: Limiter on strip allows defining a limit over 0 dB (+12 dB max) because this signal is routed internally to BUS and can be reduced by different after effects, gain or BUS Limiter. However if the Strip Limiter introduces attack noises, the BUS Limiter won’t be able to remove them.
+![](VoicemeeterPotato_UserManual/potato-25-3.jpg)
+
+Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (because directly outputting to audio device). REM: Limiter on strip allows defining a limit over 0 dB (+12 dB max) because this signal is routed internally to BUS and can be reduced by different after effects, gain or BUS Limiter. However if the Strip Limiter introduces attack noises, the BUS Limiter won't be able to remove them.
 
 REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
 
@@ -437,6 +479,8 @@ M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 
 
 ### Karaoke Button
 
+![](VoicemeeterPotato_UserManual/potato-27-1.jpg)
+
 With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K button on Virtual AUX input to offer 4 different real time algorithms to remove the voice on a stereo material..
 
 **K-m:** Karaoke Voice Remover Removes the common part of a stereo track material. All mono sound will be removed
@@ -447,6 +491,8 @@ With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K but
 
 **Kv:** If nothing works (like on a MONO track), this last mode will simply remove the voice frequence range (200- 4000 Hz) by a simple filter
 
+![](VoicemeeterPotato_UserManual/potato-27-2.jpg)
+
 27 本页有 2 张图
 
 ### Parametric EQ on hardware input
@@ -455,17 +501,19 @@ With Potato November 2022 version comes a full Parametric Stereo EQ on each hard
 
 Right click on the small EQ button (on the right of INTELLIPAN label) to open the 6 bands Full parametric EQ graphic user interface. This is exactly the same EQ than on Master BUS, except it is applied to stereo signal (hardware input are stereo when master BUS are multi channels (8 channels).
 
-PEAK Gain range has been extended to -36 db - +18 dB , that’s why different scale are proposed in contextual menu if required.
+![](VoicemeeterPotato_UserManual/potato-28-1.jpg)
+
+PEAK Gain range has been extended to -36 db - +18 dB , that's why different scale are proposed in contextual menu if required.
 
 Channel parameters are compatible with all EQ and can be copied from an EQ strip to an EQ master or in the other way.
 
 EQ settings can also be saved / loaded by the dialog box sys-menu (click on icon on top-left) or the Strip menu (see next page).
 
-28 本页有 1 张图
-
 ### Strip Menu
 
 Right click on top of the input strip to display the Strip Menu (Right Click on INTELLIPAN label for hardware inputs, Click on EQUALIZER label for virtual Inputs).
+
+![](VoicemeeterPotato_UserManual/potato-29-1.jpg)
 
 The strip Menu allows performing 3 kinds of operation on all parameters of the strip (except slider, Solo / Mute and BUS assignation).
 
@@ -477,15 +525,19 @@ The strip Menu allows performing 3 kinds of operation on all parameters of the s
 
 Strip menu is different for Virtual Input than for Hardware input since it offers different strip tools.
 
-29 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-29-2.jpg)
+
+29 本页有 2 张图
 
 ### Applications shown on Virtual Input Strip
 
 With Voicemeeter Potato, the virtual input strips are showing the 4 first applications connected to the related virtual input (through the windows audio interface). It does not list application connected by ASIO interface). Then for each application, it displays the volume and the mute control coming directly from the Windows Volume Mixer.
 
-If you move the cursor on the Windows Volume Mixer, it will be shown on the Voicemeeter virtual strip and vice versa. The Mute control is represented by the “M” button and is also related to the Mute control on the Windows Volume Mixer.
+![](VoicemeeterPotato_UserManual/potato-30-1.jpg)
 
-Generally speaking, the virtual inputs strip should reflect the related Windows Volume Mixer state (without the System Sounds Control) up to 32 applications. If an application is disconnected, Voicemeeter should be notified and will remove it from the list. If it remains in the list, a “Restart Audio Engine” should correctly refresh the list of connected applications.
+If you move the cursor on the Windows Volume Mixer, it will be shown on the Voicemeeter virtual strip and vice versa. The Mute control is represented by the "M" button and is also related to the Mute control on the Windows Volume Mixer.
+
+Generally speaking, the virtual inputs strip should reflect the related Windows Volume Mixer state (without the System Sounds Control) up to 32 applications. If an application is disconnected, Voicemeeter should be notified and will remove it from the list. If it remains in the list, a "Restart Audio Engine" should correctly refresh the list of connected applications.
 
 Some applications like Discord can open all available device and appears in All Windows Volume mixers. This is confusing and must be notified to the software manufacturer, it makes no sense to open all audio devices. Just the one selected is enough.
 
@@ -493,11 +545,13 @@ With last version of Voicemeeter Potato, the level meter is also displayed in re
 
 Note also that the 4 first applications can be handled by a MIDI controller thanks to the MIDI mapping.
 
-30 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-31-1.jpg)
 
 ### Master Section: Output BUS
 
 The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are connected to physical audio device while BUS B1, B2, B3 are connected to related virtual audio output (appearing as recording devices in Windows system).
+
+![](VoicemeeterPotato_UserManual/potato-31-2.jpg)
 
 **SELECT MIX:** SEL button allows selecting the mix assigned to a particular BUS. CTL+CLICK allows to select several BUS in the same time. When a BUS is selected, Input Sliders are displaying the related MIX.
 
@@ -517,17 +571,19 @@ The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are c
 
 BUS Selector allows defining sub mix with strip gain sliders, but version 3.1.3.0 offers an overview on all sub-mix by right clicking on assignation buttons (Right click to swap view).
 
+![](VoicemeeterPotato_UserManual/potato-32-1.jpg)
+
 Then you can see all mix for all strips in the same time, and also possibly make the link with VM-Streamer View.
 
 The Strip Gain Slider is giving the max level of all sub-mix (or of the SELected sub-mix by BUS SEL buttons).
 
 The submix value can be adjusted directly by using CTRL+Wheel. The value can be edited by CTRL+Click.
 
-32 本页有 1 张图
-
 ### BUS Master Parametric EQ
 
 Each BUS offers an EQ button to switch ON/OFF the Master 6 Cells Full Parametric EQ. Right Click on this EQ button to open the EQpro-G6 Dialog Box.
+
+![](VoicemeeterPotato_UserManual/potato-33-1.jpg)
 
 It provides 6 EQ Cells (with a master gain / delay) for the 8 possible channels of the BUS. The Channel Selector allows working on all channels in the same time or on a given channel only.
 
@@ -541,6 +597,8 @@ COPY ALL: copy EQ settings of all channels (to copy entire equalization to anoth
 
 RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter value manually / precisely.
 
+![](VoicemeeterPotato_UserManual/potato-33-2.jpg)
+
 The EQ button can give information about the current Equalizer state for the 8 channels
 
 **Green:** channel is equalized or gain changed. 
@@ -549,6 +607,8 @@ The EQ button can give information about the current Equalizer state for the 8 c
 **Black:** nothing applied on channel.
 
 33 本页有 2 张图
+
+![](VoicemeeterPotato_UserManual/potato-34-1.jpg)
 
 EQ Dialog Box System Menu offers two functions to simply LOAD / SAVE your EQ settings as a XML File (for the current BUS with its 8 channels).
 
@@ -559,6 +619,8 @@ Right click on graph opens a menu to change dB Scale range
 ### Special Routing Options on Output BUS
 
 Voicemeeter provides additional routing modes for all Busses in order to use the possible 8 output channels in different ways.
+
+![](VoicemeeterPotato_UserManual/potato-34-2.jpg)
 
 **MIX DOWN MODE**
 
@@ -588,21 +650,25 @@ MIX DOWN B (Processing)
 
 STEREO REPEAT mode also allows using Master EQ as crossover for 2, 3 or 4 ways active speakers system (thanks to 6 full parametric cells, especially LPF or HPF filters).
 
+![](VoicemeeterPotato_UserManual/potato-35-1.jpg)
+
 Since the stereo signal is duplicated on channel 3+4, 5+6 and 7+8. You can connect up to 4 stereo amplifier for different speakers and use the parametric EQ (that is multichannel) to make a full crossover processing.
 
 Also master EQ are now offering a trim / delay knob per channel, so you can manage the gain compensation and the delay adjustment per channel if needed.
-
-35 本页有 1 张图
 
 #### COMPOSITE MODE
 
 This mode is made for audio post production. The 8 channels of the BUS can be composed by any pre-fader or post fader inputs (or default BUS channel): In the System Settings Dialog Box, user can define the Composite Patch.
 
-With composite signal, it’s possible to record up to 8 channels composed by any Voicemeeter Inputs or with a DAW connected to Voicemeeter virtual ASIO, or with the integrated recorder. for example. It allows recording VOIP interview or conference and making post production process after, with up to 8 different tracks.
+![](VoicemeeterPotato_UserManual/potato-36-1.jpg)
+
+With composite signal, it's possible to record up to 8 channels composed by any Voicemeeter Inputs or with a DAW connected to Voicemeeter virtual ASIO, or with the integrated recorder. for example. It allows recording VOIP interview or conference and making post production process after, with up to 8 different tracks.
+
+![](VoicemeeterPotato_UserManual/potato-36-2.jpg)
 
 To switch the PRE-Fader input mode to POST-Fader input mode, just click on text here below:
 
-36 本页有 3 张图
+![](VoicemeeterPotato_UserManual/potato-36-3.jpg)
 
 Since version 2.0.3.4, additional BUS modes are also present to up mix or extract specific channels:
 
@@ -612,6 +678,10 @@ For example
 - To send 5.1 Rear channel to wireless speaker (Bluetooth).
 - To send Center channel on specific speaker device.
 - To use 2.1, 4.1, 5.1 or 7.1 PA system with stereo audio sources.
+
+![](VoicemeeterPotato_UserManual/potato-37-1.jpg)
+
+![](VoicemeeterPotato_UserManual/potato-37-2.jpg)
 
 **Additional application**
 
@@ -700,6 +770,8 @@ Contains pre fader inputs given by the COMPOSITE PATCH
 
 With Potato comes an internal Special FX section offering a stereo reverb and a stereo MutliTap Delay. Internal FX Section requires to offer SEND / RETURN knobs. One on each Strip to send the audio source in the FX , one on each BUS to get the FX result.
 
+![](VoicemeeterPotato_UserManual/potato-39-1.jpg)
+
 All Physical inputs provide a rotary knob to send the related audio source in the Reverb and in the MultiTap Delay. The POST button allows switching between PRE or POST fader mode (in POST mode the SEND level is also pending on the gain slider).
 
 All Busses also provide a rotary knob to get the return of the reverb and the return of the Delay FX. Then you can control the amount of special FX you get in each bus.
@@ -716,13 +788,13 @@ WET : amount of reverb effect (usually 0.0 dB when used with a SEND / RETURN pat
 
 DELAY knob allow to define the pre-delay (up to 1000 ms).
 
-39 本页有 1 张图
-
 E.Ref: control the Early Reflection amount (to add early reflexion, re-inforce the beginning of the reverb).
 
 DECAY knob allow to change the reverb time from 50% to 200% (1 = 100% = original preset).
 
 BYP: the bypass button allows bypassing the entire reverb (soft bypass) or the Equalizer only.
+
+![](VoicemeeterPotato_UserManual/potato-40-1.jpg)
 
 ### Internal Delay: MultiTap 8
 
@@ -742,15 +814,15 @@ PRE-DELAY knob allow to define the pre-delay (up to 1000 ms).
 
 BYPASS: the bypass button allows bypassing the entire delay fx (soft bypass).
 
-40 本页有 1 张图
-
 The two balance knobs allow considering left and right input channels independently and re- balance them to get a mono or a reverse stereo input signal.
+
+![](VoicemeeterPotato_UserManual/potato-41-1.jpg)
 
 The Feedback knob allows to loop the output and re-send it into the FX input.
 
-“Set Note” button opens a dialog box to let you define a delay time by a musical note duration (pending on current Tempo).
+"Set Note" button opens a dialog box to let you define a delay time by a musical note duration (pending on current Tempo).
 
-The TAP button allows defining a new tempo by typing on it, in rhythm with what you hear. The new tempo is displayed in blinking red (after 4 taps) then you can decide to keep it by pushing the small button “Scale Fit”. Then you can adjust your TAP rhythm with the Time Ratio knob to adjust your current rhythm to the new tempo. Then you can push the button FIX DELAY to set all delay with the right value (Time Ratio is reset to 0).
+The TAP button allows defining a new tempo by typing on it, in rhythm with what you hear. The new tempo is displayed in blinking red (after 4 taps) then you can decide to keep it by pushing the small button "Scale Fit". Then you can adjust your TAP rhythm with the Time Ratio knob to adjust your current rhythm to the new tempo. Then you can push the button FIX DELAY to set all delay with the right value (Time Ratio is reset to 0).
 
 If AUTO FIT button is ON, the new tempo is automatically kept and the delay of all activated taps, are adjusted to keep the same rhythm on new tempo.
 
@@ -758,11 +830,15 @@ If AUTO FIT button is ON, the new tempo is automatically kept and the delay of a
 
 The C5 has also been originally developed for Innovason Mixing Console in 2007 but never been used because replace by the C4. Now the C5 is available in Voicemeeter potato to apply a Multi Band Compression to any Hardware inputs.
 
+![](VoicemeeterPotato_UserManual/potato-41-2.jpg)
+
 The C5 effect must me selected first, to replace the Delay Fx in the Voicemeeter System Settings Dialog box. Click on Delay to Swith to C5 and vice versa.
 
 41 本页有 2 张图
 
 The C5 graphic user interface is basically made of 5 bands showing the different levels (input, output and gain reduction) and offering a complete Compressor/Limiter processing for each.
+
+![](VoicemeeterPotato_UserManual/potato-42-1.jpg)
 
 Frequency of the 5 bands can be adjusted by the 4 controls between bands (below meters). Then for each band the following parameters are available:
 
@@ -782,8 +858,6 @@ Frequency of the 5 bands can be adjusted by the 4 controls between bands (below 
 
 **Limit:** define a brckwall limit on the ouput of the related band.
 
-42 本页有 1 张图
-
 **Distorsion:** Controls the limiter reaction rate. More distorsion will make the limiter react faster, less distorsion slower (softer limitation).
 
 Each compressor / Limiter can be disabled / enabled. The LINK Type gives the way the band are linked together when modifying a parameter, in ABSolute mode, RELative more or completely independently.
@@ -800,19 +874,21 @@ Each compressor / Limiter can be disabled / enabled. The LINK Type gives the way
 
 To use the C5 to compress hardware input sources, you may consider routing your input signal into the C5 only. It means you must not assign BUS to your strip if it uses the FX return (otherwise you will double the signal in BUS: one coming from the C5 Return, one coming from the Strip BUS assignation).
 
+![](VoicemeeterPotato_UserManual/potato-43-1.jpg)
+
 Of course you can use BUS Assignation if the related BUS does not use C5 return. But in the example above, all BUS are getting the C5 Return, so all BUS assignation buttons must be all OFF on the strip sending signal to the C5. POST button means POST FADER (after gain slider and mute) and allow using the Slider to control the input gain (finally sent to C5).
 
 ### External FX
 
 External FX management provides two true AUX paths through regular SEND / RETURN knobs. These AUX work only if the External FX I/O are assigned to ASIO channel (from the ASIO device selected as output A1 – having enough channel to be assigned to External FX path points).
 
-43 本页有 1 张图
-
 ## ASIO Routing Capabilities
 
 If selecting an ASIO device as output A1, it is possible to route all physical inputs, all physical busses and external FX functions to possibly 64 I/O. Note that selecting an ASIO device as output A1 is the optimal way to use Voicemeeter with a professional audio board.
 
 This is possible by selecting no device for physical input / physical bus. Then the system settings dialog box proposes to select input channels / or output channels for bus A2, A3, A4 and A5 (BUS A1 always uses the 8 first output channels of the ASIO driver):
+
+![](VoicemeeterPotato_UserManual/potato-44-1.jpg)
 
 In this example:
 
@@ -830,11 +906,11 @@ WARNING: BUS outputs are copied in the ASIO output channels in logical order A1,
 
 External FX (true AUX) is working only with ASIO driver connected to output A1 and can be routed to ASIO channels by the External FX Patch (yellow diagram). In the example above, the External FX Send 1 knob will send audio to ASIO output channel 32+33 (Stereo AUX) and the return signal (Return 1) will be taken on the ASIO input channel 40,41 (Stereo RETURN).
 
-44 本页有 1 张图
-
 ## Integrated Recorder
 
 Voicemeeter Banana provides a simple player recorder to playback whatever WAV, AIFF, MP3, M4A, MP4, MOV, AVI, WMA, WMV files and to record easily everything in WAV, BWF, AIFF or even MP3 format:
+
+![](VoicemeeterPotato_UserManual/potato-45-1.jpg)
 
 Click on cassette top to select audio file to playback. Click on progress bar to position playback cursor in audio file. You can click on RECORD at any moment. It will generate an audio file in your document / Voicemeeter folder with an automatic name with a prefix, the current date, start time and current file extension:
 
@@ -844,11 +920,11 @@ Example: Record 2015-01-02 at 11h23m24s.wav
 
 Right Click on Tape Desk to get this recording option dialog box below:
 
+![](VoicemeeterPotato_UserManual/potato-45-2.jpg)
+
 Per default recording options allows to record all pre-fader inputs to simply record everything coming in Voicemeeter But you can decide to record as well the output of a BUS.
 
 PRE-FADER INPUTS  
-
-45 本页有 2 张图
 
 This option allows recording one or all inputs in stereo (mixed together), independently from the fader gain (and all fx, mute and solo states). This option is made to record original incoming audio signal, but all sources are mixed together with its original gain.
 
@@ -856,7 +932,7 @@ POST FADER OUTPUTS
 This options is made to record the outputs of a BUS (from 2 to 8 channel) possible with COMPOSITE options. In other word this option allows to record what you hear on the selected BUS. Note that you can use a BUS not connected to an audio device to make a source assignation only for recording.
 
 FILE OPTIONS  
-The target directory and prefix of the filename can be defined by clicking on the related field and select new directory or enter new prefix (prefix is “Record” if nothing is defined).
+The target directory and prefix of the filename can be defined by clicking on the related field and select new directory or enter new prefix (prefix is "Record" if nothing is defined).
 
 PRE-RECORDING BUFFER  
 Voicemeeter is permanently recording with the current buffer allocation (20 second per default). Then it is possible to store this pre-recording buffer by defining a value in second (0 = no pre- recording buffer). This pre-recording buffer will be stored at the beginning of the file (when clicking on REC).
@@ -867,7 +943,7 @@ File type can de defined as WAV, BWF, AIFF or MP3 (32 to 320 kbps). MP3 can reco
 File format, including sample rate, is defined independently than the format used by Voicemeeter. For example, the recording file format can be set in 48 kHz while Voicemeeter is running in 44100 Hz.
 
 MULTITRACK OPTION  
-If set to YES, the recording will also generate one file per track / channel. The file name will be suffixed by “\_Track1”, “\_Track2”, “\_Track3”… according the number of channel defined for the file format.
+If set to YES, the recording will also generate one file per track / channel. The file name will be suffixed by "\_Track1", "\_Track2", "\_Track3"… according the number of channel defined for the file format.
 
 PLAY ON LOAD  
 This option will playback the file automatically just after selecting it.
@@ -879,11 +955,13 @@ PLAYBACK GAIN
 This slider control the gain of the audio file being played back.
 
 STOP RECORD AFTER DURATION  
-Let you define the time of a record session. It’s a simple timer that will stop recording automatically after the given duration (set it to 00:00:00 to disable it). This is for example practical to record a movie or podcast with a known duration.
+Let you define the time of a record session. It's a simple timer that will stop recording automatically after the given duration (set it to 00:00:00 to disable it). This is for example practical to record a movie or podcast with a known duration.
 
 ## Voicemeeter Main Menu
 
-By clicking on “menu” area, user gets access to different functions:
+By clicking on "menu" area, user gets access to different functions:
+
+![](VoicemeeterPotato_UserManual/potato-47-1.jpg)
 
 The additional menu is there to provide additional functions:
 
@@ -917,13 +995,15 @@ The additional menu is there to provide additional functions:
 - System Settings Dialog Box allows to configure parameters related to audio device management..
 - M.I.D.I. Mapping Dialog Box allows to connect a M.I.D.I. Remote surface to Voicemeeter.
 - VBAN Dialog Box will help you to configure the VB-Audio Network functions, to send/receive audio stream to/from any computer of your local network.
-- Click on “Check Driver Installation” to run the VBDeviceCheck.exe program and get a detailed diagnostic on VB-Audio Driver Installation. More information on our forum: [https://forum.vb-audio.com/viewtopic.php?f=6&t=442](https://forum.vb-audio.com/viewtopic.php?f=6&t=442)
+- Click on "Check Driver Installation" to run the VBDeviceCheck.exe program and get a detailed diagnostic on VB-Audio Driver Installation. More information on our forum: [https://forum.vb-audio.com/viewtopic.php?f=6&t=442](https://forum.vb-audio.com/viewtopic.php?f=6&t=442)
 
 ### Other Voicemeeter Tools & Accessories
 
 To demonstrate Voicemeeter Remote API audio callback mechanism, Voicemeeter is installed with two audio plug-ins applications (8x8 Gain Matrix & Graphiq EQ). A standalone application called VBAN2MIDI to convert physical MIDI stream into VBAN protocol is also installed.
 
 **8x8 Gain Matrix**
+
+![](VoicemeeterPotato_UserManual/potato-48-1.jpg)
 
 This simple application provides a single 8x8 gain matrix applicable on the selected BUS.
 
@@ -933,11 +1013,15 @@ This application has been developed with the gain matrix example provided in the
 
 **15 Bands graphic EQ**
 
+![](VoicemeeterPotato_UserManual/potato-48-2.jpg)
+
 This simple application provides a 15 bands graphic EQ applicable on the selected BUS.
 
 This can be helpful to adjust the sound of your P.A. System (stereo only).
 
 **VBAN2MIDI**
+
+![](VoicemeeterPotato_UserManual/potato-48-3.jpg)
 
 Standalone application to send VBAN-MIDI stream from a MIDI input device or send MIDI message to physical MIDI Output from an incoming VBAN-MIDI Stream.
 
@@ -951,11 +1035,15 @@ Installed with Voicemeeter, the Streamer View application is a simplified and re
 
 You can launch the VM Streamer view from the Voicemeeter Menu or from the Windows Applications list. The Streamer View is a regular user application installed with Voicemeeter.
 
+![](VoicemeeterPotato_UserManual/potato-49-1.jpg)
+
 Streamer View displays only labeled Strip and labeled BUS. It means you have to give a label to your input and BUS output to see them in this interface (to label a strip or a bus, RIGHT CLICK on Voicemeeter slider bottom).
 
 One of the big interest of the streamer view with Voicemeeter potato is to get a direct access to sub mixes (mix per bus) so you can quickly adjust the mix for ouput A1 or for virtual output B1 (Skype) or virtual output B2 (OBS) because you have a slider gain for each on all strips.
 
 The MON button on each BUS allows listening to a particular output BUS according monitoring option set in Voicemeeter System Settings Dialog box.
+
+![](VoicemeeterPotato_UserManual/potato-49-2.jpg)
 
 Monitoring BUS give the output BUS where you will listen the selected BUS to monitor.
 
@@ -967,13 +1055,19 @@ The sys-menu (click on dialog box icon on top–left) allows configuring the con
 
 49 本页有 2 张图
 
+![](VoicemeeterPotato_UserManual/potato-50-1.png)
+
 VBAN Command protocol and RT Packet service can support multiple clients and consequently allow Voicemeeter to be controlled from several points. For example 2 or more VM-Streamers can be connected to Voicemeeter to control it from different rooms. In the same way, you can have other connected PC using the MacroButton to send VBAN command to the same Voicemeeter already remoted by distant VM-Streamer View.
+
+![](VoicemeeterPotato_UserManual/potato-50-2.png)
 
 50 本页有 2 张图
 
 ### Preset Scene
 
-Each Voicemeeter version offer a Preset List (64 presets) automatically stored in My Document \\ Voicemeeter dedicated folder. “Scene_Standard” for Voicemeeter Standard, “Scene_Banana” for Voicemeeter Banana, “Scene_Potato” for Voicemeeter Potato.
+Each Voicemeeter version offer a Preset List (64 presets) automatically stored in My Document \\ Voicemeeter dedicated folder. "Scene_Standard" for Voicemeeter Standard, "Scene_Banana" for Voicemeeter Banana, "Scene_Potato" for Voicemeeter Potato.
+
+![](VoicemeeterPotato_UserManual/potato-51-1.jpg)
 
 Voicemeeter Scene is an independent resizable window.
 
@@ -993,23 +1087,27 @@ Presets do not contain device selection, system settings, MIDI or VBAN parameter
 
 ## WINDOWS AUDIO MAP
 
-With Voicemeeter 3.1.3.0 come the windows audio map dialog box showing all Windows Audio paths and options around Voicemeeter. This view is interesting to see what’s happening around Voicemeeter according current different Windows options (Listen, Spatial, Exclusive mode, Audio path by application and devices…).
+With Voicemeeter 3.1.3.0 come the windows audio map dialog box showing all Windows Audio paths and options around Voicemeeter. This view is interesting to see what's happening around Voicemeeter according current different Windows options (Listen, Spatial, Exclusive mode, Audio path by application and devices…).
+
+![](VoicemeeterPotato_UserManual/potato-52-1.jpg)
 
 Click on this button on top, to open the Windows Audio Map, Right click to get this contextual menu to open most of Windows audio settings dialog box.
 
 Audio Map is a big workspace where you can move in by mouse dragging, zoom in/out with the wheel. By default it shows all devices around Voicemeeter, (possibly used by Voicemeeter): The recording devices on top, the virtual in and out around Voicemeeter and the playback devices on bottom.
 
-Voicemeeter Potato is represented by screen capture of its caption and bottom to take minimal place on this map. Orange and blue arrows are giving the audio path for physical and virtual devices.
+![](VoicemeeterPotato_UserManual/potato-52-2.jpg)
 
-52 本页有 2 张图
+Voicemeeter Potato is represented by screen capture of its caption and bottom to take minimal place on this map. Orange and blue arrows are giving the audio path for physical and virtual devices.
 
 ### Device Information and connected applications
 
 All devices show many Windows parameters, level and connected applications:
 
+![](VoicemeeterPotato_UserManual/potato-53-1.jpg)
+
 Spatial and Listen option are also shown by a small blue or red icon:
 
-53 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-53-2.jpg)
 
 LISTEN option is capability to route a recording device to a playback device. This option managed by Windows can bring chaos in audio routing if not known by user.
 
@@ -1017,21 +1115,23 @@ Applications and device Level can be set by CTRL+Mouse.
 
 ### Additional information managed by Voicemeeter
 
-Loopback and exclusive use is not given by Windows, but Voicemeeter knows if their virtual input is used with a loopback stream (represented by a red arrow) and if it uses output device in exclusive mode (“Ex C” shown in red). Voicemeeter also knows if their VAIO are used in exclusive mode.
+Loopback and exclusive use is not given by Windows, but Voicemeeter knows if their virtual input is used with a loopback stream (represented by a red arrow) and if it uses output device in exclusive mode ("Ex C" shown in red). Voicemeeter also knows if their VAIO are used in exclusive mode.
+
+![](VoicemeeterPotato_UserManual/potato-54-1.jpg)
 
 Loopback streaming is the capabilities of an application to capture audio from a playback device (instead of a recording device). OBS, Audacity and other capture applications can propose to get audio from a playback device. In Windows Audio Map we can see if an application is connected through this loopback pin.
 
 REM: VAIO Loopback option is enabled by default in Voicemeeter.
 
-54 本页有 1 张图
-
 ### Windows Audio Map Menu
 
-Right click in audio map to get the contextual menu. The “Refresh” option updates all display with current parameters (all settings are gathered again on refresh). This is useful because not all settings are real time updated. Some information requires a “refresh” to be updated.
+Right click in audio map to get the contextual menu. The "Refresh" option updates all display with current parameters (all settings are gathered again on refresh). This is useful because not all settings are real time updated. Some information requires a "refresh" to be updated.
 
-Zoom level can be change by Mouse Wheel or keyboard ‘+’ and ‘-‘. Type ZERO PAD to reset zoom to 100%
+Zoom level can be change by Mouse Wheel or keyboard '+' and '-'. Type ZERO PAD to reset zoom to 100%
 
-When you are on a VAIO device, the option “Open VAIO Control Panel” is available.
+When you are on a VAIO device, the option "Open VAIO Control Panel" is available.
+
+![](VoicemeeterPotato_UserManual/potato-55-1.jpg)
 
 We also retrieve access to different windows settings dialog box:
 
@@ -1042,6 +1142,8 @@ We also retrieve access to different windows settings dialog box:
 - Sound Dialog box (recording devices thumbnail).
 
 The 3 first Windows audio settings dialog box are not present under Windows 7 but most of information are shown, with the old VAIO drivers of course:
+
+![](VoicemeeterPotato_UserManual/potato-55-2.jpg)
 
 55 本页有 2 张图
 
@@ -1091,6 +1193,8 @@ VAIO Extension If activated (by a specific license), other VAIOs can be used by 
 |VAIO in 4 |Voicemeeter input #4 |VAIO out 4 |Voicemeeter BUS A4 |
 |VAIO in 5 |Voicemeeter input #5 |VAIO out 5 |Voicemeeter BUS A5|
 
+![](VoicemeeterPotato_UserManual/potato-57-1.jpg)
+
 57 本页有 1 张图
 
 ### VAIO Loopback Mode
@@ -1099,15 +1203,19 @@ VAIO Loopback mode is normally activated by default. It allows capture applicati
 
 This option can be checked in the Voicemeeter VAIO control panel menu as shown below:
 
+![](VoicemeeterPotato_UserManual/potato-58-1.jpg)
+
 Reset Pin Name and Icon can be useful to reset all Voicemeeter virtual I/O Name and Icon. Or because this has been changed or not set correctly.
 
 Run this application in administrator mode if you want to change any option (because requires access to the system registry).
 
 ### VAIO Volume Control
 
-The option “Enable Windows Volume Control” will enable the volume control on all Voicemeeter inputs (all playback devices). If set as default playback device, it will be possible to change the volume by the Speaker Windows Control:
+The option "Enable Windows Volume Control" will enable the volume control on all Voicemeeter inputs (all playback devices). If set as default playback device, it will be possible to change the volume by the Speaker Windows Control:
 
 By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (playback devices). To make this windows control work, you have to enable it in the VAIO Control panel application.
+
+![](VoicemeeterPotato_UserManual/potato-58-2.jpg)
 
 Voicemeeter outputs provide no gain management.
 
@@ -1123,6 +1231,8 @@ VBAN Protocol, based on a simple UDP protocol, has been designed for real-time t
 
 **VBAN-Talkie** and **VBAN-Receptor** are applications for mobile device (iOs / Android) also implementing the VBAN Protocol to send and receive audio stream from or to Voicemeeter.
 
+![](VoicemeeterPotato_UserManual/potato-60-1.jpg)
+
 VBAN Protocol is free to use to be implemented everywhere. The PCM native Audio protocol, the VBAN-TEXT protocol and the VBAN-MIDI protocol are public. You can get specification document on our support page: [https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm) and find numerous projects using it on GitHub.
 
 NOTE: two applications running on the same computer cannot use the same UDP port.
@@ -1131,7 +1241,7 @@ NOTE: two applications running on the same computer cannot use the same UDP port
 
 Click on VBAN icon to open the configuration dialog box below and configure your incoming stream (the audio stream from other computer you want to hear) and your outgoing stream (the audio stream you want to send to other computers).
 
-60 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-61-1.jpg)
 
 Voicemeeter Banana & Potato offer to listen 8x streams (on any input) and to send 8x streams to 8x different computers or mobile devices (audio source is given by selected BUS output).
 
@@ -1139,19 +1249,21 @@ A VBAN Stream in Voicemeeter can be set in any standard samplerate from 11025 Hz
 
 It is possible to broadcast an audio stream by using the 255 IP Address (on wire network only! WIFI AP are usually not broadcast capable). For example giving 192.168.1.255 as destination address will send stream to all computers of the network 192.168.1.xxx
 
-VBAN can also transport serial and text to remote Voicemeeter with MIDI message or specific request script. That’s why Voicemeeter also offers a Serial and an ASCII incoming stream.
+VBAN can also transport serial and text to remote Voicemeeter with MIDI message or specific request script. That's why Voicemeeter also offers a Serial and an ASCII incoming stream.
 
 For VBAN identification / VBAN-Chat service, it is also possible to define a USER NAME and a color.
 
 VBAN outgoing stream section now includes a VBAN-MIDI stream, getting MIDI stream from the MIDI-Mapping. It allows sending all incoming MIDI or a particular MIDI source (including MIDI output for MIDI Feedback) through the network. Then it is possible to use a MIDI Controller on the network (by using VBAN2MIDI application) with both VBAN MIDI-IN and VBAN-MIDI Out
 
-61 本页有 1 张图
-
 ### VBAN Services / Identification
 
-New services have been implemented to simplify user experience, especially to validate connections. The ‘i’ right after the IP-Address field is highlighted when the connection is validated by a VBAN-Ping hand check. Right click on ‘i’ to get further information about distant VBAN unit.
+New services have been implemented to simplify user experience, especially to validate connections. The 'i' right after the IP-Address field is highlighted when the connection is validated by a VBAN-Ping hand check. Right click on 'i' to get further information about distant VBAN unit.
+
+![](VoicemeeterPotato_UserManual/potato-62-1.jpg)
 
 IP-Address field also accept hostname (instead of IP-Address).
+
+![](VoicemeeterPotato_UserManual/potato-62-2.jpg)
 
 The VBAN Chat service is implementing basic CHAT functions to talk between VBAN-units.
 
@@ -1167,13 +1279,15 @@ OPTION menu allows changing some display option and font size. It is also possib
 
 We can configure VBAN stream just by clicking on black fields in the dialog box. An edit box or popup menu will appear to let you define parameters. UDP port used by VBAN is 6980 per default. An Audio Stream is defined by its NAME, IP-ADDRESS FROM (and UDP port). To receive an audio stream these 3 parameters must be the same on receiver.
 
+![](VoicemeeterPotato_UserManual/potato-63-1.jpg)
+
 ### Send audio stream to other computer / device
 
 To select an outgoing stream, define stream name and destination IP-address of the target computer of your local network and switch it ON. The audio stream being sent will come from the selected source (BUS A or BUS B)
 
 ### Receive audio stream from other computer / device
 
-On incoming stream, RIGHT CLICK on “Stream name” area or “IP Address from” area to get the list of current detected incoming stream and select it directly. Otherwise it is possible to edit Stream Name and IP-Address manually. Switch ON the Stream to receive audio on virtual input strip.
+On incoming stream, RIGHT CLICK on "Stream name" area or "IP Address from" area to get the list of current detected incoming stream and select it directly. Otherwise it is possible to edit Stream Name and IP-Address manually. Switch ON the Stream to receive audio on virtual input strip.
 
 NETWORK QUALITY: This parameter, more useful on incoming stream, allows tweaking the audio stream stability in case of bad or busy network. FAST means the network is able to transport audio without delay or error, SLOW is made for busy network, where audio packet can be delayed or lost more often than usual.
 
@@ -1187,11 +1301,11 @@ ERROR LED: shown on the right are blinking red in case of reception errors:
 
 REM: If too much overload & underrun errors are appearing, you may change the Network Quality parameter to FAST or more SLOW settings.
 
-63 本页有 1 张图
-
 ### Additional VBAN-MIDI or Command stream
 
-Incoming streams section offers 2 other specific VBAN Streams to receive MIDI or TEXT. Opposite to Audio Stream, MIDI or TXT streams do not need an “IP-Address From” and can manage any message coming from anywhere. This is typically done to allow remoting Voicemeeter from several points in the same time. Note the MIDI Stream feeds Voicemeeter MIDI Mapping and is also received by MacroButton.
+Incoming streams section offers 2 other specific VBAN Streams to receive MIDI or TEXT. Opposite to Audio Stream, MIDI or TXT streams do not need an "IP-Address From" and can manage any message coming from anywhere. This is typically done to allow remoting Voicemeeter from several points in the same time. Note the MIDI Stream feeds Voicemeeter MIDI Mapping and is also received by MacroButton.
+
+![](VoicemeeterPotato_UserManual/potato-64-1.jpg)
 
 VBAN MIDI messages and TEXT commands can be sent by MacroButton (see next pages).
 
@@ -1201,19 +1315,21 @@ VBAN MIDI messages can also be sent by VBAN2MIDI application (installed with Voi
 
 This simple standalone application allow converting a physical MIDI input into a VBAN outgoing stream (LEFT Side) and the opposite: from a VBAN MIDI Stream, send incoming data to a physical MIDI output (Right Side).
 
-This application can also be used to connect a MIDI controller on second PC through the network with Voicemeeter MIDI mapping as explained in the next page...
+![](VoicemeeterPotato_UserManual/potato-64-2.jpg)
 
-64 本页有 2 张图
+This application can also be used to connect a MIDI controller on second PC through the network with Voicemeeter MIDI mapping as explained in the next page...
 
 1. Connect your controller on PC1 with VBAN2MIDI to manage outgoing and incoming VBAN MIDI STREAM.
 
    On the left side, the outgoing stream: MIDI Controller out -> MIDI Input Device -> VBAN2MIDI -> Target IP Address On the right side, the incoming stream (MIDI feedback) from any IP Address -> VBAN2MIDI -> MIDI output device -> MIDI Controller In.
 
+![](VoicemeeterPotato_UserManual/potato-65-1.png)
+
 2. The MIDI mapping always take in account the incoming VBAN-MIDI stream activated in the VBAN -Dialog BOX (check the name is MIDI1 on transmitter and on receptor side).
 
    You can see incoming MIDI message in VBAN Dialog box and go in MIDI mapping to learn on desired control. "VBAN MIDI Input" in MIDI mapping dialog box is an info box related to VBAN MIDI outgoing stream and should be labeled " VBAN MIDI Output" instead.
 
-65 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-65-2.png)
 
 ### Screen Sharing / mirroring with VBAN-Frame
 
@@ -1223,6 +1339,8 @@ Thanks to the new VBAN-Frame protocol, it is possible to send video stream on yo
 
 As last outgoing stream, Voicemeeter offers the VBAN-Frame stream, allowing sharing screen with another computer using VBAN-Screen application.
 
+![](VoicemeeterPotato_UserManual/potato-66-1.jpg)
+
 It can capture en entire display (from 4 connected screen – 4K resolution max) or the main window interface only (app view). It is done by sending PNG or JPG frame up to 30 times per second to the destination address through VBAN-Frame protocol.
 
 The percent parameter is for JPG quality. The net quality is a theoretical limitation to give the priority to audio stream (12 mbps by default, does not prevent to have 30mbps or more).
@@ -1231,15 +1349,19 @@ The percent parameter is for JPG quality. The net quality is a theoretical limit
 
 If using VBAN-Screen application to display VBAN-FRAME sent by Voicemeeter. Voicemeeter can receive Mouse events from VBAN-Screen application (by the VBAN-TEXT stream) to be controlled remotely.
 
-To do so, right click on samplerate or format field (on incoming VBAN-TEXT stream) to activate the “Mouse Management”. “M” is displayed to notify that Voicemeeter is processing Mouse Event so that it can be controlled remotely by VBAN-Screen.
+![](VoicemeeterPotato_UserManual/potato-66-2.jpg)
 
-66 本页有 2 张图
+To do so, right click on samplerate or format field (on incoming VBAN-TEXT stream) to activate the "Mouse Management". "M" is displayed to notify that Voicemeeter is processing Mouse Event so that it can be controlled remotely by VBAN-Screen.
 
 #### Screen Mirroring
 
-By using “App View” as source, you can share your Voicemeeter main view with VBAN-Screen application through VBAN-Frame Stream (on your local network).
+By using "App View" as source, you can share your Voicemeeter main view with VBAN-Screen application through VBAN-Frame Stream (on your local network).
+
+![](VoicemeeterPotato_UserManual/potato-67-1.jpg)
 
 The Capture works if Voicemeeter main interface is opened, in foreground or not. As the screenshot below is showing it, you get the entire Voicemeeter main view capture even if hidden by other windows.
+
+![](VoicemeeterPotato_UserManual/potato-67-2.jpg)
 
 VBAN-Screen application is installed with VB-Audio Matrix package but can also be downloaded from our VBAN web page: [https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen](https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen)
 
@@ -1249,23 +1371,27 @@ VBAN-Screen is resizable so also can be used to get a smaller Voicemeeter view o
 
 #### Screen Sharing
 
-By using “Display” as source, you can share your entire screen with VBAN-Screen application through VBAN-Frame Stream (on your local network).
+By using "Display" as source, you can share your entire screen with VBAN-Screen application through VBAN-Frame Stream (on your local network).
+
+![](VoicemeeterPotato_UserManual/potato-68-1.jpg)
 
 As you can see on the following screenshot, VBAN-Screen application now shows the entire captured screen
 
-VBAN-Screen application is installed with VB-Audio Matrix package but can also be downloaded from our VBAN web page: [https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen](https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen)
+![](VoicemeeterPotato_UserManual/potato-68-2.jpg)
 
-68 本页有 2 张图
+VBAN-Screen application is installed with VB-Audio Matrix package but can also be downloaded from our VBAN web page: [https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen](https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen)
 
 #### VBAN-Screen
 
 To monitor a VBAN-Frame stream, you need to use VBAN-Screen application, available for PC (but will be available for MAC and other device soon). VBAN-Screen can monitor up to 4 video stream through VBAN-Frame and VBAN-Audio stream.
 
+![](VoicemeeterPotato_UserManual/potato-69-1.jpg)
+
 VBAN-Screen can also display some drawing through the VBAN-Text incoming stream (to be used as magic board).
 
 Finally, VBAN-Screen also offers an outgoing VBAN-TEXT stream to send Mouse Command. Mouse Move, Left and Right Click (by using the CTRL key).
 
-69 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-69-2.jpg)
 
 # MACRO-Buttons
 
@@ -1275,7 +1401,9 @@ Finally, VBAN-Screen also offers an outgoing VBAN-TEXT stream to send Mouse Comm
 
 Delivered and installed with Voicemeeter, MACRO BUTTONS Application allows creating programmable buttons to control Voicemeeter parameters. It is displaying several (4 to 80) push or 2 positions buttons with a title / sub title and the possibility to assign a keyboard shortcut / mouse / Game pad / MIDI message or even Audio Trigger.
 
-MACRO Button is an independent application using Voicemeeter Remote API. It is also demonstrating the capability to develop a client application to control Voicemeeter by program. This is made to allow creating any new applications, with custom graphic user interface, to make automation, to make VCA or Auto Ducking process or even to process audio directly inside Voicemeeter thanks to the different possible audio interfaces and API’s.
+![](VoicemeeterPotato_UserManual/potato-71-1.jpg)
+
+MACRO Button is an independent application using Voicemeeter Remote API. It is also demonstrating the capability to develop a client application to control Voicemeeter by program. This is made to allow creating any new applications, with custom graphic user interface, to make automation, to make VCA or Auto Ducking process or even to process audio directly inside Voicemeeter thanks to the different possible audio interfaces and API's.
 
 MACRO BUTTON application has been designed for Voicemeeter users, to make custom action, or group of actions on the different Voicemeeter controls and parameters:
 
@@ -1303,11 +1431,11 @@ Finally MACRO Buttons also provides system functions to:
 - Send M.I.D.I. Message to 2x possible devices.
 - Send VBAN-MIDI / VBAN TXT requests.
 
-71 本页有 1 张图
-
 ### Configuring MACRO Buttons
 
 Right click on the button to open the dialog box below and configure your button. It is basically possible to define 3 scripts of request(s); one for initial condition(s) (sent on startup), one sent when the button is pushed and one when the button is released.
+
+![](VoicemeeterPotato_UserManual/potato-72-1.jpg)
 
 **Button type** can be PUSH or 2 POSITIONS. Keyboard shortcut dropdown list proposes different Key and Mouse buttons combinations. Button color proposes 9 different buttons backgrounds.
 
@@ -1319,15 +1447,17 @@ Right click on the button to open the dialog box below and configure your button
 
 **HID Device Button** allows connecting directly to any HID device (see details on next pages).
 
-72 本页有 1 张图
-
 #### Button Color
 
-The parameter called “Button Color” allows selecting 8 other background colors for the button.
+The parameter called "Button Color" allows selecting 8 other background colors for the button.
+
+![](VoicemeeterPotato_UserManual/potato-73-1.jpg)
 
 #### Button Image
 
-A button can display an image (one for OFF state, one for ON state). The button “Select File Off” allows selecting image for the button OFF state (button “On” for ON State). Native resolution is 130 x 108 pixels but any image size can be loaded in BMP, PNG, JPG or TIF format. If bigger than 130 x 108, the image is reframed and scaled, otherwise the image is centered.
+A button can display an image (one for OFF state, one for ON state). The button "Select File Off" allows selecting image for the button OFF state (button "On" for ON State). Native resolution is 130 x 108 pixels but any image size can be loaded in BMP, PNG, JPG or TIF format. If bigger than 130 x 108, the image is reframed and scaled, otherwise the image is centered.
+
+![](VoicemeeterPotato_UserManual/potato-73-2.jpg)
 
 Transparent layer (including shadow effect) is managed correctly only for PNG smaller than the native resolution (130 x 108). When an image is selected, the keyboard shortcut is not displayed.
 
@@ -1335,11 +1465,13 @@ Transparent layer (including shadow effect) is managed correctly only for PNG sm
 
 The button can also react according some event coming from Voicemeeter, especially the tape recorder (Tape PLAY, STOP, REC and EndOfFile).
 
+![](VoicemeeterPotato_UserManual/potato-73-3.jpg)
+
 ### Voicemeeter Remote Requests 
 
-73 本页有 3 张图
-
 Request is composed by a structured name (related to voicemeeter control or parameter) and a value or a string behind. Some instruction can be case sensitive so we recommend writing all instructions with a capital letter of each word first letter.
+
+![](VoicemeeterPotato_UserManual/potato-74-1.jpg)
 
 Request example with numbers
 
@@ -1362,10 +1494,8 @@ Command.Restart = 1;    // request to restart audio engine
 Request example with string
 
 ```
-Command.Load= "C:\\My Documents\\VMConfig1.xml"; //load Config File in Voicemeeter
+Command.Load= "C:\My Documents\VMConfig1.xml"; //load Config File in Voicemeeter
 ```
-
-74 本页有 1 张图
 
 #### Input Strip Parameters
 
@@ -1681,13 +1811,14 @@ Typical use
 ```
 Command.Restart = 1;    // request to restart audio engine
 
-Command.Load= "C:\\My Documents\\VMConfig1.xml";    // load Config File in Voicemeeter.
+Command.Load= "C:\My Documents\VMConfig1.xml";    // load Config File in Voicemeeter.
 ```
+
 NOTE: command requests are prior to other requests. It means other type of request could not be processed if in the same request packet than a command request. For example Shutdown Request, simply closes the program without processing next request. LOAD request reset all possible previous or next requests present in the same packet.
 
 EJECT cassette function (also present in the menu) is made to release audio file and let other applications access to it.
 
-WARNING: “Command.Button” must be used in VBAN-TEXT request only, see next page.
+WARNING: "Command.Button" must be used in VBAN-TEXT request only, see next page.
 
 #### Button command for button interactions
 
@@ -1803,23 +1934,25 @@ The following parameters change are producing an Audio Engine Restart:
 
 With the TRIGGER, it is possible to make auto ducking and control any parameters or function (REC button for example) according an input level.
 
-83 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-83-1.jpg)
 
 In this example above, the hardware input in#1 is the Microphone and the Strip(3) is the virtual input of Voicemeeter Banana (used to get music). This virtual input will be faded to -15 dB and medium EQ by -12 dB when the user will talk in the microphone, more precisely, when the microphone level will go over -15 dB (to be adjusted according microphone level).
 
-Green cursor shows the “IN” threshold (level to go over to generate a trigger in). Red cursor shows the “OUT” threshold (level to go below to generate trigger out).
+Green cursor shows the "IN" threshold (level to go over to generate a trigger in). Red cursor shows the "OUT" threshold (level to go below to generate trigger out).
 
 HOLD parameter keeps the trigger open during this minimum time in ms.
+
+![](VoicemeeterPotato_UserManual/potato-84-1.jpg)
 
 The trigger can be dependent from an input Strip level (in #1 to #8) or from the output BUS level (out #1 to out #8).
 
 If the trigger level is pending on input, 3 mode can be applied to get level from pre-fader, post fader (pending on slider gain) or post mute (pending on mute button).
 
-84 本页有 1 张图
-
 ### HID Manager
 
 HID Device button configuration allows to basically connect to any HID device to control the Button. This is particularly useful to manage different devices, special devices and special keys.
+
+![](VoicemeeterPotato_UserManual/potato-85-1.jpg)
 
 You can find your HID Device by selecting it and push the key you want to detect, HID Current Data will be shown when acting on your HID device. Then you can give a friendly name to your device (HID name field).
 
@@ -1829,21 +1962,23 @@ Then click OK to Confim the HID configuration. Click again on OK to confirm the 
 
 REM: you can use the HID manager to manage you regular keyboard and mouse as well. This is sometimes useful to manage special keys, not listed in Keyboard Shorcut List.
 
-85 本页有 1 张图
-
 ### GPIO
 
 The GPIO combo box allows to select one of the 16 GPI (general purpose input) provided by an extra USB module called GPI8-USB.
 
+![](VoicemeeterPotato_UserManual/potato-86-1.jpg)
+
 The DB9 connector allows connecting 8 simple electric switches, foot pedal or anything able to create an electric contact. It is possible to connect a second DB9 connector for the Line 9-16.
+
+![](VoicemeeterPotato_UserManual/potato-86-2.jpg)
 
 HOW TO BUY THIS GPI8-USB MODULE? Check our website [www.vb-audio.com](www.vb-audio.com) to get more information.
 
-86 本页有 2 张图
-
 ### System Functions (to send command to Windows)
 
-In Macro Buttons application, some instructions are made for operating system to send Keyboard Event or run “command line” like program. These special instructions, following a “function” like syntax, can be inserted in the request script, with instructions for Voicemeeter.
+In Macro Buttons application, some instructions are made for operating system to send Keyboard Event or run "command line" like program. These special instructions, following a "function" like syntax, can be inserted in the request script, with instructions for Voicemeeter.
+
+![](VoicemeeterPotato_UserManual/potato-87-1.jpg)
 
 System Command
 |function Name |Value Type |Remark |Ver. |
@@ -1860,9 +1995,7 @@ These commands are not sent to Voicemeeter.
 
 #### System Execute
 
-This function works like a “CreateProcess” or SheelExecute under windows and allow to start any application with a command line argument.
-
-87 本页有 1 张图
+This function works like a "CreateProcess" or SheelExecute under windows and allow to start any application with a command line argument.
 
 ```
 System.Execute(szprogram, szworkdir, szcommand);
@@ -1870,9 +2003,9 @@ System.Execute(szprogram, szworkdir, szcommand);
 
 Example to open a web page with the internet explorer:
 ```
-System.Execute("C:\\Program Files\\Internet Explorer\\iexplore.exe","","-new www.voicemeeter.com");
+System.Execute("C:\Program Files\Internet Explorer\iexplore.exe","","-new www.voicemeeter.com");
 ```
-Special chars like double quotes can be inserted by this sequence %’ (percent + simple quote): then %’ will be replaced by “. To insert a percent char, simply enter it double: then “%%” will be replaced by a single ‘%’.
+Special chars like double quotes can be inserted by this sequence %' (percent + simple quote): then %' will be replaced by ". To insert a percent char, simply enter it double: then "%%" will be replaced by a single '%'.
 
 **ENVIRONMENT VARIABLES**
 
@@ -1880,7 +2013,7 @@ It is also possible to use system environment variable by using **%envname%** sy
 
 Example to run the Microsoft WRITE Editor application
 ```
-System.Execute("%windir%\\write.exe","%TMP%","");
+System.Execute("%windir%\write.exe","%TMP%","");
 ```
 
 **RUNNING DOS APPLICATION**
@@ -1889,19 +2022,19 @@ To run command line program, you need to launch cmd.exe with /K command to speci
 
 Example to run ipconfig in a DOS window:
 ```
-System.Execute("%windir%\\system32\\cmd.exe","%windir%\\system32","/K ipconfig");
+System.Execute("%windir%\system32\cmd.exe","%windir%\system32","/K ipconfig");
 ```
 - /C Carries out the command specified by string and then terminates 
 - /K Carries out the command specified by string but remains
 
 Example to ping your internet router (usual address is 192.168.1.1): 
 ```
-System.Execute("%windir%\\system32\\cmd.exe","%windir%\\system32","/K ping 192.168.1.1");
+System.Execute("%windir%\system32\cmd.exe","%windir%\system32","/K ping 192.168.1.1");
 ```
 
 #### System KeyDown / KeyUp / KeyPress
 
-This functions allow to send a combination of 1 to 4 keys by a simple string describing this keyboard combination, like “CTRL+SHIFT + F10” or simply “0”.
+This functions allow to send a combination of 1 to 4 keys by a simple string describing this keyboard combination, like "CTRL+SHIFT + F10" or simply "0".
 
 ```
 System.KeyDown(szKey); System.KeyUp(szKey);
@@ -1956,9 +2089,9 @@ LEFT |PAUSE |MEDIAPREV |RMENU |
 
 In Macro Buttons 1.0.1.1 it is possible to select 2x MIDI output devices, defining out1 and out2 MIDI device. Then it is possible to send MIDI messages to these devices by a simple script.
 
-4x request types are implemented (channel 1 to 16):
+![](VoicemeeterPotato_UserManual/potato-89-1.jpg)
 
-89 本页有 1 张图
+4x request types are implemented (channel 1 to 16):
 
 ```
 System.SendMidi("out1", "note-on", channel, note, velocity); 
@@ -1974,27 +2107,31 @@ System.SendMidi("out1", "data", aa, bb , cc, ee, ff, gg, …);
 
 (In this function only, values are in HEXA-Decimal: 00 to FF) Note that values are in decimal (0 to 127) in MIDI function except for data message, value are in hexa decimal (16 based 0 to F / e.g. 90 = 9 x 16 + 0 = 144)
 
-With Octorber 2020 versions, it is possible to use directly the instruction SendMidi without “system” prefix:
+![](VoicemeeterPotato_UserManual/potato-90-1.png)
+
+With Octorber 2020 versions, it is possible to use directly the instruction SendMidi without "system" prefix:
 ```
 SendMidi("out1", "note-on", channel, note, velocity);
 ```
 
-It is also possible to send MIDI command to the output device selected in Voicemeeter MIDI mapping by using “vmout” parameter:
+It is also possible to send MIDI command to the output device selected in Voicemeeter MIDI mapping by using "vmout" parameter:
 ```
 SendMidi("vmout", "note-on", channel, note, velocity);
 ```
-
-90 本页有 1 张图
 
 #### Send VBAN-MIDI or VBAN-TEXT (Voicemeeter script)
 
 With Voicemeeter version 1.0.3.5 / 2.0.3.5 it is possible to send MIDI message through VBAN- MIDI and Voicemeeter Script through VBAN-TEXT protocol. And the MacroButton application can also learn MIDI code coming from incoming VBAN-MIDI stream. Note that MIDI2VBAN application is also installed with Voicemeeter to convert physical MIDI I/O into VBAN-MIDI Stream.
 
+![](VoicemeeterPotato_UserManual/potato-91-1.jpg)
+
 Macro Button can also send its own graphic user interface to another device thanks to VBAN- Frame protocol to VBAN-Screen application. This can also be used to send drawing command to VBAN-Screen, through VBAN-TEXT stream.
 
-91 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-91-2.jpg)
 
 To send message through VBAN protocol, you have first to activate and configure your VBAN output streams. This is located in MacroButton system menu: VBAN Configuration Dialog Box will allow to setup 2x VBAN MIDI streams and 4x VBAN TXT Streams:
+
+![](VoicemeeterPotato_UserManual/potato-92-1.jpg)
 
 A VBAN-Frame output stream can also be configured to send the MacroButton view to another computer of the network. The last VBAN-Stream is a VBAN-TEXT incoming stream to possible receive Mouse command from VBAN-Screen (to make screen sharing with remoting).
 
@@ -2018,8 +2155,6 @@ System.SendMidi("vban1", "data", aa, bb , cc, ee, ff, gg, …);
 #### Send Voicemeeter TEXT Request through VBAN Stream
 
 Once you have configured output VBAN TEXT Stream, you can send a command script by using a section bloc starting by BEGIN_SECTION and ending by END_SECTION instruction:
-
-92 本页有 1 张图
 
 ```
 BEGIN_SECTION("vban1") 
@@ -2049,7 +2184,7 @@ Strip(1).mute=1;
 Bus(0).gain= 0.0;);
 ```
 
-93 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-93-1.jpg)
 
 #### Manage your lights Network in DMX 512
 
@@ -2070,17 +2205,19 @@ To send the newly modified DMX frame:
 System.DMXCommit();
 ```
 
-Example of tested DMX serial interface: Enttec Open DMX USB Interface.
+![](VoicemeeterPotato_UserManual/potato-94-1.jpg)
 
-94 本页有 1 张图
+Example of tested DMX serial interface: Enttec Open DMX USB Interface.
 
 ### Voicemeeter Remote API (for developer only)
 
 The requests described above are based on Voicemeeter remote API (delivered and installed with Voicemeeter as VoicemeeterRemote.dll). This API can be used by any third part application programmed in any language to control Voicemeeter and take advantage of all its features.
 
+![](VoicemeeterPotato_UserManual/potato-95-1.jpg)
+
 Since Voicemeeter 1.0.5.0 / 2.0.3.0, Voicemeeter Remote API provides an AUDIO API to process audio inside Voicemeeter in 3 Different point. Download SDK and get more information on our forum: [https://forum.vb-audio.com/viewtopic.php?f=8&t=346](https://forum.vb-audio.com/viewtopic.php?f=8&t=346)
 
-95 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-95-2.jpg)
 
 # EXTRA OPTIONS
 
@@ -2100,15 +2237,15 @@ Since Voicemeeter 1.0.5.0 / 2.0.3.0, Voicemeeter Remote API provides an AUDIO AP
 
 Open the following System Settings Dialog Box by the menu:
 
+![](VoicemeeterPotato_UserManual/potato-97-1.jpg)
+
 This modal dialog box will show you the status of the different audio devices currently used by Voicemeeter Banana.
 
 - SR: is giving the current samplerate of the device (which can be different for each device, Voicemeeter is based on multi points and multi formats audio engine able to manage most of audio system configurations).
 - buf gives the current buffer size used by the audio device (Voicemeeter Audio engine support different buffering on all audio points).
 - Ch: gives the number of channel managed by the devices (Voicemeeter can manage 1 to 2 channels on inputs and up to 8 channels on outputs).
 - r : gives the bit resolution of the device (Potato uses 24bits resolution per default).
-- S: means “share mode” (applicable for WDM device only. KS is usually in exclusive mode and MME in share mode. For WDM it depends on devices and audio engine mode).
-
-97 本页有 1 张图
+- S: means "share mode" (applicable for WDM device only. KS is usually in exclusive mode and MME in share mode. For WDM it depends on devices and audio engine mode).
 
 **Note: Output A1 device configuration gives the main audio configuration of Voicemeeter and the configuration of Voicemeeter virtual ASIO driver (Sample rate and buffer size). It also means that all audio processing done in Voicemeeter will be based on this sample rate (if some audio points work in another sample rate, conversion will be done automatically to this main sample rate.).**
 
@@ -2116,7 +2253,7 @@ INTERNAL CLOCK: if no device is selected as output A1, Voicemeeter run with an i
 
 **Buffering:** In this dialog box, you can change the latency used by MME, WDM and/or KS audio drivers. Basically MME driver support buffering between 512 and 2048 samples , while WDM and KS can go down to 256 samples (that makes audio processing very closed to the real time – practically usable to sing on a song in real time – karaoke – or to play digital piano on music in real time).
 
-Some PC configurations (or some audio devices) will work very well with minimal buffering values while other will not (the sound stream could be not stable and generates too much sound’s cut). That’s why per default MME device uses 1024 samples buffering while WDM device is using 512 samples (these default settings should work for 100% PC configuration cases).
+Some PC configurations (or some audio devices) will work very well with minimal buffering values while other will not (the sound stream could be not stable and generates too much sound's cut). That's why per default MME device uses 1024 samples buffering while WDM device is using 512 samples (these default settings should work for 100% PC configuration cases).
 
 **Preferred Main Sample Rate** can be used as a wish to make Voicemeeter run output device A1 in the wanted sample rate (44.1, 48, 88.2, 96, 176.4 or 192 kHz). But it also depends on the audio device current configuration.
 
@@ -2138,6 +2275,8 @@ Engine mode provides a SWIFT mode to possibly improve real time (experimental op
 
 Voicemeeter can use an ASIO driver as Output A1 (the main output) to run in audio pro conditions (like any DAW using ASIO device).
 
+![](VoicemeeterPotato_UserManual/potato-99-1.jpg)
+
 If ASIO device is selected as output A1, Voicemeeter will send audio to the 8 first output channels. Other BUS could be routed to other ASIO output channels. It is also possible to get the first input channels of the ASIO device routed to Hardware Inputs of Voicemeeter. This is done by the ASIO PATCH allowing to select which ASIO channel will be used for IN#1 left & right, IN#2 left and right…
 
 ASIO Buffering and ASIO samplerate are pending on two parameters:
@@ -2151,8 +2290,6 @@ It is also possible to open the ASIO Control panel of the main output device by 
 
 The choice of the Output A1 is critical to get the best global latency, since it gives the master sample rate and main buffer size. So we recommend to select your best audio device as output A1 (preferred ASIO if possible, WDM or KS otherwise) – with ASIO device the buffer size is given by the ASIO driver itself (that can usually be set by the ASIO Specific Control Panel of your audio board). But it is possible to specify a preferred ASIO buffer size (used if the driver accepts it).
 
-99 本页有 1 张图
-
 To improve latency, you can also decrease the latency buffer size (for example down to 256) especially with WDM or KS devices. If using WDM devices, you can again reduce global latency (the time between microphone and speaker) by using SWIFT mode (but not recommended because might be unstable).
 
 DISBALED OPTION: Activating WDM Input Exclusive mode (and Swift mode) will force audio engine to use smallest buffer with WDM input devices. But this exclusive mode could not be stable and produce various potential problems in the time (from audio crash to system freeze/crash – pending on audio driver and O/S – see known issues section at the end of this document).
@@ -2165,37 +2302,41 @@ Decreasing latency below 256 samples (at 44.1 / 48 kHz) can bring some audio sta
 
 ### Patch Composite
 
-Patch composite allows selecting inputs used in the 8 channels of the composite mode. It’s possible to switch PRE-FADER input to POST-FADER inputs by click on “Select Pre-Fader inputs…”.
+Patch composite allows selecting inputs used in the 8 channels of the composite mode. It's possible to switch PRE-FADER input to POST-FADER inputs by click on "Select Pre-Fader inputs…".
+
+![](VoicemeeterPotato_UserManual/potato-100-1.jpg)
 
 The COMPOSITE Mode is used to get a composite signal on a BUS and be able to send or record different channels, composed by given inputs (see USE CASE #3 in Voicemeeter User Manual).
 
 ### Patch Insert 
 
-100 本页有 1 张图
+The Patch Insert allows activating insert for each input channel. This is applicable only if an application is connected to the Voicemeeter Potato Insert ASIO Virtual Device Driver. This driver supports a single client to work as a pre-fader insert on possible 34 channels composing the 8 strips of Voicemeeter Potato. Then it's possible to use a VST Plug-in Host for example to insert plug-ins on any Voicemeeter inputs.
 
-The Patch Insert allows activating insert for each input channel. This is applicable only if an application is connected to the Voicemeeter Potato Insert ASIO Virtual Device Driver. This driver supports a single client to work as a pre-fader insert on possible 34 channels composing the 8 strips of Voicemeeter Potato. Then it’s possible to use a VST Plug-in Host for example to insert plug-ins on any Voicemeeter inputs.
+![](VoicemeeterPotato_UserManual/potato-101-1.jpg)
 
-If a DAW or any ASIO application is connected to Voicemeeter Potato Virtual Insert, a small ‘i’ icon appears on top left of each strip to let you see or set which INSERT Return is activated.
+If a DAW or any ASIO application is connected to Voicemeeter Potato Virtual Insert, a small 'i' icon appears on top left of each strip to let you see or set which INSERT Return is activated.
+
+![](VoicemeeterPotato_UserManual/potato-101-2.jpg)
 
 Here below you can see the detail of the internal voicemeeter potato routing for the different audio input interfaces, COMPOSITE and Virtual INSERT point.
 
-101 本页有 3 张图
+![](VoicemeeterPotato_UserManual/potato-101-3.jpg)
 
 ### M.I.D.I. Mapping
 
 Voicemeeter allows connecting a MIDI remote surface to control gain, mute, solo buttons of every strips and busses (with MIDI Feedback) and a secondary MIDI Controller (MIDI Extra Input Device).
 
+![](VoicemeeterPotato_UserManual/potato-102-1.jpg)
+
 You just need to select the right MIDI device and enter in Learn process to configure the M.I.D.I. Mapping. This is expected to work with any M.I.D.I. Remote. You can even give a title to your mapping and store it on disk or recall it from XML files.
 
 Click on Learn (use TAB or up/down arrow key to learn next/previous control) and move your M.I.D.I. Control. Click on M.I.D.I. Code area (black) to reset the M.I.D.I. Implementation (as it was before learning process).
 
-PTT option means “Push To Talk” and un-mute the related strip when pushing the button, mute it when release it.
+PTT option means "Push To Talk" and un-mute the related strip when pushing the button, mute it when release it.
 
 RESET MAP: reset entire M.I.D.I. mapping
 
 LOAD / SAVE allow to recall and save M.I.D.I. Map from or to file (xml file).
-
-102 本页有 1 张图
 
 REFRESH Controller: allows to send all MIDI message related to the current Voicemeeter state. This feature also exists as MIDI function (assignable to a MIDI button) – see last MIDI Mapping page.
 
@@ -2203,11 +2344,13 @@ M.I.D.I. Map name is a name defined by user to identify precisely the remote sur
 
 #### MIDI Feedback
 
-With the March 2021 Version Voicemeeter manages a MIDI Output Device to send back MIDI code and move motorized Fader or highlight LED Button. This is made automatically with the ‘F’ or ‘FF’ mode.
+With the March 2021 Version Voicemeeter manages a MIDI Output Device to send back MIDI code and move motorized Fader or highlight LED Button. This is made automatically with the 'F' or 'FF' mode.
+
+![](VoicemeeterPotato_UserManual/potato-103-1.jpg)
 
 **F: Simple feedback**
 
-The single ‘F’ mode is for simple feedback. The MIDI controller is receiving MIDI message when there is a change on related control only, but change made by Mouse or VBAN request or anything but the MIDI controller itself. ‘F’ Mode is usually enough for movable control like knobs and faders… But some remote surface can use motorized fader needing a MIDI feedback to confirm the position (like a acknowledgement) in this case ‘FF’ will be needed.
+The single 'F' mode is for simple feedback. The MIDI controller is receiving MIDI message when there is a change on related control only, but change made by Mouse or VBAN request or anything but the MIDI controller itself. 'F' Mode is usually enough for movable control like knobs and faders… But some remote surface can use motorized fader needing a MIDI feedback to confirm the position (like a acknowledgement) in this case 'FF' will be needed.
 
 **FF: double feedback**
 
@@ -2219,25 +2362,23 @@ MIDI mapping can get MIDI message from two different MIDI controller and from VB
 
 With March 2021 version, it is possible to also forward MIDI message through an outgoing VBAN MIDI stream (see VBAN Configuration Dialog box: last outgoing stream is a MIDI Stream). This is made to forward MIDI message on network (including MIDI feedback if your MIDI controller is on other computer).
 
-103 本页有 1 张图
-
 #### MIDI Advanced Feedback
 
 With the November 2022 Version Voicemeeter MIDI mapping allows to define feedback value for 2 positions control. Per default the feedback value is 127 for ON and 0 for OFF state, but for MIDI control able to display different colors, it can be interesting to define other value here.
 
-RIGHT CLICK on ‘F’ button to open the MIDI Feedback Options dialog box.
+RIGHT CLICK on 'F' button to open the MIDI Feedback Options dialog box.
 
 It is possible to define complex MIDI feedback message (including SYS-EX) to send MIDI command to other MIDI device, or MIDI LCD or MACHINE CONTROL…
 
-MIDI messages displayed in yellow mean this message is already used by one or several other MIDI map parameters. RIGHT CLICK on it to get the first parameters using the same MIDI message.
+![](VoicemeeterPotato_UserManual/potato-104-1.jpg)
 
-104 本页有 1 张图
+MIDI messages displayed in yellow mean this message is already used by one or several other MIDI map parameters. RIGHT CLICK on it to get the first parameters using the same MIDI message.
 
 #### MIDI Control Mode
 
 With the September 2026 Version Voicemeeter MIDI mapping allows to define how Control Change is managed. When the CTRL-CH message is identified, right click on it to open the menu below and select how MIDI code must be interpreted.
 
-105 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-105-1.jpg)
 
 ### Specifications
 
@@ -2266,29 +2407,33 @@ Like a regular mixing console, Voicemeeter Potato can be represented with a usua
 
 Note that Virtual I/O provide Windows Interface (MME, KS, WASAPI, DirectX…) and ASIO Interface (defined by Steinberg gmbh). It allows connecting regular windows audio application as well as audio pro DAW using ASIO devices only.
 
-External FX I/O are assignable only if using an ASIO device as output A1 (with enough channel to be assigned to External FX path).
+![](VoicemeeterPotato_UserManual/potato-107-1.jpg)
 
-107 本页有 1 张图
+External FX I/O are assignable only if using an ASIO device as output A1 (with enough channel to be assigned to External FX path).
 
 ## Voicemeeter License / About box
 
-Voicemeeter Potato is distributed as “donationware for activation code”. Once you have activated your License, Voicemeeter applications will stop to invite you to donate for your license.
+Voicemeeter Potato is distributed as "donationware for activation code". Once you have activated your License, Voicemeeter applications will stop to invite you to donate for your license.
 
-The simplest way to get your Potato license is to display the about box (by Voicemeeter menu) and click on the “BUY ONLINE” button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account.
+The simplest way to get your Potato license is to display the about box (by Voicemeeter menu) and click on the "BUY ONLINE" button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account.
 
-For each Voicemeeter license purchased, a license slot is created in your webshop account “My License” page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This REGEN option works for any Potato license and any PC. Simply click on it and enter carefully your new Challenge code to get another Response code.
+![](VoicemeeterPotato_UserManual/potato-108-1.jpg)
+
+For each Voicemeeter license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This REGEN option works for any Potato license and any PC. Simply click on it and enter carefully your new Challenge code to get another Response code.
 
 Your challenge code is not expected to change for a given PC configuration, even after windows update (but can change after a Windows re-installation). The challenge code is also expected to change if you change the CPU or possibly Motherboard or all Ethernet devices. This license is given for one PC configuration and is not transferrable (as specified in our general terms).
-
-108 本页有 1 张图
 
 ### Hide e-mail address
 
 If you right click on ACTIVATED area, you can see the option to hide your e-mail address if needed. This option is stored in registry and keeps your e-mail hidden until you change it here.
 
+![](VoicemeeterPotato_UserManual/potato-109-1.jpg)
+
 ### Use Computer Footprint
 
 If your license is activated (and if your computer has a network adapter), you can store your computer footprint on a USB key for example. Right Click on the challenge code to make appear the related menu (shown on the following screenshot).
+
+![](VoicemeeterPotato_UserManual/potato-109-2.jpg)
 
 After re-installing Windows and later Voicemeeter applications, you may import this footprint if your challenge code is not the expected one.
 
@@ -2297,11 +2442,9 @@ After re-installing Windows and later Voicemeeter applications, you may import t
 
 ### Activation Log
 
-You can also keep your Voicemeeter_ActivationLog.dat (located in My Document \\ Voicemeeter folder) from a Windows installation to another. It records the history of your different activations on the same computer and can be useful for us to understand what’s happening if you get frequent problem with your activation code.
+You can also keep your Voicemeeter_ActivationLog.dat (located in My Document \\ Voicemeeter folder) from a Windows installation to another. It records the history of your different activations on the same computer and can be useful for us to understand what's happening if you get frequent problem with your activation code.
 
-Simply copy the file Voicemeeter_ActivationLog.dat in a extra disk Simply paste it in “My Document \\ Voicemeeter” folder after Windows installation. 
-
-109 本页有 2 张图
+Simply copy the file Voicemeeter_ActivationLog.dat in a extra disk Simply paste it in "My Document \\ Voicemeeter" folder after Windows installation. 
 
 ### Activation Key for x64 version
 
@@ -2313,59 +2456,71 @@ More info on our Challenge / Response code on our forum: [https://forum.vb-audio
 
 To activate VAIO extension on Voicemeeter Potato, you will have to buy another license and use this dialog box below (see Voicemeeter menu – VAIO extension license)..
 
-This VAIO Extension License activation code works only with Potato. There is another different license for VAIO extension related to Voicemeeter Standard & Banana.
+![](VoicemeeterPotato_UserManual/potato-111-1.jpg)
 
-111 本页有 1 张图
+This VAIO Extension License activation code works only with Potato. There is another different license for VAIO extension related to Voicemeeter Standard & Banana.
 
 ### License Activation Process
 
 On first or new installation, your license activation fields are empty. And you get a unique challenge code given by your PC. Currently the H-Code is composed by 8x hexadecimal digits + a suffix letter as shown below.
 
+![](VoicemeeterPotato_UserManual/potato-112-1.jpg)
+
 #### Buy Online
 
 Clicking on BUY ONLINE button will drive you to the right VB-Audio webshop page with your challenge code automatically filled. See in the red ellipse below:
 
-Read LICENSING INFORMATION section before selecting your contribution level, and then click “Add to cart” to continue your purchase.
+![](VoicemeeterPotato_UserManual/potato-112-2.jpg)
 
-Once you have paid your order, you can go in your account “My License” page to get your current response code and other information about all your VB-Audio licenses.
+Read LICENSING INFORMATION section before selecting your contribution level, and then click "Add to cart" to continue your purchase.
 
-112 本页有 2 张图
+Once you have paid your order, you can go in your account "My License" page to get your current response code and other information about all your VB-Audio licenses.
 
 #### Get your Response code
 
-In your webshop account “My License” page, you will find download link and activation code for all your licenses:
+In your webshop account "My License" page, you will find download link and activation code for all your licenses:
+
+![](VoicemeeterPotato_UserManual/potato-113-1.jpg)
 
 In License dialog box, enter carefully your e-mail (registered for your webshop account) and your response code. You can copy / paste to avoid bad char or reading mistake.
+
+![](VoicemeeterPotato_UserManual/potato-113-2.jpg)
 
 #### Activate your license
 
 To activate your license, just click on the ACTIVATE button. It will ask to our server to generate an authentication certificate that will be stored in your computer to confirm that your license is valid.
 
+![](VoicemeeterPotato_UserManual/potato-113-3.jpg)
+
 When your license is activate, your License Dialog box is saying ACTIVATED in green
 
-113 本页有 4 张图
+![](VoicemeeterPotato_UserManual/potato-113-4.jpg)
 
 #### Activate your license manually
 
 If you are not connected to internet or if there is a problem to reach our server, the ACTIVATE process will propose you to enter the certificate manually.
 
+![](VoicemeeterPotato_UserManual/potato-114-1.jpg)
+
 After getting the error box above, the following dialog box appears to let you enter your certificate manually (by PASTE function CTRL+V):
 
-Click on “my webshop account” to directly come to your License pages here below. You will see the button “Certificate” on the right of the related license.
+![](VoicemeeterPotato_UserManual/potato-114-2.png)
+
+Click on "my webshop account" to directly come to your License pages here below. You will see the button "Certificate" on the right of the related license.
+
+![](VoicemeeterPotato_UserManual/potato-114-3.jpg)
 
 If you own several licenses, take care to select the right line, related to the right license. The certificate will be generated for current challenge / response code only.
 
-114 本页有 3 张图
-
 The dialog box to get certificate will appear and will first ask you to confirm data.
 
-Check the information in orange are exactly the same than you entered in your license dialog box and click “Get a certificate now”
+Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now"
 
 Then you get your certificate in this box
 
-Simply copy / paste it in the application License activation box and click on “Activate” button.
+Simply copy / paste it in the application License activation box and click on "Activate" button.
 
-REM: The certificate start with the char ‘>’ and finishes with the char ‘<’.
+REM: The certificate start with the char '>' and finishes with the char '<'.
 
 This certificate will be store in your computer to authenticate your license (internet is not needed).
 
@@ -2377,13 +2532,13 @@ Activating optional extra VAIO on Voicemeeter Potato requires a specific license
 
 The process is exactly the same than for Voicemeeter Potato license, simply click on Buy Online to purchase your license on our web shop.
 
-For each VAIO Extension license purchased, a license slot is created in your webshop account “My License” page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC.
+![](VoicemeeterPotato_UserManual/potato-116-1.jpg)
+
+For each VAIO Extension license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC.
 
 Your challenge code is not expected to change for a given PC configuration, even after windows update (but can change after a Windows re-installation). The challenge code is also expected to change if you change the CPU or possibly Motherboard or all Ethernet devices. The license is given for one PC configuration and is not transferrable as specified in our general terms.
 
 If you re-install Windows from scratch, you may consider storing before a computer footprint on a USB key for example (see use computer footprint chapter in previous pages).
-
-116 本页有 1 张图
 
 ## KNOWN ISSUES / RECOMMENDATIONS
 
@@ -2391,21 +2546,21 @@ Voicemeeter has been validated on different levels and should work 100% in most 
 
 ### No sound anymore on my computer!
 
-Voicemeeter is like a mixing console, it must be connected correctly to work correctly. If you set Voicemeeter audio device as default device, Voicemeeter must be running (like switching ON your mixing console) otherwise there might be no sound on your computer. When Voicemeeter is running, it can get exclusive access to selected output device (A1, A2, A3…) and prevent other applications to use these playback devices. As Virtual Audio Mixer, all audio sources should be connected to Voicemeeter to avoid possible conflict. When you connect your mixing console to your amplifier, you connect nothing else to this amplifier and all sources are connected to your mixing console. It’s the same with Voicemeeter.
+Voicemeeter is like a mixing console, it must be connected correctly to work correctly. If you set Voicemeeter audio device as default device, Voicemeeter must be running (like switching ON your mixing console) otherwise there might be no sound on your computer. When Voicemeeter is running, it can get exclusive access to selected output device (A1, A2, A3…) and prevent other applications to use these playback devices. As Virtual Audio Mixer, all audio sources should be connected to Voicemeeter to avoid possible conflict. When you connect your mixing console to your amplifier, you connect nothing else to this amplifier and all sources are connected to your mixing console. It's the same with Voicemeeter.
 
-### Voicemeeter does nothing if you don’t use it
+### Voicemeeter does nothing if you don't use it
 
-Voicemeeter application and Voicemeeter virtual audio device drivers do nothing if you don’t use them and they cannot disturb or corrupt your system. If there is no sound anymore, it’s because a bad audio configuration. Then you just have to check your default audio device in Windows Control Panel / Sound Dialog Box (what is your default playback or communication device? What is your default recording device ?…), and check the audio configuration of some possible application that you previously configured to work with Voicemeeter (typically Zoom, Discord, Spotify, Games, OBS…).
+Voicemeeter application and Voicemeeter virtual audio device drivers do nothing if you don't use them and they cannot disturb or corrupt your system. If there is no sound anymore, it's because a bad audio configuration. Then you just have to check your default audio device in Windows Control Panel / Sound Dialog Box (what is your default playback or communication device? What is your default recording device ?…), and check the audio configuration of some possible application that you previously configured to work with Voicemeeter (typically Zoom, Discord, Spotify, Games, OBS…).
 
 ### Output A1, A2, A3… are not exactly synchronized
 
 On Voicemeeter every i/o are independent and we can hear more or less delay between them, especially when using up to 5 different audio output devices: if A1,A2 and others BUS are routed to several audio devices, the sound might be not exactly synchronized (one speaker output can be late and produce a small echo with other speaker output). This is normal (according technical constraint) but can be corrected by compensate one audio output with a delay line (see System Settings Dialog Box).
 
+![](VoicemeeterPotato_UserManual/potato-117-1.jpg)
+
 ### Voicemeeter Audio Stream can be stopped (no more sound, no meter display)
 
 It can happen when changing audio system configuration (in Windows Control Panel / Sound properties) or when plug or unplug USB device or when launching other program that could use same audio device … In this case, simply restart audio engine or re-select an audio device out A1 or input 1 or any other in Voicemeeter. It will restart audio stream automatically (otherwise it could mean that audio device are used by other process and cannot be used anymore by Voicemeeter).
-
-117 本页有 1 张图
 
 ### Voicemeeter Audio Engine works only if the device selected for output A1 is running
 
@@ -2415,19 +2570,21 @@ This is possible to select nothing as output A1 to run Voicemeeter on its intern
 
 If the audio stream is not stable in the time, with too much cut in the sound, it means you did not find the right audio configuration and you must try to change audio interface or buffer size to get stable audio stream. Some application like Discord could not work correct with other sample rate than 48kHz so you may set Voicemeeter Virtual output (recording device) used by Discord in 48 kHz.
 
+![](VoicemeeterPotato_UserManual/potato-118-1.jpg)
+
 ### Windows Update can disturb audio
 
 In some cases, WIN10 or WIN11 update can bring some problems by changing some default settings or rules. For example Privacy settings regarding microphone can prevent Voicemeeter to use recording devices. The new power throttling option coming with Win11 can generate unstable stream when the application is minimized…
 
 More info on our forum topic: [https://forum.vb-audio.com/viewtopic.php?f=6&t=442](https://forum.vb-audio.com/viewtopic.php?f=6&t=442)
 
-118 本页有 1 张图
-
 ## VB-Audio Device Checker
 
-The VBDeviceCheck.exe is still proposed in Voicemeeter menu but it’s not run on startup as it was with previous version. This was made to check installation of our previous generation of virtual audio drivers. Today Voicemeeter VAIOs or VB-CABLEs are expected to be updated for Win10 and higher O/S version.
+The VBDeviceCheck.exe is still proposed in Voicemeeter menu but it's not run on startup as it was with previous version. This was made to check installation of our previous generation of virtual audio drivers. Today Voicemeeter VAIOs or VB-CABLEs are expected to be updated for Win10 and higher O/S version.
 
 This checking was originally made to detect a problem of re-installation by Win10 or Win11 automatic update (that could re-install audio driver not correctly). To detect this problem, the Device Checker was checking the Icon, pin Name and different driver information expected to not change. But today, user can change Pin name and icon with our latest driver version.
+
+![](VoicemeeterPotato_UserManual/potato-119-1.jpg)
 
 Note the 3x VoiceMeeter drivers are no more installed on Windows 10 or higher. Only Voicemeeter VAIO driver is installed instead. This is normal, since we made a single driver with 8 I/O to simplify the maintenance and bring more power.
 
@@ -2439,23 +2596,23 @@ VB-Audio Device Checker also offers the possibility to display all VB-Audio Virt
 
 Each displayed device, show their current audio format (MIX Format in parenthesis) and Exclusive properties (not always displayed – parameters seems to be not always updated correctly).
 
-119 本页有 1 张图
+![](VoicemeeterPotato_UserManual/potato-120-1.jpg)
 
 ## Where are stored settings files
 
-All Voicemeeter and MacroButtons current settings file are stored in “My Documents \\ Voicemeeter folder as XML files.
+![](VoicemeeterPotato_UserManual/potato-120-2.jpg)
 
-For Macro Buttons, Voicemeeter Standard, Voicemeeter Banana and Voicemeeter potato, the config file manager is maintaining two copies of your settings (called “today” and “yesterday”).
+All Voicemeeter and MacroButtons current settings file are stored in "My Documents \\ Voicemeeter folder as XML files.
+
+For Macro Buttons, Voicemeeter Standard, Voicemeeter Banana and Voicemeeter potato, the config file manager is maintaining two copies of your settings (called "today" and "yesterday").
 
 Today settings is the configuration state at the beginning of the current day.
 
 Yesterday settings one is the configuration file in use yesterday.
 
-120 本页有 2 张图
-
 ## Command Line Installation
 
-It is possible to make an automatic installation (or uninstallation) by using command line options. However it will need to reboot after installation (and after uninstallation). So it’s recommended to first call the setup program to uninstall possible previous version, then reboot, and then install new version (and reboot again).
+It is possible to make an automatic installation (or uninstallation) by using command line options. However it will need to reboot after installation (and after uninstallation). So it's recommended to first call the setup program to uninstall possible previous version, then reboot, and then install new version (and reboot again).
 
 ```
 –h : to hide GUI 
@@ -2463,35 +2620,37 @@ It is possible to make an automatic installation (or uninstallation) by using co
 –u : to uninstall
 ```
 
-## Voicemeeter Command Line
+### Voicemeeter Command Line
 
 Voicemeeter.exe and VoicemeeterPro.exe support some command to restart audio engine or to run Voicemeeter with a pre-defined configuration file. It allows for example to add different shortcut on the desktop to run Voicemeeter for different jobs.
 
 To Restart Audio Engine by a shortcut use the following command line.
 ```
-Voicemeeter.exe –R (or “–r”)
+Voicemeeter.exe –R (or "–r")
 ```
 
 It can be useful to restart audio engine from a shortcut, for example to re-activate a known USB headset already connected to one Voicemeeter hardware input, but not physically plugged to the computer. When re-plugged to the computer, Voicemeeter Audio Engine has to be restarted to make it work again.
 
 To run Voicemeeter with a specific configuration file, use these following command lines (Voicemeeter must have been shut down before – if Voicemeeter is already running, it will do nothing):
 ```
-–l”filename.xml” or -L”filename.xml”
+–l"filename.xml" or -L"filename.xml"
 ```
 
 If the xml is in the same directories of voicemeeter.exe 
 ```
-–l”filename.xml” or -L”filename.xml”
+–l"filename.xml" or -L"filename.xml"
 ```
 
 If the xml is in the same sub directories of voicemeeter.exe 
 ```
-–l”subfolder\\filename.xml” or -L”subfolder\\filename.xml”
+–l"subfolder\filename.xml" or -L"subfolder\filename.xml"
 ```
 
 Or you can use absolute patch 
 ```
-–l”c:\\folder\\filename.xml” or -L”c:\\folder\\filename.xml”
+–l"c:\folder\filename.xml" 
+or 
+-L"c:\folder\filename.xml"
 ```
 
 To generate a log file in c:\\temp folder only (the directory must exist). 
@@ -2499,19 +2658,19 @@ To generate a log file in c:\\temp folder only (the directory must exist).
 –v or –V (verbose mode) 
 ```
 
-This can also be activated by using the registry DWORD value: `VerboseMode` (set to ‘1’).
+This can also be activated by using the registry DWORD value: `VerboseMode` (set to '1').
 
-## Registry Parameters
+### Registry Parameters
 
 Some parameters in the registry (regedit.exe) can be interesting for some expert users in very specific use case or rare technical problems. Do not modify these values without having getting advice on our support resource (Forum, Discord).
 
 We are talking here about some values present in the following registry directory 
 ```
-HKEY_CURRENT_USER\\VB-Audio\\VoiceMeeter
+HKEY_CURRENT_USER\VB-Audio\VoiceMeeter
 ```
 
 `DelayedStartS`  
-This value gives the countdown in second before starting audio engine on Voicemeeter Startup (5 second per default). This is represented by a growing bar with a countdown displayed on the A1, A2… device selection area when launching Voicemeeter. This is done to let the time to all audio services and drivers to be started before Voicemeeter start its audio engine. If a driver is not ready when Voicemeeter Audio engine starts, this device won’t work until restarting Voicemeeter Audio Engine (Menu -> Restart Audio Engine).
+This value gives the countdown in second before starting audio engine on Voicemeeter Startup (5 second per default). This is represented by a growing bar with a countdown displayed on the A1, A2… device selection area when launching Voicemeeter. This is done to let the time to all audio services and drivers to be started before Voicemeeter start its audio engine. If a driver is not ready when Voicemeeter Audio engine starts, this device won't work until restarting Voicemeeter Audio Engine (Menu -> Restart Audio Engine).
 
 `preferredResolution`  
 This value gives the preferred bit resolution used by Voicemeeter Banana & Potato (24 bits per default). Voicemeeter Standard is always using 16bits per default with Windows Audio Interface. In any cases, the final bit resolution is the result of a negotiation with the audio interface (that can force to use other resolution than the preferred one).
@@ -2523,14 +2682,14 @@ This value gives the preferred bit resolution used by Voicemeeter Banana & Potat
 10 to 60 seconds (20 per default), this value define the pre-recording buffer memory allocation on Voicemeeter Startup. (for example around 90 MB for 60 seconds at 48 kHz).
 
 `TimerResolution`  
-This value is by default set to ‘1’ to force Voicemeeter to set the system timer resolution to 1 ms. Remove it or set it to 0 to use the 0.5ms system timer resolution.
+This value is by default set to '1' to force Voicemeeter to set the system timer resolution to 1 ms. Remove it or set it to 0 to use the 0.5ms system timer resolution.
 
 `AutoUpMixMode`  
 If set to 1, this mode act on upmix BUS MODE by detecting signal level and deduce if the signal is stereo or multichannel (it is considered as multi channel if signal above -80 dBfs is detected in channel 3,4,5 … in this case the UpMix is not applied).
 
 **WARNING: Other registry values must not be modified directly.**
 
-**AUDIO EXPERT / DEVELOPPERS**
+### AUDIO EXPERT / DEVELOPPERS
 
 `EngineMode`  
 This value gives a bit field of feature related to WASAPI audio engine. Must be ZERO per default. These historic modes are not tested anymore in our dev cycle.
