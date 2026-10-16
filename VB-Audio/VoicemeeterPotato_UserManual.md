@@ -28,7 +28,8 @@ If you are not familiar with Voicemeeter, we recommend to read first the User Ma
 
 2. If already installed, push the button REMOVE.
 
-3. REBOOT AFTER EACH OPERATION (IMPORTANT). (Virtual Audio Device Driver needs this reboot to finalize uninstallation or installation)
+3. REBOOT AFTER EACH OPERATION (IMPORTANT).  
+**(Virtual Audio Device Driver needs this reboot to finalize uninstallation or installation)**
 
 ### HOW TO UPDATE
 
@@ -179,8 +180,6 @@ If your input level is too weak (or too loud), check the level of the selected i
 |:--|:--|
 |![](VoicemeeterPotato_UserManual/potato-15-3.jpg) |![](VoicemeeterPotato_UserManual/potato-15-4.jpg) |
 
-15 本页有 4 张图
-
 ## Selecting Input Devices
 
 An audio device can be selected for every physical strip by clicking on Stereo input area. Select audio input device on strip #1, for example your microphone! Then you will be able to listen to your voice in real time.
@@ -231,21 +230,19 @@ Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 cl
 
 **For Recording Applications, take care about the loop back! You might have MUTED outputs or disable monitoring otherwise output signal will come back on input infinitely.**
 
-|||
-|:--|:--|
 |Configure DAW Application |Configure Musical Instrument |
-|Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO ||
+|:--|:--|
 |![](VoicemeeterPotato_UserManual/potato-19-2.jpg) |![](VoicemeeterPotato_UserManual/potato-19-3.jpg) |
 
-19 本页有 3 张图
+Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO
 
 ## Audio Controls.
 
 While you are talking you can tweak your voice in real time with different controls; 2D Panel, Audibility knobs or simple 3 bands Equalizer…
 
-![](VoicemeeterPotato_UserManual/potato-20-1.jpg)
-
 ### INTELLIPAN COLOR PANEL
+
+![](VoicemeeterPotato_UserManual/potato-20-1.jpg)
 
 Based on basic equalizer, this panel will allow you to change the color of your voice in a quick way.
 
@@ -262,8 +259,6 @@ Voicemeeter includes a binaural effect able to give a spatial identity to audio 
 This effect works in stereo, so can be used when recording a stereo stream to improve the sound of the global mix. This also can be used to simply enhance your voice to stereo.
 
 This kind of "psycho acoustic" effect is used a lot since decades in audio production to create a better "audio scene" by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.
-
-20 本页有 2 张图
 
 ### Modulation Fx
 
@@ -299,13 +294,13 @@ Below the Equalizer a small 2D Panel allows 5.1 balance. It's a simple process t
 - Rear Left
 - Rear Right
 
-21 本页有 3 张图
-
 #### PAN POT MODE
 
 Right Click on Pan POT to get the menu and select how you want to transform your multichannel sound before sending it to BUS.
 
 TIPS: Double click on pan pot to reset to Normal mode with the cursor on the exact center.
+
+![](VoicemeeterPotato_UserManual/potato-22-1.jpg)
 
 MONO mode works like the MONO button on stereo strips.
 
@@ -314,8 +309,6 @@ Repeat MONO mode is duplicating the left channel into 7 others.
 Repeat STEREO mode is duplicating the left+right channels into 6 others, 2 y 2. So Left + Right will be copied to channels 3+4 , 5+6, and 7+8
 
 Mix Down, Up Mix and Only modes work like BUS Modes (see BUS mode to get detailed processing in next pages).
-
-![](VoicemeeterPotato_UserManual/potato-22-1.jpg)
 
 ### Compressor / Gate / Denoiser
 
@@ -335,11 +328,9 @@ Right click again will switch back the view to original Voicemeeter Potato Strip
 
 The Compressor / Gate detailed view show the compressor transfer graph on top (in place of the INTELLIPAN panel). Horizontal level meters show input levels, red meters shows gain reduction (due to compression or gate closing).
 
-22 本页有 2 张图
+#### Compressor Details
 
 ![](VoicemeeterPotato_UserManual/potato-23-1.jpg)
-
-#### Compressor Details
 
 **Input Gain:** To control the gain before compression.
 
@@ -375,11 +366,9 @@ The Compressor / Gate detailed view show the compressor transfer graph on top (i
 
 REM: CTRL+ RIGHT CLICK to edit parameter value.
 
-23 本页有 1 张图
+SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
 
 ![](VoicemeeterPotato_UserManual/potato-24-1.jpg)
-
-SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
 
 CTRL+ RIGHT CLICK on parameter to edit its value
 
@@ -387,17 +376,17 @@ RIGHT CLICK: to switch back to original view.
 
 CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
 
-![](VoicemeeterPotato_UserManual/potato-24-2.jpg)
-
 PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
 
-To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
+![](VoicemeeterPotato_UserManual/potato-24-2.jpg)
 
-![](VoicemeeterPotato_UserManual/potato-26-1.jpg)
+To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
 
 #### Denoiser Details
 
 Right clicking on Denoiser knob will open the detailed parameters view to get access to a new voice effect.
+
+![](VoicemeeterPotato_UserManual/potato-26-1.jpg)
 
 **Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
 
@@ -423,21 +412,17 @@ REM: CTRL+ RIGHT CLICK to edit parameter value.
 
 8 configurable user presets. Left click to recall it. Right click to get contextual menu..
 
----
+PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
 
 ![](VoicemeeterPotato_UserManual/potato-26-2.jpg)
 
-PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
-
 To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
-
-26 本页有 2 张图
 
 ### Strip Limiter
 
-![](VoicemeeterPotato_UserManual/potato-24-3.jpg)
-
 With Voicemeeter Banana comes a Brick-Wall Limiter on each physical or virtual strip to define a threshold for each audio source. Click directly in the meter bar to set the limit by the mouse or right click to enter the value directly (-40 to +12 dB).
+
+![](VoicemeeterPotato_UserManual/potato-24-3.jpg)
 
 WARNING: Strip Limiter is made before Slider Gain (BUS Limiter is made after Slider Gain).
 
@@ -446,8 +431,6 @@ WARNING: Strip Limiter is made before Slider Gain (BUS Limiter is made after Sli
 #### Green or Yellow Limiter
 
 With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the original Yellow limiter and the Green limiter. Use CTRL+Click to swap from one to another.
-
-24 本页有 3 张图
 
 ![](VoicemeeterPotato_UserManual/potato-25-1.jpg)
 
@@ -459,11 +442,11 @@ Noise attack is usually not hearable on a full audio track, but if the sound is 
 
 ![](VoicemeeterPotato_UserManual/potato-25-2.jpg)
 
-Without limiter, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
+**Without limiter**, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
 
-The yellow limiter tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
+The **yellow limiter** tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
 
-Green Limiter is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
+**Green Limiter** is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
 
 #### Limiter on BUS
 
@@ -479,13 +462,11 @@ REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter i
 
 M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
 
-25 本页有 3 张图
-
 ### Karaoke Button
 
-![](VoicemeeterPotato_UserManual/potato-27-1.jpg)
-
 With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K button on Virtual AUX input to offer 4 different real time algorithms to remove the voice on a stereo material..
+
+![](VoicemeeterPotato_UserManual/potato-27-1.jpg)
 
 **K-m:** Karaoke Voice Remover Removes the common part of a stereo track material. All mono sound will be removed
 
@@ -496,8 +477,6 @@ With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K but
 **Kv:** If nothing works (like on a MONO track), this last mode will simply remove the voice frequence range (200- 4000 Hz) by a simple filter
 
 ![](VoicemeeterPotato_UserManual/potato-27-2.jpg)
-
-27 本页有 2 张图
 
 ### Parametric EQ on hardware input
 
@@ -530,8 +509,6 @@ The strip Menu allows performing 3 kinds of operation on all parameters of the s
 Strip menu is different for Virtual Input than for Hardware input since it offers different strip tools.
 
 ![](VoicemeeterPotato_UserManual/potato-29-2.jpg)
-
-29 本页有 2 张图
 
 ### Applications shown on Virtual Input Strip
 
@@ -569,8 +546,6 @@ The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are c
 
 **Gain Slider:** Finally, the Gain Slider allows to adjust the output volume of the BUS.
 
-31 本页有 2 张图
-
 #### BUS SEL Button and sub-mix view
 
 BUS Selector allows defining sub mix with strip gain sliders, but version 3.1.3.0 offers an overview on all sub-mix by right clicking on assignation buttons (Right click to swap view).
@@ -601,20 +576,18 @@ COPY ALL: copy EQ settings of all channels (to copy entire equalization to anoth
 
 RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter value manually / precisely.
 
-![](VoicemeeterPotato_UserManual/potato-33-2.jpg)
-
 The EQ button can give information about the current Equalizer state for the 8 channels
 
-**Green:** channel is equalized or gain changed. 
-**Red:** channel is delayed. 
-**Yellow:** channel is equalized and delayed. 
-**Black:** nothing applied on channel.
+![](VoicemeeterPotato_UserManual/potato-33-2.jpg)
 
-33 本页有 2 张图
-
-![](VoicemeeterPotato_UserManual/potato-34-1.jpg)
+**Green:** channel is equalized or gain changed.   
+**Red:** channel is delayed.   
+**Yellow:** channel is equalized and delayed.   
+**Black:** nothing applied on channel.  
 
 EQ Dialog Box System Menu offers two functions to simply LOAD / SAVE your EQ settings as a XML File (for the current BUS with its 8 channels).
+
+![](VoicemeeterPotato_UserManual/potato-34-1.jpg)
 
 Then it is possible copy the BUS EQ settings from a BUS to another... or/and share it with other users.
 
@@ -636,10 +609,6 @@ Rear & side Speaker are mixed out of phase to simulate surround effect in stereo
 MIX DOWN B  
 Rear & side Speaker are mixed in phase
 
-**STEREO REPEAT**
-
-This button is made to use possible 8 outputs channels with a stereo signal. This stereo signal is repeated to channel 3,4 / 5;6 and 7,8.
-
 MIX DOWN A (Processing)
 - LEFT = FL + (70% FC) + SW + RL - SL  
 - RIGHT = RL + (70% FC) + SW - RR + SR
@@ -648,7 +617,9 @@ MIX DOWN B (Processing)
 - LEFT = FL + (70% FC) + SW + RL + SL 
 - RIGHT = RL + (70% FC) + SW + RR + SR
 
-34 本页有 2 张图
+**STEREO REPEAT**
+
+This button is made to use possible 8 outputs channels with a stereo signal. This stereo signal is repeated to channel 3,4 / 5;6 and 7,8.
 
 #### Use Master EQ as crossover
 
@@ -685,90 +656,35 @@ For example
 
 ![](VoicemeeterPotato_UserManual/potato-37-1.jpg)
 
-![](VoicemeeterPotato_UserManual/potato-37-2.jpg)
-
 **Additional application**
+
+![](VoicemeeterPotato_UserManual/potato-37-2.jpg)
 
 It is also possible to get total control on 8 channels with a small application called **8x8 Gain Matrix**, to redistribute all 8 channels of a 5.1 or 7.1 audio signal coming from your DVD player or Video Game.
 
-This free application for Voicemeeter can be found on our forum here:
-
+This free application for Voicemeeter can be found on our forum here:  
 [https://forum.vb-audio.com/viewtopic.php?f=8&t=394](https://forum.vb-audio.com/viewtopic.php?f=8&t=394)
-
-37 本页有 2 张图
 
 #### All Voicemeeter BUS Mode (14)
 
 Here below the list of 14 BUS Mode to manage the 8 channels of the BUS in 14 different ways.
 
-**Normal Mode**
-
-All channels are sent AS IS
-
-**MIX DOWN A**
-
-- LEFT = FL + (70% FC) + SW + RL - SL 
-- RIGHT = RL + (70% FC) + SW - RR + SR
-
-**MIX DOWN B**
-
-- LEFT = FL + (70% FC) + SW + RL + SL 
-- RIGHT = RL + (70% FC) + SW + RR + SR 
-
-**STEREO REPEAT**
-
-- ch1 = FL, ch3 = FL, ch5 = FL, ch7 = FL 
-- ch2 = FR, ch4 = FR, ch6 = FR, ch8 = FR 
-
-**COMPOSITE MODE**
-
-Contains pre fader inputs given by the COMPOSITE PATCH
-
-**UP MIX TV (create 7.1 from stereo)**
-
-- FL = L, FC = 20%(L+R), RL = 70%(L-R), SL = 70%(L-R) 
-- FR = R, SW=50%(L+R), RR = 70%(R-L), SR = 70%(R-L) 
-
-**UP MIX 2.1**
-
-- FL = L, FR = R, SW=50%(L+R).
-
-**UP MIX 4.1**
-
-- FL = L, FR = R, SW=50%(L+R). 
-- RL = L, RR = R 
-
-**UP MIX 6.1**
-
-- FL = L, FR = R, SW=50%(L+R). 
-- RL = L, RR = R SL = L, SR = R 
-
-**LEFT ONLY (extract Left Channel)**
-
-- LEFT = FL 
-- RIGHT = FL 
-
-**RIGHT ONLY (extract Right Channel)**
-
-- LEFT = FR 
-- RIGHT = FR 
-
-**CENTER ONLY (extract Center)**
-
-- LEFT = FC 
-- RIGHT = FC 
-
-**LFE ONLY (extract sub woofer)**
-
-- LEFT = SW 
-- RIGHT = SW 
-
-**REAR ONLY (extract rear)**
-
-- LEFT = RL 
-- RIGHT = RR
-
-38 本页有 14 张图
+||||
+|:--|:--|:--|
+|![](VoicemeeterPotato_UserManual/potato-38-1.jpg) |**Normal Mode** |All channels are sent AS IS |
+|![](VoicemeeterPotato_UserManual/potato-38-2.jpg) |**MIX DOWN A** |LEFT = FL + (70% FC) + SW + RL - SL <br>RIGHT = RL + (70% FC) + SW - RR + SR |
+|![](VoicemeeterPotato_UserManual/potato-38-3.jpg) |**MIX DOWN B** |LEFT = FL + (70% FC) + SW + RL + SL <br>RIGHT = RL + (70% FC) + SW + RR + SR |
+|![](VoicemeeterPotato_UserManual/potato-38-4.jpg) |**STEREO REPEAT** |ch1 = FL, ch3 = FL, ch5 = FL, ch7 = FL <br>ch2 = FR, ch4 = FR, ch6 = FR, ch8 = FR |
+|![](VoicemeeterPotato_UserManual/potato-38-5.jpg) |**COMPOSITE MODE** |Contains pre fader inputs given by the COMPOSITE PATCH |
+|![](VoicemeeterPotato_UserManual/potato-38-6.jpg) |**UP MIX TV (create 7.1 from stereo)** |FL = L, FC = 20%(L+R), RL = 70%(L-R), SL = 70%(L-R) <br>FR = R, SW=50%(L+R), RR = 70%(R-L), SR = 70%(R-L) |
+|![](VoicemeeterPotato_UserManual/potato-38-7.jpg) |**UP MIX 2.1** |FL = L, FR = R, SW=50%(L+R). |
+|![](VoicemeeterPotato_UserManual/potato-38-8.jpg) |**UP MIX 4.1** |FL = L, FR = R, SW=50%(L+R). <br>RL = L, RR = R |
+|![](VoicemeeterPotato_UserManual/potato-38-9.jpg) |**UP MIX 6.1** |FL = L, FR = R, SW=50%(L+R). <br>RL = L, RR = R SL = L, SR = R |
+|![](VoicemeeterPotato_UserManual/potato-38-10.jpg) |**LEFT ONLY (extract Left Channel)** |LEFT = FL <br>RIGHT = FL |
+|![](VoicemeeterPotato_UserManual/potato-38-11.jpg) |**RIGHT ONLY (extract Right Channel)** |LEFT = FR <br>RIGHT = FR |
+|![](VoicemeeterPotato_UserManual/potato-38-12.jpg) |**CENTER ONLY (extract Center)** |LEFT = FC <br>RIGHT = FC |
+|![](VoicemeeterPotato_UserManual/potato-38-13.jpg) |**LFE ONLY (extract sub woofer)** |LEFT = SW <br>RIGHT = SW |
+|![](VoicemeeterPotato_UserManual/potato-38-14.jpg) |**REAR ONLY (extract rear)** |LEFT = RL <br>RIGHT = RR |
 
 ## Special Fx
 
@@ -834,11 +750,9 @@ If AUTO FIT button is ON, the new tempo is automatically kept and the delay of a
 
 The C5 has also been originally developed for Innovason Mixing Console in 2007 but never been used because replace by the C4. Now the C5 is available in Voicemeeter potato to apply a Multi Band Compression to any Hardware inputs.
 
-![](VoicemeeterPotato_UserManual/potato-41-2.jpg)
-
 The C5 effect must me selected first, to replace the Delay Fx in the Voicemeeter System Settings Dialog box. Click on Delay to Swith to C5 and vice versa.
 
-41 本页有 2 张图
+![](VoicemeeterPotato_UserManual/potato-41-2.jpg)
 
 The C5 graphic user interface is basically made of 5 bands showing the different levels (input, output and gain reduction) and offering a complete Compressor/Limiter processing for each.
 
@@ -1033,8 +947,6 @@ Warning: 2 applications cannot use the same UDP port in the same time.
 
 ### Streamer View: 
 
-48 本页有 3 张图
-
 Installed with Voicemeeter, the Streamer View application is a simplified and resizable Graphic User Interface for streamer to control Voicemeeter, or directly (by using Voicemeeter Remote API) or through network (using VBAN).
 
 You can launch the VM Streamer view from the Voicemeeter Menu or from the Windows Applications list. The Streamer View is a regular user application installed with Voicemeeter.
@@ -1057,15 +969,11 @@ Streamer Slider Mode is a local mode to let you move strip sliders independently
 
 The sys-menu (click on dialog box icon on top–left) allows configuring the connection type to Voicemeeter. DIRECT if you want to conrol Voicemeeter on the same computer, or you can define up to 4x VBAN connections to control Voicemeeter on another computer of your network.
 
-49 本页有 2 张图
-
 ![](VoicemeeterPotato_UserManual/potato-50-1.png)
 
 VBAN Command protocol and RT Packet service can support multiple clients and consequently allow Voicemeeter to be controlled from several points. For example 2 or more VM-Streamers can be connected to Voicemeeter to control it from different rooms. In the same way, you can have other connected PC using the MacroButton to send VBAN command to the same Voicemeeter already remoted by distant VM-Streamer View.
 
 ![](VoicemeeterPotato_UserManual/potato-50-2.png)
-
-50 本页有 2 张图
 
 ### Preset Scene
 
@@ -1086,8 +994,6 @@ Preset can also be exported or imported thanks to Load/Save functions. Or copy /
 Preset contains all mixing settings. All audio controls in main Voicemeeter graphic user interface and audio fx.
 
 Presets do not contain device selection, system settings, MIDI or VBAN parameters…
-
-51 本页有 1 张图
 
 ## WINDOWS AUDIO MAP
 
@@ -1131,11 +1037,11 @@ REM: VAIO Loopback option is enabled by default in Voicemeeter.
 
 Right click in audio map to get the contextual menu. The "Refresh" option updates all display with current parameters (all settings are gathered again on refresh). This is useful because not all settings are real time updated. Some information requires a "refresh" to be updated.
 
+![](VoicemeeterPotato_UserManual/potato-55-1.jpg)
+
 Zoom level can be change by Mouse Wheel or keyboard '+' and '-'. Type ZERO PAD to reset zoom to 100%
 
 When you are on a VAIO device, the option "Open VAIO Control Panel" is available.
-
-![](VoicemeeterPotato_UserManual/potato-55-1.jpg)
 
 We also retrieve access to different windows settings dialog box:
 
@@ -1149,15 +1055,13 @@ The 3 first Windows audio settings dialog box are not present under Windows 7 bu
 
 ![](VoicemeeterPotato_UserManual/potato-55-2.jpg)
 
-55 本页有 2 张图
-
 ## VAIO options and menu
 
 VAIO latency are now stored as system parameter and recalled on each Audio Engine Start.
 
-![](VoicemeeterPotato_UserManual/potato-56-1.jpg)
-
 RIGHT + CLICK on Virtual Input caption to display the latency menu.
+
+![](VoicemeeterPotato_UserManual/potato-56-1.jpg)
 
 VAIO must have an internal latency not below 3x time the buffer size used by Voicemeeter Audio Engine and the Applications connected to the Virtual I/O.
 
@@ -1174,8 +1078,6 @@ If you modify the latency for Voicemeeter input for example, it will be modified
 Select Show Control Panel to display the VAIO control panel (here below)
 
 ![](VoicemeeterPotato_UserManual/potato-56-2.jpg)
-
-56 本页有 2 张图
 
 ### VAIO Control Panel
 
@@ -1203,8 +1105,6 @@ VAIO Extension If activated (by a specific license), other VAIOs can be used by 
 
 ![](VoicemeeterPotato_UserManual/potato-57-1.jpg)
 
-57 本页有 1 张图
-
 ### VAIO Loopback Mode
 
 VAIO Loopback mode is normally activated by default. It allows capture applications like OBS to get audio from the Voicemeeter input directly.
@@ -1221,13 +1121,11 @@ Run this application in administrator mode if you want to change any option (bec
 
 The option "Enable Windows Volume Control" will enable the volume control on all Voicemeeter inputs (all playback devices). If set as default playback device, it will be possible to change the volume by the Speaker Windows Control:
 
-By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (playback devices). To make this windows control work, you have to enable it in the VAIO Control panel application.
-
 ![](VoicemeeterPotato_UserManual/potato-58-2.jpg)
 
-Voicemeeter outputs provide no gain management.
+By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (playback devices). To make this windows control work, you have to enable it in the VAIO Control panel application.
 
-58 本页有 2 张图
+Voicemeeter outputs provide no gain management.
 
 # VBAN
 
@@ -1280,8 +1178,6 @@ VBAN-Chat is list all IP-Address used by the VBAN configuration dialog box and a
 When sending a TEXT message, all connected VBAN-unit will receive it and automatically display the VBAN-Chat Dialog box.
 
 OPTION menu allows changing some display option and font size. It is also possible to send \<nudge> and \<alert>
-
-62 本页有 2 张图
 
 ### Configure VBAN Audio Stream
 
@@ -1374,8 +1270,6 @@ The Capture works if Voicemeeter main interface is opened, in foreground or not.
 VBAN-Screen application is installed with VB-Audio Matrix package but can also be downloaded from our VBAN web page: [https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen](https://vb-audio.com/Voicemeeter/vban.htm#DownloadVBANScreen)
 
 VBAN-Screen is resizable so also can be used to get a smaller Voicemeeter view on the same computer or any computer of the network.
-
-67 本页有 2 张图
 
 #### Screen Sharing
 
@@ -2522,9 +2416,9 @@ If you own several licenses, take care to select the right line, related to the 
 
 The dialog box to get certificate will appear and will first ask you to confirm data.
 
-![](VoicemeeterPotato_UserManual/potato-115-1.jpg)
-
 Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now"
+
+![](VoicemeeterPotato_UserManual/potato-115-1.jpg)
 
 Then you get your certificate in this box
 
@@ -2532,13 +2426,11 @@ Then you get your certificate in this box
 
 Simply copy / paste it in the application License activation box and click on "Activate" button.
 
+![](VoicemeeterPotato_UserManual/potato-115-3.jpg)
+
 REM: The certificate start with the char '>' and finishes with the char '<'.
 
 This certificate will be store in your computer to authenticate your license (internet is not needed).
-
-![](VoicemeeterPotato_UserManual/potato-115-3.jpg)
-
-115 本页有 3 张图
 
 ### VAIO extension Activation Code
 

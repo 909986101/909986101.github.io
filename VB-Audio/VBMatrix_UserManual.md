@@ -897,11 +897,11 @@ Check the information in orange are exactly the same than you entered in your li
 
 ![](VBMatrix_UserManual/matrix-47-2.jpg)
 
-Simply copy / paste it in the application License activation box and click on "Activate" 
+Simply copy / paste it in the application License activation box and click on "Activate" button.
 
 ![](VBMatrix_UserManual/matrix-47-3.jpg)
 
-button.REM: The certificate start with the char '>' and finishes with the char '<'.
+REM: The certificate start with the char '>' and finishes with the char '<'.
 
 ## RECOMMENDATIONS
 
