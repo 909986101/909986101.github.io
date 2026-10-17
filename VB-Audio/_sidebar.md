@@ -2,8 +2,8 @@
 
 - Voicemeeter
 
-  - [VoicemeeterPotato_UserManual](VoicemeeterPotato_UserManual.md)
+  - [VoicemeeterPotato_UserManual](VoicemeeterPotato_UserManual/VoicemeeterPotato_UserManual.md)
 
 - Matrix
 
-  - [VBMatrix_UserManual](VBMatrix_UserManual.md)
+  - [VBMatrix_UserManual](VBMatrix_UserManual/VBMatrix_UserManual.md)
