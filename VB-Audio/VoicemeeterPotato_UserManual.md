@@ -1,18 +1,36 @@
-# VOICEMEETER Potato USER MANUAL
+# VOICEMEETER
 
-> The Ultimate Virtual Audio Device Mixer for Windows
+|||
+|:-:|:-:|
+|![](VoicemeeterPotato_UserManual/1-1.jpg) |**VoiceMeeter** <br>Real Time Virtual Audio Mixer for Windows|
+|![](VoicemeeterPotato_UserManual/banana-1-1.jpg) |**Banana** <br>Advanced Virtual Audio Mixer for Windows|
+|![](VoicemeeterPotato_UserManual/potato-1-1.jpg) |**Patato** <br>The Ultimate Virtual Audio Device Mixer for Windows|
 
-![](VoicemeeterPotato_UserManual/potato-1-1.jpg)
-
-> OFFICIAL WEBSITE [www.voicemeeter.com](https://www.voicemeeter.com)
-
-> Official package URL is only based on download. vb-audio.com (and Microsoft Store), DO NOT DOWNLOAD VOICEMEETER FROM OTHER LOCATION.
-
-This Document explains the additional functions added in Voicemeeter Potato (Voicemeeter 8) .
-
-If you are not familiar with Voicemeeter, we recommend to read first the User Manual of Voicemeeter Standard or Banana version.
+## OFFICIAL WEBSITE 
 
 [www.voicemeeter.com](https://www.voicemeeter.com)
+
+> [!CAUTION]
+> Official package URL is only based on **download. vb-audio.com** (and Microsoft Store), **DO NOT DOWNLOAD VOICEMEETER FROM OTHER LOCATION.**
+
+## ONLINE SUPPORT 
+
+[https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm)
+
+## Fair Trade, Affordable For Everyone
+
+> Voicemeeter is a donationware, free to download and free to use! It allows you to adjust the license price according to your means or usage.
+
+> Voicemeeter Potato is distributed as Donationware with an activation code!  After 30 days period, it will periodically invite you to activate your license.
+
+> For any professional use, you may pay the recommended license price on the webshop. For volume licensing / commercial distribution, you may contact us to get quotation / agreement.
+
+More Licensing info: [https://www.vb-audio.com/Services/licensing.htm](https://www.vb-audio.com/Services/licensing.htm)
+
+Thanks for your participation and support!  
+[https://shop.vb-audio.com](https://shop.vb-audio.com)
+
+Windows XP (SP2), VISTA, WIN7, WIN8, WIN8.1, WIN10 32/64 bits (MME, DX, WDM/WASAPI, KS, ASIO).
 
 ## INSTALLATION
 
@@ -65,54 +83,74 @@ more info on our forum: [https://forum.vb-audio.com/viewtopic.php?f=7&t=688](htt
 
 8. Possibly re-check some option in menu (System Tray, Run at Startup, Show App on Startup...).
 
-## ONLINE SUPPORT 
-
-[https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm)
-
-## Fair Trade, Affordable For Everyone
-
-> Voicemeeter is a donationware, free to download and free to use! It allows you to adjust the license price according to your means or usage.
-
-> Voicemeeter Potato is distributed as Donationware with an activation code!  After 30 days period, it will periodically invite you to activate your license.
-
-> For any professional use, you may pay the recommended license price on the webshop. For volume licensing / commercial distribution, you may contact us to get quotation / agreement.
-
-More Licensing info: [https://www.vb-audio.com/Services/licensing.htm](https://www.vb-audio.com/Services/licensing.htm)
-
-Thanks for your participation and support!  
-[https://shop.vb-audio.com](https://shop.vb-audio.com)
-
-Windows XP (SP2), VISTA, WIN7, WIN8, WIN8.1, WIN10 32/64 bits (MME, DX, WDM/WASAPI, KS, ASIO).
-
 ## INTRODUCTION
+
+Voicemeeter is a virtual mixing console able to manage 3 audio inputs (2 physicals and 1
+virtual) and 3 audio outputs (2 physicals and 1 virtual) through 2 busses A & B.
+
+![](VoicemeeterPotato_UserManual/8-1.jpg)
+
+Voicemeeter Banana is an advanced virtual mixing console able to manage 5 audio inputs (3
+physicals and 2 virtual) and 5 audio outputs (3 physicals and 2 virtual) through 5 multichannel
+busses (A1, A2, A3 & B1, B2).
+
+![](VoicemeeterPotato_UserManual/banana-8-1.jpg)
 
 Voicemeeter Potato is an advanced virtual mixing console able to manage 8 audio inputs (5 physicals and 3 virtual) and 8 audio outputs (5 physicals and 3 virtual) through 8 multichannel busses (A1, A2, A3, A4, A5 & B1, B2, B3).
 
 ![](VoicemeeterPotato_UserManual/potato-9-1.jpg)
 
-As Mixing Console, Voicemeeter offers large amount of use case combinations: To mix in real time your voice with your music, your movie, your video game or web radio and share it on internet through VOIP or Streaming applications. Voicemeeter is also able to let you manage 5 Headsets and create new VOIP experiences …
+As Mixing Console, Voicemeeter offers large amount of use case combinations: To mix in real time your voice with your music, your movie, your video game or web radio and share it on internet through VOIP or Streaming (Patato only) applications. Voicemeeter is also able to let you manage 2 / 3 (Banana) / 5（Potato） Headsets and create new VOIP experiences …
 
+Voicemeeter Banana integrates an audio recorder able to generate BWF, WAV, AIFF, or MP3
+file in stereo. (and 4, 6, or 8 channels for WAV / AIFF format). Recording options allow recording
+any pre-fader inputs or post fader BUS. Special Composite Mode will allow to record pre or post
+fader inputs in multichannel mode.  
 Voicemeeter Potato integrates the same recorder than Voicemeeter Banana and a new internal FX section offering a Reverb and a Multitap Delay through a regular Send / Return function. Potato also offers two true aux to manage external FX with an ASIO device (ASIO channel must be assigned to SEND / RETURN functions in system settings dialog box).
 
-Voicemeeter Potato also offers a 6 cells full parametric EQ on every BUS, with the possibility to make independent equalization on each channel (1-to 8). This is made to correct your P.A. System from mono to 7.1 setup. In conjunction with Stereo Repeat Mode, it 's also possible to use this Equalizer as stereo Cross Over to drive 2, 3, or 4 ways active speakers system.
+Voicemeeter Banana / Potato also offers a 6 cells full parametric EQ on every BUS, with the possibility to make independent equalization on each channel (1-to 8). This is made to correct your P.A. System from mono to 7.1 setup. In conjunction with Stereo Repeat Mode, it 's also possible to use this Equalizer as stereo Cross Over to drive 2, 3, or 4 ways active speakers system.
 
+Finally Voicemeeter Banana provides a better control on Compression / Gate effect by
+presenting 2 different knobs and adds another modulation effect panel on the 3 physical input
+strips.  
 Finally Voicemeeter Potato displays applications connected on its virtual input and gives you the same volume and mute control than the Windows volume mixer.
+
+
+
+![](VoicemeeterPotato_UserManual/8-2.jpg)
+_Voicemeeter General Diagram (3 inputs / 2 Buses Mixing Console)_
+
+Voicemeeter Banana implements a simple matrix to let you manage input to output routing, and
+make mix minus processing for every strips. So we have 5 push buttons per strip: A1, A2 A3
+and B1, B2 to send each strip to assign any audio source to any busses.
+
+![](VoicemeeterPotato_UserManual/banana-9-1.jpg)
+_Voicemeeter Banana General Diagram (5 inputs / 5 Buses / 5 outputs Mixing Console)_
+
+![](VoicemeeterPotato_UserManual/banana-9-2.jpg)
 
 Voicemeeter Potato implements a full 8x8 matrix to let you mix your 8 possible inputs strip into 8 possible BUS outputs. BUS Assignation per strip work like on Banana but the SEL button per BUS allows setting input level for a particular BUS only. Then it is possible to define a MIX per BUS independently.
 
 ![](VoicemeeterPotato_UserManual/potato-10-1.jpg)
 
-Voicemeeter Potato General Diagram (8 inputs / 8 Buses / 8 outputs Mixing Console)
+_Voicemeeter Potato General Diagram (8 inputs / 8 Buses / 8 outputs Mixing Console)_
 
 ![](VoicemeeterPotato_UserManual/potato-10-2.jpg)
 
-### Voicemeeter Banana as Universal Virtual Audio Device
+### Voicemeeter / Banana / Patato as Universal Virtual Audio Device
 
-Voicemeeter offers Virtual Audio Point on Input #6, #7 & #8 and on BUS B1, B2 and B3. These Virtual Audio I/O's (VAIO) support all possible Audio Interfaces and allows connecting any audio applications, including audio pro DAW or musical instrument working with ASIO devices.
+Voicemeeter offers Virtual Audio Point on Input #3 and on BUS B (Output B).   
+Voicemeeter Banana offers Virtual Audio Point on Input #4 & #5 and on BUS B1 and B2.  
+Voicemeeter Potato offers Virtual Audio Point on Input #6, #7 & #8 and on BUS B1, B2 and B3.  
+These Virtual Audio I/O's (VAIO) support all possible Audio Interfaces and allows connecting any audio applications, including audio pro DAW or musical instrument working with ASIO devices.
 
-Audio interfaces type supported by Voicemeeter Virtual audio I/O (Voicemeeter VAIO). 
+![](VoicemeeterPotato_UserManual/9-1.jpg)
+
+![](VoicemeeterPotato_UserManual/banana-10-1.jpg)
 
 ![](VoicemeeterPotato_UserManual/potato-11-1.jpg)
+
+Audio interfaces type supported by Voicemeeter Virtual audio I/O (Voicemeeter VAIO). 
 
 |Interface |Type Description |
 |:--|:-|
@@ -136,7 +174,37 @@ Voicemeeter package also installs VoicemeeterRemote.dll and VoicemeeterRemote64.
 More information and SDK download on our forum:  
 [https://forum.vb-audio.com/viewtopic.php?f=8&t=346](https://forum.vb-audio.com/viewtopic.php?f=8&t=346)
 
-## Quick Startup Guide
+---
+std-11
+
+### Audio Mixing Console Basis
+
+An audio mixing console is a device able to sum different audio signals (audio sounds) coming
+from different inputs and route them to different outputs. Mixing desk is usually composed by
+Strips and Busses. While strips are connected to Inputs, busses are connected to outputs.
+
+![](VoicemeeterPotato_UserManual/11-1.jpg)
+
+This schema above shows how basically Voicemeeter can mix 3 inputs into 2 busses (in BUS A
+if button A is switched on, on BUS B if button B is switched on). Typically BUS A can be used
+for monitoring (speakers) and BUS B for VOIP or audio recording applications.
+
+Each strip (each input) can go through different processing before summing to the busses.
+Voicemeeter includes funny panels to tweak the sound on input #1 and #2 and a regular 3
+bands Equalizer on input #3 (the Virtual Input).
+
+Again on usual Mixing Console, we have on each strip a SOLO button (to listen one or several
+strips only) and a MUTE button to simply mute the signal of the Strip or Bus.
+
+Finally the Fader Gain allows to adjust the sound volume for each Strip and Bus.
+
+Other controls will be explained later, but basically we have described here the outlines of what
+is an Audio Mixer, generally speaking. 
+
+std-11
+---
+
+## STEP 0: Quick Startup Guide
 
 Voicemeeter is a virtual audio mixer intended to replace the Windows Mixer. The quickest way to configure Voicemeeter is to simply use it as default device and connect it to your main playback device. Then all PC sounds will go through Voicemeeter before playing back to your speakers.
 
@@ -150,7 +218,7 @@ Windows System Audio Configuration is mainly located in Windows Control Panel / 
 
 In all cases, all is a question of audio configuration and it does not need to remove Voicemeeter in case of problem. Voicemeeter is a simple Application endowed with an audio device driver, if you don't use it, there is no way to get trouble. But if you do, you need to avoid possible audio device conflict and connect everything to Voicemeeter (to prevent other application to use audio playback device already used by Voicemeeter).
 
-## Connecting Voicemeeter to Audio device
+## STEP 1: Select main audio Output Device / Connecting Voicemeeter to Audio device
 
 Voicemeeter can now work without audio device by running on its own internal clock (if no device is selected on output A1). If you have an audio output device, you can select it as output A1 for monitoring and give the master clock to Voicemeeter Audio Engine.
 
@@ -180,7 +248,7 @@ If your input level is too weak (or too loud), check the level of the selected i
 |:--|:--|
 |![](VoicemeeterPotato_UserManual/potato-15-3.jpg) |![](VoicemeeterPotato_UserManual/potato-15-4.jpg) |
 
-## Selecting Input Devices
+## STEP 2: Select an Input Device / Selecting Input Devices
 
 An audio device can be selected for every physical strip by clicking on Stereo input area. Select audio input device on strip #1, for example your microphone! Then you will be able to listen to your voice in real time.
 
@@ -190,9 +258,75 @@ If you remove selection, Input strip can still get audio from VBAN stream or ASI
 
 REM: it's better to select WDM driver (present since Windows VISTA) to get best latency and audio performances. If using MME driver you might have a bigger delay between input and output. Use MME driver only if WDM are not present or does not work correctly with your audio hardware configuration.
 
+---
+std-15
+
+After Step 2, Voicemeeter is routing signal from selected input (e.g. Microphone) to A1 selected Output. Then you can hear from this audio output the sound coming in input #1. A & B button are switch to send signal in BUS A or/and BUS B.
+
+![](VoicemeeterPotato_UserManual/15-2.jpg)
+
+std-15
+---
+
+---
+std-16
+
+### Monitor Input in Real Time
+
+After Step 2, you can hear what is coming in selected input. Blue VU-meter will show you level in real time. Input signal is per default sent to both busses (A & B) and we have routed the BUS A to an output device in Step 1.
+
+![](VoicemeeterPotato_UserManual/16-1.jpg)
+
+std-16
+---
+---
+std-17
+
+## STEP 3: Use Virtual Input as default playback device
+
+Strip #3 is the virtual input of Voicemeeter. It is shown as regular system audio device and can be used by another application as playback audio device.
+
+![](VoicemeeterPotato_UserManual/17-1.jpg)
+
+If Voicemeeter Input is set as default audio device, every sound played on the computer will go on the Virtual Input (Strip #3) of Voicemeeter Mixing Console.
+
+![](VoicemeeterPotato_UserManual/17-2.jpg)
+
+You can launch a Media Player or Web Radio and check that you can hear the sound coming from it on the Voicemeeter Virtual Input (IN 3).
+
+![](VoicemeeterPotato_UserManual/17-3.png)
+
+std-17
+---
+---
+std-18
+
+### Virtual Input is Multi-Channel
+
+Strip #3, the virtual input of Voicemeeter can manage until 8 channels and get 5.1 audio from DVD for example. 
+
+![](VoicemeeterPotato_UserManual/18-1.jpg)
+
+Windows Control Panel /Sound Dialog Box allows configuring Audio device (playback and recording devices).
+
+To get multichannel audio from DVD player you need to configure the Voicemeeter Input in multi-channel (click on configure button on the left bottom after having selected the Voicemeeter input).
+
+When playing DVD you will see 5.1 audio signal incoming on Voicemeeter Virtual Input and also on possible A output level (if your output device supports the same number of channels).
+
+Note that BUS B is also multichannel but level meter shows always 2 first channels only.
+
+![](VoicemeeterPotato_UserManual/18-2.jpg)
+
+std-18
+---
+
 ## Understanding Voicemeeter Virtual I/O in one picture
 
 Virtual I/O are connected to virtual audio devices installed with Voicemeeter. Playback devices are used as virtual inputs while recording devices are fed with output B1, B2 and B3.
+
+![](VoicemeeterPotato_UserManual/19-1.jpg)
+
+![](VoicemeeterPotato_UserManual/banana-16-1.jpg)
 
 ![](VoicemeeterPotato_UserManual/potato-17-1.jpg)
 
@@ -212,17 +346,58 @@ Voicemeeter VAIO: Recording Devices:
 
 ### Understanding new Voicemeeter VAIOs driver (Win10 or higher)
 
-Voicemeeter now offers up to 8 Virtual I/O. I/O 1 to 5 are VAIO extension. Voicemeeter input, AUX and VAIO3 are also the Virtual input 6, 7 and 8.
+Voicemeeter now offers up to 8 Virtual I/O. I/O 1 to 5 are VAIO extension.  
+Standard: Voicemeeter input is also the Virtual input 6.  
+Banana: Voicemeeter input is also the Virtual input 6. Voicemeeter Aux input is also the Virtual input 7.  
+Potato: Voicemeeter input, AUX and VAIO3 are also the Virtual input 6, 7 and 8.
+
+![](VoicemeeterPotato_UserManual/20-1.jpg)
+
+Voicemeeeter Output is now called “Voicemeeter out B1” (Virtual output 6).
+
+![](VoicemeeterPotato_UserManual/20-2.jpg)
+
+VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
+
+![](VoicemeeterPotato_UserManual/banana-17-1.jpg)
+
+Voicemeeter output is now called “Voicemeeter out B1” (Virtual output 6)  
+Voicemeeter AUX output is now called “Voicemeeter.out B2” (Virtual output 7).
+
+![](VoicemeeterPotato_UserManual/banana-17-2.jpg)
+
+VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
 
 ![](VoicemeeterPotato_UserManual/potato-18-1.jpg)
 
-Voicemeeter output is now called "Voicemeeter out B1" (Virtual output 6) Voicemeeter AUX output is now called "Voicemeeter.out B2" (Virtual output 7). Voicemeeter VAIO3 output is now called "Voicemeeter.out B3" (Virtual output 8).
+Voicemeeter output is now called "Voicemeeter out B1" (Virtual output 6)  
+Voicemeeter AUX output is now called "Voicemeeter.out B2" (Virtual output 7).  
+Voicemeeter VAIO3 output is now called "Voicemeeter.out B3" (Virtual output 8).
 
 ![](VoicemeeterPotato_UserManual/potato-18-2.jpg)
 
 VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
 
 ### Voicemeeter Virtual ASIO driver
+
+---
+std-25
+
+Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
+
+![](VoicemeeterPotato_UserManual/25-1.jpg)
+
+std-25
+---
+---
+banana-18
+
+Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) or BUS B2 (for Voicemeeter AUX virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
+
+![](VoicemeeterPotato_UserManual/banana-18-1.jpg)
+
+banana-18
+---
 
 Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) BUS B2 (for Voicemeeter AUX virtual ASIO) or BUS B3 (for Voicemeeter VAIO3 virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
 
@@ -236,7 +411,23 @@ Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 cl
 
 Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO
 
-## Audio Controls.
+---
+std-21
+
+## STEP 4: Send the Mix Output to Skype Input
+
+BUS B, not used yet, can be used to send the mix to virtual output that can be connected to another application (typically a recording or VOIP application).
+
+![](VoicemeeterPotato_UserManual/21-1.jpg)
+
+For example in Skype you can select the Voicemeeter Virtual Output as Microphone.
+
+![](VoicemeeterPotato_UserManual/21-2.jpg)
+
+std-21
+---
+
+## STEP 5: Enjoy new Audio Controls
 
 While you are talking you can tweak your voice in real time with different controls; 2D Panel, Audibility knobs or simple 3 bands Equalizer…
 
@@ -280,9 +471,14 @@ On both Virtual input strips, there is a simple 3 bands Equalizer and 5.1 Pan Po
 
 ![](VoicemeeterPotato_UserManual/potato-21-3.jpg)
 
+_Banana / Patato Equalizer and 5.1 Pan Pot_
+
 **EQUALIZER**
 
 3 Bands Equalizer to boost or remove bass, medium and high frequency (treble).
+
+![](VoicemeeterPotato_UserManual/23-2.jpg)  
+_Voicemeeter Equalizer_
 
 **5.1 Pan POT**
 
@@ -309,6 +505,22 @@ Repeat MONO mode is duplicating the left channel into 7 others.
 Repeat STEREO mode is duplicating the left+right channels into 6 others, 2 y 2. So Left + Right will be copied to channels 3+4 , 5+6, and 7+8
 
 Mix Down, Up Mix and Only modes work like BUS Modes (see BUS mode to get detailed processing in next pages).
+
+### AUDIBILITY CONTROL
+
+![](VoicemeeterPotato_UserManual/23-1.jpg)
+
+_VoiceMeeter Standard_
+
+This single knob controls a compressor / gate allowing to boost your voice and manage noisy talk. It needs to be adjusted according microphone capabilities and sound environment.
+
+### Compressor / Gate
+
+On each input strip there are two knobs to set compression and gate effect.
+
+![](VoicemeeterPotato_UserManual/banana-20-3.jpg)
+
+_Banana_
 
 ### Compressor / Gate / Denoiser
 
@@ -458,9 +670,11 @@ Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (b
 
 REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
 
-### M.C Button
+### M.C Button / M.C. Means “Mute Center”
 
 M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
+
+![](VoicemeeterPotato_UserManual/26-2.jpg)
 
 ### Karaoke Button
 
@@ -528,9 +742,17 @@ Note also that the 4 first applications can be handled by a MIDI controller than
 
 ![](VoicemeeterPotato_UserManual/potato-31-1.jpg)
 
+### Master Section: BUS Assignation
+
+Banana: The Master section allows managing all outputs BUS. BUS A1, A2, A3 are connected to physical audio device while BUS B1, B2 are connected to related virtual audio output (appearing as recording device in Windows system).
+
+Potato: The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are connected to physical audio device while BUS B1, B2, B3 are connected to related virtual audio output (appearing as recording devices in Windows system).
+
+![](VoicemeeterPotato_UserManual/banana-26-1.png)
+
 ### Master Section: Output BUS
 
-The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are connected to physical audio device while BUS B1, B2, B3 are connected to related virtual audio output (appearing as recording devices in Windows system).
+Each BUS offers different function to manage audio output behavior:
 
 ![](VoicemeeterPotato_UserManual/potato-31-2.jpg)
 
@@ -630,6 +852,34 @@ STEREO REPEAT mode also allows using Master EQ as crossover for 2, 3 or 4 ways a
 Since the stereo signal is duplicated on channel 3+4, 5+6 and 7+8. You can connect up to 4 stereo amplifier for different speakers and use the parametric EQ (that is multichannel) to make a full crossover processing.
 
 Also master EQ are now offering a trim / delay knob per channel, so you can manage the gain compensation and the delay adjustment per channel if needed.
+
+---
+std-26
+
+![](VoicemeeterPotato_UserManual/26-1.jpg)
+
+**COMPOSITE**
+
+This last button is made for audio post production. The 8 channels are composed in this way:
+
+- ch 1,2 : usual BUS stereo output
+- ch 3,4: Voicemeeter input #1 before gain fader
+- ch 5,6: Voicemeeter input #2 before gain fader
+- ch 7,8: Virtual input channel 1,2 before gain fader
+
+With composite signal, it’s possible to record all
+Voicemeeter Inputs (each in stereo) with a DAW
+connected to Voicemeeter virtual ASIO for
+example. It allows recording VOIP interview or
+conference and making post production process
+after with the 3 audio stereo tracks.
+
+**MONO**
+
+MONO button simply merges channel 1 & 2 to make mono signal in both channel 1 & 2. Made for single speaker monitoring.
+
+std-26
+---
 
 #### COMPOSITE MODE
 
@@ -801,6 +1051,46 @@ Of course you can use BUS Assignation if the related BUS does not use C5 return.
 External FX management provides two true AUX paths through regular SEND / RETURN knobs. These AUX work only if the External FX I/O are assigned to ASIO channel (from the ASIO device selected as output A1 – having enough channel to be assigned to External FX path points).
 
 ## ASIO Routing Capabilities
+
+---
+std-27
+
+With Voicemeeter 1.0.5.0 / 2.0.3.0 it is possible to route all physical inputs and busses to possibly 64 I/O of the ASIO Driver selected as output A1. It is the optimal way to use Voicemeeter with a professional audio board.
+
+This is possible by selecting no device for physical input / physical bus. Then the system settings dialog box proposes to select input channels / or output channels for bus A2 (BUS A1 always uses the 8 first output channels of the ASIO driver):
+
+![](VoicemeeterPotato_UserManual/27-1.png)
+
+In this example:
+
+- Physical Input #2 gets audio from ASIO input channels 3+4
+- BUS A1 automatically uses 8 first output channel of the ASIO board
+- BUS A2 will send audio to ASIO output channels 63+64
+
+WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won’t hear the BUS A1 anymore, since it is replaced by A2).
+
+std-27
+---
+---
+banana-33
+
+With Voicemeeter 1.0.5.0 / 2.0.3.0 it is possible to route all physical inputs and busses to possibly 64 I/O of the ASIO Driver selected as output A1. It is the optimal way to use Voicemeeter with a professional audio board.
+
+This is possible by selecting no device for physical input / physical bus. Then the system settings dialog box proposes to select input channels / or output channels for bus A2 and A3 (BUS A1 always uses the 8 first output channels of the ASIO driver):
+
+![](VoicemeeterPotato_UserManual/banana-33-1.png)
+
+In this example:
+- Physical Input #2 gets audio from ASIO input channels 3+4
+- Physical input #3 gets audio from ASIO input channels 5+6
+- BUS A1 automatically uses 8 first output channel of the ASIO board
+- BUS A2 will send audio to ASIO output channels 63+64
+- BUS A3 will send audio to ASIO output channel 10 to 17 (8 channels).
+
+WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won’t hear the BUS A1 anymore, since it is replaced by A2).
+
+banana-33
+---
 
 If selecting an ASIO device as output A1, it is possible to route all physical inputs, all physical busses and external FX functions to possibly 64 I/O. Note that selecting an ASIO device as output A1 is the optimal way to use Voicemeeter with a professional audio board.
 
@@ -997,7 +1287,7 @@ Presets do not contain device selection, system settings, MIDI or VBAN parameter
 
 ## WINDOWS AUDIO MAP
 
-With Voicemeeter 3.1.3.0 come the windows audio map dialog box showing all Windows Audio paths and options around Voicemeeter. This view is interesting to see what's happening around Voicemeeter according current different Windows options (Listen, Spatial, Exclusive mode, Audio path by application and devices…).
+With Voicemeeter 1.1.3.0 / 2.1.3.0 / 3.1.3.0 come the windows audio map dialog box showing all Windows Audio paths and options around Voicemeeter. This view is interesting to see what's happening around Voicemeeter according current different Windows options (Listen, Spatial, Exclusive mode, Audio path by application and devices…).
 
 ![](VoicemeeterPotato_UserManual/potato-52-1.jpg)
 
@@ -1127,6 +1417,111 @@ By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (pla
 
 Voicemeeter outputs provide no gain management.
 
+---
+std-38
+
+# CASE
+
+## CASE STUDY #1 How to talk and send music in the same time on Skype?
+
+How to talk and send music in the same time on Skype or Google Voice? To make it, we will use a configuration very closed to our current setup after Step 5 of this document.
+
+![](VoicemeeterPotato_UserManual/39-1.jpg)
+
+For this configuration, we need to install VB-Audio Virtual Cable, it makes the things more comfortable since we have control on the 3 sounds: our voice (IN 1), Skype output (IN2) and computer sound (IN 3).
+
+VB-Audio Virtual cable will be used to connect the Skype output to Voicemeeter Input #2.
+
+![](VoicemeeterPotato_UserManual/39-2.jpg)
+
+### STEP 1
+
+Install VB-AUDIO Virtual Cable: download it on www.vb-cable.com
+
+![](VoicemeeterPotato_UserManual/40-1.jpg)
+
+After Installation, you have a new audio installed driver called CABLE Input (as playback device) and CABLE Output (as recording device). These are the two ends of the cable, and like every cable, all sounds sent to cable input will go on cable output.
+
+|||
+|:--|:--|
+|![](VoicemeeterPotato_UserManual/40-2.jpg) |![](VoicemeeterPotato_UserManual/40-3.jpg)|
+
+### STEP 2
+
+Configure Skype to receive audio from Voicemeeter B Output (Virtual Output) and send audio to CABLE (newly installed).
+
+![](VoicemeeterPotato_UserManual/41-1.jpg)
+
+Note it’s important to check off “Automatic gain control” because it’s now Voicemeeter mixing console which takes care about levels. Also you can set level to max for the same reason.
+
+In this above configuration, Skype will still continue to use your PC speaker to ring you, but for communication, you will need to launch Voicemeeter to make it work of course (see menu to set Voicemeeter in system tray and run on Windows startup)..
+
+### STEP 3
+
+Configure Voicemeeter to connect it to skype through the VB-CABLE.
+
+**Already done in last document steps**
+
+- Select A1 Output device: your headphone/headset speakers.
+- Select Input device IN1: your headset microphone.
+- Set Voicemeeter Virtual Input as default playback device (to get all computer sound in IN3 – all computer sound played on default playback device of course).
+
+**To be done to get skype output**
+
+- Select Input device IN2: CABLE output (where Skype output is routed to).
+
+![](VoicemeeterPotato_UserManual/42-1.jpg)
+
+With A / B Switches, you can decide what sound you send to monitor (speaker) and what you send to Skype (through Bus B).
+
+Basically you will send to your headphone everything but your voice (except if you want to also hear your own voice in speaker). That’s why A is off on strip #1.
+
+Regarding Skype, you will want to send everything (your voice and music) but skype sound (Skype caller coming in input 2). That’s why B is off on strip #2. Otherwise we could have a loop back and the caller could hear his own voice again and again and again…
+
+## CASE STUDY #2 How to manage 2 headsets on Skype?
+
+How to manage 2 Headsets in the same time on Skype or Google Voice? To manage 2 headsets is maybe simpler than the previous case, since we don’t need additional VB-Cable.
+
+![](VoicemeeterPotato_UserManual/44-1.jpg)
+
+To manage 2 Headset, we need to manage 2 different microphones, but also 2 different headphones. That’s why Voicemeeter allows selecting 2 physical output devices on BUS A outputs (A1 and A2). Then both headset speakers will give the sound coming from Skype (IN3).
+
+![](VoicemeeterPotato_UserManual/44-2.jpg)
+
+B button on strip #3 must be OFF to avoid Skype feedback (otherwise audio coming from Skype on strip #3 would be sent again to Skype through Voicemeeter Virtual Output).
+
+### STEP 1
+
+Configure Voicemeeter to manage 2 headsets
+
+It just means to select audio output A1 and A2 for your headphone 1 and 2. Then Select Input Device 1 for your microphone headset #1 and Device 2 for your microphone headset #2.
+
+### STEP 2
+
+Configure Skype Audio Settings to use both Voicemeeter virtual audio i/o :
+
+![](VoicemeeterPotato_UserManual/45-1.jpg)
+
+Do not forget to click on SAVE button to validate your settings. Now you are ready to use VOIP application with 2 Headsets.
+
+## CASE STUDY #3 How to record Conference-Call in 8 tracks for post production?
+
+Since Voicemeeter is providing ASIO interface, we can connect audio pro DAW to Voicemeeter, not only to playback into Voicemeeter Virtual input, but also to record the Voicemeeter Virtual Output (which is composed of 8 channels).
+
+![](VoicemeeterPotato_UserManual/47-1.jpg)
+
+If we connect for example REAPER to the Voicemeeter Virtual ASIO point, we can manage 8 channels recording. And the COMPOSITE buttons is there to feed these 8 channels with the 3 Voicemeeter inputs before fader (pre fader).
+
+Of course channel 1,2 remain unchanged compared to other modes, but the 6 other channels are replaced by Voicemeeter inputs. This allows for example to make multi track recording of interview made on Skype or Google Voice and record everything on a pro audio DAW to make post production after.
+
+Be careful to disable input monitoring in your recorder application to avoid feedback loop (prevent signal to go again into Voicemeeter virtual input).
+
+![](VoicemeeterPotato_UserManual/47-2.jpg)  
+_REAPER recording 4 stereo tracks coming from Voicemeeter virtual ASIO output._
+
+std-48
+---
+
 # VBAN
 
 > VB-Audio Network
@@ -1149,11 +1544,12 @@ Click on VBAN icon to open the configuration dialog box below and configure your
 
 ![](VoicemeeterPotato_UserManual/potato-61-1.jpg)
 
-Voicemeeter Banana & Potato offer to listen 8x streams (on any input) and to send 8x streams to 8x different computers or mobile devices (audio source is given by selected BUS output).
+Voicemeeter Banana & Potato offer to listen 8x(Voicemeeter is 4x) streams (on any input) and to send 8x streams to 8x(Voicemeeter is 4x) different computers or mobile devices (audio source is given by selected BUS output).
 
 A VBAN Stream in Voicemeeter can be set in any standard samplerate from 11025 Hz to 96 kHz in 16 or 24 bits resolution with 1 to 8 channels (mono sound to 7.1). It allows transporting high quality audio in native PCM format on your local network.
 
-It is possible to broadcast an audio stream by using the 255 IP Address (on wire network only! WIFI AP are usually not broadcast capable). For example giving 192.168.1.255 as destination address will send stream to all computers of the network 192.168.1.xxx
+It is possible to broadcast an audio stream by using the 255 IP Address (on wire network only! WIFI AP are usually not broadcast capable). For example giving 192.168.1.255 as destination address will send stream to all computers of the network 192.168.1.xxx (REM: such broadcast UDP stream could not pass through router or WIFI Access
+Point – usually forbidding UDP broadcast)
 
 VBAN can also transport serial and text to remote Voicemeeter with MIDI message or specific request script. That's why Voicemeeter also offers a Serial and an ASCII incoming stream.
 
@@ -1744,6 +2140,10 @@ Button(5).Trigger = 1; //Enable Audio Trigger on button ID 5
 Button(5).Trigger = 0; //Disable Audio Trigger on button ID 5
 ```
 
+### Exclusive Commands
+
+MacroButtons offers some local command instruction, executed in MacroButton (command are not send to Voicemeeter but managed by MacroButton application directly).
+
 #### Wait command to create sequence of requests
 
 With the September 2019 version, the Wait command allows to introduce timing pause between requests and finally create a sequence of requests.
@@ -2137,7 +2537,9 @@ Since Voicemeeter 1.0.5.0 / 2.0.3.0, Voicemeeter Remote API provides an AUDIO AP
 
 ## System Settings / Options
 
-Open the following System Settings Dialog Box by the menu:
+For Voicemeeter Click on Master Meter LCD Section to open the Options Dialog Box.
+
+Banana / Potato Open the following System Settings Dialog Box by the menu:
 
 ![](VoicemeeterPotato_UserManual/potato-97-1.jpg)
 
@@ -2200,6 +2602,10 @@ Virtual I/O latency can also be optimized by decreasing the Internal Latency of 
 
 Virtual ASIO driver are adding a single buffer to the global latency (the size of this buffer is given by the buffering of the output A1)
 
+#### LATENCY WARNING
+
+**CHANGING DEFAULT LATENCY, BY REDUCING BUFFER SIZE CAN DECAY THE AUDIO STREAM, BRING UNSTABILITY, FREQUENT AUDIO CUT, STATIC, SYNCHRO LOST (ROBOTIC VOICE).**
+
 Decreasing latency below 256 samples (at 44.1 / 48 kHz) can bring some audio stability problem. If you get such problem, come back to default buffer size.
 
 ### Patch Composite
@@ -2212,7 +2618,7 @@ The COMPOSITE Mode is used to get a composite signal on a BUS and be able to sen
 
 ### Patch Insert 
 
-The Patch Insert allows activating insert for each input channel. This is applicable only if an application is connected to the Voicemeeter Potato Insert ASIO Virtual Device Driver. This driver supports a single client to work as a pre-fader insert on possible 34 channels composing the 8 strips of Voicemeeter Potato. Then it's possible to use a VST Plug-in Host for example to insert plug-ins on any Voicemeeter inputs.
+The Patch Insert allows activating insert for each input channel. This is applicable only if an application is connected to the Voicemeeter Potato Insert ASIO Virtual Device Driver. This driver supports a single client to work as a pre-fader insert on possible 22(Banana) / 34(Potato) channels composing the 8 strips of Voicemeeter Potato. Then it's possible to use a VST Plug-in Host for example to insert plug-ins on any Voicemeeter inputs.
 
 ![](VoicemeeterPotato_UserManual/potato-101-1.jpg)
 
@@ -2303,17 +2709,35 @@ With the September 2026 Version Voicemeeter MIDI mapping allows to define how Co
 |BUS Processing: |- Integrated 0 dBfs Limiter and Peak Remover. <br>- Mix Down to convert 5.1 or 7.1 to Stereo. <br>- Stereo Repeat (Stereo signal copied on channel 3,4 / 5,6 / 7,8) <br>- Master Full Parametric EQ (6 Cells / 8 channels). <br>- Mute / Mono / Cross. |
 |Others: |- Physical Output Synchronization Delay in system settings dialog box.|
 
-### Voicemeeter Potato I/O Diagram
+### Voicemeeter / Banana / Potato I/O Diagram
 
-Like a regular mixing console, Voicemeeter Potato can be represented with a usual I/O Diagram even if connections are not made by real wire, principles are staying the same.
+Like a regular mixing console, Voicemeeter / Banana / Potato can be represented with a usual I/O Diagram even if connections are not made by real wire, principles are staying the same.
 
 Note that Virtual I/O provide Windows Interface (MME, KS, WASAPI, DirectX…) and ASIO Interface (defined by Steinberg gmbh). It allows connecting regular windows audio application as well as audio pro DAW using ASIO devices only.
+
+![](VoicemeeterPotato_UserManual/90-1.jpg)
+
+![](VoicemeeterPotato_UserManual/banana-93-1.jpg)
 
 ![](VoicemeeterPotato_UserManual/potato-107-1.jpg)
 
 External FX I/O are assignable only if using an ASIO device as output A1 (with enough channel to be assigned to External FX path).
 
 ## Voicemeeter License / About box
+
+Voicemeeter Standard version is distributed as “Simple donationware”. Just click on “I already made a donation” button if you already paid for it. Note if you paid a Voicemeeter Potato license, you can also consider having paid for Voicemeeter Standard and Voicemeeter Banana.
+
+“Simple donationware” means the application is free to use, with all functions available (except optional features), but you are expected to pay your license if you find it useful or if you make any professional use. The donationware model allows selecting the price amount according your means or usage. 
+
+The simplest way to get your license is to click on “Donate” button. You will be re-directed to our webshop on the right product page. The webshop is proposing 5 different amounts: The smallest price can be considered as a renewal license price, the default price as the recommended license price, the highest price as a generous support to our R&D team. Thanks for your participation!
+
+|||
+|:--|:--|
+|![](VoicemeeterPotato_UserManual/91-1.jpg) |![](VoicemeeterPotato_UserManual/banana-94-1.jpg)|
+
+If re-installing Voicemeeter, this about box can appear again to invite you to donate again. This is a way for us to encourage you to support our maintenance and R&D effort.
+
+For professional use, we remind you are expected to pay your license for Voicemeeter anyway. More info on our licensing page: [https://vb-audio.com/Services/licensing.htm](https://vb-audio.com/Services/licensing.htm)
 
 Voicemeeter Potato is distributed as "donationware for activation code". Once you have activated your License, Voicemeeter applications will stop to invite you to donate for your license.
 
@@ -2434,13 +2858,17 @@ This certificate will be store in your computer to authenticate your license (in
 
 ### VAIO extension Activation Code
 
+Voicemeeter Standard offers an optional feature distributed as “donationware for activation code”. Once you have activated your License, VAIO extension will be activated (for both Banana and Standard version).
+
 Activating optional extra VAIO on Voicemeeter Potato requires a specific license with another activation code.
+
+The simplest way to get your VAIO extension license is to display the related dialog box (by Voicemeeter menu) and click on the “BUY ONLINE” button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account. 
 
 The process is exactly the same than for Voicemeeter Potato license, simply click on Buy Online to purchase your license on our web shop.
 
 ![](VoicemeeterPotato_UserManual/potato-116-1.jpg)
 
-For each VAIO Extension license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC.
+For each VAIO Extension license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This REGEN option works for any VAIO extension license and any PC. Simply click on it and enter carefully your new Challenge code to get another Response code.
 
 Your challenge code is not expected to change for a given PC configuration, even after windows update (but can change after a Windows re-installation). The challenge code is also expected to change if you change the CPU or possibly Motherboard or all Ethernet devices. The license is given for one PC configuration and is not transferrable as specified in our general terms.
 
