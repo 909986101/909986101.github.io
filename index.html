@@ -9,7 +9,6 @@
   
   <!-- Core Theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/dist/themes/core.min.css">
-  
   <!-- Theme Add-on(s) -->
   <link
     rel="stylesheet"
@@ -19,8 +18,9 @@
     data-sheet="core-dark-auto"
   />
 
+  <!-- markdown 表格样式 -->
   <style>
-  /* 让 markdown 中的表格宽度占满内容区域 */
+    /* 让 markdown 中的表格宽度占满内容区域 */
     .markdown-section table {
       /*width: 100% ;*/
       display: table; /* 防止某些主题将表格设为 block 导致宽度异常 */
@@ -33,10 +33,11 @@
 <body class="sidebar-group-box sidebar-chevron-right">
   <div id="app"></div>
 
+  <!-- MathJax 3 的全局配置对象 -->
   <script>
     window.MathJax = {
       tex: {
-        tags: 'ams',
+        tags: 'ams',  // 启用 AMS 风格公式编号
       }
     }
   </script>
@@ -62,11 +63,13 @@
       //  启用相对路径
       relativePath: true,
 
+      //docsify-latex 插件配置
       latex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],    // 行内公式，默认值
         displayMath: [['$$', '$$']]                  // 块级公式，默认值
       },
 
+      //docsify-plugin-footer 插件配置
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
       },
@@ -93,7 +96,6 @@
   <!-- 引入 MathJax -->
   <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <!-- <script src="//cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" defer></script> -->
-
   <!-- 引入 docsify-latex 插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-latex"></script>
 
