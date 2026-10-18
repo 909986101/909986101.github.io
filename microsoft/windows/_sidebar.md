@@ -1,3 +1,0 @@
-- WinPE
-  - [前言](/microsoft/windows/winpe/)
-  - [Base](/microsoft/windows/winpe/base)

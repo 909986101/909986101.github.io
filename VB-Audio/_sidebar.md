@@ -1,6 +1,6 @@
 - VB-Audio
 
-  - [VB-Audio](https://vb-audio.com)
+  - [Return VB-Audio](/VB-Audio/)
 
 - Voicemeeter
 

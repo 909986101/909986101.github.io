@@ -1,14 +1,12 @@
 <!-- _navbar.md -->
+<!-- 这里必须使用“绝对路径” -->
 
-* Microsoft
-  * [Windows](/microsoft/windows/)
-* Oracle
-  * [OCM](/oracle/ocm/)
-  * [OCP](/oracle/ocp/)
-  * [SQL](/oracle/sql/)
-* Linux
-  * [Kernel](/linux/kernel/)
-  * [Base](/linux/base/)
-  * [Shell](/linux/shell/)
+
+* [Microsoft](/microsoft/)
+
+* [Oracle](/oracle/)
+
+* [Linux](/linux/)
+
 * 音乐
   * [VB-Audio](/VB-Audio/)

@@ -1,4 +1,6 @@
-<!-- docs/_sidebar.md -->
+- Oracle
+
+  - [Return Oralce](/oracle/)
 
 - OCP 环境搭建
 
