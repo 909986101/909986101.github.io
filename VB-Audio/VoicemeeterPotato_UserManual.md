@@ -353,7 +353,7 @@ Potato: Voicemeeter input, AUX and VAIO3 are also the Virtual input 6, 7 and 8.
 
 ![](VoicemeeterPotato_UserManual/20-1.jpg)
 
-Voicemeeeter Output is now called “Voicemeeter out B1” (Virtual output 6).
+Voicemeeeter Output is now called Voicemeeter out B1 (Virtual output 6).
 
 ![](VoicemeeterPotato_UserManual/20-2.jpg)
 
@@ -361,8 +361,8 @@ VAIO Extensions can be activated by an additional license (see Voicemeeter menu)
 
 ![](VoicemeeterPotato_UserManual/banana-17-1.jpg)
 
-Voicemeeter output is now called “Voicemeeter out B1” (Virtual output 6)  
-Voicemeeter AUX output is now called “Voicemeeter.out B2” (Virtual output 7).
+Voicemeeter output is now called Voicemeeter out B1 (Virtual output 6)  
+Voicemeeter AUX output is now called Voicemeeter.out B2 (Virtual output 7).
 
 ![](VoicemeeterPotato_UserManual/banana-17-2.jpg)
 
@@ -670,7 +670,7 @@ Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (b
 
 REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
 
-### M.C Button / M.C. Means “Mute Center”
+### M.C Button / M.C. Means Mute Center
 
 M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
 
@@ -1452,7 +1452,7 @@ Configure Skype to receive audio from Voicemeeter B Output (Virtual Output) and 
 
 ![](VoicemeeterPotato_UserManual/41-1.jpg)
 
-Note it’s important to check off “Automatic gain control” because it’s now Voicemeeter mixing console which takes care about levels. Also you can set level to max for the same reason.
+Note it’s important to check off Automatic gain control because it’s now Voicemeeter mixing console which takes care about levels. Also you can set level to max for the same reason.
 
 In this above configuration, Skype will still continue to use your PC speaker to ring you, but for communication, you will need to launch Voicemeeter to make it work of course (see menu to set Voicemeeter in system tray and run on Windows startup)..
 
@@ -1532,6 +1532,8 @@ VBAN Protocol, based on a simple UDP protocol, has been designed for real-time t
 
 **VBAN-Talkie** and **VBAN-Receptor** are applications for mobile device (iOs / Android) also implementing the VBAN Protocol to send and receive audio stream from or to Voicemeeter.
 
+![](VBMatrix_UserManual/matrix-28-1.jpg)
+
 ![](VoicemeeterPotato_UserManual/potato-60-1.jpg)
 
 VBAN Protocol is free to use to be implemented everywhere. The PCM native Audio protocol, the VBAN-TEXT protocol and the VBAN-MIDI protocol are public. You can get specification document on our support page: [https://vb-audio.com/Services/support.htm](https://vb-audio.com/Services/support.htm) and find numerous projects using it on GitHub.
@@ -1546,7 +1548,10 @@ Click on VBAN icon to open the configuration dialog box below and configure your
 
 Voicemeeter Banana & Potato offer to listen 8x(Voicemeeter is 4x) streams (on any input) and to send 8x streams to 8x(Voicemeeter is 4x) different computers or mobile devices (audio source is given by selected BUS output).
 
-A VBAN Stream in Voicemeeter can be set in any standard samplerate from 11025 Hz to 96 kHz in 16 or 24 bits resolution with 1 to 8 channels (mono sound to 7.1). It allows transporting high quality audio in native PCM format on your local network.
+Matrix offers 5x I/O streams (the 5th able to manage up to 64 channels). Matrix Coconut offer 10x I/O Streams (the 9th able to manage up to 64 channels and the 10th able to manage up to 128 channels).
+
+A VBAN Stream in Voicemeeter can be set in any standard samplerate from 11025 Hz to 96 kHz in 16 or 24 bits resolution with 1 to 8 channels (mono sound to 7.1), 64 or 128 channels (according stream capabilities and matrix
+version). It allows transporting high quality audio in native PCM format on your local network.
 
 It is possible to broadcast an audio stream by using the 255 IP Address (on wire network only! WIFI AP are usually not broadcast capable). For example giving 192.168.1.255 as destination address will send stream to all computers of the network 192.168.1.xxx (REM: such broadcast UDP stream could not pass through router or WIFI Access
 Point – usually forbidding UDP broadcast)
@@ -1572,6 +1577,8 @@ The VBAN Chat service is implementing basic CHAT functions to talk between VBAN-
 VBAN-Chat is list all IP-Address used by the VBAN configuration dialog box and all IP- Address identified by a VBAN-Ping. Then you may see all connected unit around.
 
 When sending a TEXT message, all connected VBAN-unit will receive it and automatically display the VBAN-Chat Dialog box.
+
+You can select one or several destinations in the left list to send message to a particular user or a group of several connected user.
 
 OPTION menu allows changing some display option and font size. It is also possible to send \<nudge> and \<alert>
 
@@ -1603,7 +1610,7 @@ REM: If too much overload & underrun errors are appearing, you may change the Ne
 
 ### Additional VBAN-MIDI or Command stream
 
-Incoming streams section offers 2 other specific VBAN Streams to receive MIDI or TEXT. Opposite to Audio Stream, MIDI or TXT streams do not need an "IP-Address From" and can manage any message coming from anywhere. This is typically done to allow remoting Voicemeeter from several points in the same time. Note the MIDI Stream feeds Voicemeeter MIDI Mapping and is also received by MacroButton.
+Incoming streams section offers 2 other specific VBAN Streams to receive MIDI or TEXT. Opposite to Audio Stream, MIDI or TXT streams do not need an "IP-Address From" and can manage any message coming from anywhere. This is typically done to allow remoting Voicemeeter / Matrix from several points in the same time. Note the MIDI Stream feeds Voicemeeter MIDI Mapping and is also received by MacroButton.
 
 ![](VoicemeeterPotato_UserManual/potato-64-1.jpg)
 
@@ -1617,7 +1624,7 @@ This simple standalone application allow converting a physical MIDI input into a
 
 ![](VoicemeeterPotato_UserManual/potato-64-2.jpg)
 
-This application can also be used to connect a MIDI controller on second PC through the network with Voicemeeter MIDI mapping as explained in the next page...
+This application can also be used to connect a MIDI controller on second PC through the network with Voicemeeter / Matrix MIDI mapping as explained in the next page...
 
 1. Connect your controller on PC1 with VBAN2MIDI to manage outgoing and incoming VBAN MIDI STREAM.
 
@@ -2636,6 +2643,11 @@ Voicemeeter allows connecting a MIDI remote surface to control gain, mute, solo 
 
 ![](VoicemeeterPotato_UserManual/potato-102-1.jpg)
 
+Matrix allows connecting a MIDI remote surface to control Preset gain, apply, mute and phase
+buttons (with MIDI Feedback) and a secondary MIDI Controller (MIDI Extra Input Device).
+
+![](VBMatrix_UserManual/matrix-35-1.jpg)
+
 You just need to select the right MIDI device and enter in Learn process to configure the M.I.D.I. Mapping. This is expected to work with any M.I.D.I. Remote. You can even give a title to your mapping and store it on disk or recall it from XML files.
 
 Click on Learn (use TAB or up/down arrow key to learn next/previous control) and move your M.I.D.I. Control. Click on M.I.D.I. Code area (black) to reset the M.I.D.I. Implementation (as it was before learning process).
@@ -2646,15 +2658,29 @@ RESET MAP: reset entire M.I.D.I. mapping
 
 LOAD / SAVE allow to recall and save M.I.D.I. Map from or to file (xml file).
 
-REFRESH Controller: allows to send all MIDI message related to the current Voicemeeter state. This feature also exists as MIDI function (assignable to a MIDI button) – see last MIDI Mapping page.
+REFRESH Controller: allows to send all MIDI message related to the current Voicemeeter state (or Matrix Preset state). This feature also exists as MIDI function (assignable to a MIDI button) – see last MIDI Mapping page.
 
 M.I.D.I. Map name is a name defined by user to identify precisely the remote surface (stored in M.I.D.I. Map XML file).
 
+VBAN M.I.D.I. input gives the name of the possible incoming VBAN-MIDI stream, that can also be used in MIDI mapping (if a MIDI device is connected on network thanks to a MIDI2VBAN converter for example).
+
+#### MIDI Control for selected preset
+
+The MIDI map provides entries for all 64 presets, but the 6 first MIDI map entries are for the selected preset. First MIDI control allows selecting previous or next preset and 4 others allows you to control the different parameters of this selected preset.
+
+![](VBMatrix_UserManual/matrix-36-1.jpg)
+
+Then after, the MIDI mapping dialog box is providing 4 controls for each 64 possible preset patch and a RECALL function to fully recall the preset.
+
+Reminder: the gain slider is given by the max level of all points of the preset. This is working like a VCA fader and if same points are present in several preset, then the preset gain becomes automatically inter-dependent.
+
 #### MIDI Feedback
 
-With the March 2021 Version Voicemeeter manages a MIDI Output Device to send back MIDI code and move motorized Fader or highlight LED Button. This is made automatically with the 'F' or 'FF' mode.
+With the March 2021 Version Voicemeeter / Matrix manages a MIDI Output Device to send back MIDI code and move motorized Fader or highlight LED Button. This is made automatically with the 'F' or 'FF' mode.
 
 ![](VoicemeeterPotato_UserManual/potato-103-1.jpg)
+
+![](VBMatrix_UserManual/matrix-37-1.jpg)
 
 **F: Simple feedback**
 
@@ -2672,13 +2698,15 @@ With March 2021 version, it is possible to also forward MIDI message through an 
 
 #### MIDI Advanced Feedback
 
-With the November 2022 Version Voicemeeter MIDI mapping allows to define feedback value for 2 positions control. Per default the feedback value is 127 for ON and 0 for OFF state, but for MIDI control able to display different colors, it can be interesting to define other value here.
+With the November 2022 Version Voicemeeter / Matrix MIDI mapping allows to define feedback value for 2 positions control. Per default the feedback value is 127 for ON and 0 for OFF state, but for MIDI control able to display different colors, it can be interesting to define other value here.
 
 RIGHT CLICK on 'F' button to open the MIDI Feedback Options dialog box.
 
 It is possible to define complex MIDI feedback message (including SYS-EX) to send MIDI command to other MIDI device, or MIDI LCD or MACHINE CONTROL…
 
 ![](VoicemeeterPotato_UserManual/potato-104-1.jpg)
+
+![](VBMatrix_UserManual/matrix-38-1.jpg)
 
 MIDI messages displayed in yellow mean this message is already used by one or several other MIDI map parameters. RIGHT CLICK on it to get the first parameters using the same MIDI message.
 
@@ -2723,13 +2751,13 @@ Note that Virtual I/O provide Windows Interface (MME, KS, WASAPI, DirectX…) an
 
 External FX I/O are assignable only if using an ASIO device as output A1 (with enough channel to be assigned to External FX path).
 
-## Voicemeeter License / About box
+## Voicemeeter License / About box / Matrix Activation Code
 
-Voicemeeter Standard version is distributed as “Simple donationware”. Just click on “I already made a donation” button if you already paid for it. Note if you paid a Voicemeeter Potato license, you can also consider having paid for Voicemeeter Standard and Voicemeeter Banana.
+Voicemeeter Standard version is distributed as Simple donationware. Just click on I already made a donation button if you already paid for it. Note if you paid a Voicemeeter Potato license, you can also consider having paid for Voicemeeter Standard and Voicemeeter Banana.
 
-“Simple donationware” means the application is free to use, with all functions available (except optional features), but you are expected to pay your license if you find it useful or if you make any professional use. The donationware model allows selecting the price amount according your means or usage. 
+Simple donationware means the application is free to use, with all functions available (except optional features), but you are expected to pay your license if you find it useful or if you make any professional use. The donationware model allows selecting the price amount according your means or usage. 
 
-The simplest way to get your license is to click on “Donate” button. You will be re-directed to our webshop on the right product page. The webshop is proposing 5 different amounts: The smallest price can be considered as a renewal license price, the default price as the recommended license price, the highest price as a generous support to our R&D team. Thanks for your participation!
+The simplest way to get your license is to click on Donate button. You will be re-directed to our webshop on the right product page. The webshop is proposing 5 different amounts: The smallest price can be considered as a renewal license price, the default price as the recommended license price, the highest price as a generous support to our R&D team. Thanks for your participation!
 
 |||
 |:--|:--|
@@ -2739,13 +2767,17 @@ If re-installing Voicemeeter, this about box can appear again to invite you to d
 
 For professional use, we remind you are expected to pay your license for Voicemeeter anyway. More info on our licensing page: [https://vb-audio.com/Services/licensing.htm](https://vb-audio.com/Services/licensing.htm)
 
-Voicemeeter Potato is distributed as "donationware for activation code". Once you have activated your License, Voicemeeter applications will stop to invite you to donate for your license.
+Voicemeeter Potato / VB-Audio Matrix and Coconut are distributed as "donationware for activation code". Once you have activated your License, Voicemeeter applications will stop to invite you to donate for your license.
+
+Note there is one License activation code for Matrix and one for Matrix Coconut. These are two different products with two different licenses.
 
 The simplest way to get your Potato license is to display the about box (by Voicemeeter menu) and click on the "BUY ONLINE" button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account.
 
 ![](VoicemeeterPotato_UserManual/potato-108-1.jpg)
 
-For each Voicemeeter license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This REGEN option works for any Potato license and any PC. Simply click on it and enter carefully your new Challenge code to get another Response code.
+![](VBMatrix_UserManual/matrix-41-1.jpg)
+
+For each Voicemeeter / Matrix license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This REGEN option works for any Potato license and any PC. Simply click on it and enter carefully your new Challenge code to get another Response code.
 
 Your challenge code is not expected to change for a given PC configuration, even after windows update (but can change after a Windows re-installation). The challenge code is also expected to change if you change the CPU or possibly Motherboard or all Ethernet devices. This license is given for one PC configuration and is not transferrable (as specified in our general terms).
 
@@ -2764,13 +2796,13 @@ If your license is activated (and if your computer has a network adapter), you c
 After re-installing Windows and later Voicemeeter applications, you may import this footprint if your challenge code is not the expected one.
 
 1. Enter your registered e-mail and previous response code. 
-2. Load the footprint to retrieve your previous challenge code and use your previous response code.
+2. Load the footprint to retrieve your previous challenge code and use your previous response code. Your license should be re-activated.
 
 ### Activation Log
 
-You can also keep your Voicemeeter_ActivationLog.dat (located in My Document \\ Voicemeeter folder) from a Windows installation to another. It records the history of your different activations on the same computer and can be useful for us to understand what's happening if you get frequent problem with your activation code.
+You can also keep your Voicemeeter_ActivationLog.dat (located in My Document \\ Voicemeeter / VBAudioMAtrix folder) VBAudioMatrix_ActivationLog.dat  from a Windows installation to another. It records the history of your different activations on the same computer and can be useful for us to understand what's happening if you get frequent problem with your activation code.
 
-Simply copy the file Voicemeeter_ActivationLog.dat in a extra disk Simply paste it in "My Document \\ Voicemeeter" folder after Windows installation. 
+Simply copy the file Voicemeeter_ActivationLog.dat / VBAudioMatrix_ActivationLog.dat  in a extra disk Simply paste it in "My Document \\ Voicemeeter / VBAudioMAtrix" folder after Windows installation. 
 
 ### Activation Key for x64 version
 
@@ -2786,6 +2818,14 @@ To activate VAIO extension on Voicemeeter Potato, you will have to buy another l
 
 This VAIO Extension License activation code works only with Potato. There is another different license for VAIO extension related to Voicemeeter Standard & Banana.
 
+### Matrix Coconut Activation Code
+
+Matrix Coconut is another application with another License requiring another activation code.
+
+![](VBMatrix_UserManual/matrix-43-1.jpg)
+
+The License activation code for VB-Audio Matrix cannot work with VB-Audio Matrix Coconut and vice versa. Challenge codes are not expected to be the same for Matrix and Coconut.
+
 ### License Activation Process
 
 On first or new installation, your license activation fields are empty. And you get a unique challenge code given by your PC. Currently the H-Code is composed by 8x hexadecimal digits + a suffix letter as shown below.
@@ -2798,6 +2838,8 @@ Clicking on BUY ONLINE button will drive you to the right VB-Audio webshop page 
 
 ![](VoicemeeterPotato_UserManual/potato-112-2.jpg)
 
+![](VBMatrix_UserManual/matrix-44-2.jpg)
+
 Read LICENSING INFORMATION section before selecting your contribution level, and then click "Add to cart" to continue your purchase.
 
 Once you have paid your order, you can go in your account "My License" page to get your current response code and other information about all your VB-Audio licenses.
@@ -2807,6 +2849,8 @@ Once you have paid your order, you can go in your account "My License" page to g
 In your webshop account "My License" page, you will find download link and activation code for all your licenses:
 
 ![](VoicemeeterPotato_UserManual/potato-113-1.jpg)
+
+![](VBMatrix_UserManual/matrix-45-1.jpg)
 
 In License dialog box, enter carefully your e-mail (registered for your webshop account) and your response code. You can copy / paste to avoid bad char or reading mistake.
 
@@ -2836,6 +2880,8 @@ Click on "my webshop account" to directly come to your License pages here below.
 
 ![](VoicemeeterPotato_UserManual/potato-114-3.jpg)
 
+![](VBMatrix_UserManual/matrix-46-3.jpg)
+
 If you own several licenses, take care to select the right line, related to the right license. The certificate will be generated for current challenge / response code only.
 
 The dialog box to get certificate will appear and will first ask you to confirm data.
@@ -2858,11 +2904,11 @@ This certificate will be store in your computer to authenticate your license (in
 
 ### VAIO extension Activation Code
 
-Voicemeeter Standard offers an optional feature distributed as “donationware for activation code”. Once you have activated your License, VAIO extension will be activated (for both Banana and Standard version).
+Voicemeeter Standard offers an optional feature distributed as donationware for activation code. Once you have activated your License, VAIO extension will be activated (for both Banana and Standard version).
 
 Activating optional extra VAIO on Voicemeeter Potato requires a specific license with another activation code.
 
-The simplest way to get your VAIO extension license is to display the related dialog box (by Voicemeeter menu) and click on the “BUY ONLINE” button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account. 
+The simplest way to get your VAIO extension license is to display the related dialog box (by Voicemeeter menu) and click on the BUY ONLINE button. You will be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account. 
 
 The process is exactly the same than for Voicemeeter Potato license, simply click on Buy Online to purchase your license on our web shop.
 
