@@ -28,7 +28,7 @@
   </style>
 
   <!-- footer 插件样式 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer/dist/plugin.min.css">
 </head>
 <body class="sidebar-group-box sidebar-chevron-right">
   <div id="app"></div>
@@ -46,7 +46,9 @@
     //mermaid.initialize({ startOnLoad: false });
     
     window.$docsify = {
-      name: 'haona_li\'s docs',
+      //name: 'haona_li\'s docs',
+      //logo: '/_media/Tiger25.jpg',
+      name: '<img src="/_media/Tiger25.jpg" style="display:block; margin:0 auto 6px;">haona_li\'s docs',
       repo: '909986101/909986101.github.io',
 
       loadSidebar: true,
@@ -54,7 +56,6 @@
       loadNavbar: true,
       coverpage: true,
       auto2top: true,
-      //logo: '/_media/Tiger.jpg',
       //autoHeader: true,
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
       onlyCover: true,
@@ -77,7 +78,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/dist/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
-  <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer/dist/plugin.min.js"></script>
   
   <!-- 使用 ES Module 方式引入 Mermaid v10+ -->
   <script type="module">

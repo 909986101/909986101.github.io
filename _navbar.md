@@ -2,11 +2,14 @@
 <!-- 这里必须使用“绝对路径” -->
 
 
-* [Microsoft](/microsoft/)
+* **IT** :desktop_computer:
+  * [Microsoft](/microsoft/)
+  * ---
+  * [Linux](/linux/)
+  * ---
+  * [Oracle](/oracle/)
 
-* [Oracle](/oracle/)
+|
 
-* [Linux](/linux/)
-
-* 音乐
+* **音乐** :musical_score:
   * [VB-Audio](/VB-Audio/)
