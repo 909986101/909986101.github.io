@@ -13,3 +13,4 @@
 
 * **音乐** :musical_score:
   * [VB-Audio](/VB-Audio/)
+  * [O DEUS Audio](/o-deus-audio/)
