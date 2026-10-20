@@ -9,5 +9,4 @@
   - [使用](./Using_ASIO_Link_Pro.md)
   - [问答](FAQ.md)
   - [示例配置](Sample_Configurations.md)
-  - [~~注册（已废弃）~~](./Register_ASIO_Link_Pro.md)
   - [ASIO Link Pro Tool](./The_ASIO_Link_Pro_Tool.md)
