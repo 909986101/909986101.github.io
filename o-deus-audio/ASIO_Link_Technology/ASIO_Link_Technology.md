@@ -1,6 +1,6 @@
 # O Deus Audio
 
-![](ASIO_Link_Technology/1-1.jpg)
+![](../_media/1-1.jpg)
 
 # ASIO Link Technology
 
@@ -16,7 +16,7 @@ ASIO Link Technology also has the ability to route audio over the network to ano
 
 ASIO Link Technology has multi-client support built in which allows you to use the same ASIO driver in more than one application.
 
-![](ASIO_Link_Technology/4-1.jpg)  
+![](../_media/4-1.jpg)  
 _The ASIO Link Pro User Interface (UI)_
 
 ## Versions
@@ -51,7 +51,7 @@ _developer of ASIO Link_
 
 On the welcome page you will have an option to install 16 stereo WDM devices, if you do not select this, 4 surround 7.1 channel devices will be installed.
 
-![](ASIO_Link_Technology/5-1.jpg)  
+![](../_media/5-1.jpg)  
 _Install 4 surround or 16 stereo ASIOVADPRO devices_
 
 ## Install ASIO Link Pro
@@ -62,7 +62,7 @@ Further options allow choice of installation folders if required.
 
 _WARNING - The uninstaller has an option to delete all settings, only check this if you are not upgrading as it will erase your product key in the registry!!_
 
-![](ASIO_Link_Technology/6-1.jpg)
+![](../_media/6-1.jpg)
 
 Install has successfully completed
 
@@ -88,12 +88,12 @@ When the Link first runs for this host program
 
 Tip, you can pick a new driver any time with the "Pick driver" button in the ASIO Link Pro UI.
 
-![](ASIO_Link_Technology/7-1.jpg)  
+![](../_media/7-1.jpg)  
 _Select ASIO Link Pro in your host app and select the ASIO driver_
 
 Next, click the new green (or purple) icon in the system tray, if the GUI doesn't automatically pop up.
 
-![](ASIO_Link_Technology/7-2.jpg)  
+![](../_media/7-2.jpg)  
 _Tray Icon_
 
 Now, in the ASIO Link Pro GUI, look at the sample rate because you need this information in the next step.
@@ -108,18 +108,18 @@ _Unless you are using windows XP, Everything except setting the speaker configur
 
 To access this panel, right click on the windows speaker tray icon and click Playback devices or Recording devices.
 
-![](ASIO_Link_Technology/8-1.jpg)  
+![](../_media/8-1.jpg)  
 Windows speaker tray icon
 
 The Playback tab contains the ASIOVADPRO Speakers 01-04 and the Recording tab contains the ASIOVADPRO Mix 01-04.
 
-_You can also access this control panel with the ![](ASIO_Link_Technology/8-2.jpg)  button in ASIO Link Pro_
+_You can also access this control panel with the ![](../_media/8-2.jpg)  button in ASIO Link Pro_
 
 #### Default Device
 
 To get windows to output and receive all audio through the ASIO Link Pro you need to set the ASIOVADPRO Speakers 01 and ASIOVADPRO Mix 01 as the default windows devices _**(AUTOMATIC IN VISTA, 7, 8 and 10).**_
 
-![](ASIO_Link_Technology/8-3.jpg)  
+![](../_media/8-3.jpg)  
 _ASIOVADPRO Speakers and Mix audio devices_
 
 #### Default Format
@@ -128,10 +128,10 @@ The next step is to right click and go into properties of each device and make s
 
 To be sure of the ASIO sample rate get the sample rate you can look at the ASIO Link Pro UI help bar.
 
-![](ASIO_Link_Technology/8-4.jpg)  
+![](../_media/8-4.jpg)  
 _ASIO Link Pro UI Settings and Help bar sections_
 
-![](ASIO_Link_Technology/9-1.jpg)  
+![](../_media/9-1.jpg)  
 _ASIOVADPRO Default Format properties_
 
 You only need to check that the Default Format is the same as the ASIO Link Pro is running at. You can set the bits to any value but the 24 bit setting is usually more than adequate.
@@ -142,7 +142,7 @@ Importantly, you need to tell windows to use the right speaker configuration. Ri
 
 By default, the 7.1 channel configuration is selected.
 
-![](ASIO_Link_Technology/10-1.jpg)  
+![](../_media/10-1.jpg)  
 _Configure ASIOVADPRO Speakers Setup_
 
 # Using ASIO Link Pro
@@ -158,7 +158,7 @@ The UI consists of two parts
 1. The settings and help bar section (top part)
 2. The channel racks (lower, larger part)
 
-![](ASIO_Link_Technology/11-1.jpg)  
+![](../_media/11-1.jpg)  
 _ASIO Link Pro UI sections 1 + 2_
 
 ## Settings and Help Bar
@@ -167,7 +167,7 @@ There are many settings and buttons available in the top part of the ASIO Link P
 
 Just below those is the help bar. When you "mouse over" a control the help bar will give a brief summary of what that control does. Below, it is giving a help tip on the help bar itself.
 
-![](ASIO_Link_Technology/11-2.jpg)  
+![](../_media/11-2.jpg)  
 Settings and Help Bar
 
 ## Channel Racks and Channel Connections
@@ -210,7 +210,7 @@ Depending on the **Show audio flow** setting (see [Top Settings]()) you can see 
 
 ### ASIO HOST IN MIX
 
-![](ASIO_Link_Technology/12-1.jpg)  
+![](../_media/12-1.jpg)  
 
 This rack is the PRE-MIX for your ASIO host programs ASIO input channels. All audio mixed into ASIO HOST IN MIX will appear in your ASIO host.
 
@@ -218,7 +218,7 @@ The **X** button clears all routings.
 
 ### ASIO DRIVER OUT MIX
 
-![](ASIO_Link_Technology/12-2.jpg)  
+![](../_media/12-2.jpg)  
 
 This rack is the PRE-MIX for your ASIO driver output. This is where the audio processing has been finished and everything has been mixed in ready to send to the ASIO driver or multi-client server (see [Multi-client Mode]()).
 
@@ -230,17 +230,17 @@ The **X** button clears all routings.
 
 ### ASIOVADPRO SPEAKERS IN
 
-![](ASIO_Link_Technology/13-1.jpg)  
+![](../_media/13-1.jpg)  
 
 WDM meets ASIO with ASIOVADPRO SPEAKERS IN. Any audio played to the ASIOVADPRO Speakers 01 – 04 shall appear on this rack as an input to ASIO HOST IN MIX and/or ASIO DRIVER OUT MIX. As shown above, the channels are connected to the ASIO HOST IN MIX and are being processed by the HOST as ASIO inputs.
 
 Each ASIOVADPRO device has WDM specific controls
 
 - Latency The latency wheel enables adjusting the WDM stream latency. It is fine to leave this at 0.0ms. It also displays the current stream latency.  
-![](ASIO_Link_Technology/13-2.jpg)  
+![](../_media/13-2.jpg)  
 
 - Status Below the latency wheel there is a text box displaying the ASIOVADPRO device status for each device.  
-![](ASIO_Link_Technology/13-3.jpg)
+![](../_media/13-3.jpg)
 
 If the device is unavailable, or there is an error, channels will appear red with an X over the channel number.
 
@@ -248,7 +248,7 @@ By default, when you first start/select ASIO Link Pro in a new host program, the
 
 ### ASIO DRIVER IN
 
-![](ASIO_Link_Technology/13-4.jpg)  
+![](../_media/13-4.jpg)  
 
 These are the actual real ASIO driver inputs like microphone and line in etc.
 
@@ -258,16 +258,16 @@ By default, when you first start/select ASIO Link Pro in a new host program, the
 
 ### NETWORK IN
 
-![](ASIO_Link_Technology/13-5.jpg)
+![](../_media/13-5.jpg)
 
 Receive up to 16 channels of audio over the network from another machine that is running another instance of the ASIO Link Pro driver (see [Networking]()).
 
 Notice this rack has some networking specific controls
 
 - **Latency** which allows you to move the stream back from the incoming stream to leave enough latency to avoid drop outs. It is up to the user to set this value right so no distortion can be heard. The latency on the stream is to left in the square brackets and network jitter on the right in the square brackets. The network jitter value will give you a rough idea of what latency should be selected, it shows the maximum variance in received packet delay.  
-![](ASIO_Link_Technology/14-1.jpg)  
+![](../_media/14-1.jpg)  
 
-- ![](ASIO_Link_Technology/14-2.jpg) **R** Resets the network latency to the value in the latency wheel
+- ![](../_media/14-2.jpg) **R** Resets the network latency to the value in the latency wheel
 
 - **Local IP** is the IP address and port of the current machine running ASIO Link Pro. An example is **192.168.1.101:5060**
 
@@ -279,7 +279,7 @@ Notice this rack has some networking specific controls
 
 ### ASIOVADPRO MIX OUT
 
-![](ASIO_Link_Technology/14-3.jpg)  
+![](../_media/14-3.jpg)  
 
 ASIO meets WDM with ASIOVADPRO MIX OUT. Stream DAW audio over any application that can record WDM, MME, WASAPI or any other WDM based audio stream.
 
@@ -288,10 +288,10 @@ The audio output here is recordable by any normal windows audio application (e.g
 Each ASIOVADPRO device has WDM specific controls
 
 - **Latency** The latency wheel enables adjusting the WDM stream latency. It is fine to leave this at 25.0ms. It also displays the current stream latency  
-![](ASIO_Link_Technology/14-4.jpg)  
+![](../_media/14-4.jpg)  
 
 - **Status** Below the latency wheel there is a text box displaying the ASIOVADPRO device status for each device  
-![](ASIO_Link_Technology/14-5.jpg)  
+![](../_media/14-5.jpg)  
 
 If the device is unavailable, or there is an error, channels will appear red with an X over the channel number.
 
@@ -301,7 +301,7 @@ _Since most windows applications can only open recording devices in stereo, you 
 
 ### NETWORK OUT
 
-![](ASIO_Link_Technology/15-1.jpg)  
+![](../_media/15-1.jpg)  
 
 NETWORK OUT can send audio over the network to another machine that is running another instance of the ASIO Link Pro driver (see [Networking]()).
 
@@ -324,14 +324,11 @@ If you click and hold the mouse over a channel, then drag the mouse, channels yo
 <div style="display: grid; grid-template-columns: 3fr 0.75fr 6.25fr;">
   <div>
   
-  ![](ASIO_Link_Technology/15-2.jpg)
+  ![](../_media/15-2.jpg)
   </div>
   <div></div>
   <div>Dragging channel 1 from ASIOVADPRO SPEAKERS IN to ASIO HOST IN MIX channel 1 connects the audio input to the MIX RACK. EASY!!! </div>
 </div>
-|||
-|:--|:--|
-|![](ASIO_Link_Technology/15-2.jpg) |Dragging channel 1 from ASIOVADPRO SPEAKERS IN to ASIO HOST IN MIX channel 1 connects the audio input to the MIX RACK. EASY!!! |
 
 _Drag-Drop Channels_
 
@@ -344,7 +341,7 @@ _BE CAREFUL NOT TO ACCIDENTALLY DELETE CONNECTIONS!_
 
 IN and OUT racks each have **IN MIX**, **X** and 1-1 buttons and also **OUT MIX**, **X** and **1-1** buttons.
 
-![](ASIO_Link_Technology/16-1.jpg)  
+![](../_media/16-1.jpg)  
 _IN MIX, X, 1-1 and OUT MIX, X, 1-1 buttons_
 
 ### Quick Mapping
@@ -361,9 +358,18 @@ The mapping window allows exact configuration of audio routing from an audio inp
 
 In the below image, the mapping window matrix has 4 x 8 channels (from ASIOVADPRO SPEAKERS IN) going down and 8 channels (from ASIO HOST IN MIX) going across.
 
-|||
-|:--|:--|
-|![](ASIO_Link_Technology/16-2.jpg 'size=20%') |In the Mapping window you can assign channels to ASIO HOST IN MIX or ASIO DRIVER OUT MIX. <br>In the left the routing is to ASIO HOST IN MIX and this window is available for all INPUT and OUTPUT racks. <br>NOTE – If you subsequently "drag-drop channels" or use "quick mapping" then the volume information will be set to the default of 0dB. It is your choice to use either "drag- dropping", "quick-mapping" or the "mapping window". |
+<div style="display: grid; grid-template-columns: 2fr 0.75fr 7.25fr">
+  <div>
+  
+  ![](../_media/16-2.jpg)
+  </div>
+  <div></div>
+  <div>
+    <p>In the Mapping window you can assign channels to ASIO HOST IN MIX or ASIO DRIVER OUT MIX.</p>
+    <p>In the left the routing is to ASIO HOST IN MIX and this window is available for all INPUT and OUTPUT racks. </p>
+    <p>NOTE – If you subsequently "drag-drop channels" or use "quick mapping" then the volume information will be set to the default of 0dB. It is your choice to use either "drag- dropping", "quick-mapping" or the "mapping window". </p>
+  </div>
+</div>
 
 _Mapping window_
 
@@ -373,7 +379,7 @@ It is possible to mix multiple channels into single channels and vice versa for 
 
 ## Top Settings
 
-![](ASIO_Link_Technology/17-1.jpg)  
+![](../_media/17-1.jpg)  
 
 ### Profiles
 
@@ -393,7 +399,7 @@ It is possible to mix multiple channels into single channels and vice versa for 
 
 **Show performance** – This allows you to see performance metrics. It shows the total time in microseconds taken for audio processing, the host application time and ASIO Link Pro times.
 
-![](ASIO_Link_Technology/17-2.jpg)  
+![](../_media/17-2.jpg)  
 
 **Show max values** – Shows the maximum values over time for each performance display value.
 
@@ -423,7 +429,7 @@ FLAC files can take up a lot of disk space. Especially 8 channel ones.
 
 |||
 |:--|:--|
-|![](ASIO_Link_Technology/18-1.jpg) |![](ASIO_Link_Technology/18-2.jpg)|
+|![](../_media/18-1.jpg) |![](../_media/18-2.jpg)|
 
 Once a folder is selected, every time ASIO Link Pro starts, a new FLAC file is created. 
 
@@ -439,7 +445,7 @@ So if you start say, ASIO Link Pro with driver one normally and disable multi cl
 
 The ASIO Link Pro can run in multi-client server mode allowing more than one application to share one ASIO driver. In order to do this you should run a "server" ASIO Link Pro instance and enable the Enable multi-clients check box.
 
-![](ASIO_Link_Technology/19-1.jpg)  
+![](../_media/19-1.jpg)  
 _Enabling multi -client Mode_
 
 Now, when you run an application that uses ASIO Link Pro it will use the inbuilt _ASIO Link Multiclient_ ASIO driver.
@@ -450,7 +456,7 @@ You can run up to **25** instances of ASIO Link Pro in anything from standalone 
 
 To capture output to the ASIO inputs of your server application, enable the **Route to ASIO IN** check box in the client application.
 
-![](ASIO_Link_Technology/19-2.jpg)  
+![](../_media/19-2.jpg)  
 _Routing multi-client output to ASIO Inputs of the multi-client server host application_
 
 In multi-client mode you can still capture ASIOVADPRO SPEAKERS IN and ASIO DRIVER IN and you can also send audio to the ASIOVADPRO MIX OUT rack. One thing to note is that all the audio is going to the server instance so you need to be careful not to overload the ASIOVADPRO MIX OUT!
@@ -468,14 +474,14 @@ When entering the Local or Remote IP addresses for NETWORK IN and NETWORK OUT re
 
 To obtain your IP address, run a command prompt (search for cmd.exe) and type "ipconfig.exe" and press enter and you will see something like this:
 
-![](ASIO_Link_Technology/20-1.jpg)  
+![](../_media/20-1.jpg)  
 _"ipconfig.exe" output_
 
 IP address of your machine is not necessarily this on the internet, but for routing over the LAN, this is the address you want. To connect on the internet, often you have to enable traffic on port 5050 (or whatever port you select) with your ISP and with your firewall. You also have to explicitly set the IP address in the adapter settings (right click the network icon in the system tray to get to Local Area Connection Properties)
 
 |||
 |:--|:--|
-|![](ASIO_Link_Technology/20-2.jpg) |![](ASIO_Link_Technology/20-3.jpg) |
+|![](../_media/20-2.jpg) |![](../_media/20-3.jpg) |
 
 _Network adapter settings/IPv4 settings_
 
@@ -502,13 +508,13 @@ There are two racks that can be enabled by enabling the **Enable LOOPER loopback
 
 ### LOOPER OUT
 
-![](ASIO_Link_Technology/21-1.jpg)  
+![](../_media/21-1.jpg)  
 
 You can send audio to this rack to and it will be looped back through the LOOPER IN rack
 
 ### LOOPER IN
 
-![](ASIO_Link_Technology/21-2.jpg)  
+![](../_media/21-2.jpg)  
 
 Audio sent to the LOOPER OUT rack will be available on this rack. There will be one audio buffer of latency on audio sent via the LOOPER OUT and LOOPER IN mechanism.
 
@@ -518,23 +524,23 @@ You can also send audio to LOOPER OUT and receive audio from LOOPER IN in [Multi
 
 ## Enter a Product Key
 
-![](ASIO_Link_Technology/22-1.jpg)  
+![](../_media/22-1.jpg)  
 _The "Enter product key" button_
 
 When you click the **Enter product key** button you will get the below dialog pop up to enter your product key.
 
-![](ASIO_Link_Technology/22-2.jpg)  
+![](../_media/22-2.jpg)  
 _"Register the Link!" dialog_
 
 In order to stop the annoying break-ups in sound you must purchase register the software. If you click the **Purchase ASIO Link** button you will be taken to the ASIO Link Pro page.
 
-Here you can click the PayPal ![](ASIO_Link_Technology/22-3.jpg) button and you will receive a product key via email to enter in the "_Register the Link!_" dialog. Once you have a key, thank you and click **Register** to register the software.
+Here you can click the PayPal ![](../_media/22-3.jpg) button and you will receive a product key via email to enter in the "_Register the Link!_" dialog. Once you have a key, thank you and click **Register** to register the software.
 
 _**You must be connected to the internet to register**_
 
 ## Transfer Your License
 
-![](ASIO_Link_Technology/22-4.jpg)  
+![](../_media/22-4.jpg)  
 The "Unregister ASIO Link" button
 
 Once registered, the product key button disappears and a new button becomes available and, if you wish to transfer your license to another machine, then all you need to do is click the **Unregister ASIO Link** button which will remove the license to ASIO Link Pro from this machine.
@@ -551,7 +557,7 @@ It can also clear all your default settings for host applications. This is like 
 
 ## Using the ASIO Link Pro Tool
 
-![](ASIO_Link_Technology/23-1.jpg)  
+![](../_media/23-1.jpg)  
 _ASIO Link Pro Tool UI_
 
 ## ASIO Link Pro Tool Functions
@@ -646,7 +652,7 @@ Follow the additional steps
 
 If you do use ASIO4ALL be sure not to enable the ASIOVADPRO Driver for the output/input device as this will not work (ASIO Link Pro mixes ASIOVADPRO audio into ASIO therefore it cannot be the selected device for ASIO4ALL).
 
-![](ASIO_Link_Technology/26-1.jpg)  
+![](../_media/26-1.jpg)  
 
 ## DAW specific
 
@@ -708,7 +714,7 @@ This means that the ASIO driver is not doing any audio processing at all. If thi
 
 You can also try to restart the host application and possibly the computer and if that does not solve this issue then [contact us]().
 
-![](ASIO_Link_Technology/28-1.jpg)  
+![](../_media/28-1.jpg)  
 
 # Sample Configurations
 
@@ -720,7 +726,7 @@ You can pull audio from any windows audio source that is using WASAPI, MME or Di
 
 You can quickly achieve this by clicking the "**1-1**" button shown below.
 
-![](ASIO_Link_Technology/29-1.jpg)  
+![](../_media/29-1.jpg)  
 _Send WDM playback to ASIO input_
 
 ### Uses
@@ -738,7 +744,7 @@ To use the output simply select the ASIOVADPRO MIX 01-04 (or 01-16) in your scre
 
 You can quickly achieve this by clicking the "**1-1**" button shown below.
 
-![](ASIO_Link_Technology/30-1.jpg)  
+![](../_media/30-1.jpg)  
 _Send ASIO output to WDM recording devices_
 
 ### Uses
@@ -752,12 +758,12 @@ To achieve this you need to use multi-client mode.
 
 First, start the server DAW that will receive the audio input from another DAW. Below I have started Ableton Live and selected the ASIO Link Pro ASIO driver and I made sure that "**Enable multi-clients**" is enabled. Also, enable all the ASIO input and output channels you need.
 
-![](ASIO_Link_Technology/31-1.jpg)  
+![](../_media/31-1.jpg)  
 _Start the server DAW_
 
 Next, start the DAW that will send audio to Ableton Live. I have started FL Studio and made sure I enabled the "**Route to ASIO in**" option to send audio to Ableton Live ASIO inputs. Note I have selected channels 3+4 for output so that audio output from FL Studio appears on Ableton Live ASIO input channels 3 + 4.
 
-![](ASIO_Link_Technology/31-2.jpg)  
+![](../_media/31-2.jpg)  
 _Start the DAW to send audio from_
 
 ### Uses
@@ -774,7 +780,7 @@ Next, enter the Remote IP address of the target machine that is running ASIO Lin
 
 NOTE: You need to check the "**Enable connection**" check box to start sending audio.
 
-![](ASIO_Link_Technology/32-1.jpg)  
+![](../_media/32-1.jpg)  
 _Send audio over IP_
 
 ### Uses
@@ -792,7 +798,7 @@ You can quickly achieve this by clicking the "**1-1**" button and entering the I
 
 NOTE: You need to check the "**Enable connection**" check box to start sending audio.
 
-![](ASIO_Link_Technology/33-1.jpg)  
+![](../_media/33-1.jpg)  
 _Receive audio over IP_
 
 ### Uses
@@ -828,6 +834,6 @@ ASIO Link Technology uses ASIO technology by Steinberg.
 
 ## Steinberg Media GmbH
 
-![](ASIO_Link_Technology/34-1.jpg)  
+![](../_media/34-1.jpg)  
 
 ASIO Technology by Steinberg. ASIO is a trademark of Steinberg Media Technologies GmbH.
