@@ -329,6 +329,9 @@ If you click and hold the mouse over a channel, then drag the mouse, channels yo
   <div></div>
   <div>Dragging channel 1 from ASIOVADPRO SPEAKERS IN to ASIO HOST IN MIX channel 1 connects the audio input to the MIX RACK. EASY!!! </div>
 </div>
+|||
+|:--|:--|
+|![](ASIO_Link_Technology/15-2.jpg) |Dragging channel 1 from ASIOVADPRO SPEAKERS IN to ASIO HOST IN MIX channel 1 connects the audio input to the MIX RACK. EASY!!! |
 
 _Drag-Drop Channels_
 
@@ -358,18 +361,9 @@ The mapping window allows exact configuration of audio routing from an audio inp
 
 In the below image, the mapping window matrix has 4 x 8 channels (from ASIOVADPRO SPEAKERS IN) going down and 8 channels (from ASIO HOST IN MIX) going across.
 
-<div style="display: grid; grid-template-columns: 2fr 0.75fr 7.25fr">
-  <div>
-  
-  ![](ASIO_Link_Technology/16-2.jpg)
-  </div>
-  <div></div>
-  <div>
-    <p>In the Mapping window you can assign channels to ASIO HOST IN MIX or ASIO DRIVER OUT MIX.</p>
-    <p>In the left the routing is to ASIO HOST IN MIX and this window is available for all INPUT and OUTPUT racks. </p>
-    <p>NOTE – If you subsequently "drag-drop channels" or use "quick mapping" then the volume information will be set to the default of 0dB. It is your choice to use either "drag- dropping", "quick-mapping" or the "mapping window". </p>
-  </div>
-</div>
+|||
+|:--|:--|
+|![](ASIO_Link_Technology/16-2.jpg 'size=20%') |In the Mapping window you can assign channels to ASIO HOST IN MIX or ASIO DRIVER OUT MIX. <br>In the left the routing is to ASIO HOST IN MIX and this window is available for all INPUT and OUTPUT racks. <br>NOTE – If you subsequently "drag-drop channels" or use "quick mapping" then the volume information will be set to the default of 0dB. It is your choice to use either "drag- dropping", "quick-mapping" or the "mapping window". |
 
 _Mapping window_
 
