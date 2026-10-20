@@ -1,5 +1,5 @@
 - O Deus Audio
-  - [Return](/o-deus-audio/)
+  - [Return O Deus Audio](/o-deus-audio/)
 
 - ASIO Link Technology
   - [ASIO Link Technology](README.md)
