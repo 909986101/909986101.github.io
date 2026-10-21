@@ -1,8 +1,8 @@
 # The ASIO Link Pro Tool
 
-This is both a configuration tool and a simple ASIO host application to allow configuring and testing the ASIO Link Pro. It can be very helpful to find and diagnose problems as you are in control of all the ASIO settings.
+这既是一个配置工具，也是一个简单的 ASIO 主机应用程序，用于对 ASIO Link Pro 进行配置和测试。由于您可以完全掌控所有 ASIO 设置，因此在排查和诊断问题时会非常有用。
 
-It can also clear all your default settings for host applications. This is like starting with a fresh install if you wish to start anew.
+此外，它还可以清除主机应用程序的所有默认设置。如果您希望重新开始，这相当于进行一次全新安装。
 
 ## Using the ASIO Link Pro Tool
 
@@ -13,29 +13,23 @@ _ASIO Link Pro Tool UI_
 
 ### ASIO Settings
 
-**Sample rate** – The ASIO sample rate to set. 'ASIO preferred'.is the default value and it uses the ASIO driver's default sample rate.
-
-**Buffer size** – The ASIO buffer size to try to set in the driver. If low latency is desirable (lower size means lower latency) then try to set this as low as you can but if set too low, audio can distort. 'ASIO Preferred' is the default value and will use the ASIO driver's preferred buffer size.
-
-**Channels IN/OUT** – Choose the number of input and output channels.
-
-**Init ASIO** – Initialises, but does not start, the ASIO Link Pro driver.
-
-**START ASIO** – Starts the ASIO Link Pro driver's audio processing and you can use the test tone to test your ASIO driver.
-
-**Stop ASIO** – This stops the ASIO Link Pro driver.
-
-**ASIO CPanel** – Launches the ASIO driver's control panel.
-
-**Test tone** – Plays a 440Hz test tone to all enabled ASIO output channels.
-
-**Send IN to OUT** – ASIO Link Pro Tool will route audio from ASIO input to the ASIO output. This option is still included but you can route audio in any way you wish in the ASIO Link Pro driver.
+|||
+|:--|:--|
+|**Sample rate<br>（采样率）** |要设置的 ASIO 采样率。“ASIO preferred（ASIO 首选）”为默认值，将使用 ASIO 驱动程序的默认采样率。|
+|**Buffer size<br>（缓冲区大小）** |尝试在驱动程序中设置的 ASIO 缓冲区大小。<br>如果需要低延迟（较小的缓冲区大小意味着更低的延迟），请尽量将其设得尽可能小；但若设置过小，音频可能会失真。<br>“ASIO preferred（ASIO 首选）”为默认值，将使用 ASIO 驱动程序的首选缓冲区大小。|
+|**Channels IN/OUT<br>（输入/输出通道数）** |选择输入和输出通道的数量。|
+|**Init ASIO<br>（初始化 ASIO）** |初始化 ASIO Link Pro 驱动程序，但不会启动它。|
+|**START ASIO<br>（启动 ASIO）** |启动 ASIO Link Pro 驱动程序的音频处理，您还可以使用测试音来测试您的 ASIO 驱动程序。|
+|**Stop ASIO<br>（停止 ASIO）** |停止 ASIO Link Pro 驱动程序。|
+|**ASIO CPanel<br>（ASIO 控制面板）** |打开 ASIO 驱动程序的控制面板。|
+|**Test tone<br>（测试音）** |向所有已启用的 ASIO 输出通道播放 440Hz 的测试音。|
+|**Send IN to OUT<br>（发送 IN 至 OUT）** |ASIO Link Pro 工具会将音频从 ASIO 输入路由至 ASIO 输出。<br>此选项仍保留在内，但您可以在 ASIO Link Pro 驱动程序中以任意方式对音频进行路由。|
 
 ### Tool Settings
 
-**Start minimised and START ASIO** – When enabled, the ASIO Link Pro Tool will start minimised to the system tray and automatically start the ASIO Link Pro. This can be useful if you wish to start ASIO Link Pro with windows.
+**Start minimised and START ASIO（最小化启动并启动 ASIO）**——启用后，ASIO Link Pro 工具将以最小化状态驻留在系统托盘，并自动启动 ASIO Link Pro。如果您希望随 Windows 启动 ASIO Link Pro，此选项将非常有用。
 
-**Start with windows** – When enabled, the ASIO Link Pro Tool will start with windows. Usually you would also enable the Start minimised and START ASIO option too to automatically start ASIO.
+**Start with windows（随 Windows 启动）**——启用后，ASIO Link Pro 工具将随 Windows 自动启动。通常，您还应同时启用“Start minimised and START ASIO（最小化启动并启动 ASIO）”选项，以便实现 ASIO Link Pro 的自动启动。
 
 ### ASIO Link Settings
 

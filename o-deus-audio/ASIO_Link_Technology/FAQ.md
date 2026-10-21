@@ -2,92 +2,107 @@
 
 ## I can't hear anything
 
+**我什么都听不到**
+
 Follow the below steps:
 
-1. Firstly, you must ensure that the ASIOVADPRO device is set up as the default windows audio device to capture all windows sounds (or set it as the output device for your favourite media player if you don't want to capture all windows sounds).
+1. 首先，您必须确保 ASIOVADPRO device 已被设置为 Windows 的默认音频设备，以便捕获所有系统声音（如果您不想捕获所有系统声音，也可以将其设为常用媒体播放器的输出设备）。
 
-2. Next, you need to start an ASIO host application such as Ableton Live, Reason, FL, Reaper or Cubase but there are countless other ASIO applications.
+2. 接下来，您需要启动一个 ASIO 主机应用程序，例如 Ableton Live、Reason、FL Studio、Reaper 或 Cubase，等等。
 
-3. Setup the ASIO Link Pro as the host programs ASIO device and, if it is the first time you have run it, pick the target ASIO driver you wish the ASIO Link Pro to output to.
+3. 将 ASIO Link Pro 设置为主机程序的 ASIO 设备；如果是首次运行，请选择您希望 ASIO Link Pro 输出的目标 ASIO 驱动程序。
 
-4. Check the channels with the "Map" button in the "WDM Audio to ASIO OUT" section and you should see green in the V-meters when sound is played through ASIOVADPRO speakers.
+4. 在“WDM Audio to ASIO OUT”部分，使用“Map”按钮检查各通道，当通过 ASIOVADPRO 扬声器播放声音时，V 型表应显示绿色。
 
-5. The status should read "_Copied Audio Data_" and you should hear sound.
+5. 状态应显示“_Copied Audio Data_”，并且您应该能够听到声音。
+
 
 ## I still can't hear anything
 
+**我仍然听不到任何声音**
+
 Follow the additional steps
 
-1. If the status says "_No WDM audio stream_" it means nothing is playing to the ASIOVADPRO speaker out, play something in your favourite media player with output to the ASIOVADPRO speakers.
+1. 如果状态显示“_No WDM audio stream（无 WDM 音频流）_”，则表示没有任何音频正在输出到 ASIOVADPRO speaker，请在您常用的媒体播放器中播放一段音频，并确保输出设备为 ASIOVADPRO speakers。
 
-2. If the status says "_Sample rate mismatch_" it means you need to set the ASIOVADPRO windows device sample rate to the sample rate of the ASIO driver.
+2. 如果状态显示“_Sample rate mismatch（采样率不匹配）_”，则需要将 ASIOVADPRO Windows 设备的采样率设置为与 ASIO 驱动程序相同的采样率。
 
-3. Make sure you have enabled ASIO channels you can actually hear in the appropriate matrix.
+3. 请确保在相应的矩阵中已启用您实际能够听到的 ASIO 通道。
 
 ## I use ASIO4ALL
 
-If you do use ASIO4ALL be sure not to enable the ASIOVADPRO Driver for the output/input device as this will not work (ASIO Link Pro mixes ASIOVADPRO audio into ASIO therefore it cannot be the selected device for ASIO4ALL).
+如果确实使用 ASIO4ALL，请务必不要为输出/输入设备启用 ASIOVADPRO 驱动程序，因为这将无法正常工作（ASIO Link Pro 会将 ASIOVADPRO 的音频混入 ASIO 中，因此它不能被选为 ASIO4ALL 的目标设备）。
 
 ![](../_media/26-1.jpg)  
 
-## DAW specific
+## DAW specific（特性）
 
-When using DAWs with ASIO Link there can be an issue with settings that offer to "unload" your ASIO driver when the application becomes inactive or loses focus.
+在使用支持 ASIO Link 的 DAW 时，可能会遇到一种情况：当应用程序处于非活动状态或失去焦点（focus）时，某些设置会尝试“unload（卸载）”您的 ASIO 驱动程序。  
 
-It is best not to enable these features as ASIO Link Pro gives you access to all windows audio anyway!
+建议不要启用这些功能，因为 ASIO Link Pro 本身已能为您提供对 Windows 音频的完全访问权限！  
 
-If you enable these options be aware that the ASIO Link Pro driver may be shut down and restarted often making it hard to use the UI. It will also _cause problems running as a multi-client server_ as the driver will shut down causing clients to "disconnect".
+如果您启用了这些选项，请注意，ASIO Link Pro 驱动程序可能会频繁被关闭并重新启动，从而导致 UI 使用不便。此外，这还会 _在作为多客户端服务器（multi-client server）运行时引发问题_，因为驱动程序的关闭会导致客户端“disconnect（断开连接）”。
 
 ### FL Studio
 
-In FL Studio the setting is the **Auto Close** ASIO driver option (it is not enabled by default). Try not to enable it.
+在 FL Studio 中，相关设置是 **Auto Close（自动关闭）** 的 ASIO 驱动选项（默认情况下未启用）。请尽量不要启用该选项。
 
 ### Reaper
 
-In Reaper the setting is **Close audio device when stopped and application is inactive**. Try not to enable it.
+在 Reaper 中，设置为“Close audio device when stopped and application is inactive（停止且应用程序处于非活动状态时关闭音频设备）”。请尽量不要启用此选项。
 
 ### I use Reason
 
-In Reason the setting is **Play in background**. Try to keep it enabled as you want the driver to stay active even when focus is taken away from Reason.
+在 Reason 中，设置为“Play in background（在后台播放）”。请尽量保持该选项启用，以便在您将焦点移出 Reason 时，驱动程序仍能持续运行。
 
 ### I use Wavelab or SoundForge
 
-Wavelab and SoundForge both start and stop the ASIO driver so it is not wise to use it as a multi-client server at all. Always check the latest version as we do not check every version of these tools.
+Wavelab 和 SoundForge 都会自行启动和停止 ASIO 驱动程序，因此根本不建议将其用作多客户端服务器。请务必检查最新版本，因为我们不会对这些工具的每个版本都进行逐一验证。
 
 ## I get a Failed IOCTL status from ASIOVADPRO
 
-Make sure you fully uninstall a previous version before installing a new one. Try a complete uninstall and reinstall and it should then be fine. 
+**我从 ASIOVADPRO 获得了“IOCTL 失败”的状态。**
+
+请确保在安装新版本之前，已彻底卸载旧版本。尝试执行完全卸载后再重新安装，问题应该就能解决。
 
 ## What is this latency thing?
 
-### ASIOVADPRO SPEAKERS / MIX Latency Adjustment
+什么是延迟？
 
-In the case of the ASIOVADPRO SPEAKERS IN rack, ASIOVADPRO MIX OUT rack, the latency is the time between the audio being written to, and the audio being read from the stream.
+### ASIOVADPRO SPEAKERS / MIX Latency Adjustment（调整）
 
-Windows writes audio into the ASIOVADPRO SPEAKERS and ASIO Link Pro reads audio behind it and the latency is the time delay. In the case of ASIOVADPRO MIX, windows is reading audio just after ASIO Link Pro writes audio and the latency is the time delay.
+对于 ASIOVADPRO SPEAKERS IN 机架和 ASIOVADPRO MIX OUT 机架而言，延迟是指音频从被写入流到被读取之间的时延。
 
-Usually you do not need to adjust this but you can reduce or add latency if required.
+Windows 将音频写入 ASIOVADPRO SPEAKERS，而 ASIO Link Pro 则在其后读取音频，此时的延迟即为这一时间差。对于 ASIOVADPRO MIX 而言，Windows 在 ASIO Link Pro 写入音频之后随即读取，其延迟同样为这一时间差。
+
+通常情况下，您无需调整此项设置，但如有需要，也可适当增加或减少延迟。
 
 ### NETWORK IN Latency Adjustment
 
-The latency adjust in the NETWORK IN rack allows you to add latency to the network stream to stop drop outs. It is really dependent on the quality of the network connection whether this can be reduced to nearer 0. The range is the same as the stored buffer size which is 250ms of audio. In short, if it distorts, add some latency.
+NETWORK IN 机架中的延迟调节功能允许您为网络音频流添加延迟，以避免音频断续。能否将延迟降至接近零，很大程度上取决于网络连接的质量。该调节范围与存储缓冲区大小一致，即250毫秒的音频时长。简而言之，如果出现失真，就适当增加一些延迟。
 
-If you enable "Auto synchronise" the audio stream will use "adaptive resampling" to keep the incoming audio stream clock and local ASIO clock in time.
+启用“Auto synchronise（自动同步）”后，音频流将采用“adaptive resampling（自适应重采样）”技术，使输入音频流的时钟与本地 ASIO 时钟保持同步。
 
-The value displayed in the latency box is a best estimate of the total latency from sender to receiver.
+延迟框中显示的数值是发送端到接收端总延迟的最佳估算值。
 
 ## I get distortion when mixing multiple channels
 
-Make sure, when mixing multiple input channels into only a few channels, you reduce the volume of the multiple channels using the IN MIX or OUT MIX buttons. Hold the left mouse button and move the mouse up or down on the green circle volume control to adjust the volume. Try to make sure no red levels are visible in the level display. 
+**在混音多个声道时会出现失真现象**
+
+请确保在将多个输入声道混合为少数几个声道时，使用“IN MIX”或“OUT MIX”按钮降低各声道的音量。按住鼠标左键，在绿色圆圈状的音量控制区域上下拖动以调节音量。同时，请尽量保证电平显示（level display）中不出现红色峰值（red levels）。
 
 ## WDM is running but status is "Not Active" with ASIO4ALL
 
-Sometimes ASIO4ALL can have trouble getting the card if it was the default device before ASIO4ALL starts. The best way to work around this is to disable the card in playback devices before using the link. It doesn't always happen so you can just try a few times disabling certain inputs and outputs in ASIO4ALL.
+**WDM 正在运行，但状态显示为“未激活”，且使用的是 ASIO4ALL**
+
+有时，如果在 ASIO4ALL 启动前该声卡曾是默认设备，ASIO4ALL 可能会难以正确识别该声卡。解决这一问题的最佳方法是在启用该连接之前，先在播放设备中禁用该声卡。这种情况并非每次都会发生，因此您可以尝试多次在 ASIO4ALL 中禁用某些输入和输出端口。
 
 ## I see red channels with X
 
-This means that the ASIO driver is not doing any audio processing at all. If this happens first try to reset the ASIO Link Pro driver (R button).
+**我看到红色通道显示为 X**
 
-You can also try to restart the host application and possibly the computer and if that does not solve this issue then [contact us]().
+这意味着 ASIO 驱动程序完全没有进行任何音频处理。如果出现这种情况，首先尝试重置 ASIO Link Pro 驱动程序（按 R 键）。
+
+您还可以尝试重启宿主应用程序，必要时也重启计算机。
 
 ![](../_media/28-1.jpg)  

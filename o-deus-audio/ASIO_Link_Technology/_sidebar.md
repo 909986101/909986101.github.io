@@ -7,6 +7,6 @@
   - [安装](Installation.md)
   - [设置](./Setup_ASIO_Link_Pro.md)
   - [使用](./Using_ASIO_Link_Pro.md)
-  - [问答](FAQ.md)
+  - [常见问题](FAQ.md)
   - [示例配置](Sample_Configurations.md)
   - [ASIO Link Pro Tool](./The_ASIO_Link_Pro_Tool.md)

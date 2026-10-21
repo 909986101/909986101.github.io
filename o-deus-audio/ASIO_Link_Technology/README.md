@@ -2,57 +2,49 @@
 
 ## What is it?
 
-Utilising WDM drivers, emulating real sound cards, ASIO Link Technology allows you to listen or record windows audio from your ASIO driver.
+借助 WDM 驱动程序并模拟真实声卡，ASIO Link 技术使您能够通过 ASIO 驱动程序收听或录制 Windows 音频。
 
-You can make the windows audio appear as an input into an ASIO host application or DAW, or monitor windows audio as an ASIO output bypassing the host application.
+您可以将 Windows 音频作为输入信号接入 ASIO 主机应用程序或 DAW，也可以将其作为 ASIO 输出进行监听，从而绕过主机应用程序。
 
-It is also possible to route your ASIO output to the ASIOVADPRO Mix recording device(s) for recording by WDM applications or for streaming applications (i.e. live broadcast, OBS, voice chat programs, Skype).
+此外，您还可以将 ASIO 输出路由至 ASIOVADPRO 混音录制设备，以供 WDM 应用程序进行录制，或用于流媒体应用（如直播、OBS、语音聊天软件、Skype 等）。
 
-ASIO Link Technology also has the ability to route audio over the network to another machine running an ASIO Link Technology product. This feature allows for pairs to connect to each other (as both sender and receiver) to allow full duplex sharing of live music ideas!
+ASIO Link 技术还具备通过网络将音频传输至另一台运行 ASIO Link 技术产品的计算机的功能。这一特性支持双方互为发送端与接收端，实现全双工的实时音乐创意共享！
 
-ASIO Link Technology has multi-client support built in which allows you to use the same ASIO driver in more than one application.
+ASIO Link 技术内置多客户端支持，允许您在多个应用程序中使用同一套 ASIO 驱动程序。
 
 ![](../_media/4-1.jpg)  
 _The ASIO Link Pro User Interface (UI)_
 
-## Versions
+## 版本说明
 
-This documentation is specific to the **ASIO Link Pro** edition and the screen shots and information in this documentation are specifically for the ASIO Link Pro version.
+本手册仅适用于 **ASIO Link Pro** 版本，其中的屏幕截图及各项信息亦专为 ASIO Link Pro 版本而设计。
 
-We have 3 editions available that all share ASIO Link Technology:
+我们提供三种版本，均采用 ASIO Link 技术：
 
-### ASIO Link
 
-The documentation presented here shows the WDM device name as "ASIOVADPRO" but the ASIO Link uses the "ASIOVAD" WDM device name. Also, the ASIO Link Pro Tool is named "ASIO Link Tool" and the ASIO driver name is "ASIO Link".
+|版本名称|WDM device name|Tool name|ASIO driver name|
+|:--|:--|:--|--|
+|ASIO Link     |ASIOVAD    |ASIO Link Tool    |ASIO Link     |
+|ASIO Link Pro |ASIOVADPRO |ASIO Link Pro Tool|ASIO Link Pro |
+|ASIO Link Max |ASIOVADMAX |ASIO Link Max Tool|ASIO Link Max |
 
-### ASIO Link
+## Thank You
 
-Pro The documentation presented here is specifically for this version.
-
-### ASIO Link Max
-
-The documentation presented here shows the WDM device name as "ASIOVADPRO" but the ASIO Link Max uses the "ASIOVADMAX" WDM device name. Also, the ASIO Link Pro Tool is named "ASIO Link Max Tool" and the ASIO driver name is "ASIO Link Max".
-
-# Thank You
-
-## Aleksey Vaneev
-
+- Aleksey Vaneev  
 A special thank you goes out to Aleksey Vaneev for his r8brain sample rate conversion code which is used for adaptive resampling.
 
-## Steinberg Media GmbH
-
+- Steinberg Media GmbH  
 Thank you for the ASIO and VST technology that has become standard on windows platforms for pro-audio. ASIO Link Technology would not be possible without ASIO.
 
-# Copyright
+## Copyright
 
-## O Deus Audio
+- O Deus Audio  
+  ASIO Link Technology and its associated products and documentation are the copyright work of John Shield/O Deus Audio.  
+  
+  ASIO Link Technology uses ASIO technology by Steinberg.
 
-ASIO Link Technology and its associated products and documentation are the copyright work of John Shield/O Deus Audio.
+- Steinberg Media GmbH
 
-ASIO Link Technology uses ASIO technology by Steinberg.
+  ![](../_media/34-1.jpg)  
 
-## Steinberg Media GmbH
-
-![](../_media/34-1.jpg)  
-
-ASIO Technology by Steinberg. ASIO is a trademark of Steinberg Media Technologies GmbH.
+  ASIO Technology by Steinberg. ASIO is a trademark of Steinberg Media Technologies GmbH.

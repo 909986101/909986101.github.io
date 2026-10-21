@@ -29,9 +29,9 @@ We have 3 editions available that all share ASIO Link Technology:
 
 The documentation presented here shows the WDM device name as "ASIOVADPRO" but the ASIO Link uses the "ASIOVAD" WDM device name. Also, the ASIO Link Pro Tool is named "ASIO Link Tool" and the ASIO driver name is "ASIO Link".
 
-### ASIO Link
+### ASIO Link Pro
 
-Pro The documentation presented here is specifically for this version.
+The documentation presented here is specifically for this version.
 
 ### ASIO Link Max
 
@@ -62,9 +62,8 @@ Further options allow choice of installation folders if required.
 
 _WARNING - The uninstaller has an option to delete all settings, only check this if you are not upgrading as it will erase your product key in the registry!!_
 
-![](../_media/6-1.jpg)
-
-Install has successfully completed
+![](../_media/6-1.jpg)  
+_Install has successfully completed_
 
 # Setup ASIO Link Pro
 
