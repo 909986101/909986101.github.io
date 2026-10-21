@@ -1,8 +1,12 @@
 # VB-Audio Matrix & Coconut USER MANUAL
 
-> Universal Audio Router for Windows
+Universal Audio Router for Windows 
 
-![](VBMatrix_UserManual/matrix-1-1.jpg)
+<div style="text-align: center;">
+
+![](VBMatrix_UserManual/matrix-1-1.jpg ':size=50%')
+
+</div>
 
 > OFFICIAL WEBSITE [www.vbaudiomatrix.com](https://www.vbaudiomatrix.com)
 
@@ -134,15 +138,20 @@ To modify a preset can be done first by selecting the preset, and secondly by de
 
 ![](VBMatrix_UserManual/matrix-9-1.jpg)
 
-Right Click on Preset to retrieve the functions list. 
-
-![](VBMatrix_UserManual/matrix-9-2.jpg) 
-
-Recall preset: apply the preset with zone(s) (it removes all points not part of the preset in zone). Other functions like Apply, Gain Mute, Phase, are applied to preset points only (other points of the zone are not affected if not part of the preset).
-
-A Name and Comment can be defined for each preset.
-
-Update Preset: restore the current preset with current point value and states, automatically set it in Applied status. "A" button is full green when all points of the preset are set like the preset definition.
+<div style="display: grid; grid-template-columns: 4.5fr 0.5fr 5fr;">
+  <div>
+  
+  ![](VBMatrix_UserManual/matrix-9-2.jpg)
+  
+  </div>
+  <div></div>
+  <div>
+    <p>Right Click on Preset to retrieve the functions list. </P>
+    <p>Recall preset: apply the preset with zone(s) (it removes all points not part of the preset in zone). Other functions like Apply, Gain Mute, Phase, are applied to preset points only (other points of the zone are not affected if not part of the preset).</P>
+    <p>A Name and Comment can be defined for each preset.</P>
+    <p>Update Preset: restore the current preset with current point value and states, automatically set it in Applied status. "A" button is full green when all points of the preset are set like the preset definition.</P>
+  </div>
+</div>
 
 ## System settings
 
@@ -327,19 +336,19 @@ The additional menu is there to provide additional functions:
 
 |Nenu |Functions |
 |:--|:--|
-|Restart Audio Engine |To Restart Audio Engine. |
-|Auto Restart Audio Engine(Master Device) |To Automatically Restart Audio Engine if the Master device is disconnected. |
-|Load Settings... <br>Save Settings |To load or save current settings in a given filename. |
-|Load Settings on Startup |To Load a particular settings file on startup, then you restart with the same settings anyway. |
-|Load Grid Settings only...<br>Save Grid Settings only...<br>Reset Grid Settings only... |To Load, Save, Reset the routing grid settings. |
-|Reset Settings(Re-Initialization) |To reset complete settings.|
-|System Tray |To set Matrix in system tray. |
-|Run on Windows Startup |To run it on system startup. |
-|Show App On Startup |To show Matrix on launch. |
-|Set as Always Visible |To set Matrix as always visible (window on top).|
-|Limit Remote Gain to 0 dBfs |To limit the remote gain (MIDI control) to 0dB (instead of +12 dB).|
-|Log/CLI... <br>Settings... <br>Routings Grid... <br>M.I.D.I. Mapping... <br>VBAN Dialog Box |To open different configuration dialog boxes (Log/CLI, System settings, Routing Grid, M.I.D.I. mapping, VBAN Dialog Box).|
-|Shut Down Matrix |To shutdown the application|
+|**Restart Audio Engine** |To Restart Audio Engine. |
+|**Auto Restart Audio Engine(Master Device)** |To Automatically Restart Audio Engine if the Master device is disconnected. |
+|**Load Settings... <br>Save Settings** |To load or save current settings in a given filename. |
+|**Load Settings on Startup** |To Load a particular settings file on startup, then you restart with the same settings anyway. |
+|**Load Grid Settings only...<br>Save Grid Settings only...<br>Reset Grid Settings only...** |To Load, Save, Reset the routing grid settings. |
+|**Reset Settings(Re-Initialization)** |To reset complete settings.|
+|**System Tray** |To set Matrix in system tray. |
+|**Run on Windows Startup** |To run it on system startup. |
+|**Show App On Startup** |To show Matrix on launch. |
+|**Set as Always Visible** |To set Matrix as always visible (window on top).|
+|**Limit Remote Gain to 0 dBfs** |To limit the remote gain (MIDI control) to 0dB (instead of +12 dB).|
+|**Log/CLI... <br>Settings... <br>Routings Grid... <br>M.I.D.I. Mapping... <br>VBAN Dialog Box** |To open different configuration dialog boxes (Log/CLI, System settings, Routing Grid, M.I.D.I. mapping, VBAN Dialog Box).|
+|**Shut Down Matrix** |To shutdown the application|
 
 The **About Box** will show you your current activation code and **license** status and some link to get more information and buy your license online.
 
@@ -466,15 +475,21 @@ Right Click to get the contextual menu on a slot and open VB-Audio Matrix Contro
 
 ### VAIO LATENCY MENU
 
-CTRL+ Click on Buffer size to get the latency menu to change the internal latency of the Matrix VAIO couple (in / out)
+<div style="display: grid; grid-template-columns: 4.75fr 0.5fr 4.75fr;">
+  <div>
+    <p>CTRL+ Click on Buffer size to get the latency menu to change the internal latency of the Matrix VAIO couple (in / out)</p>
+    <p>This latency is stored in registry by Matrix and recalled on audio engine start (overwriting possible change in VAIO Control panel it self).</p>
+    <p>The 7168 sample latency allow the VAIO working well for any cases because it allows connected application to work with buffer up to 2048 samples. In this case, stable stream would require 3x 2048 = 6144 samples, so 7168 is also working.</p>
+    <p>If you get problem (cut in the sound or no sound anymore) trying to find best internal latency, you may come back to default value.</p>
+  </div>
+  <div></div>
+  <div>
 
-![](VBMatrix_UserManual/matrix-21-2.jpg)
-
-This latency is stored in registry by Matrix and recalled on audio engine start (overwriting possible change in VAIO Control panel it self).
-
-The 7168 sample latency allow the VAIO working well for any cases because it allows connected application to work with buffer up to 2048 samples. In this case, stable stream would require 3x 2048 = 6144 samples, so 7168 is also working.
-
-If you get problem (cut in the sound or no sound anymore) trying to find best internal latency, you may come back to default value.
+  ![](VBMatrix_UserManual/matrix-21-2.jpg)
+  
+  </div>
+  
+</div>
 
 ### VBAN SLOT
 
@@ -534,13 +549,18 @@ VB-Audio Matrix Coconut installs 4x other virtual ASIO Drivers:
 - VASIO32 (32 I/O – 2 client applications) VB-Matrix VASIO-32 
 - VASIO512 (512 I/O – 1 client application) VB-Matrix VASIO-512
 
-![](VBMatrix_UserManual/matrix-25-1.jpg)
+<div style="display: grid; grid-template-columns: 5fr 0.5fr 4.5fr;">
+  <div>
+    <p>VB-Matrix ASIO drivers are provided as 32bits and 64 bits DLL so can be used in any DAW application (32bits or 64bits).</p>
+    <p>Each DLL is endowed with an icon, one for VB-Audio Matrix and one for Coconut version. Some device selector might not display the associated icon.</p>
+    <p>Here it is on the right, the ASIO device list shown in Voicemeeter device selector.</p>
+  </div>
+  <div></div>
+  <div>
 
-VB-Matrix ASIO drivers are provided as 32bits and 64 bits DLL so can be used in any DAW application (32bits or 64bits).
-
-Each DLL is endowed with an icon, one for VB-Audio Matrix and one for Coconut version. Some device selector might not display the associated icon.
-
-Here it is on the right, the ASIO device list shown in Voicemeeter device selector.
+  ![](VBMatrix_UserManual/matrix-25-1.jpg)
+  </div>
+</div>
 
 ## Master Clock and Synchronization
 

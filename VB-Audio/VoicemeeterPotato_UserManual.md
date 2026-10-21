@@ -1,10 +1,29 @@
 # VOICEMEETER
 
-|||
-|:-:|:-:|
-|![](VoicemeeterPotato_UserManual/1-1.jpg) |**VoiceMeeter** <br>Real Time Virtual Audio Mixer for Windows|
-|![](VoicemeeterPotato_UserManual/banana-1-1.jpg) |**Banana** <br>Advanced Virtual Audio Mixer for Windows|
-|![](VoicemeeterPotato_UserManual/potato-1-1.jpg) |**Patato** <br>The Ultimate Virtual Audio Device Mixer for Windows|
+||
+|:-:|
+|**Patato** <br>The Ultimate Virtual Audio Device Mixer for Windows |
+|![](VoicemeeterPotato_UserManual/potato-1-1.jpg) |
+
+<div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr; text-align: center;">
+  <div style="grid-column: 1; grid-row: 1;">
+    <p><strong>Banana</strong></p>
+    <p>Advanced Virtual Audio Mixer for Windows</P>
+  </div>
+  <div style="grid-column: 1; grid-row: 2;">
+  
+  ![](VoicemeeterPotato_UserManual/banana-1-1.jpg)
+  </div>
+  <div style="grid-column: 2; grid-row: 1 / span 2;"></div>
+  <div style="grid-column: 3; grid-row: 1;">
+    <p><strong>VoiceMeeter</strong></p>
+    <p>Real Time Virtual Audio Mixer for Windows</P>
+  </div>
+  <div style="grid-column: 3; grid-row: 2;">
+  
+  ![](VoicemeeterPotato_UserManual/1-1.jpg)
+  </div>
+</div>
 
 ## OFFICIAL WEBSITE 
 
@@ -258,18 +277,14 @@ If you remove selection, Input strip can still get audio from VBAN stream or ASI
 
 REM: it's better to select WDM driver (present since Windows VISTA) to get best latency and audio performances. If using MME driver you might have a bigger delay between input and output. Use MME driver only if WDM are not present or does not work correctly with your audio hardware configuration.
 
----
-std-15
-
-After Step 2, Voicemeeter is routing signal from selected input (e.g. Microphone) to A1 selected Output. Then you can hear from this audio output the sound coming in input #1. A & B button are switch to send signal in BUS A or/and BUS B.
-
-![](VoicemeeterPotato_UserManual/15-2.jpg)
-
-std-15
----
-
----
-std-16
+<div style="display: grid; grid-template-columns: 6fr 0.5fr 3.5fr;">
+  <div>
+  
+  ![](VoicemeeterPotato_UserManual/15-2.jpg)
+  </div>
+  <div></div>
+  <div>After Step 2, Voicemeeter is routing signal from selected input (e.g. Microphone) to A1 selected Output. Then you can hear from this audio output the sound coming in input #1. A & B button are switch to send signal in BUS A or/and BUS B.</div>
+</div>
 
 ### Monitor Input in Real Time
 
@@ -277,48 +292,49 @@ After Step 2, you can hear what is coming in selected input. Blue VU-meter will 
 
 ![](VoicemeeterPotato_UserManual/16-1.jpg)
 
-std-16
----
----
-std-17
 
 ## STEP 3: Use Virtual Input as default playback device
 
 Strip #3 is the virtual input of Voicemeeter. It is shown as regular system audio device and can be used by another application as playback audio device.
 
-![](VoicemeeterPotato_UserManual/17-1.jpg)
-
-If Voicemeeter Input is set as default audio device, every sound played on the computer will go on the Virtual Input (Strip #3) of Voicemeeter Mixing Console.
-
-![](VoicemeeterPotato_UserManual/17-2.jpg)
-
-You can launch a Media Player or Web Radio and check that you can hear the sound coming from it on the Voicemeeter Virtual Input (IN 3).
+<div style="display: grid; grid-template-columns: 5fr 0.25fr 3fr; grid-template-rows: 7fr 3fr;">
+  <div style="grid-column: 1; grid-row: 1;">
+  
+  ![](VoicemeeterPotato_UserManual/17-1.jpg)
+  </div>
+  <div style="grid-column: 1; grid-row: 2;">
+    <p>If Voicemeeter Input is set as default audio device, every sound played on the computer will go on the Virtual Input (Strip #3) of Voicemeeter Mixing Console.</p>
+    <p>You can launch a Media Player or Web Radio and check that you can hear the sound coming from it on the Voicemeeter Virtual Input (IN 3).</p>
+  </div>
+  <div style="grid-column: 2; grid-row: 1 / span 2;"></div>
+  <div style="grid-column: 3; grid-row: 1 / span 2;">
+  
+  ![](VoicemeeterPotato_UserManual/17-2.jpg)
+  </div>
+</div>
 
 ![](VoicemeeterPotato_UserManual/17-3.png)
 
-std-17
----
----
-std-18
 
 ### Virtual Input is Multi-Channel
 
 Strip #3, the virtual input of Voicemeeter can manage until 8 channels and get 5.1 audio from DVD for example. 
 
-![](VoicemeeterPotato_UserManual/18-1.jpg)
-
-Windows Control Panel /Sound Dialog Box allows configuring Audio device (playback and recording devices).
-
-To get multichannel audio from DVD player you need to configure the Voicemeeter Input in multi-channel (click on configure button on the left bottom after having selected the Voicemeeter input).
-
-When playing DVD you will see 5.1 audio signal incoming on Voicemeeter Virtual Input and also on possible A output level (if your output device supports the same number of channels).
-
-Note that BUS B is also multichannel but level meter shows always 2 first channels only.
+<div style="display: grid; grid-template-columns: 4.5fr 0.25fr 5.25fr;">
+  <div>
+  
+  ![](VoicemeeterPotato_UserManual/18-1.jpg)
+  </div>
+  <div></div>
+  <div>
+    <p>Windows Control Panel /Sound Dialog Box allows configuring Audio device (playback and recording devices).</p>
+    <p>To get multichannel audio from DVD player you need to configure the Voicemeeter Input in multi-channel (click on configure button on the left bottom after having selected the Voicemeeter input).</p>
+    <p>When playing DVD you will see 5.1 audio signal incoming on Voicemeeter Virtual Input and also on possible A output level (if your output device supports the same number of channels).</p>
+    <p>Note that BUS B is also multichannel but level meter shows always 2 first channels only.</p>
+  </div>
+</div>
 
 ![](VoicemeeterPotato_UserManual/18-2.jpg)
-
-std-18
----
 
 ## Understanding Voicemeeter Virtual I/O in one picture
 
@@ -867,7 +883,7 @@ This last button is made for audio post production. The 8 channels are composed 
 - ch 5,6: Voicemeeter input #2 before gain fader
 - ch 7,8: Virtual input channel 1,2 before gain fader
 
-With composite signal, it’s possible to record all
+With composite signal, it's possible to record all
 Voicemeeter Inputs (each in stereo) with a DAW
 connected to Voicemeeter virtual ASIO for
 example. It allows recording VOIP interview or
@@ -1067,7 +1083,7 @@ In this example:
 - BUS A1 automatically uses 8 first output channel of the ASIO board
 - BUS A2 will send audio to ASIO output channels 63+64
 
-WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won’t hear the BUS A1 anymore, since it is replaced by A2).
+WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won't hear the BUS A1 anymore, since it is replaced by A2).
 
 std-27
 ---
@@ -1087,7 +1103,7 @@ In this example:
 - BUS A2 will send audio to ASIO output channels 63+64
 - BUS A3 will send audio to ASIO output channel 10 to 17 (8 channels).
 
-WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won’t hear the BUS A1 anymore, since it is replaced by A2).
+WARNING: BUS outputs are copied in the ASIO output channels in logical order A1, A2, A3. It means that A1 channels (1 to 8) could be replaced by A2 channels (if overlapping). For example if A2 is routed to channel 1+2, it will overwrite output A1 channel 1+2 (you won't hear the BUS A1 anymore, since it is replaced by A2).
 
 banana-33
 ---
@@ -1452,7 +1468,7 @@ Configure Skype to receive audio from Voicemeeter B Output (Virtual Output) and 
 
 ![](VoicemeeterPotato_UserManual/41-1.jpg)
 
-Note it’s important to check off Automatic gain control because it’s now Voicemeeter mixing console which takes care about levels. Also you can set level to max for the same reason.
+Note it's important to check off Automatic gain control because it's now Voicemeeter mixing console which takes care about levels. Also you can set level to max for the same reason.
 
 In this above configuration, Skype will still continue to use your PC speaker to ring you, but for communication, you will need to launch Voicemeeter to make it work of course (see menu to set Voicemeeter in system tray and run on Windows startup)..
 
@@ -1474,17 +1490,17 @@ Configure Voicemeeter to connect it to skype through the VB-CABLE.
 
 With A / B Switches, you can decide what sound you send to monitor (speaker) and what you send to Skype (through Bus B).
 
-Basically you will send to your headphone everything but your voice (except if you want to also hear your own voice in speaker). That’s why A is off on strip #1.
+Basically you will send to your headphone everything but your voice (except if you want to also hear your own voice in speaker). That's why A is off on strip #1.
 
-Regarding Skype, you will want to send everything (your voice and music) but skype sound (Skype caller coming in input 2). That’s why B is off on strip #2. Otherwise we could have a loop back and the caller could hear his own voice again and again and again…
+Regarding Skype, you will want to send everything (your voice and music) but skype sound (Skype caller coming in input 2). That's why B is off on strip #2. Otherwise we could have a loop back and the caller could hear his own voice again and again and again…
 
 ## CASE STUDY #2 How to manage 2 headsets on Skype?
 
-How to manage 2 Headsets in the same time on Skype or Google Voice? To manage 2 headsets is maybe simpler than the previous case, since we don’t need additional VB-Cable.
+How to manage 2 Headsets in the same time on Skype or Google Voice? To manage 2 headsets is maybe simpler than the previous case, since we don't need additional VB-Cable.
 
 ![](VoicemeeterPotato_UserManual/44-1.jpg)
 
-To manage 2 Headset, we need to manage 2 different microphones, but also 2 different headphones. That’s why Voicemeeter allows selecting 2 physical output devices on BUS A outputs (A1 and A2). Then both headset speakers will give the sound coming from Skype (IN3).
+To manage 2 Headset, we need to manage 2 different microphones, but also 2 different headphones. That's why Voicemeeter allows selecting 2 physical output devices on BUS A outputs (A1 and A2). Then both headset speakers will give the sound coming from Skype (IN3).
 
 ![](VoicemeeterPotato_UserManual/44-2.jpg)
 
