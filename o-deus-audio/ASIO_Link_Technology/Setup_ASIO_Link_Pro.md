@@ -20,7 +20,7 @@
 |多个 |将会弹出一个小型下拉列表（见下图），供您选择所需的驱动程序 |
 |无 |将使用“ASIO Link Pro Null Driver”，这是一款仅用于网络通信的静默驱动。<br>如果您看到此提示，我们建议您改用 _ASIO4ALL_。
 
-> 提示：您随时可以通过 ASIO Link Pro 界面中的“选择驱动”按钮更换新的驱动程序。
+> 提示：您随时可以通过 ASIO Link Pro 界面中的““Pick driver（选择驱动）”按钮更换新的驱动程序。
 
 ![](../_media/7-1.jpg)  
 _Select ASIO Link Pro in your host app and select the ASIO driver_
