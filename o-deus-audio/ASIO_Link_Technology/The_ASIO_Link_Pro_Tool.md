@@ -4,12 +4,16 @@
 
 此外，它还可以清除主机应用程序的所有默认设置。如果您希望重新开始，这相当于进行一次全新安装。
 
-## Using the ASIO Link Pro Tool
+## 使用
+
+**Using the ASIO Link Pro Tool**
 
 ![](../_media/23-1.jpg)  
 _ASIO Link Pro Tool UI_
 
-## ASIO Link Pro Tool Functions
+## 功能
+
+**ASIO Link Pro Tool Functions**
 
 ### ASIO Settings
 
