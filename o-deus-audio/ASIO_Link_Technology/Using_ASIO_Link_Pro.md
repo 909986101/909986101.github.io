@@ -17,7 +17,7 @@ _'Anything is possible with ASIO Link Pro'_
 ![](../_media/11-1.jpg)  
 _ASIO Link Pro UI sections 1 + 2_
 
-## 设置（settings）与帮助栏（help bar）
+## 设置与帮助栏
 
 **Settings and Help Bar**
 
@@ -28,7 +28,7 @@ ASIO Link Pro 界面的顶部区域提供了许多设置和按钮，其详细说
 ![](../_media/11-2.jpg)  
 Settings and Help Bar
 
-## 通道机架（Racks）与通道连接
+## 通道机架与通道连接
 
 **Channel Racks and Channel Connections**
 
@@ -62,9 +62,9 @@ ASIO 主机输入混音（ASIO HOST IN MIX）与 ASIO 驱动程序输出混音�
 
 二者是 ASIO Link Pro 的主要音频总线机架。音频既可从这两个机架进行混音输入，也可从中进行混音输出。它们同时兼具输入与输出功能，因此被称为“混音机架”。
 
-### 通道连接（Channel Connections）
+### 通道连接
 
-Depending on the **Show audio flow** setting (see [Top Settings]()) you can see either some lines or all lines connecting channels on racks. These are called channel connections and can be created by drag-dropping channels as described [below]().
+**Channel Connections**
 
 根据“显示音频流（Show audio flow）”设置（参见[顶部设置（Top Settings）](#top-settings)），您可以看到连接机架上各通道的若干条线，或全部线条。这些称为通道连接（Channel Connections），可通过如下所述的[拖放通道操作（drag-dropping channels）](#方法一-拖放通道)来创建。
 
@@ -154,12 +154,6 @@ ASIO 通过 ASIOVADPRO MIX OUT 实现与 WDM 相连接。通过任何能够录�
 
 - **状态（Status）** 在延迟轮下方有一个文本框，用于显示每个设备的 ASIOVADPRO 设备状态  
 ![](../_media/14-5.jpg)  
-
-If the device is unavailable, or there is an error, channels will appear red with an X over the channel number.
-
-By default, when you first start/select ASIO Link Pro in a new host program, the routings 1-1 and 2-2 shall be enabled by default from the ASIO DRIVER OUT MIX.
-
-_Since most windows applications can only open recording devices in stereo, you can down mix surround sound to stereo by adjusting the mappings appropriately._
 
 如果设备不可用或出现错误，通道将显示为红色，并在通道编号上标有叉号（X）。
 
@@ -315,7 +309,9 @@ FLAC 文件可能会占用大量磁盘空间，尤其是 8 声道的文件。
 
 因此，如果你先以常规方式启动 ASIO Link Pro 并使用第一个驱动程序，同时禁用多客户端功能，那么你就可以再加载另一个宿主软件，并连接到另一个 ASIO 驱动程序。这样一来，你便可以通过网络将音频从第二个实例发送到第一个实例，或者反之亦然。
 
-## 多客户端模式（Multi-client Mode）
+## 多客户端模式
+
+**Multi-client Mode**
 
 ASIO Link Pro 支持多客户端服务器（multi-client server）模式，允许多个应用程序共享同一个 ASIO 驱动程序。为此，您需要运行一个“服务器（server）”版的 ASIO Link Pro 实例，并勾选“启用多客户端（Enable multi-clients）”复选框。
 
@@ -332,8 +328,6 @@ _Enabling multi-client Mode_
 
 ![](../_media/19-2.jpg)  
 _Routing multi-client output to ASIO Inputs of the multi-client server host application_
-
-In multi-client mode you can still capture ASIOVADPRO SPEAKERS IN and ASIO DRIVER IN and you can also send audio to the ASIOVADPRO MIX OUT rack. One thing to note is that all the audio is going to the server instance so you need to be careful not to overload the ASIOVADPRO MIX OUT!
 
 在多客户端模式（multi-client mode）下，您仍然可以同时捕获 ASIOVADPRO SPEAKERS IN 和ASIO DRIVER IN，并且还可以将音频发送至 ASIOVADPRO MIX OUT 机架。需要注意的是，所有音频都会路由到服务器实例（server instance），因此请务必避免使 ASIOVADPRO MIX OUT 过载！
 
