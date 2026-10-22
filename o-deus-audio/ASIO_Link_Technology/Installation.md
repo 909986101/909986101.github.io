@@ -1,6 +1,8 @@
 # Installation
 
-## Download and Run Installer
+## 下载并运行安装程序
+
+**Download and Run Installer**
 
 ~~首先，请从我们主页上的链接下载最新的安装程序 exe 文件并运行。~~
 
@@ -18,15 +20,16 @@
 
   https://github.com/DirkoAudio/ASIOLinkProRepack
 
-## Number of WDM Devices
+## WDM 设备数量
 
-**WDM 设备数量**  
+**Number of WDM Devices**  
+
 在欢迎页面上，您将看到一个选项，用于安装 16 个立体声 WDM 设备；如果您未选择此项，则将安装 4 个环绕 7.1 声道设备。
 
 ![](../_media/5-1.jpg)  
 _Install 4 surround or 16 stereo ASIOVADPRO devices_
 
-## Install ASIO Link Pro
+## 安装 ASIO Link Pro
 
 安装程序将显示一份最终用户许可协议（EULA），您需同意该协议方可安装 ASIO Link Pro。
 

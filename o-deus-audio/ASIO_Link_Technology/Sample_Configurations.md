@@ -1,8 +1,8 @@
 # Sample Configurations
 
-## Mix WDM playback into host application input
+## 将 WDM 播放混入主机应用程序的输入
 
-**将 WDM 播放混入主机应用程序的输入**
+**Mix WDM playback into host application input**
 
 通过启用从 ASIOVADPRO SPEAKERS IN 到 ASIO HOST IN MIX 的连接，您可以将 WDM 音频引入主机应用程序的 ASIO 输入通道。
 
@@ -19,9 +19,9 @@ _Send WDM playback to ASIO input_
 
 - 将 Windows WDM 应用程序的音频录制到您的 ASIO 主机中
 
-## Send ASIO output to WDM recording devices
+## 将 ASIO 输出发送至 WDM 录音设备
 
-**将 ASIO 输出发送至 WDM 录音设备**
+**Send ASIO output to WDM recording devices**
 
 通过启用从 ASIO DRIVER OUT MIX 到 ASIOVADPRO MIX OUT 的连接，您可以将 ASIO 输出传输至 ASIOVADPRO 的 WDM 录音设备。
 
@@ -40,9 +40,9 @@ _Send ASIO output to WDM recording devices_
 
 - 将 DAW 音频捕获至屏幕共享应用程序
 
-## Send DAW ASIO output to another DAW ASIO input
+## 将 DAW 的 ASIO 输出发送至另一台 DAW 的 ASIO 输入
 
-**将 DAW 的 ASIO 输出发送至另一台 DAW 的 ASIO 输入**
+**Send DAW ASIO output to another DAW ASIO input**
 
 要实现这一目标，您需要启用多客户端模式（multi-client mode）。
 
@@ -59,17 +59,10 @@ _Start the DAW to send audio from_
 ### 用途（Uses）
 
 - 将 ASIO 音频输出从一个应用程序发送到另一个应用程序的 ASIO 输入端口
-## Send audio over IP on the network or LAN
 
-By enabling connections from ASIO DRIVER OUT MIX to NETWORK OUT you can send audio over IP.
+## 通过网络或局域网发送音频
 
-You can quickly achieve this by clicking the "**1-1**" button.
-
-Next, enter the Remote IP address of the target machine that is running ASIO Link Pro with NETWORK IN enabled so it can receive the audio.
-
-NOTE: You need to check the "**Enable connection**" check box to start sending audio.
-
-**通过网络或局域网发送音频**
+**Send audio over IP on the network or LAN**
 
 通过启用从 ASIO DRIVER OUT MIX 到 NETWORK OUT 的连接，您可以实现音频的 IP 传输。
 
@@ -92,9 +85,9 @@ _Send audio over IP_
 
 - 结合“多客户端模式（Multi-client Mode）”，从多台设备接收音频
 
-## Receive audio into your host program from the network or LAN
+## 通过网络或局域网将音频输入到您的宿主程序中
 
-**通过网络或局域网将音频输入到您的宿主程序中**
+**Receive audio into your host program from the network or LAN**
 
 通过启用从“NETWORK IN”到“ASIO HOST IN MIX”的连接，您可以实现基于 IP 的音频接收。
 
