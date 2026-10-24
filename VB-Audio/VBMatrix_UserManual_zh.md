@@ -1,10 +1,10 @@
 # VB-Audio Matrix & Coconut 用户手册
 
-Windows 通用音频路由器
+<div style="width: 50%; margin: 0 auto; text-align: center;">
 
-<div style="text-align: center;">
+<p><strong>Windows 通用音频路由器</strong></p>
 
-![](VBMatrix_UserManual/matrix-1-1.jpg ':size=50%')
+![](VBMatrix_UserManual/matrix-1-1.jpg)
 
 </div>
 
@@ -107,8 +107,6 @@ VB-Audio Matrix 提供了 5 种类型的插槽（slots）：
 ![](VBMatrix_UserManual/matrix-7-1.jpg)
 
 按住 Ctrl 键并单击，可在插槽中选择设备或启用该插槽。
-
-**Once a Slot is enabled, it appears in the Routing Grid.**
 
 **一旦启用某个插槽（Slot），它就会显示在路由网格（Routing Grid）中。**
 
@@ -538,9 +536,7 @@ Screen Sharing and remote control:
 
 ## VASIO SLOT
 
-Virtual ASIO slots are managing the virtual ASIO drivers installed with matrix. VB-Audio Matrix installs a set of 2x 4 ASIO driver providing different capabilities:
-
-VASIO 插槽（Virtual ASIO slots）负责管理随 Matrix 一同安装的虚拟 ASIO 驱动程序(virtual ASIO drivers)。VB-Audio Matrix 会安装一组 2×4 的 ASIO 驱动程序，提供多种不同的功能：
+VASIO 插槽（Virtual ASIO slots）负责管理随 Matrix 一同安装的虚拟 ASIO 驱动程序(virtual ASIO drivers)。VB-Audio Matrix 会安装一组 2×4 的 ASIO 驱动程序，提供多种不同的能力：
 
 VB-Audio Matrix installs 4x virtual ASIO Drivers:
 
@@ -654,8 +650,6 @@ Matrix 已在多个层面通过验证，在大多数配置下使用当前的默�
 常规的 Windows 系统配置通常难以将缓冲时间控制在 2.5 毫秒以下。这意味着，在12小时或24小时内，音频线程可能会遭遇长达 2.5 毫秒的中断。这一情况可以通过专门的测试应用程序进行测量，例如，您可以在数天内持续运行该程序，以获取最长的中断时长：[https://forum.vb-audio.com/viewtopic.php?t=519](https://forum.vb-audio.com/viewtopic.php?t=519)
 
 2.5 毫秒在 44.1/48kHz 采样率下约等于 128 个样本。因此，128 个样本的缓冲区大小对于 Windows 系统而言已属临界值，难以有效避免音频线程受到中断干扰。若要进一步降低至 128 个样本以下（而我们知道某些 PC 配置甚至可以采用 64 或 48 个样本的缓冲区）则必须依赖经过验证的硬件配置，并可能需要专业的音频技术知识。
-
-2.5 ms is around 128 samples at 44.1 / 48 kHz. So, 128 samples buffer size is already a critical buffer size for windows (that is unable to protect the audio thread from interruptions). To go below 128 samples (and we know that some PC configuration can work with 64 or 48 samples buffer size) is requiring a validated PC configuration and possibly an audio pro expertise.
 
 ## 延迟建议（Latency recommendation）
 

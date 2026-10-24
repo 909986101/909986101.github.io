@@ -1,10 +1,10 @@
 # VB-Audio Matrix & Coconut USER MANUAL
 
-Universal Audio Router for Windows 
+<div style="width: 50%; margin: 0 auto; text-align: center;">
 
-<div style="text-align: center;">
+<p><strong>Universal Audio Router for Windows</strong></p>
 
-![](VBMatrix_UserManual/matrix-1-1.jpg ':size=50%')
+![](VBMatrix_UserManual/matrix-1-1.jpg)
 
 </div>
 
