@@ -1,9 +1,13 @@
 - VB-Audio
 
+- CABLE
+
+  - [VBCABLE](VBCABLE/)
+
 - Voicemeeter
 
   - [Voicemeeter](Voicemeeter/)
 
-- Matrix
+- VBMatrix
 
   - [VBMatrix](VBMatrix/)
