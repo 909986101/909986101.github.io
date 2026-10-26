@@ -67,33 +67,34 @@ Don't forget to restart your computer after to let Windows finalize the uninstal
 After installation, you can set or check your default audio device. With Windows 10 and higher, the last installed audio driver can be automatically set as default device and it's maybe not what you want.
 
 <div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr;">
-  <div>
-    <p>All PC Sound will come in VB-CABLE input (so you will not hear any sound anymore). 
-    </p>
-  
+  <div style="grid-column: 1; grid-row: 1;">
+    <p>All PC Sound will come in VB-CABLE input (so you will not hear any sound anymore).</p>
+  </div>
+  <div style="grid-column: 1; grid-row: 2;">
+
   ![](../_media/cable-6-1.jpg)
   </div>
-  <div></div>
-  <div>
-    <p>Your default microphone will be the VB-CABLE output (so all audio sent to VB-CABLE input).
-    </p>
+  <div style="grid-column: 1; grid-row: 3;">
+    <p>Default playback device can also be set in Windows Sound Dialog box (playback tab).</p>
+  </div>
+  <div style="grid-column: 1; grid-row: 4;">
+
+  ![](../_media/cable-6-4.jpg)
+  </div>
+  <div style="grid-column: 2; grid-row: 1 / span 4;">
+  </div>
+  <div style="grid-column: 3; grid-row: 1;">
+    <p>Your default microphone will be the VB-CABLE output (so all audio sent to VB-CABLE input).</p>
+  </div>
+  <div style="grid-column: 3; grid-row: 2;">
 
   ![](../_media/cable-6-2.jpg)
   </div>
-</div>
-
-<div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr;">
-  <div>
-    <p>Default playback device can also be set in Windows Sound Dialog box (playback tab). 
-    </p>
-  
-  ![](../_media/cable-6-4.jpg)
+  <div style="grid-column: 3; grid-row: 3;">
+    <p>Default recording device can be selected in Windows Sound Dialog box (recording tab)</p>
   </div>
-  <div></div>
-  <div>
-    <p>Default recording device can be selected in Windows Sound Dialog box (recording tab)
-    </p>
-  
+  <div style="grid-column: 3; grid-row: 4;">
+
   ![](../_media/cable-6-3.jpg)
   </div>
 </div>
