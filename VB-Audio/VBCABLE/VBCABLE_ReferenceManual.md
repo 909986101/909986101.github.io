@@ -2,7 +2,7 @@
 
 Virtual Audio Device working as Virtual Audio Cable
 
-![](./VBCABLE/cable-1-1.jpg)
+![](../_media/cable-1-1.jpg)
 
 # Introduction
 
@@ -13,7 +13,7 @@ The VB-CABLE is present in the system like any other audio devices. It is presen
 <div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr;">
   <div>
 
-  ![](./VBCABLE/cable-3-1.jpg)
+  ![](../_media/cable-3-1.jpg)
     <p>Playback device (the CABLE Input) can be configured like speaker in different mode (from mono to 7:1 home cinema setup) and supports 44.1 kHz to 96 or 192 kHz sample rate (16bits or 24bits resolution). 
     </p>
     <p>Like a regular audio device, the CABLE input can be set as system preferred / default device and can be used by several client applications in the same time. 
@@ -23,7 +23,7 @@ The VB-CABLE is present in the system like any other audio devices. It is presen
   </div>
   <div>
 
-  ![](./VBCABLE/cable-3-2.jpg)
+  ![](../_media/cable-3-2.jpg)
     <p>Recording Device (the CABLE output) can also be configured by properties dialog box and supports 44.1 kHz to 96 or 192 kHz samplerate (16bits or 24bits resolution). 
     </p>
     <p>This CABLE output is simply providing signal coming in the other side (the CABLE input). 
@@ -50,17 +50,17 @@ VB-CABLE can be installed on all Windows from XP SP2 to latest Win11 32 or 64 bi
 
 **STEP 3**: Follow instruction and wait for the end of the process. Restart your computer after installation (Restart after uninstallation too).
 
-![](VBCABLE/cable-4-1.jpg)
+![](../_media/cable-4-1.jpg)
 
 # Uninstall VB-Cable
 
 If the VB-CABLE is already installed, the setup program will propose you to remove the driver (instead of installing it).
 
-![](VBCABLE/cable-5-1.jpg)
+![](../_media/cable-5-1.jpg)
 
 Don't forget to restart your computer after to let Windows finalize the uninstallation. If the driver is not removed after that, you will have to remove it manually by the Windows Device Manager:
 
-![](VBCABLE/cable-5-2.jpg)
+![](../_media/cable-5-2.jpg)
 
 # Set VB-Cable as default device
 
@@ -71,14 +71,14 @@ After installation, you can set or check your default audio device. With Windows
     <p>All PC Sound will come in VB-CABLE input (so you will not hear any sound anymore). 
     </p>
   
-  ![](VBCABLE/cable-6-1.jpg)
+  ![](../_media/cable-6-1.jpg)
   </div>
   <div></div>
   <div>
     <p>Your default microphone will be the VB-CABLE output (so all audio sent to VB-CABLE input).
     </p>
 
-  ![](VBCABLE/cable-6-2.jpg)
+  ![](../_media/cable-6-2.jpg)
   </div>
 </div>
 
@@ -87,14 +87,14 @@ After installation, you can set or check your default audio device. With Windows
     <p>Default playback device can also be set in Windows Sound Dialog box (playback tab). 
     </p>
   
-  ![](VBCABLE/cable-6-4.jpg)
+  ![](../_media/cable-6-4.jpg)
   </div>
   <div></div>
   <div>
     <p>Default recording device can be selected in Windows Sound Dialog box (recording tab)
     </p>
   
-  ![](VBCABLE/cable-6-3.jpg)
+  ![](../_media/cable-6-3.jpg)
   </div>
 </div>
 
@@ -106,15 +106,15 @@ The VB-CABLE default format is stereo 48 kHz (for Win10/11) and stereo 44.1 kHz 
 
 For "Speaker" pin, the channel number can be configured by the **configure** button.
 
-![](VBCABLE/cable-7-1.jpg)
+![](../_media/cable-7-1.jpg)
 
 For a "Line Out" pin, the channel number must be defined with the default audio format in advanced properties (both cable inputs cannot be used in the same time):
 
-![](VBCABLE/cable-7-2.jpg)
+![](../_media/cable-7-2.jpg)
 
 VB-CABLE recording devise is a "Line In" pin so the channel number must also be defined with the default audio format in advanced properties:
 
-![](VBCABLE/cable-8-1.jpg)
+![](../_media/cable-8-1.jpg)
 
 VB-CABLE previous version (XP to Win7) is limited to 8 channels. The 8 channels are also present on VB-CABLE output (recording device) but can be used with MME under XP only. MME is limited to stereo from Vista. But the 8 channels are available though KS interface. WIN10/11 version provides 8 channels (or up to 16) for all interface (MME, WASAPI, KS).
 
@@ -124,11 +124,11 @@ REM: VB-Audio Matrix coconut is able to manage Windows Audio device offering mor
 
 The VB-Cable Control Panel application can be found in the ZIP package or in the installation folder:
 
-![](VBCABLE/cable-9-1.jpg)
+![](../_media/cable-9-1.jpg)
 
 The VB-CABLE control panel is basically made to help in some particular cases, or in order to improve audio quality or real time streaming aspects, VB-CABLE control panel allows setting two important system parameters: the **Max Latency** (pipe size) and **internal sample rate** (called 'Internal SR').
 
-![](VBCABLE/cable-9-2.jpg)
+![](../_media/cable-9-2.jpg)
 
 VB-CABLE Control Panel shows current system parameters (top-Left):
 
@@ -160,7 +160,7 @@ VB-CABLE works internally with a fixed Samplerate (given by Internal SR). It all
 <div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBCABLE/cable-11-1.jpg)
+  ![](../_media/cable-11-1.jpg)
   </div>
   <div></div>
   <div>
@@ -180,7 +180,7 @@ If both i/o have the same sample rate than the Internal SR, the sound pass throu
 
 But according Windows Version and Audio Interface used by client applications (e.g. MME, WASAPI, DX) system components (like kMixer for example) can make required conversion and decrease sound quality (independently from the VB-CABLE).
 
-![](VBCABLE/cable-11-2.jpg)
+![](../_media/cable-11-2.jpg)
 
 For example under Win7, conversion is made while under XP VB-Cable Input Samplerate is changed by windows media player.
 
@@ -188,27 +188,27 @@ For example under Win7, conversion is made while under XP VB-Cable Input Sampler
 
 VB-CABLE can now let you change the latency on the fly or by editing the value on main view, or by using the latency menu.
 
-![](VBCABLE/cable-12-1.jpg)
+![](../_media/cable-12-1.jpg)
 
 If the latency is considered too small according statistics (buffer used by applications connected to the cable) the counter becomes red and the sound can become discontinued or simply silence.
 
-![](VBCABLE/cable-12-2.jpg)
+![](../_media/cable-12-2.jpg)
 
 Simply enter a bigger value until removing the red display
 
-![](VBCABLE/cable-12-3.jpg)
+![](../_media/cable-12-3.jpg)
 
 ## Loopback streaming
 
 Microsoft windows provides WASAPI interface to capture the stream of the playback device too (not only the recording device). This has been made to let remoting program to capture the sound playing back for example. This streaming was previously taken in charge by the system but is a special feature in new Win10 Driver Architecture and must be managed at driver level. Activated by default the Loopback option will allow you to capture the VB-CABLE Input.
 
-![](VBCABLE/cable-13-1.jpg)
+![](../_media/cable-13-1.jpg)
 
 ## Windows Volume Control
 
 New VB-CABLE version implements the Windows Volume Control by option to let you change the volume of the VB-CABLE input (Playback device) with the regular Windows Controller. Otherwise the Volume Control has no effect (Mute control can have effect, pending on Windows version).
 
-![](VBCABLE/cable-13-2.jpg)
+![](../_media/cable-13-2.jpg)
 
 ## Reset Pin Name and Icon
 
@@ -230,7 +230,7 @@ Basically the VB-CABLE needs 3 buffers to make a continuous audio stream (one fo
 <div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBCABLE/cable-14-1.jpg)
+  ![](../_media/cable-14-1.jpg)
   </div>
   <div></div>
   <div>
@@ -268,7 +268,7 @@ General formula to compute Optimal Max Latency is much more complicated and woul
 <div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBCABLE/cable-15-1.jpg)
+  ![](../_media/cable-15-1.jpg)
   </div>
   <div></div>
   <div>
@@ -286,7 +286,7 @@ General formula to compute Optimal Max Latency is much more complicated and woul
 <div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBCABLE/cable-15-2.jpg)
+  ![](../_media/cable-15-2.jpg)
   </div>
   <div></div>
   <div>
@@ -302,7 +302,7 @@ Note: for VB-CABLE, you can decrease the Internal SR to increase effective pipe 
 <div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBCABLE/cable-15-3.jpg)
+  ![](../_media/cable-15-3.jpg)
   </div>
   <div></div>
   <div>
@@ -317,7 +317,7 @@ REM : When client audio application are using KS or WASAPI audio interface, VB-C
 
 HiFi Cable is a bit different (compared to original VB-CABLE) since it does not include an SRC (Sample Rate Converter). Consequently, it works correctly only if i/o are configured with the same sample rate.
 
-![](VBCABLE/cable-16-1.jpg)
+![](../_media/cable-16-1.jpg)
 
 HiFi Cable Control Panel is called **ASIO Bridge** because it also allows routing virtual i/o to an ASIO Device. Per default HiFi Cable is in **Pass Through** mode: The regular mode where all incoming audio on input is going to audio output of the Hi-Fi Cable. In **ASIO Direct** Mode the HiFi Cable Input is routed to ASIO output and the ASIO input is routed to HiFi Cable Output. In a way, ASIO Bridge is an Audio Interface Converter allowing audio application to use ASIO device through its regular audio management (MME, KS, Direct-X or WASAPI).
 
@@ -327,13 +327,13 @@ NOTE : If the ASIO Bridge Application is not launched then the Hi-Fi Cable is PA
 
 Since it support up to 384 kHz audio stream, Hi-Fi Cable includes more options to set maximum latency time (up to 32k samples).
 
-![](VBCABLE/cable-16-2.jpg)
+![](../_media/cable-16-2.jpg)
 
 ## Alert when Max Latency is not big enough
 
 HiFi Cable Control Panel is analyzing statistics every second to check if the pipe size is big enough to support buffering used by the different i/o streams. And if current MAX Latency is too weak, we got a blinking text below LCD proposing a new MAX Latency.
 
-![](VBCABLE/cable-17-1.jpg)
+![](../_media/cable-17-1.jpg)
 
 The red text below the LCD is displayed when current Cable Latency is too small to support current audio stream.
 
@@ -341,7 +341,7 @@ The red text below the LCD is displayed when current Cable Latency is too small 
 
 ASIO Buffer size is displayed in a red blinking rectangle if it is too big compared to the cable MAX Latency. Again we must respect the main rule where buffer used must have size below 1/3 of the Cable MAX Latency.
 
-![](VBCABLE/cable-17-2.jpg)
+![](../_media/cable-17-2.jpg)
 
 ## Alert when Sample rate are different
 
@@ -353,7 +353,7 @@ REM: Of course if its blinking you can expect to have a corrupted audio stream, 
 
 If ASIO Driver is not started, the device name is followed by the mention (STOPPED). To restart it, reselect ASIO Device in popup menu, or change twice the ASIO Bridge mode (PASS Through and ASIO Direct).
 
-![](VBCABLE/cable-18-1.jpg)
+![](../_media/cable-18-1.jpg)
 
 ## Alert on bad ASIO Clock 
 
@@ -361,7 +361,7 @@ ASIO Bridge includes a sample rate measurement to check the real sample rate del
 
 Typical problem comes from hardware input that can use a different sample rate than the one required by the software. If you play a DVD asking for 48 kHz, ASIO Driver can start with this setting but work finally in 44.1 kHz because converter or audio physical connection is driven by another clock.
 
-![](VBCABLE/cable-18-2.jpg)
+![](../_media/cable-18-2.jpg)
 
 If there is an ASIO Clock problem, the measured sample rate (here 44100 Hz) is shown in a blinking red rectangle.
 
@@ -374,16 +374,16 @@ The VB CABLE is a regular MME / KS / Direct X Audio Driver presenting a playback
 <div style="display: grid; grid-template-columns: 15fr 1fr 14fr;">
   <div>
   
-  ![](VBCABLE/cable-20-1.jpg)
+  ![](../_media/cable-20-1.jpg)
   </div>
   <div></div>
   <div>
     <p>Installation program:</p>
 
-  ![](VBCABLE/cable-20-2.jpg)
+  ![](../_media/cable-20-2.jpg)
     <p>Continue Anyway to install driver:</p>
 
-  ![](VBCABLE/cable-20-3.jpg)
+  ![](../_media/cable-20-3.jpg)
   </div>
 </div>
 
@@ -407,19 +407,19 @@ The VB-CABLE works like a regular audio device and can be selected as a playback
   <div></div>
   <div>
 
-  ![](VBCABLE/cable-21-1.jpg)
+  ![](../_media/cable-21-1.jpg)
   </div>
 </div>
 
 Then you can launch a player application (using default playback device). For example VLC, Windows Media Player, Winamp...
 
-![](VBCABLE/cable-21-2.jpg)
+![](../_media/cable-21-2.jpg)
 
 Check the sound is coming into VB-Cable input
 
 The VB-CABLE package includes a small Control Panel program that can be useful to check if it works.
 
-![](VBCABLE/cable-22-1.jpg)
+![](../_media/cable-22-1.jpg)
 
 Here you can see in the input levels section if the audio signal is coming in the cable input (playback device). You can click on it to change the level unit (db or % level).
 
@@ -433,23 +433,23 @@ Audacity® is free, open source, cross-platform software for recording and editi
 
 First of all you may configure AUDACITY device to record the signal coming from VB-CABLE output and play it back in a real audio output (in this example: the Realtek HD Audio output).
 
-![](VBCABLE/cable-23-1.jpg)
+![](../_media/cable-23-1.jpg)
 
 You can check that the signal is coming from the VB-CABLE by using START MONITOR function. Then you will see the Level Meters move.
 
-![](VBCABLE/cable-23-2.jpg)
+![](../_media/cable-23-2.jpg)
 
 ## Use Audacity to record VB-CABLE output
 
 Simply push the RECORD Button.
 
-![](VBCABLE/cable-24-1.jpg)
+![](../_media/cable-24-1.jpg)
 
 The Sound coming in VB-CABLE is recorded and after could be played back through a real output audio device (Just Push PLAY).
 
 Routing Diagram :
 
-![](VBCABLE/cable-24-2.jpg)
+![](../_media/cable-24-2.jpg)
 
 Every player are sending sound in the VB-CABLE input since it's set as Default Playback Audio Device. Then a recorder application can get back the signal from the CABLE-Output, which is a Virtual Recording Audio Device.
 
@@ -457,7 +457,7 @@ Every player are sending sound in the VB-CABLE input since it's set as Default P
 
 This application, delivered in the Driver Package, allows checking status of the driver: version, configuration, and specific data for diagnostic / debugging purpose. The VB-CABLE control panel for older version is more limited in term of options / functions (than the latest 2024 version for example).
 
-![](VBCABLE/cable-25-1.jpg)
+![](../_media/cable-25-1.jpg)
 
 The VB-CABLE works internally with a fixed sample rate and a fixed pipe size (7168 samples per default) and support I/O sample rate range from 8 kHz to 96 kHz.
 
@@ -473,10 +473,10 @@ The VB-CABLE works internally with a fixed sample rate and a fixed pipe size (71
 
 VB-CABLE audio device can let you redefine pin name and icon (by the properties dialog box).
 
-![](VBCABLE/cable-26-1.jpg)
+![](../_media/cable-26-1.jpg)
 
 But only the latest Win10/11 version will allow you to change it and stay persistent. Previous VB-CABLE version (XP to Win7) could reset icon and pin name on Windows startup.
 
-![](VBCABLE/cable-26-2.jpg)
+![](../_media/cable-26-2.jpg)
 
 REM: the driver name cannot be changed.
