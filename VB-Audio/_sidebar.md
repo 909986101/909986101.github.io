@@ -1,8 +1,8 @@
 - VB-Audio
 
-- CABLE
+- VBCable
 
-  - [VBCABLE](VBCABLE/)
+  - [VBCable](VBCable/)
 
 - Voicemeeter
 
