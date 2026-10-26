@@ -4,7 +4,7 @@
 
 <p><strong>Windows 通用音频路由器</strong></p>
 
-![](VBMatrix_UserManual/matrix-1-1.jpg)
+![](../_media/matrix-1-1.jpg)
 
 </div>
 
@@ -80,7 +80,7 @@ Windows XP (SP2), VISTA, WIN7, WIN8, WIN8.1, WIN10/11 32/64 bits ARM64 compatibl
 
 VB-Audio Matrix 是一款适用于 Windows 的通用音频路由器，能够通过不同的音频接口同时管理多个 ASIO 设备、多个 Windows 音频设备、多个音频应用程序、多个 ASIO 应用程序或 VBAN 流，并具备将任意输入路由至任意输出（即任意源到任意目标）的能力，且可按通道进行配置。
 
-![](VBMatrix_UserManual/matrix-6-1.jpg)
+![](../_media/matrix-6-1.jpg)
 
 VB-Audio Matrix 最多可管理 128 个 ASIO 设备通道和 64 个 VBAN 流通道，并提供完整的路由网格视图、预设管理、MIDI 功能以及 VBAN-TEXT 请求功能。
 
@@ -88,7 +88,7 @@ VB-Audio Matrix Coconut 则提供更多插槽，最多可管理 512 个 ASIO 设
 
 主采样率（main sample rate）与缓冲（buffering）设置显示在 VDSP/CPU 负载指示条下方。
 
-![](VBMatrix_UserManual/matrix-6-2.jpg)
+![](../_media/matrix-6-2.jpg)
 
 # Matrix 插槽（Slots）
 
@@ -104,7 +104,7 @@ VB-Audio Matrix 提供了 5 种类型的插槽（slots）：
 
 **Virtual ASIO（虚拟 ASIO）：** 用于使用随 VB-Audio Matrix 安装的虚拟 ASIO 驱动程序。
 
-![](VBMatrix_UserManual/matrix-7-1.jpg)
+![](../_media/matrix-7-1.jpg)
 
 按住 Ctrl 键并单击，可在插槽中选择设备或启用该插槽。
 
@@ -114,7 +114,7 @@ VB-Audio Matrix 提供了 5 种类型的插槽（slots）：
 
 点击 MATRIX 标志或使用菜单中的“Routing Grid（路由网格）”选项，即可进入 Matrix 路由网格（Routing Grid）：
 
-![](VBMatrix_UserManual/matrix-8-1.jpg)
+![](../_media/matrix-8-1.jpg)
 
 这使得能够将任意输入路由至任意输出，且可设置增益。换言之，它允许将任意信号源发送至任意目标。
 
@@ -136,12 +136,12 @@ Matrix 提供了一组 64 个永久预设，这些预设会自动存储在磁盘
 
 要修改某个预设，首先需选中该预设，然后在矩阵上定义一个区域（或选定一个点），再右键单击，即可在上下文菜单中选择“存储或添加当前点/区域到所选预设”（一个预设最多可包含 64 个区域）。所选预设中的各点将以浅蓝色显示。
 
-![](VBMatrix_UserManual/matrix-9-1.jpg)
+![](../_media/matrix-9-1.jpg)
 
 <div style="display: grid; grid-template-columns: 4.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBMatrix_UserManual/matrix-9-2.jpg)
+  ![](../_media/matrix-9-2.jpg)
   
   </div>
   <div></div>
@@ -157,7 +157,7 @@ Matrix 提供了一组 64 个永久预设，这些预设会自动存储在磁盘
 
 通过菜单（或按 Ctrl + ,）即可打开系统设置（system settings）对话框，以查看各项选项：
 
-![](VBMatrix_UserManual/matrix-10-1.jpg)
+![](../_media/matrix-10-1.jpg)
 
 缓冲区（Buffering）可针对不同的音频接口进行设置：MME、WDM（WASAPI）、KS、ASIO，以及内部时钟。
 
@@ -179,7 +179,7 @@ VAIOs 同步模式（VAIOs Synchronization）可强制 VAIO Windows 驱动程序
 
 VB-Audio Matrix 还提供了一个日志/CLI 窗口，便于您查看系统运行情况以及所使用的事件或命令。您可以在底部的编辑框中输入 CLI（命令行指令），并通过“send（发送）”按钮将其发出：
 
-![](VBMatrix_UserManual/matrix-11-1.jpg)
+![](../_media/matrix-11-1.jpg)
 
 这也是获取请求语法的实用方法。大多数指令也可以用作 VBAN-TEXT 请求。
 
@@ -330,7 +330,7 @@ Command.Master = ?;                     // returns MASTER SUID + (SR, Buffer)
 
 点击“左上角”后，用户即可访问各项功能：
 
-![](VBMatrix_UserManual/matrix-14-1.jpg)
+![](../_media/matrix-14-1.jpg)
 
 附加菜单则用于提供其他功能：
 
@@ -406,7 +406,7 @@ ASIO 和 WINDOWS 插槽均遵循相同的原则。您可以选择某个设备，
 
 ASIO 128 最多可管理一个 ASIO 设备的 128 个输入/输出通道。如果设备提供的通道数超过此上限，则超出部分将被忽略（仅使用前 128 个输入/输出通道）。若 ASIO 设备提供的输入/输出通道数少于插槽的容量，则系统只会考虑实际可用的通道数，例如下文所示的 M‑Audio 设备仅提供 4 个输入/输出通道的情况。
 
-![](VBMatrix_UserManual/matrix-16-1.jpg)
+![](../_media/matrix-16-1.jpg)
 
 如果输入峰值表中显示有电平，说明 ASIO 设备正在接收信号。如果输出峰值表中显示有电平，说明矩阵正在将某些输入路由至这些输出。输出通道完全由路由网格决定。
 
@@ -416,7 +416,7 @@ WINDOWS 设备插槽与 ASIO 插槽类似，但输入与输出是分开的。其
 
 此外，WIN 插槽也可作为主设备，但无法与 Windows 录音设备配合使用。主设备（MASTER device）必须非常稳定，并以固定缓冲区大小进行数据流传输；而 Windows 录音设备通常并未以独占模式打开，可能会产生不同的缓冲区大小，从而导致其无法正常作为主设备工作。
 
-![](VBMatrix_UserManual/matrix-17-1.jpg)
+![](../_media/matrix-17-1.jpg)
 
 以深蓝色显示的采样率或缓冲区大小表示其与主设备的设置不同。不过这并不会影响正常工作，因为矩阵音频引擎能够处理任何以不同采样率或缓冲配置的音频流。
 
@@ -426,7 +426,7 @@ WINDOWS 设备插槽与 ASIO 插槽类似，但输入与输出是分开的。其
 
 单击峰值表的 I/O 时，显示的路由中会带有非常细小的白色箭头。
 
-![](VBMatrix_UserManual/matrix-17-2.jpg)
+![](../_media/matrix-17-2.jpg)
 
 单击“输出峰值表（OUT peak meter）”即可查看所有路由至该输出的输入信号。单击“输入峰值表（IN peak meter）”即可查看所有从该输入获取音频的输出信号。
 
@@ -436,43 +436,43 @@ WINDOWS 设备插槽与 ASIO 插槽类似，但输入与输出是分开的。其
 
 右键单击以在插槽上打开上下文菜单，并调出设备选择器或 Windows 声音对话框。
 
-![](VBMatrix_UserManual/matrix-18-1.jpg)
+![](../_media/matrix-18-1.jpg)
 
 ## ASIO 插槽上下文菜单
 
 右键单击以在插槽上打开上下文菜单，并调出设备选择器或 Windows 声音对话框。
 
-![](VBMatrix_UserManual/matrix-18-2.jpg)
+![](../_media/matrix-18-2.jpg)
 
 ## VAIO SLOT
 
 虚拟音频输入/输出（Virtual Audio I/O）插槽负责管理通过 Matrix 安装的虚拟输入/输出设备（virtual I/O）。VB-Audio Matrix VAIO 是一款音频驱动程序，可提供最多 8 个输入设备和 8 个输出设备，每个通道又可支持多达 8 个通道。它旨在将任何使用 MME、WASAPI、DirectX 或 KS 音频接口的音频应用程序与音频播放或录制功能相连接。
 
-![](VBMatrix_UserManual/matrix-19-1.jpg)
+![](../_media/matrix-19-1.jpg)
 
 VAIO 插槽可直接访问此虚拟音频设备。VB-Audio Matrix 使用前 4 个虚拟输入/输出，而 Coconut 版本则可访问全部 8 个虚拟输入/输出。
 
 VB-Audio Matrix 的输入 2、4、6、8 显示为扬声器通道，而输入 1、3、5、7 则显示为线路输出引脚（pin）。扬声器通道配有“CONFIGURE（配置）”按钮，用于选择声道编号：
 
-![](VBMatrix_UserManual/matrix-19-2.jpg)
+![](../_media/matrix-19-2.jpg)
 
 默认采样率可在属性 -> 高级缩略图中进行定义。
 
 线路输出引脚（Pins）必须通过属性对话框进行配置（此类引脚的“configure（配置）”按钮已被禁用）。
 
-![](VBMatrix_UserManual/matrix-20-1.png)
+![](../_media/matrix-20-1.png)
 
 此对话框中定义的默认格式是应用程序在连接不同设备时所使用的 Windows 音频格式。所有输入/输出均可轻松配置为不同的音频格式、声道数或采样率。Matrix 虚拟音频 I/O 驱动程序（Virtual Audio I/O driver）会自动将其转换为 Matrix 当前使用的格式。
 
 VB-Audio Matrix VAIO 作为 Matrix 应用程序的虚拟 I/O 设备工作：
 
-![](VBMatrix_UserManual/matrix-20-2.jpg)
+![](../_media/matrix-20-2.jpg)
 
 ## VAIO SLOT 上下文菜单
 
 右键单击以在插槽上打开上下文菜单，并启动 VB-Audio Matrix 控制面板。
 
-![](VBMatrix_UserManual/matrix-21-1.jpg)
+![](../_media/matrix-21-1.jpg)
 
 ## VAIO 延迟按钮
 
@@ -486,7 +486,7 @@ VB-Audio Matrix VAIO 作为 Matrix 应用程序的虚拟 I/O 设备工作：
   <div></div>
   <div>
 
-  ![](VBMatrix_UserManual/matrix-21-2.jpg)
+  ![](../_media/matrix-21-2.jpg)
   
   </div>
   
@@ -496,7 +496,7 @@ VB-Audio Matrix VAIO 作为 Matrix 应用程序的虚拟 I/O 设备工作：
 
 VB-Audio Matrix 提供 VBAN 插槽，可像 Voicemeeter 一样实现音频在 VBAN 流之间的路由，配备 4 个常规的 VBAN 输入与输出通道（Coconut 版本为 8 个），并首次新增一个 64 通道的 VBAN 输入与输出通道（Coconut 版本额外提供 128 通道的 VBAN 插槽）。
 
-![](VBMatrix_UserManual/matrix-22-1.jpg)
+![](../_media/matrix-22-1.jpg)
 
 VBAN 服务必须处于开启（ON）状态，且 VBAN 插槽必须设置为在线（Online）才能正常运行。随后，还需在额外的 VBAN 配置对话框中完成 VBAN 流的配置（VBAN 插槽上仅显示“ON（开启）”按钮）。
 
@@ -508,11 +508,11 @@ VBAN Configuration dialog box allows to define more precisely each stream, first
 
 VBAN 配置对话框允许更精确地定义每个流；前 4 个流为常规的 8 通道 VBAN 流，第 5 个数据流则可配置为发送或接收，最多支持 64 个通道。
 
-![](VBMatrix_UserManual/matrix-22-2.jpg)
+![](../_media/matrix-22-2.jpg)
 
 Matrix Coconut 提供 10 路 I/O 流，其中第 9 路可支持最多 64 个通道，第 10 路则可支持 128 个通道。
 
-![](VBMatrix_UserManual/matrix-23-1.jpg)
+![](../_media/matrix-23-1.jpg)
 
 与 Voicemeeter 类似，VBAN 实现提供 MIDI 输入和输出数据流，以及一个 VBAN-TEXT 输入数据流（“Command1”）。
 
@@ -520,7 +520,7 @@ Matrix Coconut 提供 10 路 I/O 流，其中第 9 路可支持最多 64 个通�
 
 作为最后一项输出流，VB-Matrix 首次推出了 VBAN-Frame 流，支持通过 VBAN-Screen 应用程序实现与另一台计算机的屏幕共享。
 
-![](VBMatrix_UserManual/matrix-24-1.jpg)
+![](../_media/matrix-24-1.jpg)
 
 它可以捕获整个显示屏（来自4个连接的屏幕，最高4K分辨率）或仅捕获主窗口界面（应用程序视图）。这是通过 VBAN-Frame 协议以每秒最多30次的速度将 PNG 或 JPG 帧发送到目标地址来实现的。
 
@@ -530,7 +530,7 @@ Screen Sharing and remote control:
 
 如果使用 VBAN-Screen 应用程序来显示由 Matrix 发送的 VBAN-FRAME，那么 Matrix 可以通过 VBAN-TEXT 流接收来自 VBAN-Screen 应用程序的鼠标事件，从而实现远程控制。
 
-![](VBMatrix_UserManual/matrix-24-2.jpg)
+![](../_media/matrix-24-2.jpg)
 
 为此，请右键单击采样率或格式字段以启用鼠标管理。此时将显示“M”，提示我们正在处理鼠标事件，从而可通过 VBAN-Screen 进行远程控制。
 
@@ -561,7 +561,7 @@ VB-Audio Matrix Coconut installs 4x other virtual ASIO Drivers:
   <div></div>
   <div>
 
-  ![](VBMatrix_UserManual/matrix-25-1.jpg)
+  ![](../_media/matrix-25-1.jpg)
   </div>
 </div>
 
@@ -573,7 +573,7 @@ VB-Audio Matrix Coconut installs 4x other virtual ASIO Drivers:
 
 为实现处理与同步，所有音频点在必要时都需转换为主时钟的采样率和缓冲区大小。这一同步过程可能会在声音中引入或多或少可闻的失真（尤其对于那些以“软”方式与主时钟同步的音频点）。
 
-![](VBMatrix_UserManual/matrix-26-1.jpg)
+![](../_media/matrix-26-1.jpg)
 
 **一般建议**是将您首选的音频设备（ASIO 设备或 Windows 输出设备）设置为主设备，这样该音频设备就能与 VAIO、虚拟 ASIO 驱动程序以及 VBAN 输出流实现完美同步（VAIOs 的同步选项需设为“严格模式（STRICT mode）”）。
 

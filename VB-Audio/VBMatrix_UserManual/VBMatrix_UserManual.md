@@ -4,7 +4,7 @@
 
 <p><strong>Universal Audio Router for Windows</strong></p>
 
-![](VBMatrix_UserManual/matrix-1-1.jpg)
+![](../_media/matrix-1-1.jpg)
 
 </div>
 
@@ -80,7 +80,7 @@ Windows XP (SP2), VISTA, WIN7, WIN8, WIN8.1, WIN10/11 32/64 bits ARM64 compatibl
 
 VB-Audio Matrix is a universal audio router for Windows, able to manage several ASIO devices, several Window devices, several Audio Applications, several ASIO applications or VBAN Streams together through different audio interfaces, with the capability to route any input to any output (any source to any target), channel by channel.
 
-![](VBMatrix_UserManual/matrix-6-1.jpg)
+![](../_media/matrix-6-1.jpg)
 
 VB-Audio Matrix can manage up to 128 channels ASIO device and 64 channels VBAN Stream and is also providing a full routing grid view, preset management, MIDI functions and VBAN- TEXT request.
 
@@ -88,7 +88,7 @@ VB-Audio Matrix Coconut Is simply providing more slot and can manage up to 512 c
 
 The main sample rate and buffering is displayed below VDSP/ CPU load meter bars,.
 
-![](VBMatrix_UserManual/matrix-6-2.jpg)
+![](../_media/matrix-6-2.jpg)
 
 ## Matrix Slots
 
@@ -104,7 +104,7 @@ VB-Audio Matrix is providing 5 types of slots:
 
 **Virtual ASIO:** To use Virutal ASIO driver installed with VB-Audio Matrix.
 
-![](VBMatrix_UserManual/matrix-7-1.jpg)
+![](../_media/matrix-7-1.jpg)
 
 Use CTRL+CLICK to select a device in the slot, or to enable the slot.
 
@@ -114,7 +114,7 @@ Use CTRL+CLICK to select a device in the slot, or to enable the slot.
 
 If you click on MATRIX logo or use the menu -> Routing Grid, you get access to the Matrix Routing Grid:
 
-![](VBMatrix_UserManual/matrix-8-1.jpg)
+![](../_media/matrix-8-1.jpg)
 
 This is allowing to route any inputs to any outputs, possibly with a gain. In other words it allows sending any sources to any targets.
 
@@ -136,12 +136,12 @@ Matrix offers a set of 64 permanent presets, automatically stored on disk (in My
 
 To modify a preset can be done first by selecting the preset, and secondly by defining a zone on matrix (or a selected point) and right click to get the contextual menu to Store or Add current point(s)/zone in the selected preset (a preset can contains 64 zones max). Points of the selected preset appear in light blue.
 
-![](VBMatrix_UserManual/matrix-9-1.jpg)
+![](../_media/matrix-9-1.jpg)
 
 <div style="display: grid; grid-template-columns: 4.5fr 0.5fr 5fr;">
   <div>
   
-  ![](VBMatrix_UserManual/matrix-9-2.jpg)
+  ![](../_media/matrix-9-2.jpg)
   
   </div>
   <div></div>
@@ -157,7 +157,7 @@ To modify a preset can be done first by selecting the preset, and secondly by de
 
 By the menu (or CTL + ',') you can get the system settings dialog box to check different options:
 
-![](VBMatrix_UserManual/matrix-10-1.jpg)
+![](../_media/matrix-10-1.jpg)
 
 Buffering can be set for different audio interface: MME, WDM (WASAPI), KS, ASIO and for the internal clock.
 
@@ -179,7 +179,7 @@ Gives the device used to listen to a particular I/O (playback device) and channe
 
 VB-Audio Matrix also provides a LOG / CLI window to let you see what happened, what even or command has been used. The CLI (Command Line Instruction) can be enter in the bottom edit field and send by the send button:
 
-![](VBMatrix_UserManual/matrix-11-1.jpg)
+![](../_media/matrix-11-1.jpg)
 
 This is also practical to get request syntax. Most of instructions can also be used as VBAN- TEXT request.
 
@@ -332,7 +332,7 @@ By clicking on "top-left" corner, user gets access to different functions:
 
 The additional menu is there to provide additional functions:
 
-![](VBMatrix_UserManual/matrix-14-1.jpg)
+![](../_media/matrix-14-1.jpg)
 
 |Nenu |Functions |
 |:--|:--|
@@ -405,7 +405,7 @@ ASIO and WINDOWS slots are driven by common principles. You can select a device 
 
 ASIO 128 can manage an ASIO device up to 128 I/O. if the device is offering more channels, they will be ignored (only 128 first I/O will be used). If the ASIO device is offering less I/O than the slot capabilities, it is simply considering available I/O only, like in the example below with a M-Audio device offering 4 I/O.
 
-![](VBMatrix_UserManual/matrix-16-1.jpg)
+![](../_media/matrix-16-1.jpg)
 
 If you see level in Input peak meters, it means some signal is incoming in the ASIO device. If you see level in Output peak meters, it means the matrix is routing some inputs into these outputs. Outputs are exclusively defined by the routing grid.
 
@@ -415,7 +415,7 @@ WINDOWS devices slot are similar to ASIO slot but inputs and outputs are separat
 
 WIN slot can also be master, but it could not work with Windows Recording device. MASTER device needs to be very regular and stream with a fixed buffer size while Windows recording devices, usually not opened in exclusive mode, could produce various buffer size and then won't work correct as master device.
 
-![](VBMatrix_UserManual/matrix-17-1.jpg)
+![](../_media/matrix-17-1.jpg)
 
 Sample Rate or buffer size displayed in dark blue means it is different from the master one. This should work anyway since the matrix audio engine is able to manage any kind of stream configured in different sample rate or buffering.
 
@@ -425,7 +425,7 @@ Device name displayed in red means the device is not running, or because not con
 
 Clicking on peak meter I/O is showing the routing with very small white arrows.
 
-![](VBMatrix_UserManual/matrix-17-2.jpg)
+![](../_media/matrix-17-2.jpg)
 
 Click on OUT peak meter to see all inputs routed to this output. Click on IN peak meter to see all outputs getting audio from this input.
 
@@ -435,43 +435,43 @@ Using CTRL+Click on peak meter I/O allows to change the routing (without having 
 
 Right Click to get the contextual menu on a slot and open device selector or the Windows Sound Dialog box.
 
-![](VBMatrix_UserManual/matrix-18-1.jpg)
+![](../_media/matrix-18-1.jpg)
 
 ### ASIO SLOT CONTEXTUAL MENU
 
 Right Click to get the contextual menu on a slot and open device selector or the Windows Sound Dialog box.
 
-![](VBMatrix_UserManual/matrix-18-2.jpg)
+![](../_media/matrix-18-2.jpg)
 
 ### VAIO SLOT
 
 Virtual Audio I/O slots are managing the virtual I/O installed with matrix. VB-Audio Matrix VAIO is an audio driver providing up to 8 inputs and 8 output devices, each one offering up to 8 channels. This is made to connect any audio applications using MME, WASAPI, Direct X or KS audio interface to playback or record audio.
 
-![](VBMatrix_UserManual/matrix-19-1.jpg)
+![](../_media/matrix-19-1.jpg)
 
 VAIO slots are offering direct access to this virtual audio device. VB-Audio Matrix is using the 4 first virtual I/O while Coconut version gives access to the 8 virtual I/O.
 
 VB-Audio Matrix inputs 2,4,6,8 are presented as Speakers while VB-Audio Matrix inputs 1,3,5,7 are Line Out pin. Speaker Pins offer a CONFIGURE button to select the channel number:
 
-![](VBMatrix_UserManual/matrix-19-2.jpg)
+![](../_media/matrix-19-2.jpg)
 
 The default sample rate can be defined in the properties -> advanced thumbnail.
 
 Line Out Pins must be configured by the properties dialog box only (configure button is disabled for this kind of pin).
 
-![](VBMatrix_UserManual/matrix-20-1.png)
+![](../_media/matrix-20-1.png)
 
 Default format defined in this dialog are Windows audio format used by application connected to the different devices. All I/Os can be configured with a different audio format, channel number or sample rate without problem. Matrix Virtual Audio I/O driver will convert it automatically to the format currently in use in Matrix.
 
 VB-Audio Matrix VAIO work as virtual I/O for Matrix Application:
 
-![](VBMatrix_UserManual/matrix-20-2.jpg)
+![](../_media/matrix-20-2.jpg)
 
 ### VAIO SLOT CONTEXTUAL MENU
 
 Right Click to get the contextual menu on a slot and open VB-Audio Matrix Control Panel.
 
-![](VBMatrix_UserManual/matrix-21-1.jpg)
+![](../_media/matrix-21-1.jpg)
 
 ### VAIO LATENCY MENU
 
@@ -485,7 +485,7 @@ Right Click to get the contextual menu on a slot and open VB-Audio Matrix Contro
   <div></div>
   <div>
 
-  ![](VBMatrix_UserManual/matrix-21-2.jpg)
+  ![](../_media/matrix-21-2.jpg)
   
   </div>
   
@@ -495,7 +495,7 @@ Right Click to get the contextual menu on a slot and open VB-Audio Matrix Contro
 
 VB-Audio Matrix offers VBAN Slot to route audio to or from VBAN stream like Voicemeeter can do, by providing 4 regular VBAN in and output streams(8 on Coconut version) and for the first time, one 64 channels VBAN in and output stream (additional 128 channels VBAN slot on Coconut version).
 
-![](VBMatrix_UserManual/matrix-22-1.jpg)
+![](../_media/matrix-22-1.jpg)
 
 VBAN service must be switched ON and the VBAN Slot must be set ONLINE to be operational. Then VBAN stream configuration has to be done in additional VBAN configuration dialog box (only the ON button is represented in the VBAN SLOT).
 
@@ -505,11 +505,11 @@ If the VBAN output stream is OFF, the peak meters can show level in dark to indi
 
 VBAN Configuration dialog box allows to define more precisely each stream, first 4 streams are regular 8 channels VBAN stream, the 5th can be configured (send or received) up to 64 channels.
 
-![](VBMatrix_UserManual/matrix-22-2.jpg)
+![](../_media/matrix-22-2.jpg)
 
 Matrix Coconut offers 10x I/O streams, the 9th able to manage up to 64 channels, the 10th able to manage 128 channels.
 
-![](VBMatrix_UserManual/matrix-23-1.jpg)
+![](../_media/matrix-23-1.jpg)
 
 Like Voicemeeter, VBAN implementation provides a MIDI input and output stream and a VBAN-TEXT input stream ("Command1").
 
@@ -517,7 +517,7 @@ Like Voicemeeter, VBAN implementation provides a MIDI input and output stream an
 
 As last outgoing stream, VB-Matrix introduces for the first time, the VBAN-Frame stream, allowing sharing screen with another computer using VBAN-Screen application.
 
-![](VBMatrix_UserManual/matrix-24-1.jpg)
+![](../_media/matrix-24-1.jpg)
 
 It can capture en entire display (from 4 connected screen – 4K resolution max) or the main window interface only (app view). It is done by sending PNG or JPG frame up to 30 times per second to the destination address through VBAN-Frame protocol.
 
@@ -527,7 +527,7 @@ Screen Sharing and remote control:
 
 If using VBAN-Screen application to display VBAN-FRAME sent by Matrix. Matrix can receive Mouse events from VBAN-Screen application (by the VBAN-TEXT stream) to be controlled remotely.
 
-![](VBMatrix_UserManual/matrix-24-2.jpg)
+![](../_media/matrix-24-2.jpg)
 
 To do so, right click on samplerate or format field to activate the Mouse Management. "M" is displayed to notify that we are processing Mouse Event so that we can be controlled remotely by VBAN-Screen.
 
@@ -558,7 +558,7 @@ VB-Audio Matrix Coconut installs 4x other virtual ASIO Drivers:
   <div></div>
   <div>
 
-  ![](VBMatrix_UserManual/matrix-25-1.jpg)
+  ![](../_media/matrix-25-1.jpg)
   </div>
 </div>
 
@@ -570,7 +570,7 @@ In strict mode, audio points are running strictly at the same clock than the mas
 
 To be processed and synchronized, all audio point must be converted in the master sample rate and buffer size if required. This synchronization process can produce some more or less hearable artifact in the sound (for audio point with a "soft" synchronization to Master).
 
-![](VBMatrix_UserManual/matrix-26-1.jpg)
+![](../_media/matrix-26-1.jpg)
 
 **The general recommendation** is to set your best audio device (ASIO one or Windows Output) as master, then you will be able to consider this audio device perfectly in sync with VAIOs, Virtual ASIO driver and VBAN output stream (VAIOs sync option set in STRICT mode).
 
@@ -814,7 +814,7 @@ VB-Audio Matrix and Coconut are distributed as "donationware for activation code
 
 The simplest way is to click on the "BUY ONLINE" button to be re-directed to our webshop with the Challenge Code already set. While the Challenge code is given by your PC, the Response code is given by the webshop after donation, and is also related to your e-mail used for your webshop account.
 
-![](VBMatrix_UserManual/matrix-41-1.jpg)
+![](../_media/matrix-41-1.jpg)
 
 For each Matrix license purchased, a license slot is created in your webshop account "My License" page where you can retrieve your current Response code and possibly generate another one, for example in case of PC change or for a second PC. This is the REGEN option: simply click on it and enter carefully your new Challenge code to get another Response code.
 
@@ -824,13 +824,13 @@ Your challenge code is not expected to change for a given PC configuration, even
 
 If you right click on ACTIVATED area, you can see the option to hide your e-mail address if needed. This option is stored in registry and keeps your e-mail hidden until you change it here.
 
-![](VBMatrix_UserManual/matrix-42-1.jpg)
+![](../_media/matrix-42-1.jpg)
 
 ### Use Computer Footprint
 
 If your license is activated (and if your computer has a network adapter), you can store your computer footprint on a USB key for example. Right Click on the challenge code to make appear the related menu (shown on the following screenshot).
 
-![](VBMatrix_UserManual/matrix-42-2.jpg)
+![](../_media/matrix-42-2.jpg)
 
 After re-installing Windows and later Matrix applications, you may import this footprint if your challenge code is not the expected one.
 
@@ -853,7 +853,7 @@ More info on our Challenge / Response code on our forum. [https://forum.vb-audio
 
 Matrix Coconut is another application with another License requiring another activation code.
 
-![](VBMatrix_UserManual/matrix-43-1.jpg)
+![](../_media/matrix-43-1.jpg)
 
 The License activation code for VB-Audio Matrix cannot work with VB-Audio Matrix Coconut and vice versa. Challenge codes are not expected to be the same for Matrix and Coconut.
 
@@ -861,13 +861,13 @@ The License activation code for VB-Audio Matrix cannot work with VB-Audio Matrix
 
 On first or new installation, your license activation fields are empty. And you get a unique challenge code given by your PC (currently the H-Code is composed by 8x hexadecimal digits + a suffix letter).
 
-![](VBMatrix_UserManual/matrix-44-1.jpg)
+![](../_media/matrix-44-1.jpg)
 
 #### Buy Online
 
 Clicking on BUY ONLINE button will drive you to the right VB-Audio webshop page with your challenge code automatically filled. See in the red ellipse below:
 
-![](VBMatrix_UserManual/matrix-44-2.jpg)
+![](../_media/matrix-44-2.jpg)
 
 Read LICENSING INFORMATION section before selecting your contribution level, and then click "Add to cart" to continue your purchase.
 
@@ -877,49 +877,49 @@ Once you have paid your order, you can go in your account "My License" page to g
 
 In your webshop account "My License" page, you will find download link and activation code for all your licenses:
 
-![](VBMatrix_UserManual/matrix-45-1.jpg)
+![](../_media/matrix-45-1.jpg)
 
 In License dialog box, enter carefully your e-mail (registered for your webshop account) and your response code. You can copy / paste to avoid bad char or reading mistake.
 
-![](VBMatrix_UserManual/matrix-45-2.jpg)
+![](../_media/matrix-45-2.jpg)
 
 #### Activate your license
 
 To activate your license you must click on the ACTIVATE button. It will ask to our server to generate an authentication certificate that will be stored in your computer to confirm that your license is valid.
 
-![](VBMatrix_UserManual/matrix-45-3.jpg)
+![](../_media/matrix-45-3.jpg)
 
 When your license is activate, your License Dialog box is saying ACTIVATED in green
 
-![](VBMatrix_UserManual/matrix-45-4.jpg)
+![](../_media/matrix-45-4.jpg)
 
 #### Activate your license manually
 
 If you are not connected to internet or if there is a problem to reach our server, the ACTIVATE process will propose you to enter the certificate manually.
 
-![](VBMatrix_UserManual/matrix-46-1.jpg)
+![](../_media/matrix-46-1.jpg)
 
 After getting the error box above, the following dialog box appears to let you enter your certificate manually (by PASTE function CTRL+V):
 
-![](VBMatrix_UserManual/matrix-46-2.jpg)
+![](../_media/matrix-46-2.jpg)
 
 Click on "my webshop account" to directly come to your License pages here below. You will see the button "Certificate" on the right of the related license.
 
-![](VBMatrix_UserManual/matrix-46-3.jpg)
+![](../_media/matrix-46-3.jpg)
 
 If you own several licenses, take care to select the right line, related to the right license.
 
 The dialog box to get certificate will appear and will first ask you to confirm data.
 
-![](VBMatrix_UserManual/matrix-47-1.png)
+![](../_media/matrix-47-1.png)
 
 Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now".
 
-![](VBMatrix_UserManual/matrix-47-2.jpg)
+![](../_media/matrix-47-2.jpg)
 
 Simply copy / paste it in the application License activation box and click on "Activate" button.
 
-![](VBMatrix_UserManual/matrix-47-3.jpg)
+![](../_media/matrix-47-3.jpg)
 
 REM: The certificate start with the char '>' and finishes with the char '<'.
 
