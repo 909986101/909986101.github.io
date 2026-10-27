@@ -2,7 +2,7 @@
 
 - VBCable
 
-  - [VBCable](VBCable/)
+  - [VBCable](VBCABLE/)
 
 - Voicemeeter
 
