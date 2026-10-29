@@ -208,59 +208,59 @@ std-11
 std-11
 ---
 
-## STEP 0: Quick Startup Guide
+## 步骤 0 ：快速入门指南
 
-Voicemeeter is a virtual audio mixer intended to replace the Windows Mixer. The quickest way to configure Voicemeeter is to simply use it as default device and connect it to your main playback device. Then all PC sounds will go through Voicemeeter before playing back to your speakers.
+Voicemeeter 是一款虚拟音频混音器，旨在替代 Windows 自带的混音器。配置 Voicemeeter 的最快捷方式是将其设置为默认设备，并将其连接到主播放设备。这样，所有电脑声音在播放到扬声器之前都会先经过 Voicemeeter。
 
 ![](../_media/potato-13-1.jpg)
 
-### Remarks in case of problem
+### 问题备注
 
-Installing Voicemeeter means installing audio driver. In some cases, the system might declare this new driver as default driver (as default playback device for example). Consequently you do not hear anything anymore since you do not run and configure Voicemeeter and your system audio correctly (as it is shown above).
+安装 Voicemeeter 意味着要安装音频驱动程序。在某些情况下，系统可能会将该新驱动程序设为默认驱动程序（例如，作为默认的播放设备）。因此，由于您没有运行和配置Voicemeeter，也没有正确配置系统音频（如上所示），您将听不到任何声音。
 
-Windows System Audio Configuration is mainly located in Windows Control Panel / Sound Dialog Box. This is where you have to go to check or set what is your default playback device and what is your default recording device (and the Communications option has to be set to "Do Nothing" if you use Voicemeeter with VOIP applications).
+Windows 系统音频配置主要位于 Windows 控制面板中的“声音”对话框。您需要在此处查看或设置默认的播放设备和默认的录音设备（如果您将 Voicemeeter 与 VoIP 应用程序一起使用，则必须将“通信”选项设为“无操作”）。
 
-In all cases, all is a question of audio configuration and it does not need to remove Voicemeeter in case of problem. Voicemeeter is a simple Application endowed with an audio device driver, if you don't use it, there is no way to get trouble. But if you do, you need to avoid possible audio device conflict and connect everything to Voicemeeter (to prevent other application to use audio playback device already used by Voicemeeter).
+在所有情况下，问题都出在音频配置上，遇到问题时无需移除 Voicemeeter。Voicemeeter 是一款配备音频设备驱动程序的简单应用程序，如果你不使用它，就不会出现任何问题。但若使用，则需避免可能出现的音频设备冲突，并将所有设备都连接到 Voicemeeter（以防止其他应用程序使用 Voicemeeter 已占用的音频播放设备）。
 
-## STEP 1: Select main audio Output Device / Connecting Voicemeeter to Audio device
+## 步骤 1 ：选择主音频输出设备 / 将 Voicemeeter 连接到音频设备
 
-Voicemeeter can now work without audio device by running on its own internal clock (if no device is selected on output A1). If you have an audio output device, you can select it as output A1 for monitoring and give the master clock to Voicemeeter Audio Engine.
+Voicemeeter 现在可以在不使用音频设备的情况下运行，只需依靠其自身的内部时钟（前提是输出 A1 未选择任何设备）。如果您已连接音频输出设备，可将其设为输出 A1 以用于监听，并将主时钟交由 Voicemeeter Audio Engine 使用。
 
-Just click on A1 button to select the main output device used for BUS A (A1). We recommend to select first ASIO (if exists) or WDM device type to get best Latency. WDM / KS playback device are used in exclusive mode per default, bypassing the windows mixer and possibly its Volume Control.
+只需点击 A1 按钮，即可选择用于 BUS A（A1）的主输出设备。我们建议优先选择 ASIO（如有）或 WDM 类型的设备，以获得最佳的延迟效果。默认情况下，WDM/KS 播放设备以独占模式运行，绕过 Windows 混音器及其音量控制。
 
 ![](../_media/potato-14-1.jpg)
 
-The device selector is now displaying your different audio devices by audio interface (WDM, KS, MME and ASIO) and driver name sorted by alphabetic order. Icons also help to find quickly the right device to select.
+设备选择器按音频接口（WDM、KS、MME 和 ASIO）及驱动程序名称，以字母顺序显示各类音频设备。同时，图标也能帮助您快速找到并选择所需设备。
 
-The main audio output device (A1) can work in 32 kHz, 44.1 kHz, 48 kHz, 88.2 kHz, 96 kHz, 176.4 kHz or 192 kHz. This will also be the main sample rate of the entire mixing process and Virtual ASIO points (Voicemeeter will support any sample rate on other inputs or outputs points).
+主音频输出设备（A1）支持 32 kHz、44.1 kHz、48 kHz、88.2 kHz、96 kHz、176.4 kHz或192 kHz 等采样率。该采样率也将是整个混音过程和虚拟 ASIO 点的主采样率（Voicemeeter 将支持其他输入或输出点上的任何采样率）。
 
-"Open Windows Sound" button will open the Windows Sound Dialog Box to let you configure some audio system aspect and adjust the audio format of your audio devices.
+“Open Windows Sound”按钮将打开 Windows 声音对话框，使您可以配置音频系统的某些设置并调整音频设备的音频格式。
 
-### Windows Sound Panel / Sound Properties to configure device sound format
+### Windows 声音面板 / 声音属性，用于配置设备的声音格式
 
 |||
 |:--|:--|
 |![](../_media/potato-15-1.jpg) |![](../_media/potato-15-2.jpg) |
 
-### Windows Sound Panel / Input level and Listen option
+### Windows 声音面板 / 输入电平与监听选项
 
-Windows "Listen" option can disturb Voicemeeter routing, so be sure that this option is disabled or makes sense for you. 
+Windows 的“监听”选项可能会干扰 Voicemeeter 的路由，因此请确保此选项已禁用，或确认该选项对您而言是合适的。
 
-If your input level is too weak (or too loud), check the level of the selected input device. (Adjust possible pre-amp gain if any).
+如果您的输入音量过低（或过高），请检查所选输入设备的音量大小。（如有前置放大器，可适当调整其增益。）
 
 |||
 |:--|:--|
 |![](../_media/potato-15-3.jpg) |![](../_media/potato-15-4.jpg) |
 
-## STEP 2: Select an Input Device / Selecting Input Devices
+## 步骤 2 ：选择输入设备
 
-An audio device can be selected for every physical strip by clicking on Stereo input area. Select audio input device on strip #1, for example your microphone! Then you will be able to listen to your voice in real time.
+通过单击“立体声输入”区域，即可为每个物理通道条带选择音频设备。例如，在条带 #1 上选择音频输入设备，比如你的麦克风！这样您就能实时听到自己的声音。
 
 ![](../_media/potato-16-1.jpg)
 
-If you remove selection, Input strip can still get audio from VBAN stream or ASIO input from the ASIO device selected as output A1.
+如果取消选择，输入条带仍可从 VBAN 流获取音频，或从被选为输出 A1 的 ASIO 设备获取 ASIO 输入。
 
-REM: it's better to select WDM driver (present since Windows VISTA) to get best latency and audio performances. If using MME driver you might have a bigger delay between input and output. Use MME driver only if WDM are not present or does not work correctly with your audio hardware configuration.
+REM：为获得最佳的延迟与音频性能，建议选择 WDM 驱动程序（自 Windows VISTA 起已内置）。若使用 MME 驱动程序，输入与输出之间可能会出现更大的延迟。仅当WDM不存在或与您的音频硬件配置不兼容时，才使用MME驱动程序。
 
 <div style="display: grid; grid-template-columns: 6fr 0.5fr 3.5fr;">
   <div>
@@ -268,19 +268,18 @@ REM: it's better to select WDM driver (present since Windows VISTA) to get best 
   ![](../_media/15-2.jpg)
   </div>
   <div></div>
-  <div>After Step 2, Voicemeeter is routing signal from selected input (e.g. Microphone) to A1 selected Output. Then you can hear from this audio output the sound coming in input #1. A & B button are switch to send signal in BUS A or/and BUS B.</div>
+  <div>完成步骤 2 后，Voicemeeter 会将来自所选输入（例如麦克风）的信号路由至 A1 所选输出。此时，您可以通过该音频输出听到输入 #1 传入的声音。A 与 B 按钮用于切换，以将信号发送至总线 A 和/或总线 B。</div>
 </div>
 
-### Monitor Input in Real Time
+### 实时监听输入
 
-After Step 2, you can hear what is coming in selected input. Blue VU-meter will show you level in real time. Input signal is per default sent to both busses (A & B) and we have routed the BUS A to an output device in Step 1.
+完成步骤 2 后，您将能够听到所选输入中的声音。蓝色 VU 表会实时显示电平。默认情况下，输入信号会同时发送至两个总线（A 与 B），而我们在步骤 1 中已将总线 A 路由至输出设备。
 
 ![](../_media/16-1.jpg)
 
+## 步骤 3 ：将虚拟输入设为默认播放设备
 
-## STEP 3: Use Virtual Input as default playback device
-
-Strip #3 is the virtual input of Voicemeeter. It is shown as regular system audio device and can be used by another application as playback audio device.
+Strip #3 是 Voicemeeter 的虚拟输入。它显示为常规系统音频设备，并可作为播放音频设备供其他应用程序使用。
 
 <div style="display: grid; grid-template-columns: 5fr 0.25fr 3fr; grid-template-rows: 7fr 3fr;">
   <div style="grid-column: 1; grid-row: 1;">
@@ -288,8 +287,8 @@ Strip #3 is the virtual input of Voicemeeter. It is shown as regular system audi
   ![](../_media/17-1.jpg)
   </div>
   <div style="grid-column: 1; grid-row: 2;">
-    <p>If Voicemeeter Input is set as default audio device, every sound played on the computer will go on the Virtual Input (Strip #3) of Voicemeeter Mixing Console.</p>
-    <p>You can launch a Media Player or Web Radio and check that you can hear the sound coming from it on the Voicemeeter Virtual Input (IN 3).</p>
+    <p>如果将 Voicemeeter Input 设置为默认音频设备，则计算机上播放的任何声音都会被路由到 Voicemeeter 混音控制台的虚拟输入（Strip #3）。</p>
+    <p>您可以启动媒体播放器或网络电台，并检查是否能在 Voicemeeter 虚拟输入（IN 3）上听到其发出的声音。</p>
   </div>
   <div style="grid-column: 2; grid-row: 1 / span 2;"></div>
   <div style="grid-column: 3; grid-row: 1 / span 2;">
@@ -300,10 +299,9 @@ Strip #3 is the virtual input of Voicemeeter. It is shown as regular system audi
 
 ![](../_media/17-3.png)
 
+### 虚拟输入是多通道的
 
-### Virtual Input is Multi-Channel
-
-Strip #3, the virtual input of Voicemeeter can manage until 8 channels and get 5.1 audio from DVD for example. 
+Strip #3，Voicemeeter 的虚拟输入最多可管理8个通道（channels），例如从DVD获取5.1音频。
 
 <div style="display: grid; grid-template-columns: 4.5fr 0.25fr 5.25fr;">
   <div>
@@ -312,10 +310,10 @@ Strip #3, the virtual input of Voicemeeter can manage until 8 channels and get 5
   </div>
   <div></div>
   <div>
-    <p>Windows Control Panel /Sound Dialog Box allows configuring Audio device (playback and recording devices).</p>
-    <p>To get multichannel audio from DVD player you need to configure the Voicemeeter Input in multi-channel (click on configure button on the left bottom after having selected the Voicemeeter input).</p>
-    <p>When playing DVD you will see 5.1 audio signal incoming on Voicemeeter Virtual Input and also on possible A output level (if your output device supports the same number of channels).</p>
-    <p>Note that BUS B is also multichannel but level meter shows always 2 first channels only.</p>
+    <p>Windows 控制面板中的“声音”对话框可用于配置音频设备（播放设备和录音设备）。</p>
+    <p>要从 DVD 播放器获取多声道音频，需要将 Voicemeeter 输入配置为多声道（选中 Voicemeeter 输入后，单击左下角的“配置”按钮）。</p>
+    <p>播放 DVD 时，您将在 Voicemeeter 虚拟输入上看到 5.1 声道的音频信号，并且在相应的 A 输出电平上也会显示相应信号（前提是您的输出设备支持相同数量的声道）。</p>
+    <p>请注意，BUS B 同样支持多声道，但电平表始终只显示前两个声道。</p>
   </div>
 </div>
 
