@@ -109,9 +109,7 @@ virtual) and 3 audio outputs (2 physicals and 1 virtual) through 2 busses A & B.
 
 ![](../_media/8-1.jpg)
 
-Voicemeeter Banana is an advanced virtual mixing console able to manage 5 audio inputs (3
-physicals and 2 virtual) and 5 audio outputs (3 physicals and 2 virtual) through 5 multichannel
-busses (A1, A2, A3 & B1, B2).
+Voicemeeter Banana is an advanced virtual mixing console able to manage 5 audio inputs (3 physicals and 2 virtual) and 5 audio outputs (3 physicals and 2 virtual) through 5 multichannel busses (A1, A2, A3 & B1, B2).
 
 ![](../_media/banana-8-1.jpg)
 
@@ -119,29 +117,21 @@ Voicemeeter Potato is an advanced virtual mixing console able to manage 8 audio 
 
 ![](../_media/potato-9-1.jpg)
 
-As Mixing Console, Voicemeeter offers large amount of use case combinations: To mix in real time your voice with your music, your movie, your video game or web radio and share it on internet through VOIP or Streaming (Patato only) applications. Voicemeeter is also able to let you manage 2 / 3 (Banana) / 5（Potato） Headsets and create new VOIP experiences …
+As Mixing Console, Voicemeeter offers large amount of use case combinations: To mix in real time your voice with your music, your movie, your video game or web radio and share it on internet through VOIP or Streaming applications. Voicemeeter is also able to let you manage 2 / 3 (Banana) / 5（Potato） Headsets and create new VOIP experiences …
 
-Voicemeeter Banana integrates an audio recorder able to generate BWF, WAV, AIFF, or MP3
-file in stereo. (and 4, 6, or 8 channels for WAV / AIFF format). Recording options allow recording
-any pre-fader inputs or post fader BUS. Special Composite Mode will allow to record pre or post
-fader inputs in multichannel mode.  
+Voicemeeter Banana integrates an audio recorder able to generate BWF, WAV, AIFF, or MP3 file in stereo. (and 4, 6, or 8 channels for WAV / AIFF format). Recording options allow recording any pre-fader inputs or post fader BUS. Special Composite Mode will allow to record pre or post fader inputs in multichannel mode.  
+
 Voicemeeter Potato integrates the same recorder than Voicemeeter Banana and a new internal FX section offering a Reverb and a Multitap Delay through a regular Send / Return function. Potato also offers two true aux to manage external FX with an ASIO device (ASIO channel must be assigned to SEND / RETURN functions in system settings dialog box).
 
 Voicemeeter Banana / Potato also offers a 6 cells full parametric EQ on every BUS, with the possibility to make independent equalization on each channel (1-to 8). This is made to correct your P.A. System from mono to 7.1 setup. In conjunction with Stereo Repeat Mode, it 's also possible to use this Equalizer as stereo Cross Over to drive 2, 3, or 4 ways active speakers system.
 
-Finally Voicemeeter Banana provides a better control on Compression / Gate effect by
-presenting 2 different knobs and adds another modulation effect panel on the 3 physical input
-strips.  
+Finally Voicemeeter Banana provides a better control on Compression / Gate effect by presenting 2 different knobs and adds another modulation effect panel on the 3 physical input strips.  
 Finally Voicemeeter Potato displays applications connected on its virtual input and gives you the same volume and mute control than the Windows volume mixer.
-
-
 
 ![](../_media/8-2.jpg)
 _Voicemeeter General Diagram (3 inputs / 2 Buses Mixing Console)_
 
-Voicemeeter Banana implements a simple matrix to let you manage input to output routing, and
-make mix minus processing for every strips. So we have 5 push buttons per strip: A1, A2 A3
-and B1, B2 to send each strip to assign any audio source to any busses.
+Voicemeeter Banana implements a simple matrix to let you manage input to output routing, and make mix minus processing for every strips. So we have 5 push buttons per strip: A1, A2 A3 and B1, B2 to send each strip to assign any audio source to any busses.
 
 ![](../_media/banana-9-1.jpg)
 _Voicemeeter Banana General Diagram (5 inputs / 5 Buses / 5 outputs Mixing Console)_
@@ -171,7 +161,7 @@ These Virtual Audio I/O's (VAIO) support all possible Audio Interfaces and allow
 
 Audio interfaces type supported by Voicemeeter Virtual audio I/O (Voicemeeter VAIO). 
 
-|Interface |Type Description |
+|Interface Type |Description |
 |:--|:-|
 |MME |The MME API or the Windows Multimedia API (also known as WinMM) was the first universal and standardized Windows audio API. This audio interface type is expected to work with whatever audio device but with latency time possibly around 100ms. |
 |WDM |That we call WDM (Windows Driver Model) audio interface in Voicemeeter is handled by WASAPI : the Latest Microsoft Audio Functions to get best audio performances and small latency (< 30ms) – available since Windows VISTA |
@@ -198,27 +188,19 @@ std-11
 
 ### Audio Mixing Console Basis
 
-An audio mixing console is a device able to sum different audio signals (audio sounds) coming
-from different inputs and route them to different outputs. Mixing desk is usually composed by
-Strips and Busses. While strips are connected to Inputs, busses are connected to outputs.
+An audio mixing console is a device able to sum different audio signals (audio sounds) coming from different inputs and route them to different outputs. Mixing desk is usually composed by Strips and Busses. While strips are connected to Inputs, busses are connected to outputs.
 
 ![](../_media/11-1.jpg)
 
-This schema above shows how basically Voicemeeter can mix 3 inputs into 2 busses (in BUS A
-if button A is switched on, on BUS B if button B is switched on). Typically BUS A can be used
-for monitoring (speakers) and BUS B for VOIP or audio recording applications.
+This schema above shows how basically Voicemeeter can mix 3 inputs into 2 busses (in BUS A if button A is switched on, on BUS B if button B is switched on). Typically BUS A can be used for monitoring (speakers) and BUS B for VOIP or audio recording applications.
 
-Each strip (each input) can go through different processing before summing to the busses.
-Voicemeeter includes funny panels to tweak the sound on input #1 and #2 and a regular 3
-bands Equalizer on input #3 (the Virtual Input).
+Each strip (each input) can go through different processing before summing to the busses. Voicemeeter includes funny panels to tweak the sound on input #1 and #2 and a regular 3 bands Equalizer on input #3 (the Virtual Input).
 
-Again on usual Mixing Console, we have on each strip a SOLO button (to listen one or several
-strips only) and a MUTE button to simply mute the signal of the Strip or Bus.
+Again on usual Mixing Console, we have on each strip a SOLO button (to listen one or several strips only) and a MUTE button to simply mute the signal of the Strip or Bus.
 
 Finally the Fader Gain allows to adjust the sound volume for each Strip and Bus.
 
-Other controls will be explained later, but basically we have described here the outlines of what
-is an Audio Mixer, generally speaking. 
+Other controls will be explained later, but basically we have described here the outlines of what is an Audio Mixer, generally speaking. 
 
 std-11
 ---
