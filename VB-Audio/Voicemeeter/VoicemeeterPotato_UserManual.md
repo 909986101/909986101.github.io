@@ -581,117 +581,188 @@ The Compressor / Gate detailed view show the compressor transfer graph on top (i
 
 REM: CTRL+ RIGHT CLICK to edit parameter value.
 
-SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-24-1.jpg)
+  </div>
+  <div>
+  
+  SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
+  
+  CTRL+ RIGHT CLICK on parameter to edit its value
+  
+  RIGHT CLICK: to switch back to original view.
+  
+  CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
+  </div>
+</div>
 
-![](../_media/potato-24-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-24-2.jpg)
+  </div>
+  <div>
 
-CTRL+ RIGHT CLICK on parameter to edit its value
+  PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
+  
+  To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
+  
+  </div>
+</div>
 
-RIGHT CLICK: to switch back to original view.
-
-CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
-
-PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
-
-![](../_media/potato-24-2.jpg)
-
-To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
-
-#### Denoiser Details
+### Denoiser Details
 
 Right clicking on Denoiser knob will open the detailed parameters view to get access to a new voice effect.
 
-![](../_media/potato-26-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-26-1.jpg)
+  </div>
+  <div>
 
-**Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
+  **Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
 
-#### Voice Modeler
+### Voice Modeler
 
-**Enable Fx:** Activate the Voice Modeler effect.
+  **Enable Fx:** Activate the Voice Modeler effect.
 
-**Dry / Wet Balance:** gives the amount of dry signal (original input = -100%) and wet signal (Fx = +100%). 0% mean same amount for dry and wet signal.
+  **Dry / Wet Balance:** gives the amount of dry signal (original input = -100%) and wet signal (Fx = +100%). 0% mean same amount for dry and wet signal.
 
-**Pitch:** pitch amount in semi tone (from -12 to +12 semi tone).
+  **Pitch:** pitch amount in semi tone (from -12 to +12 semi tone).
 
-**Formant Lo:** Pitch for low frequency formant (from -12 to +12 semi tone).
+  **Formant Lo:** Pitch for low frequency formant (from -12 to +12 semi tone).
 
-**Formant Med:** Pitch for medium frequency formant (from -12 to +12 semi tone).
+  **Formant Med:** Pitch for medium frequency formant (from -12 to +12 semi tone).
 
-**Formant Hi:** Pitch for high frequency formant (from -12 to +12 semi tone).
+  **Formant Hi:** Pitch for high frequency formant (from -12 to +12 semi tone).
 
-**Formant Group:** 3 Formant average control, to change all formant in the same time.
+  **Formant Group:** 3 Formant average control, to change all formant in the same time.
 
-REM: CTRL+ RIGHT CLICK to edit parameter value.
+  REM: CTRL+ RIGHT CLICK to edit parameter value.
 
-**Preset**
+  **Preset**
 
-8 configurable user presets. Left click to recall it. Right click to get contextual menu..
+  8 configurable user presets. Left click to recall it. Right click to get contextual menu..
+  </div>
+</div>
 
-PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-26-2.jpg)
+  </div>
+  <div>
+  
+  PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
 
-![](../_media/potato-26-2.jpg)
-
-To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
+  To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
+  </div>
+</div>
 
 ### Strip Limiter
 
-With Voicemeeter Banana comes a Brick-Wall Limiter on each physical or virtual strip to define a threshold for each audio source. Click directly in the meter bar to set the limit by the mouse or right click to enter the value directly (-40 to +12 dB).
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-24-3.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-24-3.jpg)
+  With Voicemeeter Banana comes a Brick-Wall Limiter on each physical or virtual strip to define a threshold for each audio source. Click directly in the meter bar to set the limit by the mouse or right click to enter the value directly (-40 to +12 dB).
 
-WARNING: Strip Limiter is made before Slider Gain (BUS Limiter is made after Slider Gain).
+  WARNING: Strip Limiter is made before Slider Gain (BUS Limiter is made after Slider Gain).
 
-**Trick: All controls go back to default value if double click on it!**
+  **Trick: All controls go back to default value if double click on it!**
+  </div>
+</div>
 
 #### Green or Yellow Limiter
 
 With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the original Yellow limiter and the Green limiter. Use CTRL+Click to swap from one to another.
 
-![](../_media/potato-25-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-25-1.jpg)
+  </div>
+  <div>
 
-The green Limiter is also a Brick-Wall Limiter but with a 5ms integration time (this predictive time introduces 5ms latency). This is made to avoid distortion and remove any crackling.
+  The green Limiter is also a Brick-Wall Limiter but with a 5ms integration time (this predictive time introduces 5ms latency). This is made to avoid distortion and remove any crackling.
 
-Noise attack is usually not hearable on a full audio track, but if the sound is a single instrument (e.g. guitar or bass) or a voice from a Soft-Phone or any sound without treble (nothing above 5kHz), then yellow limiter can produce hearable attack noise. That's why we now offering the Green Limiter.
+  Noise attack is usually not hearable on a full audio track, but if the sound is a single instrument (e.g. guitar or bass) or a voice from a Soft-Phone or any sound without treble (nothing above 5kHz), then yellow limiter can produce hearable attack noise. That's why we now offering the Green Limiter.
+  </div>
+</div>
 
 #### What is Limiter noise attack?
 
-![](../_media/potato-25-2.jpg)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-25-2.jpg)
+  </div>
+  <div>
 
-**Without limiter**, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
+  **Without limiter**, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
 
-The **yellow limiter** tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
+  The **yellow limiter** tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
 
-**Green Limiter** is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
+  **Green Limiter** is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
+  </div>
+</div>
 
 #### Limiter on BUS
 
 With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
 
-![](../_media/potato-25-3.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-25-3.jpg)
+  </div>
+  <div>
 
-Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (because directly outputting to audio device). REM: Limiter on strip allows defining a limit over 0 dB (+12 dB max) because this signal is routed internally to BUS and can be reduced by different after effects, gain or BUS Limiter. However if the Strip Limiter introduces attack noises, the BUS Limiter won't be able to remove them.
+  Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (because directly outputting to audio device). REM: Limiter on strip allows defining a limit over 0 dB (+12 dB max) because this signal is routed internally to BUS and can be reduced by different after effects, gain or BUS Limiter. However if the Strip Limiter introduces attack noises, the BUS Limiter won't be able to remove them.
 
-REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
+  REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
+  </div>
+</div>
 
 ### M.C Button / M.C. Means Mute Center
 
-M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/26-2.jpg)
+  </div>
+  <div>
 
-![](../_media/26-2.jpg)
+  M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
+  </div>
+</div>
 
 ### Karaoke Button
 
-With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K button on Virtual AUX input to offer 4 different real time algorithms to remove the voice on a stereo material..
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-27-1.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-27-1.jpg)
+  With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K button on Virtual AUX input to offer 4 different real time algorithms to remove the voice on a stereo material..
 
-**K-m:** Karaoke Voice Remover Removes the common part of a stereo track material. All mono sound will be removed
+  **K-m:** Karaoke Voice Remover Removes the common part of a stereo track material. All mono sound will be removed
 
-**K-1:** For some material, other sounds than voices can be removed, so the K-1 mode will keep some bass and treble.
+  **K-1:** For some material, other sounds than voices can be removed, so the K-1 mode will keep some bass and treble.
 
-**K-2:** Like the K-1 mode, K-2 mode will keep more bass and more treble.
+  **K-2:** Like the K-1 mode, K-2 mode will keep more bass and more treble.
 
-**Kv:** If nothing works (like on a MONO track), this last mode will simply remove the voice frequence range (200- 4000 Hz) by a simple filter
+  **Kv:** If nothing works (like on a MONO track), this last mode will simply remove the voice frequence range (200- 4000 Hz) by a simple filter
+  </div>
+</div>
 
 ![](../_media/potato-27-2.jpg)
 
@@ -713,19 +784,26 @@ EQ settings can also be saved / loaded by the dialog box sys-menu (click on icon
 
 Right click on top of the input strip to display the Strip Menu (Right Click on INTELLIPAN label for hardware inputs, Click on EQUALIZER label for virtual Inputs).
 
-![](../_media/potato-29-1.jpg)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-29-1.jpg)
+  </div>
+  <div>
 
-The strip Menu allows performing 3 kinds of operation on all parameters of the strip (except slider, Solo / Mute and BUS assignation).
+  The strip Menu allows performing 3 kinds of operation on all parameters of the strip (except slider, Solo / Mute and BUS assignation).
 
-**RESET:** to reset all parameters or just a particular effect to default values.
+  **RESET:** to reset all parameters or just a particular effect to default values.
 
-**COPY / PASTE:** to copy / paste all parameters or just a particular effect from a strip to another.
+  **COPY / PASTE:** to copy / paste all parameters or just a particular effect from a strip to another.
 
-**LOAD / SAVE:** to save / load all parameters or just a particular effect from a strip to another, through a xml file, that you can also share with other users / computers.
+  **LOAD / SAVE:** to save / load all parameters or just a particular effect from a strip to another, through a xml file, that you can also share with other users / computers.
 
-Strip menu is different for Virtual Input than for Hardware input since it offers different strip tools.
+  Strip menu is different for Virtual Input than for Hardware input since it offers different strip tools.
 
-![](../_media/potato-29-2.jpg)
+  ![](../_media/potato-29-2.jpg)
+  </div>
+</div>
 
 ### Applications shown on Virtual Input Strip
 
@@ -801,38 +879,63 @@ COPY ALL: copy EQ settings of all channels (to copy entire equalization to anoth
 
 RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter value manually / precisely.
 
-The EQ button can give information about the current Equalizer state for the 8 channels
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-33-2.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-33-2.jpg)
+  The EQ button can give information about the current Equalizer state for the 8 channels
 
-**Green:** channel is equalized or gain changed.   
-**Red:** channel is delayed.   
-**Yellow:** channel is equalized and delayed.   
-**Black:** nothing applied on channel.  
+  **Green:** channel is equalized or gain changed.   
+  **Red:** channel is delayed.   
+  **Yellow:** channel is equalized and delayed.   
+  **Black:** nothing applied on channel.  
+  </div>
+</div>
 
-EQ Dialog Box System Menu offers two functions to simply LOAD / SAVE your EQ settings as a XML File (for the current BUS with its 8 channels).
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-34-1.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-34-1.jpg)
+  EQ Dialog Box System Menu offers two functions to simply LOAD / SAVE your EQ settings as a XML File (for the current BUS with its 8 channels).
 
-Then it is possible copy the BUS EQ settings from a BUS to another... or/and share it with other users.
+  Then it is possible copy the BUS EQ settings from a BUS to another... or/and share it with other users.
 
-Right click on graph opens a menu to change dB Scale range
+  Right click on graph opens a menu to change dB Scale range
+  </div>
+</div>
 
 ### Special Routing Options on Output BUS
 
 Voicemeeter provides additional routing modes for all Busses in order to use the possible 8 output channels in different ways.
 
-![](../_media/potato-34-2.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-34-2.jpg)
+  </div>
+  <div>
 
-**MIX DOWN MODE**
+  **MIX DOWN MODE**
 
-This mode is made to make a stereo mix- down with 5.1 or 7.1 sound coming from DVD player on virtual input (strip #3). Left and right channels, Center, Sub and rear are combined to output on stereo speakers.
+  This mode is made to make a stereo mix- down with 5.1 or 7.1 sound coming from DVD player on virtual input (strip #3). Left and right channels, Center, Sub and rear are combined to output on stereo speakers.
 
-MIX DOWN A  
-Rear & side Speaker are mixed out of phase to simulate surround effect in stereo
+  MIX DOWN A  
+  Rear & side Speaker are mixed out of phase to simulate surround effect in stereo
 
-MIX DOWN B  
-Rear & side Speaker are mixed in phase
+  MIX DOWN B  
+  Rear & side Speaker are mixed in phase
+
+  **STEREO REPEAT**
+
+  This button is made to use possible 8 outputs channels with a stereo signal. This stereo signal is repeated to channel 3,4 / 5,6 and 7,8.
+  </div>
+</div>
 
 MIX DOWN A (Processing)
 - LEFT = FL + (70% FC) + SW + RL - SL  
@@ -841,10 +944,6 @@ MIX DOWN A (Processing)
 MIX DOWN B (Processing)
 - LEFT = FL + (70% FC) + SW + RL + SL 
 - RIGHT = RL + (70% FC) + SW + RR + SR
-
-**STEREO REPEAT**
-
-This button is made to use possible 8 outputs channels with a stereo signal. This stereo signal is repeated to channel 3,4 / 5;6 and 7,8.
 
 #### Use Master EQ as crossover
 
@@ -859,27 +958,29 @@ Also master EQ are now offering a trim / delay knob per channel, so you can mana
 ---
 std-26
 
-![](../_media/26-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/26-1.jpg)
+  </div>
+  <div>
 
-**COMPOSITE**
+  **COMPOSITE**
 
-This last button is made for audio post production. The 8 channels are composed in this way:
+  This last button is made for audio post production. The 8 channels are composed in this way:
 
-- ch 1,2 : usual BUS stereo output
-- ch 3,4: Voicemeeter input #1 before gain fader
-- ch 5,6: Voicemeeter input #2 before gain fader
-- ch 7,8: Virtual input channel 1,2 before gain fader
+  - ch 1,2 : usual BUS stereo output
+  - ch 3,4: Voicemeeter input #1 before gain fader
+  - ch 5,6: Voicemeeter input #2 before gain fader
+  - ch 7,8: Virtual input channel 1,2 before gain fader
 
-With composite signal, it's possible to record all
-Voicemeeter Inputs (each in stereo) with a DAW
-connected to Voicemeeter virtual ASIO for
-example. It allows recording VOIP interview or
-conference and making post production process
-after with the 3 audio stereo tracks.
+  With composite signal, it's possible to record all Voicemeeter Inputs (each in stereo) with a DAW connected to Voicemeeter virtual ASIO for example. It allows recording VOIP interview or conference and making post production process after with the 3 audio stereo tracks.
 
-**MONO**
+  **MONO**
 
-MONO button simply merges channel 1 & 2 to make mono signal in both channel 1 & 2. Made for single speaker monitoring.
+  MONO button simply merges channel 1 & 2 to make mono signal in both channel 1 & 2. Made for single speaker monitoring.
+  </div>
+</div>
 
 std-26
 ---
@@ -909,14 +1010,21 @@ For example
 
 ![](../_media/potato-37-1.jpg)
 
-**Additional application**
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-37-2.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-37-2.jpg)
+  **Additional application**
 
-It is also possible to get total control on 8 channels with a small application called **8x8 Gain Matrix**, to redistribute all 8 channels of a 5.1 or 7.1 audio signal coming from your DVD player or Video Game.
+  It is also possible to get total control on 8 channels with a small application called **8x8 Gain Matrix**, to redistribute all 8 channels of a 5.1 or 7.1 audio signal coming from your DVD player or Video Game.
 
-This free application for Voicemeeter can be found on our forum here:  
-[https://forum.vb-audio.com/viewtopic.php?f=8&t=394](https://forum.vb-audio.com/viewtopic.php?f=8&t=394)
+  This free application for Voicemeeter can be found on our forum here:  
+  [https://forum.vb-audio.com/viewtopic.php?f=8&t=394](https://forum.vb-audio.com/viewtopic.php?f=8&t=394)
+  </div>
+</div>
 
 #### All Voicemeeter BUS Mode (14)
 
@@ -1003,9 +1111,16 @@ If AUTO FIT button is ON, the new tempo is automatically kept and the delay of a
 
 The C5 has also been originally developed for Innovason Mixing Console in 2007 but never been used because replace by the C4. Now the C5 is available in Voicemeeter potato to apply a Multi Band Compression to any Hardware inputs.
 
-The C5 effect must me selected first, to replace the Delay Fx in the Voicemeeter System Settings Dialog box. Click on Delay to Swith to C5 and vice versa.
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-41-2.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-41-2.jpg)
+  The C5 effect must me selected first, to replace the Delay Fx in the Voicemeeter System Settings Dialog box. Click on Delay to Swith to C5 and vice versa.
+  </div>
+</div>
 
 The C5 graphic user interface is basically made of 5 bands showing the different levels (input, output and gain reduction) and offering a complete Compressor/Limiter processing for each.
 
@@ -1199,8 +1314,6 @@ The additional menu is there to provide additional functions:
 - To open different configuration dialog boxes (System settings, Recording options, M.I.D.I. mapping, VBAN Dialog Box).
 - To shutdown the application.
 
-47 本页有 1 张图
-
 - The About Box will show you some link to get more information and donate on our webshop.
 - VAIO Extension License Dialog box is present on Win10 64bit and higher version, when the new VAIO driver is installed and when extra virtual I/O (1 to 2) can be activated by a specific activation code.
 - System Settings Dialog Box allows to configure parameters related to audio device management..
@@ -1212,31 +1325,46 @@ The additional menu is there to provide additional functions:
 
 To demonstrate Voicemeeter Remote API audio callback mechanism, Voicemeeter is installed with two audio plug-ins applications (8x8 Gain Matrix & Graphiq EQ). A standalone application called VBAN2MIDI to convert physical MIDI stream into VBAN protocol is also installed.
 
-**8x8 Gain Matrix**
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-48-1.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-48-1.jpg)
+  **8x8 Gain Matrix**
 
-This simple application provides a single 8x8 gain matrix applicable on the selected BUS.
+  This simple application provides a single 8x8 gain matrix applicable on the selected BUS.
 
-This can be helpful to re-distribute audio channels into different multi channel speaker systems.
+  This can be helpful to re-distribute audio channels into different multi channel speaker systems.
 
-This application has been developed with the gain matrix example provided in the Voicemeeter Remote API SDK: [https://forum.vb-audio.com/viewtopic.php?f=8&t=346](https://forum.vb-audio.com/viewtopic.php?f=8&t=346)
+  This application has been developed with the gain matrix example provided in the Voicemeeter Remote API SDK: [https://forum.vb-audio.com/viewtopic.php?f=8&t=346](https://forum.vb-audio.com/viewtopic.php?f=8&t=346)
+  </div>
+  <div>
+  
+  **15 Bands graphic EQ**
 
-**15 Bands graphic EQ**
+  This simple application provides a 15 bands graphic EQ applicable on the selected BUS.
 
-![](../_media/potato-48-2.jpg)
+  This can be helpful to adjust the sound of your P.A. System (stereo only).
+  </div>
+  <div>
 
-This simple application provides a 15 bands graphic EQ applicable on the selected BUS.
+  ![](../_media/potato-48-2.jpg)
+  </div>
+  <div>
 
-This can be helpful to adjust the sound of your P.A. System (stereo only).
+  ![](../_media/potato-48-3.jpg)
+  </div>
+  <div>
 
-**VBAN2MIDI**
+  **VBAN2MIDI**
 
-![](../_media/potato-48-3.jpg)
+  Standalone application to send VBAN-MIDI stream from a MIDI input device or send MIDI message to physical MIDI Output from an incoming VBAN-MIDI Stream.
 
-Standalone application to send VBAN-MIDI stream from a MIDI input device or send MIDI message to physical MIDI Output from an incoming VBAN-MIDI Stream.
-
-Warning: 2 applications cannot use the same UDP port in the same time. 
+  Warning: 2 applications cannot use the same UDP port in the same time. 
+  </div>
+</div>
 
 ### Streamer View: 
 
@@ -1252,11 +1380,18 @@ One of the big interest of the streamer view with Voicemeeter potato is to get a
 
 The MON button on each BUS allows listening to a particular output BUS according monitoring option set in Voicemeeter System Settings Dialog box.
 
-![](../_media/potato-49-2.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-49-2.jpg)
+  </div>
+  <div>
 
-Monitoring BUS give the output BUS where you will listen the selected BUS to monitor.
+  Monitoring BUS give the output BUS where you will listen the selected BUS to monitor.
 
-For consistency with possible remoting, Slider Mode might be set in RELATIVE mode, then all sub mixes will keep there differences when using MIDI controller on Strip Gain Slider.
+  For consistency with possible remoting, Slider Mode might be set in RELATIVE mode, then all sub mixes will keep there differences when using MIDI controller on Strip Gain Slider.
+  </div>
+</div>
 
 Streamer Slider Mode is a local mode to let you move strip sliders independently (NO LINK) fully dependently (ABSolute mode) or relatively (RELative mode).
 
@@ -1272,21 +1407,28 @@ VBAN Command protocol and RT Packet service can support multiple clients and con
 
 Each Voicemeeter version offer a Preset List (64 presets) automatically stored in My Document \\ Voicemeeter dedicated folder. "Scene_Standard" for Voicemeeter Standard, "Scene_Banana" for Voicemeeter Banana, "Scene_Potato" for Voicemeeter Potato.
 
-![](../_media/potato-51-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-51-1.jpg)
+  </div>
+  <div>
 
-Voicemeeter Scene is an independent resizable window.
+  Voicemeeter Scene is an independent resizable window.
 
-Click ENTER or CTRL+Click to recall a preset. F1 to F24 key can be used to recall first 24 presets.
+  Click ENTER or CTRL+Click to recall a preset. F1 to F24 key can be used to recall first 24 presets.
 
-Right Click to get the contextual menu and store the Voicemeeter current setting in an empty preset (or overwrite already defined preset).
+  Right Click to get the contextual menu and store the Voicemeeter current setting in an empty preset (or overwrite already defined preset).
 
-You can define a Name and a comment. If the Comment is not defined, it displays date and hours of the preset creation.
+  You can define a Name and a comment. If the Comment is not defined, it displays date and hours of the preset creation.
 
-Preset can also be exported or imported thanks to Load/Save functions. Or copy / paste
+  Preset can also be exported or imported thanks to Load/Save functions. Or copy / paste
 
-Preset contains all mixing settings. All audio controls in main Voicemeeter graphic user interface and audio fx.
+  Preset contains all mixing settings. All audio controls in main Voicemeeter graphic user interface and audio fx.
 
-Presets do not contain device selection, system settings, MIDI or VBAN parameters…
+  Presets do not contain device selection, system settings, MIDI or VBAN parameters…
+  </div>
+</div>
 
 ## WINDOWS AUDIO MAP
 
@@ -1328,13 +1470,20 @@ REM: VAIO Loopback option is enabled by default in Voicemeeter.
 
 ### Windows Audio Map Menu
 
-Right click in audio map to get the contextual menu. The "Refresh" option updates all display with current parameters (all settings are gathered again on refresh). This is useful because not all settings are real time updated. Some information requires a "refresh" to be updated.
+<div style="display: grid; grid-template-columns: 1fr auto; gap: 16px;">
+  <div>
+  
+  Right click in audio map to get the contextual menu. The "Refresh" option updates all display with current parameters (all settings are gathered again on refresh). This is useful because not all settings are real time updated. Some information requires a "refresh" to be updated.
 
-![](../_media/potato-55-1.jpg)
+  Zoom level can be change by Mouse Wheel or keyboard '+' and '-'. Type ZERO PAD to reset zoom to 100%
 
-Zoom level can be change by Mouse Wheel or keyboard '+' and '-'. Type ZERO PAD to reset zoom to 100%
+  When you are on a VAIO device, the option "Open VAIO Control Panel" is available.
+  </div>
+  <div>
 
-When you are on a VAIO device, the option "Open VAIO Control Panel" is available.
+  ![](../_media/potato-55-1.jpg)
+  </div>
+</div>
 
 We also retrieve access to different windows settings dialog box:
 
@@ -1352,23 +1501,30 @@ The 3 first Windows audio settings dialog box are not present under Windows 7 bu
 
 VAIO latency are now stored as system parameter and recalled on each Audio Engine Start.
 
-RIGHT + CLICK on Virtual Input caption to display the latency menu.
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-56-1.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-56-1.jpg)
+  RIGHT + CLICK on Virtual Input caption to display the latency menu.
 
-VAIO must have an internal latency not below 3x time the buffer size used by Voicemeeter Audio Engine and the Applications connected to the Virtual I/O.
+  VAIO must have an internal latency not below 3x time the buffer size used by Voicemeeter Audio Engine and the Applications connected to the Virtual I/O.
 
-7168 samples value is expected to work 100% but you can try 3072 or less sample to reduce the latency on Virtual Audio Input and related output.
+  7168 samples value is expected to work 100% but you can try 3072 or less sample to reduce the latency on Virtual Audio Input and related output.
 
-It means the latency is applied to the
+  It means the latency is applied to the
 
-- Virtual input stream
-- Possible loopback stream
-- Virtual output stream
+  - Virtual input stream
+  - Possible loopback stream
+  - Virtual output stream
 
-If you modify the latency for Voicemeeter input for example, it will be modified for the output B1 too.
+  If you modify the latency for Voicemeeter input for example, it will be modified for the output B1 too.
 
-Select Show Control Panel to display the VAIO control panel (here below)
+  Select Show Control Panel to display the VAIO control panel (here below)
+  </div>
+</div>
 
 ![](../_media/potato-56-2.jpg)
 
@@ -1414,11 +1570,18 @@ Run this application in administrator mode if you want to change any option (bec
 
 The option "Enable Windows Volume Control" will enable the volume control on all Voicemeeter inputs (all playback devices). If set as default playback device, it will be possible to change the volume by the Speaker Windows Control:
 
-![](../_media/potato-58-2.jpg)
+<div style="display: grid; grid-template-columns: 1fr auto; gap: 16px;">
+  <div>
 
-By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (playback devices). To make this windows control work, you have to enable it in the VAIO Control panel application.
+  By default Windows Volume Control has no effect on Voicemeeter VAIOs inputs (playback devices). To make this windows control work, you have to enable it in the VAIO Control panel application.
 
-Voicemeeter outputs provide no gain management.
+  Voicemeeter outputs provide no gain management.
+  </div>
+  <div>
+
+  ![](../_media/potato-58-2.jpg)
+  </div>
+</div>
 
 ---
 std-38
@@ -1573,17 +1736,24 @@ New services have been implemented to simplify user experience, especially to va
 
 IP-Address field also accept hostname (instead of IP-Address).
 
-![](../_media/potato-62-2.jpg)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-62-2.jpg)
+  </div>
+  <div>
 
-The VBAN Chat service is implementing basic CHAT functions to talk between VBAN-units.
+  The VBAN Chat service is implementing basic CHAT functions to talk between VBAN-units.
 
-VBAN-Chat is list all IP-Address used by the VBAN configuration dialog box and all IP- Address identified by a VBAN-Ping. Then you may see all connected unit around.
+  VBAN-Chat is list all IP-Address used by the VBAN configuration dialog box and all IP- Address identified by a VBAN-Ping. Then you may see all connected unit around.
 
-When sending a TEXT message, all connected VBAN-unit will receive it and automatically display the VBAN-Chat Dialog box.
+  When sending a TEXT message, all connected VBAN-unit will receive it and automatically display the VBAN-Chat Dialog box.
 
-You can select one or several destinations in the left list to send message to a particular user or a group of several connected user.
+  You can select one or several destinations in the left list to send message to a particular user or a group of several connected user.
 
-OPTION menu allows changing some display option and font size. It is also possible to send \<nudge> and \<alert>
+  OPTION menu allows changing some display option and font size. It is also possible to send \<nudge> and \<alert>
+  </div>
+</div>
 
 ### Configure VBAN Audio Stream
 
@@ -2889,21 +3059,32 @@ If you own several licenses, take care to select the right line, related to the 
 
 The dialog box to get certificate will appear and will first ask you to confirm data.
 
-Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now"
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-115-1.jpg)
+  </div>
+  <div>
 
-![](../_media/potato-115-1.jpg)
+  Check the information in orange are exactly the same than you entered in your license dialog box and click "Get a certificate now"
 
-Then you get your certificate in this box
+  Then you get your certificate in this box
 
-![](../_media/potato-115-2.jpg)
+  ![](../_media/potato-115-2.jpg)
+  </div>
+  <div>
 
-Simply copy / paste it in the application License activation box and click on "Activate" button.
+  Simply copy / paste it in the application License activation box and click on "Activate" button.
+
+  REM: The certificate start with the char '>' and finishes with the char '<'.
+
+  This certificate will be store in your computer to authenticate your license (internet is not needed).
+  </div>
+  <div>
 
 ![](../_media/potato-115-3.jpg)
-
-REM: The certificate start with the char '>' and finishes with the char '<'.
-
-This certificate will be store in your computer to authenticate your license (internet is not needed).
+  </div>
+</div>
 
 ### VAIO extension Activation Code
 
