@@ -321,11 +321,17 @@ Strip #3，Voicemeeter 的虚拟输入最多可管理8个通道（channels），
 
 虚拟输入/输出（Virtual I/O）与通过 Voicemeeter 安装的虚拟音频设备相连。播放设备用作虚拟输入，而录音设备则接收 output B1、B2 和 B3。
 
-![](../_media/19-1.jpg)
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px">
 
-![](../_media/banana-16-1.jpg)
+_Voicemeeter_
+![](../_media/19-1.jpg)  
 
-![](../_media/potato-17-1.jpg)
+_Banana_
+![](../_media/banana-16-1.jpg)  
+
+_Potato_
+![](../_media/potato-17-1.jpg)  
+</div>
 
 Voicemeeter VAIO: Playback Devices: 
 |Virtual Audio Device Name |Description |Connected to |
@@ -361,8 +367,6 @@ VAIO 扩展（VAIO Extensions）功能可通过额外的许可证激活（请参
 
 ### Voicemeeter Virtual ASIO driver
 
-Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) BUS B2 (for Voicemeeter AUX virtual ASIO) or BUS B3 (for Voicemeeter VAIO3 virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
-
 每个 Voicemeeter 虚拟 I/O 还支持一个 ASIO 接口，可同时管理 4 个客户端应用程序。这 4 个可能的信号源分别从 BUS B1（用于 Voicemeeter Virtual ASIO）、BUS B2（用于 Voicemeeter AUX Virtual ASIO）或 BUS B3（用于 Voicemeeter VAIO3 Virtual ASIO）获取音频信号，其输出在相关的虚拟输入端混合在一起（可能还有来自常规 Windows 音频接口的 PC 声音）。
 
 ||||
@@ -371,8 +375,8 @@ Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 cl
 
 **对于录音应用程序，请注意环回问题！否则，输出信号可能会无限循环回到输入端，导致输出被静音或禁用监听功能。**
 
-|Configure DAW Application |Configure Musical Instrument |
-|:--|:--|
+|配置 DAW |配置乐器应用程序 |
+|:-:|:-:|
 |![](../_media/potato-19-2.jpg) |![](../_media/potato-19-3.jpg) |
 
 在任何支持 ASIO 的音频应用程序中，选择 Voicemeeter Virtual ASIO 设备
@@ -444,7 +448,7 @@ std-21
 
 在每个虚拟输入通道条带上，均配备了一个简易的三段均衡器和一个 5.1 声像旋钮。
 
-<div style="display: grid; grid-template-columns: auto 1fr; gap: 80px ">
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px ">
   <div>
   
   ![](../_media/potato-21-3.jpg)
