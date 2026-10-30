@@ -426,36 +426,34 @@ std-21
 
 ### Modulation Fx
 
-If you right click on 2D Panel you can also get the Modulation panel below.
+在 2D 面板上单击右键，可以打开下方的调制（Modulation）面板。
 
 ![](../_media/potato-21-1.jpg)
 
-Based on Chorus effect, this panel allows to make various effects. Just experiment by placing cursor wherever you want. Basically chorus / phasing effect are on the bottom while modulations are on the top. Modulations with feedback are on the left side while simple modulation is on the right side. Depth is given by the distance to the middle of the panel.
+基于合唱（Chorus）效果，此面板可实现多种音效。只需将光标置于任意位置即可进行试听。总体而言，合唱/相位（phasing）效果位于下方，调制效果位于上方；带反馈的调制位于左侧，而单纯调制则位于右侧。深度由距面板中心的距离决定。
 
-### INTELLIPAN INDICATOR
+### 智能指示器
 
-On the top of this panel you now can see 3x points indicating if the effect is in use or not. First point becomes orange if the Color Panel is not in neutral position. Second point becomes orange if the Modulation Panel is not in neutral position. Third point becomes orange if the 3D Panel is not in neutral position.
+在该面板的顶部，您现在可以看到三个指示灯，用于显示相应效果是否已启用。当色彩面板未处于中立位置时，第一个指示灯会变为橙色；当调制面板未处于中立位置时，第二个指示灯会变为橙色；当 3D 面板未处于中立位置时，第三个指示灯会变为橙色。
 
 ![](../_media/potato-21-2.jpg)
 
-### Equalization / 5.1 Pan Pot
+### 均衡 / 5.1 声像旋钮
 
-On both Virtual input strips, there is a simple 3 bands Equalizer and 5.1 Pan Pot.
+在每个虚拟输入通道条带上，均配备了一个简易的三段均衡器和一个 5.1 声像旋钮。
 
 ![](../_media/potato-21-3.jpg)
 
-_Banana / Patato Equalizer and 5.1 Pan Pot_
+**均衡器**
 
-**EQUALIZER**
-
-3 Bands Equalizer to boost or remove bass, medium and high frequency (treble).
+三段均衡器，用于增强或削减低频、中频和高频（高音）。
 
 ![](../_media/23-2.jpg)  
 _Voicemeeter Equalizer_
 
-**5.1 Pan POT**
+**5.1 声像旋钮**
 
-Below the Equalizer a small 2D Panel allows 5.1 balance. It's a simple process to position the sound source in one of your 5 speakers:
+均衡器下方有一个小型的二维面板（2D Panel），用于调节 5.1 声道的声像平衡。只需将声源定位到五个扬声器中的任意一个，操作十分简便：
 
 - front left
 - Front Center
@@ -463,49 +461,48 @@ Below the Equalizer a small 2D Panel allows 5.1 balance. It's a simple process t
 - Rear Left
 - Rear Right
 
-#### PAN POT MODE
+#### 声像旋钮模式
 
-Right Click on Pan POT to get the menu and select how you want to transform your multichannel sound before sending it to BUS.
+在 Pan POT 上单击右键打开菜单，然后选择在将多声道音频发送至 BUS 之前如何对其进行处理。
 
-TIPS: Double click on pan pot to reset to Normal mode with the cursor on the exact center.
+提示：在光标位于正中央时，双击声像旋钮即可重置为普通模式。
 
 ![](../_media/potato-22-1.jpg)
 
-MONO mode works like the MONO button on stereo strips.
+|||
+|:--|:--|
+|MONO mode |单声道模式的工作方式类似于立体声控制条上的单声道（MONO）按钮。|
+|Repeat MONO mode |重复单声道模式会将左声道复制到另外 7 个声道中。|
+|Repeat STEREO mode |重复立体声模式是将左+右声道复制到其他 6 个声道中，两两一组。因此，左+右声道将被复制到 3+4、5+6 和 7+8 声道。|
+|Mix Down, Up Mix and Only modes |下混、上混和仅限模式的工作方式与总线模式类似（有关详细处理过程，请参阅后续页面中的总线模式）。|
 
-Repeat MONO mode is duplicating the left channel into 7 others.
-
-Repeat STEREO mode is duplicating the left+right channels into 6 others, 2 y 2. So Left + Right will be copied to channels 3+4 , 5+6, and 7+8
-
-Mix Down, Up Mix and Only modes work like BUS Modes (see BUS mode to get detailed processing in next pages).
-
-### AUDIBILITY CONTROL
+### 可听度控制
 
 ![](../_media/23-1.jpg)
 
 _VoiceMeeter Standard_
 
-This single knob controls a compressor / gate allowing to boost your voice and manage noisy talk. It needs to be adjusted according microphone capabilities and sound environment.
+标准版中，这个旋钮可同时控制压缩器和门限器，帮助提升人声并有效抑制背景噪音。其具体设置需根据麦克风性能与现场声学环境进行调整。
 
-### Compressor / Gate
+### 压缩器 / 门限器
 
-On each input strip there are two knobs to set compression and gate effect.
+Banana 中，在每个输入通道条带上，都有两个旋钮，用于调节压缩和门限效果。
 
 ![](../_media/banana-20-3.jpg)
 
 _Banana_
 
-### Compressor / Gate / Denoiser
+### 压缩器 / 门限器 / 降噪器
 
-On each hardware input strip, there are three knobs to set simplified Compression effect, simplified Gate effect and a Denoiser knob to reduce or remove the noise floor.
+在每个硬件输入通道条上，都配有三个旋钮：用于设置简化的压缩效果、简化的门限效果，以及一个降噪旋钮，可用于降低或消除底噪。
 
 ![](../_media/potato-22-2.jpg)
 
-Compression is made with "auto make up". Consequently it gives a big boost to your voice while compressing it. Then you can adjust the level by decreasing the fader gain.
+压缩采用“自动补偿（auto make up）”模式，因此在压缩的同时还能显著提升音量。随后，您可以通过降低推子增益来调整音量电平。
 
-Denoiser knb will help you to reduce or remove the noise floor according the amount (0 to 10). If not zero, the Denoiser effect will add some latency to this strip.
+降噪器旋钮将根据设定的数值（0 至 10）帮助您降低或消除底噪。若数值不为零，该降噪效果将为此声道条带增加一定的延迟。
 
-#### Compressor / Gate detailed parameters
+#### 压缩器 / 门限器详细参数
 
 Right clicking on compressor or gate knob will open the detailed parameters view to get access to all parameters of the compressor and gate effect.
 
