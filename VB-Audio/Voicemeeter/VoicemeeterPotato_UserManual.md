@@ -441,13 +441,18 @@ It gives a spectral identity to your voice by acting on 3 frequency bands and a 
 
 If you right click on panel you can switch to another effect able to position audio sources with a simple room effect (works in stereo only).
 
-![](../_media/potato-20-2.jpg)
-
-Voicemeeter includes a binaural effect able to give a spatial identity to audio sources and then increase dialog intelligibility (especially when everyone is talking in the same time).
-
-This effect works in stereo, so can be used when recording a stereo stream to improve the sound of the global mix. This also can be used to simply enhance your voice to stereo.
-
-This kind of "psycho acoustic" effect is used a lot since decades in audio production to create a better "audio scene" by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.
+<div style="display: grid; grid-template-columns: 5fr 0.25fr 3fr; ">
+  <div>
+  
+  ![](../_media/potato-20-2.jpg)
+  </div>
+  <div></div>
+  <div>
+    <p>Voicemeeter includes a binaural effect able to give a spatial identity to audio sources and then increase dialog intelligibility (especially when everyone is talking in the same time).</p>
+    <p>This effect works in stereo, so can be used when recording a stereo stream to improve the sound of the global mix. This also can be used to simply enhance your voice to stereo.</p>
+    <p>This kind of "psycho acoustic" effect is used a lot since decades in audio production to create a better "audio scene" by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.</p>
+  </div>
+</div>
 
 ### Modulation Fx
 

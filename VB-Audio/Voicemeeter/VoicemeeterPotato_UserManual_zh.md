@@ -319,9 +319,9 @@ Strip #3，Voicemeeter 的虚拟输入最多可管理8个通道（channels），
 
 ![](../_media/18-2.jpg)
 
-## Understanding Voicemeeter Virtual I/O in one picture
+## 一张图看懂 Voicemeeter 虚拟输入/输出
 
-Virtual I/O are connected to virtual audio devices installed with Voicemeeter. Playback devices are used as virtual inputs while recording devices are fed with output B1, B2 and B3.
+虚拟输入/输出（Virtual I/O）与通过 Voicemeeter 安装的虚拟音频设备相连。播放设备用作虚拟输入，而录音设备则接收 output B1、B2 和 B3。
 
 ![](../_media/19-1.jpg)
 
@@ -343,112 +343,86 @@ Voicemeeter VAIO: Recording Devices:
 |Voicemeeter Aux Output |Installed with Voicemeeter Banana |BUS B2 |
 |Voicemeeter VAIO3 Output |Installed with Voicemeeter Potato |BUS B3|
 
-### Understanding new Voicemeeter VAIOs driver (Win10 or higher)
+### 了解新的 Voicemeeter VAIO 驱动程序（适用于 Windows 10 及更高版本）
 
-Voicemeeter now offers up to 8 Virtual I/O. I/O 1 to 5 are VAIO extension.  
-Standard: Voicemeeter input is also the Virtual input 6.  
-Banana: Voicemeeter input is also the Virtual input 6. Voicemeeter Aux input is also the Virtual input 7.  
-Potato: Voicemeeter input, AUX and VAIO3 are also the Virtual input 6, 7 and 8.
+Voicemeeter 现在提供多达 8 个虚拟输入/输出接口。输入/输出 #1 至 #5 为 VAIO 扩展。   
+标准版：Voicemeeter input 对应 Virtual input 6.  
+Banana：Voicemeeter input 和 AUX 对应 Virtual input 6 and 7.  
+Potato：Voicemeeter input、AUX 和 VAIO3 对应 Virtual input 6, 7 and 8.
 
-![](../_media/20-1.jpg)
+||||
+|:-:|:-:|:-:|
+|![](../_media/20-1.jpg)|![](../_media/banana-17-1.jpg)|![](../_media/potato-18-1.jpg)|
+|![](../_media/20-2.jpg)|![](../_media/banana-17-2.jpg)|![](../_media/potato-18-2.jpg)|
 
-Voicemeeeter Output is now called Voicemeeter out B1 (Virtual output 6).
+Voicemeeter output 现在称为 Voicemeeter out B1 (Virtual output 6)  
+Voicemeeter AUX output 现在称为 Voicemeeter out B2 (Virtual output 7)  
+Voicemeeter VAIO3 output 现在称为 Voicemeeter out B3 (Virtual output 8)
 
-![](../_media/20-2.jpg)
-
-VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
-
-![](../_media/banana-17-1.jpg)
-
-Voicemeeter output is now called Voicemeeter out B1 (Virtual output 6)  
-Voicemeeter AUX output is now called Voicemeeter.out B2 (Virtual output 7).
-
-![](../_media/banana-17-2.jpg)
-
-VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
-
-![](../_media/potato-18-1.jpg)
-
-Voicemeeter output is now called "Voicemeeter out B1" (Virtual output 6)  
-Voicemeeter AUX output is now called "Voicemeeter.out B2" (Virtual output 7).  
-Voicemeeter VAIO3 output is now called "Voicemeeter.out B3" (Virtual output 8).
-
-![](../_media/potato-18-2.jpg)
-
-VAIO Extensions can be activated by an additional license (see Voicemeeter menu).
+VAIO 扩展（VAIO Extensions）功能可通过额外的许可证激活（请参阅 Voicemeeter 菜单）。
 
 ### Voicemeeter Virtual ASIO driver
 
----
-std-25
-
-Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
-
-![](../_media/25-1.jpg)
-
-std-25
----
----
-banana-18
-
-Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) or BUS B2 (for Voicemeeter AUX virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
-
-![](../_media/banana-18-1.jpg)
-
-banana-18
----
-
 Each Voicemeeter Virtual I/O also supports an ASIO interface able to manage 4 client applications. These 4 possible sources get signal from BUS B1 (for Voicemeeter Virtual ASIO) BUS B2 (for Voicemeeter AUX virtual ASIO) or BUS B3 (for Voicemeeter VAIO3 virtual ASIO) and their outputs are mixed together on the related Virtual Input (with possible PC Sound already coming from usual windows audio interfaces).
 
-![](../_media/potato-19-1.jpg)
+每个 Voicemeeter 虚拟 I/O 还支持一个 ASIO 接口，可同时管理 4 个客户端应用程序。这 4 个可能的信号源分别从 BUS B1（用于 Voicemeeter Virtual ASIO）、BUS B2（用于 Voicemeeter AUX Virtual ASIO）或 BUS B3（用于 Voicemeeter VAIO3 Virtual ASIO）获取音频信号，其输出在相关的虚拟输入端混合在一起（可能还有来自常规 Windows 音频接口的 PC 声音）。
 
-**For Recording Applications, take care about the loop back! You might have MUTED outputs or disable monitoring otherwise output signal will come back on input infinitely.**
+||||
+|:-:|:-:|:-:|
+|![](../_media/25-1.jpg)|![](../_media/banana-18-1.jpg)|![](../_media/potato-19-1.jpg)|
+
+**对于录音应用程序，请注意环回问题！否则，输出信号可能会无限循环回到输入端，导致输出被静音或禁用监听功能。**
 
 |Configure DAW Application |Configure Musical Instrument |
 |:--|:--|
 |![](../_media/potato-19-2.jpg) |![](../_media/potato-19-3.jpg) |
 
-Select Voicemeeter Virtual ASIO device In any audio applications supporting ASIO
+在任何支持 ASIO 的音频应用程序中，选择 Voicemeeter Virtual ASIO 设备
 
 ---
 std-21
 
-## STEP 4: Send the Mix Output to Skype Input
+## 步骤 4 ：将混音输出发送到 Skype 输入端
 
-BUS B, not used yet, can be used to send the mix to virtual output that can be connected to another application (typically a recording or VOIP application).
+BUS B 尚未使用，可用于将混音发送至虚拟输出，该输出可连接至其他应用程序（通常为录音或 VOIP 应用程序）。
 
 ![](../_media/21-1.jpg)
 
-For example in Skype you can select the Voicemeeter Virtual Output as Microphone.
+例如，在 Skype 中，您可以将 Voicemeeter 虚拟输出设为麦克风。
 
 ![](../_media/21-2.jpg)
 
 std-21
 ---
 
-## STEP 5: Enjoy new Audio Controls
+## 步骤 5 ：享受全新的音频控制
 
-While you are talking you can tweak your voice in real time with different controls; 2D Panel, Audibility knobs or simple 3 bands Equalizer…
+在通话时，您可以通过不同的控件实时调整您的声音；2D 面板、可听度旋钮，或简单的3段均衡器……
 
-### INTELLIPAN COLOR PANEL
+### 智能彩色面板
 
 ![](../_media/potato-20-1.jpg)
 
-Based on basic equalizer, this panel will allow you to change the color of your voice in a quick way.
+基于基本均衡器，此面板可让您快速调整人声的音色。
 
-It gives a spectral identity to your voice by acting on 3 frequency bands and a tiny reverb on the half top.
+通过调节三个频段，并在高频部分加入轻微的混响，为您的声音赋予独特的频谱特质。
 
-### Position 3D Panel: The Binaural effect
+### Position 3D Panel: 双耳效果
 
-If you right click on panel you can switch to another effect able to position audio sources with a simple room effect (works in stereo only).
+在面板上单击右键，可以切换到另一种能够通过简单的房间效果来定位声源的特效（仅适用于立体声）。
 
-![](../_media/potato-20-2.jpg)
-
-Voicemeeter includes a binaural effect able to give a spatial identity to audio sources and then increase dialog intelligibility (especially when everyone is talking in the same time).
-
-This effect works in stereo, so can be used when recording a stereo stream to improve the sound of the global mix. This also can be used to simply enhance your voice to stereo.
-
-This kind of "psycho acoustic" effect is used a lot since decades in audio production to create a better "audio scene" by positioning some music tracks on different virtual location. Today several FOH live mixing consoles are proposing such advanced Pan Pot, mainly because it allows saving audio energy – while the regular pan pot could completely remove the sound from left or right.
+<div style="display: grid; grid-template-columns: 5fr 0.25fr 3fr; ">
+  <div>
+  
+  ![](../_media/potato-20-2.jpg)
+  </div>
+  <div></div>
+  <div>
+    <p>Voicemeeter 包含一种双耳效果，能够为音频源赋予空间感，并提升对话的可懂度（尤其是在多人同时讲话的情况下）。</p>
+    <p>此效果支持立体声，因此在录制立体声音频流时可用于提升整体混音的音质。此外，它还可用于将人声简单地增强为立体声。</p>
+    <p>这种“心理声学”效应在音频制作领域已沿用数十年，通过将部分音乐声轨置于不同的虚拟位置，从而营造出更为逼真的“声场效果”。如今，许多现场调音台（FOH）都配备了这类先进的声像旋钮（Pan Pot），其主要原因在于它能够有效节省音频能量——而传统的声像旋钮则可能将声音完全移至左侧或右侧。</p>
+  </div>
+</div>
 
 ### Modulation Fx
 
