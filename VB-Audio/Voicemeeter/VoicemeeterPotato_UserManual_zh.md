@@ -476,27 +476,16 @@ _Voicemeeter Equalizer_
 |Repeat STEREO mode |重复立体声模式是将左+右声道复制到其他 6 个声道中，两两一组。因此，左+右声道将被复制到 3+4、5+6 和 7+8 声道。|
 |Mix Down, Up Mix and Only modes |下混、上混和仅限模式的工作方式与总线模式类似（有关详细处理过程，请参阅后续页面中的总线模式）。|
 
-### 可听度控制
+### 可听度控制（压缩器 / 门限器 / 降噪器）
 
-![](../_media/23-1.jpg)
+||||
+|:-:|:-:|:-:|
+|![](../_media/23-1.jpg)|![](../_media/banana-20-3.jpg)|![](../_media/potato-22-2.jpg)|
+|_VoiceMeeter Standard_|_Banana_|_potato_|
 
-_VoiceMeeter Standard_
-
-标准版中，这个旋钮可同时控制压缩器和门限器，帮助提升人声并有效抑制背景噪音。其具体设置需根据麦克风性能与现场声学环境进行调整。
-
-### 压缩器 / 门限器
-
-Banana 中，在每个输入通道条带上，都有两个旋钮，用于调节压缩和门限效果。
-
-![](../_media/banana-20-3.jpg)
-
-_Banana_
-
-### 压缩器 / 门限器 / 降噪器
-
-在每个硬件输入通道条上，都配有三个旋钮：用于设置简化的压缩效果、简化的门限效果，以及一个降噪旋钮，可用于降低或消除底噪。
-
-![](../_media/potato-22-2.jpg)
+标准版中，这个旋钮可同时控制压缩器和门限器，帮助提升人声并有效抑制背景噪音。其具体设置需根据麦克风性能与现场声学环境进行调整。  
+Banana 中，在每个输入通道条带上，都有两个旋钮，用于调节压缩和门限效果。  
+Potato 中，在每个硬件输入通道条上，都配有三个旋钮：用于设置简化的压缩效果、简化的门限效果，以及一个降噪旋钮，可用于降低或消除底噪。
 
 压缩采用“自动补偿（auto make up）”模式，因此在压缩的同时还能显著提升音量。随后，您可以通过降低推子增益来调整音量电平。
 
@@ -504,75 +493,86 @@ _Banana_
 
 #### 压缩器 / 门限器详细参数
 
-Right clicking on compressor or gate knob will open the detailed parameters view to get access to all parameters of the compressor and gate effect.
+右键单击压缩器或门限旋钮，将打开详细参数视图，以访问压缩器和门限效果的所有参数。
 
-Right click again will switch back the view to original Voicemeeter Potato Strip view.
+再次单击右键，即可切换回原始的 Voicemeeter 条带视图。
 
-The Compressor / Gate detailed view show the compressor transfer graph on top (in place of the INTELLIPAN panel). Horizontal level meters show input levels, red meters shows gain reduction (due to compression or gate closing).
+在压缩器/门限的详细视图中，顶部显示的是压缩器的传输曲线（代替 INTELLIPAN 面板）。水平电平表用于显示输入电平，红色电平表则显示增益衰减（由压缩或门限关闭引起）。
 
-#### Compressor Details
+### 压缩器 / 门限器详情
 
-![](../_media/potato-23-1.jpg)
-
-**Input Gain:** To control the gain before compression.
-
-**Ratio:** Gives the compression rate.
-
-**Threshold:** Define a level to start the compression when the input signal goes over this threshold.
-
-**Attack Time:** to control the compression behavior on sound attack (when the input signal starts to go over the threshold).
-
-**Release Time:** to control the compression behavior when the signal goes down.
-
-**Knee:** To control the compression transition softness on threshold point.
-
-**Output Gain:** To control the gain after compression.
-
-**Auto make Up:** apply an output gain automatically computed to compensate the compression.
-
-#### Gate Details
-
-**Threshold:** If input gain is below this level the gate is closing, above this level the gate is opening.
-
-**Damping Max:** Allows limiting the gain reduction when the gate is closing. Per default OFF = -inf, the gate completely remove the signal when closing.
-
-**BP Sidechain:** This parameters allows to define a Band Pass frequency (1,5 octave) in the sidechain (input signal controlling the gate). Then the gate will react on specific frequency range only.
-
-**Attack time:** Define how long it takes to open the gate (gain increasing time).
-
-**Hold Time:** Define the minimal time the gate stays opened anyway (whatever the input gain).
-
-**Release Time:** Define how long it takes to close the gate (gain decreasing time).
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-23-1.jpg)
+  </div>
+  <div>
+    <p><strong>压缩器</strong></p>
+    <p><strong>Input Gain：</strong>输入增益，用于控制压缩前的增益。
+    <br><strong>Ratio：</strong>压缩比，设定压缩的比率。
+    <br><strong>Threshold：</strong>阈值，定义一个电平，当输入信号超过该阈值时开始进行压缩。
+    <br><strong>Attack Time：</strong>启动时间，控制声音开始时（输入信号开始超过阈值时）的压缩行为。
+    <br><strong>Release Time：</strong>释放时间，控制信号下降时的压缩行为。
+    <br><strong>Knee：</strong>软拐点，用于调节在阈值处的压缩过渡的平滑程度。
+    <br><strong>Output Gain：</strong>输出增益，用于控制压缩后的增益。
+    <br><strong>Auto make Up：</strong>自动补增补偿，自动应用一个输出增益，以补偿压缩带来的损失。
+    </p>
+    <p><strong>门限器</strong></p>
+    <p><strong>Threshold：</strong>阈值，当输入增益低于该电平时，则门关闭；若高于此水平，则门打开。
+    <br><strong>Damping Max：</strong>最大衰减，用于限制门关闭时的增益衰减量。默认情况下，关闭时为 OFF = -∞（-inf），即门在关闭时会完全切除信号。
+    <br><strong>BP Sidechain：</strong>带通侧链，此参数允许在侧链（控制门控的输入信号）中定义带通频率（1.5倍频程）。这样，门控将仅对特定频率范围做出响应。
+    <br><strong>Attack time：</strong>启动时间，定义门打开所需的时间（增益上升时间）。
+    <br><strong>Hold Time：</strong>保持时间：定义门在任何情况下（无论输入增益如何）保持开启的最小时间。
+    <br><strong>Release Time：</strong>释放时间：定义门关闭所需的时间（增益下降时间）。
+    </p>
+  </div>
+</div>
 
 ---
 
-REM: CTRL+ RIGHT CLICK to edit parameter value.
+REM：按 Ctrl + 右键单击可编辑参数值。
 
-SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-24-1.jpg)
+  </div>
+  <div>
+    <p>SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.</p>
+    <p>CTRL+ RIGHT CLICK on parameter to edit its value</p>
+    <p>RIGHT CLICK: to switch back to original view.</p>
+    <p>CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO</p>
+  </div>
+</div>
 
-![](../_media/potato-24-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-24-2.jpg)
+  </div>
+  <div>
+   <p>PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
+   </p>
+   <p>To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
+   </p>
+  </div>
+</div>
 
-CTRL+ RIGHT CLICK on parameter to edit its value
 
-RIGHT CLICK: to switch back to original view.
-
-CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
-
-PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
-
-![](../_media/potato-24-2.jpg)
-
-To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
-
-#### Denoiser Details
+### Denoiser Details
 
 Right clicking on Denoiser knob will open the detailed parameters view to get access to a new voice effect.
 
-![](../_media/potato-26-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-26-1.jpg)
+  </div>
+  <div>
 
-**Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
+  **Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
 
-#### Voice Modeler
+### Voice Modeler
 
 **Enable Fx:** Activate the Voice Modeler effect.
 
@@ -594,11 +594,23 @@ REM: CTRL+ RIGHT CLICK to edit parameter value.
 
 8 configurable user presets. Left click to recall it. Right click to get contextual menu..
 
-PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
+  </div>
+</div>
 
-![](../_media/potato-26-2.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/potato-26-2.jpg)
+  </div>
+  <div>
+  
+  PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
 
-To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
+  To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
+  </div>
+</div>
+
+------
 
 ### Strip Limiter
 
