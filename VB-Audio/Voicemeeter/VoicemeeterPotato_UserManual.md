@@ -1674,13 +1674,20 @@ Do not forget to click on SAVE button to validate your settings. Now you are rea
 
 Since Voicemeeter is providing ASIO interface, we can connect audio pro DAW to Voicemeeter, not only to playback into Voicemeeter Virtual input, but also to record the Voicemeeter Virtual Output (which is composed of 8 channels).
 
-![](../_media/47-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/47-1.jpg)
+  </div>
+  <div>
 
-If we connect for example REAPER to the Voicemeeter Virtual ASIO point, we can manage 8 channels recording. And the COMPOSITE buttons is there to feed these 8 channels with the 3 Voicemeeter inputs before fader (pre fader).
+  If we connect for example REAPER to the Voicemeeter Virtual ASIO point, we can manage 8 channels recording. And the COMPOSITE buttons is there to feed these 8 channels with the 3 Voicemeeter inputs before fader (pre fader).
 
-Of course channel 1,2 remain unchanged compared to other modes, but the 6 other channels are replaced by Voicemeeter inputs. This allows for example to make multi track recording of interview made on Skype or Google Voice and record everything on a pro audio DAW to make post production after.
+  Of course channel 1,2 remain unchanged compared to other modes, but the 6 other channels are replaced by Voicemeeter inputs. This allows for example to make multi track recording of interview made on Skype or Google Voice and record everything on a pro audio DAW to make post production after.
 
-Be careful to disable input monitoring in your recorder application to avoid feedback loop (prevent signal to go again into Voicemeeter virtual input).
+  Be careful to disable input monitoring in your recorder application to avoid feedback loop (prevent signal to go again into Voicemeeter virtual input).
+  </div>
+</div>
 
 ![](../_media/47-2.jpg)  
 _REAPER recording 4 stereo tracks coming from Voicemeeter virtual ASIO output._

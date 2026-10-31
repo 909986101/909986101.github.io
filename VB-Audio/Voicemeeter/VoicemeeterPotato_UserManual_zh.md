@@ -551,13 +551,13 @@ REM：按 Ctrl + 右键单击可编辑参数值。
   </div>
   <div>
   
-  SHIFT + CLICK on a parameter to open the TRI Precision Slider. It will allow you to adjust some time values for example with high precision.
+  按 Shift + 单击 某个参数，即可打开 TRI 精度滑块。借助该滑块，可以以高精度调整某些时间值。
   
-  CTRL+ RIGHT CLICK on parameter to edit its value
+  按 Ctrl + 右键单击参数，即可编辑其数值。
   
-  RIGHT CLICK: to switch back to original view.
+  右键单击：可切换回原始视图。
   
-  CTRL+ RIGHT CLICK on Comp or Gate knob = UNDO
+  按 Ctrl + 右键单击 Comp 或 Gate 旋钮，即可执行撤销操作。
   </div>
 </div>
 
@@ -568,16 +568,15 @@ REM：按 Ctrl + 右键单击可编辑参数值。
   </div>
   <div>
 
-  PRG is displayed in the Comp or Gate Knob when detailed parameters are changed. If moving this Comp or Gate Knob after, all detailed parameter will be changed again to fit the default behavior of these Comp / Gate knob. .
+  当详细参数发生更改时，PRG（参数）会显示在 Comp（压缩）或 Gate（门）旋钮上。如果在此之后移动 Comp 或 Gate 旋钮，所有详细参数将再次更改，以符合这些 Comp / Gate 旋钮的默认行为。
   
-  To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on this Comp or Gate Knob.
-  
+  要恢复您的详细参数（撤销操作）：按 Ctrl + 右键单击该“Comp”或“Gate”旋钮。
   </div>
 </div>
 
-### Denoiser Details
+### 降噪器详情
 
-Right clicking on Denoiser knob will open the detailed parameters view to get access to a new voice effect.
+右键点击“降噪”旋钮，即可打开详细参数视图，从而获取全新的语音效果。
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -586,29 +585,28 @@ Right clicking on Denoiser knob will open the detailed parameters view to get ac
   </div>
   <div>
 
-  **Noise Floor Remover:** To control the denoiser amount (same as denoiser knob).
+  **Noise Floor Remover（底噪消除器）：** 用于调节降噪程度（与降噪旋钮功能相同）。
 
-### Voice Modeler
+### Voice Modeler（声音建模器）
 
-  **Enable Fx:** Activate the Voice Modeler effect.
+  **Enable Fx（启用效果）:** 激活声音建模器效果。
 
-  **Dry / Wet Balance:** gives the amount of dry signal (original input = -100%) and wet signal (Fx = +100%). 0% mean same amount for dry and wet signal.
+  **Dry / Wet Balance（干湿/平衡）:** 设置干信号（原始输入 = -100%）与湿信号（效果 = 100%）的比例。0% 表示干湿信号各占一半。
 
-  **Pitch:** pitch amount in semi tone (from -12 to +12 semi tone).
+  **Pitch（音高）:** 以半音为单位的音高变化范围（-12 至 +12 半音）。
 
-  **Formant Lo:** Pitch for low frequency formant (from -12 to +12 semi tone).
+  **Formant Lo（低频共振峰）:** 低频共振峰的音高调整范围（-12 至 +12 半音）。
 
-  **Formant Med:** Pitch for medium frequency formant (from -12 to +12 semi tone).
+  **Formant Med（中频共振峰）:** 中频共振峰的音高调整范围（-12 至 +12 半音）。
 
-  **Formant Hi:** Pitch for high frequency formant (from -12 to +12 semi tone).
+  **Formant Hi（高频共振峰）:** 高频共振峰的音高调整范围（-12 至 +12 半音）。
 
-  **Formant Group:** 3 Formant average control, to change all formant in the same time.
+  **Formant Group（共振峰组）:** 对三个共振峰进行统一调节，可同时改变所有共振峰的频率。
 
-  REM: CTRL+ RIGHT CLICK to edit parameter value.
+  提示：按 Ctrl + 右键单击可编辑参数值。
 
-  **Preset**
-
-  8 configurable user presets. Left click to recall it. Right click to get contextual menu..
+  **Preset（预设）**  
+  提供 8 个可自定义的用户预设。左键单击即可调用，右键单击可打开上下文菜单。
   </div>
 </div>
 
@@ -619,13 +617,13 @@ Right clicking on Denoiser knob will open the detailed parameters view to get ac
   </div>
   <div>
   
-  PRG is also displayed in Denoiser knob if the Voice Modeler is in use. Moving this Knob will switch off the voice Modeler and act on Noise floor Remover parameter only. Set it to ZERO to disable all Denoiser Fx.
+  如果正在使用声音建模器，Denoiser 旋钮上也会显示 PRG。移动此旋钮将关闭语音建模器，仅作用于底噪去除参数。将其设为零可禁用所有降噪效果。
 
-  To get your detailed parameter back (UNDO): CTRL + RIGHT CLICK on Denoiser knob Knob.
+  要恢复详细参数（撤销）：按住 Ctrl 键并右键单击 Denoiser 旋钮。
   </div>
 </div>
 
-### Strip Limiter
+### Strip Limiter（通道条带限幅器）
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -634,17 +632,17 @@ Right clicking on Denoiser knob will open the detailed parameters view to get ac
   </div>
   <div>
 
-  With Voicemeeter Banana comes a Brick-Wall Limiter on each physical or virtual strip to define a threshold for each audio source. Click directly in the meter bar to set the limit by the mouse or right click to enter the value directly (-40 to +12 dB).
+  Voicemeeter Banana 的每个物理或虚拟通道条带上都配备了一个砖墙式限幅器，用于为每个音频源设定阈值。直接在仪表条中点击鼠标即可设置限值，或右键单击直接输入数值（–40 至 12 dB）。
 
-  WARNING: Strip Limiter is made before Slider Gain (BUS Limiter is made after Slider Gain).
+  警告：通道条带限幅器的处理顺序位于滑块增益之前（总线限幅器则位于滑块增益之后）。
 
-  **Trick: All controls go back to default value if double click on it!**
+  **小技巧：双击任意控件即可恢复默认值！**
   </div>
 </div>
 
-#### Green or Yellow Limiter
+#### 绿色或黄色限幅器
 
-With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the original Yellow limiter and the Green limiter. Use CTRL+Click to swap from one to another.
+在 x.1.3.0 版本中，Voicemeeter Banana 提供了两种限幅器类型：经典的黄色限幅器和绿色限幅器。按 Ctrl + 单击即可在两者之间切换。
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -653,13 +651,13 @@ With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the o
   </div>
   <div>
 
-  The green Limiter is also a Brick-Wall Limiter but with a 5ms integration time (this predictive time introduces 5ms latency). This is made to avoid distortion and remove any crackling.
+  绿色限幅器同样是一种砖墙式限幅器，但其积分时间（integration time）为 5 毫秒（这一预测时间会增加 5 毫秒的延迟）。这样设计旨在避免失真，并消除任何噼啪声。
 
-  Noise attack is usually not hearable on a full audio track, but if the sound is a single instrument (e.g. guitar or bass) or a voice from a Soft-Phone or any sound without treble (nothing above 5kHz), then yellow limiter can produce hearable attack noise. That's why we now offering the Green Limiter.
+  通常，在整条音频轨道上几乎听不到噪声冲击（noise attack）；然而，如果声音仅来自单一乐器（如吉他或贝斯），或者来自软电话中的语音，又或是不含高频成分的声音（频率不超过 5kHz），那么黄色限幅器就可能会产生可听见的冲击噪声。这就是我们现在提供绿色限幅器的原因。
   </div>
 </div>
 
-#### What is Limiter noise attack?
+#### 限幅器噪声攻击
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
   <div>
@@ -668,17 +666,17 @@ With the version x.1.3.0 Voicemeeter Banana is offering two limiter types, the o
   </div>
   <div>
 
-  **Without limiter**, the signal over zero dBfs is just clipped, squashed against a boundary. This is producing a C-MOS type distortion. Sinus signal tends to become a square signal.
+  **无限幅器**，超过 0dBFS 的信号会被削波，即被压缩到边界。这会产生一种类似 C-MOS 的失真，正弦信号往往会变成方波信号。
 
-  The **yellow limiter** tries to reduce the gain to keep the signal into the 0 dBfs limit. But since it's a real time algorithm, it can be surprised on big attack and finally produces clipping effect (hearable in some cases, pending on material).
+  **黄色限幅器**试图通过降低增益来将信号控制在 0 dBFS 的上限之内。但由于它是实时算法，在遇到较大的瞬态冲击时可能会措手不及，最终仍会产生削波效应（在某些情况下可听得到，具体取决于素材）。
 
-  **Green Limiter** is expected to be perfect because it uses a 5ms latency as integration time to anticipates all signal peaks.
+  **绿色限幅器**理论上应该是完美的，因为它采用 5 毫秒的延迟作为积分时间，能够提前预测所有信号峰值。
   </div>
 </div>
 
-#### Limiter on BUS
+#### 总线限幅器
 
-With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
+在 x.1.3.0 版本中，Voicemeeter Banana 也在总线上提供了限幅器功能。
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -687,13 +685,14 @@ With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
   </div>
   <div>
 
-  Limiter on BUS work like on strip except it can be set between -20 dB and 0dB (because directly outputting to audio device). REM: Limiter on strip allows defining a limit over 0 dB (+12 dB max) because this signal is routed internally to BUS and can be reduced by different after effects, gain or BUS Limiter. However if the Strip Limiter introduces attack noises, the BUS Limiter won't be able to remove them.
+  总线上的限幅器工作方式与条带上的限幅器类似，只是其阈值可在 –20 dB 至 0 dB 之间进行设置（因为信号直接输出至音频设备）。注：条带上的限幅器允许设定高于 0 dB 的阈值（最高 12 dB），这是因为该信号在内部被路由至总线，并且后续还可通过其他效果、增益或总线限幅器进一步衰减。然而，条带轨道限幅器引入了冲击噪声，则总线限幅器将无法将其消除。
 
-  REM: if OUT Limiter option is ON in system settings dialog box, yellow limiter is set as 0 dBfs by default (even if not explicitly set) This is the original Voicemeeter default behavior.
+  注：如果在系统设置对话框中启用了“OUT 限幅器”选项，则黄色限幅器默认被设置为 0 dBFS（即使未明确指定）。这是 Voicemeeter 的原始默认行为。
+
   </div>
 </div>
 
-### M.C Button / M.C. Means Mute Center
+### M.C 按钮 / M.C. 表示中置静音
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -702,11 +701,11 @@ With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
   </div>
   <div>
 
-  M.C. Button is made to mute the center channel on virtual input on a 5.1 or 7.1 audio material, coming from DVD for example. This is the button to mute the channel 3 (CENTER) containing the dialogs of the movie. Then it is possible to make real time movie dubbing by using this button as this video tutorial is showing it: https://youtu.be/EdnD8b6n-Fw
+  M.C. 按钮用于在虚拟输入中静音 5.1 或 7.1 音频素材的中置声道，例如来自 DVD 的音频。该按钮可将包含影片对白的第 3 声道（中置声道）静音。随后，您便可借助此按钮进行实时电影配音，具体操作方法请参见本视频教程：https://youtu.be/EdnD8b6n-Fw
   </div>
 </div>
 
-### Karaoke Button
+### Karaoke 按钮
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -715,15 +714,15 @@ With the version x.1.3.0 Voicemeeter Banana is offering limiter also on BUS.
   </div>
   <div>
 
-  With Voicemeeter Banana version 2.0.5.3 and Potato version 3.0.1.3 comes a K button on Virtual AUX input to offer 4 different real time algorithms to remove the voice on a stereo material..
+  在 Voicemeeter Banana 2.0.5.3 版和 Potato 3.0.1.3 版中，虚拟 AUX 输入上新增了一个 K 按钮，可提供四种不同的实时算法，用于从立体声素材中去除人声。
 
-  **K-m:** Karaoke Voice Remover Removes the common part of a stereo track material. All mono sound will be removed
+  **K-m：** 卡拉 OK 人声消除器，可去除立体声音轨中的共同（common）部分；所有单声道声音将被完全移除。
 
-  **K-1:** For some material, other sounds than voices can be removed, so the K-1 mode will keep some bass and treble.
+  **K-1：** 对于某些素材，除了人声之外的其他声音也可能被一并去除，因此 K-1 模式会保留部分低频与高频成分。
 
-  **K-2:** Like the K-1 mode, K-2 mode will keep more bass and more treble.
+  **K-2：** 与 K-1 模式类似，K-2 模式会保留更多的低频与高频成分。
 
-  **Kv:** If nothing works (like on a MONO track), this last mode will simply remove the voice frequence range (200- 4000 Hz) by a simple filter
+  **Kv：** 如果上述方法均无效（例如针对单声道音轨），此模式将通过一个简单的滤波器，仅去除人声频率范围（200–4000 Hz）。
   </div>
 </div>
 
@@ -1637,13 +1636,20 @@ Do not forget to click on SAVE button to validate your settings. Now you are rea
 
 Since Voicemeeter is providing ASIO interface, we can connect audio pro DAW to Voicemeeter, not only to playback into Voicemeeter Virtual input, but also to record the Voicemeeter Virtual Output (which is composed of 8 channels).
 
-![](../_media/47-1.jpg)
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
+  <div>
+  
+  ![](../_media/47-1.jpg)
+  </div>
+  <div>
 
-If we connect for example REAPER to the Voicemeeter Virtual ASIO point, we can manage 8 channels recording. And the COMPOSITE buttons is there to feed these 8 channels with the 3 Voicemeeter inputs before fader (pre fader).
+  If we connect for example REAPER to the Voicemeeter Virtual ASIO point, we can manage 8 channels recording. And the COMPOSITE buttons is there to feed these 8 channels with the 3 Voicemeeter inputs before fader (pre fader).
 
-Of course channel 1,2 remain unchanged compared to other modes, but the 6 other channels are replaced by Voicemeeter inputs. This allows for example to make multi track recording of interview made on Skype or Google Voice and record everything on a pro audio DAW to make post production after.
+  Of course channel 1,2 remain unchanged compared to other modes, but the 6 other channels are replaced by Voicemeeter inputs. This allows for example to make multi track recording of interview made on Skype or Google Voice and record everything on a pro audio DAW to make post production after.
 
-Be careful to disable input monitoring in your recorder application to avoid feedback loop (prevent signal to go again into Voicemeeter virtual input).
+  Be careful to disable input monitoring in your recorder application to avoid feedback loop (prevent signal to go again into Voicemeeter virtual input).
+  </div>
+</div>
 
 ![](../_media/47-2.jpg)  
 _REAPER recording 4 stereo tracks coming from Voicemeeter virtual ASIO output._
