@@ -728,23 +728,23 @@ REM：按 Ctrl + 右键单击可编辑参数值。
 
 ![](../_media/potato-27-2.jpg)
 
-### Parametric EQ on hardware input
+### 硬件输入上的参数均衡器
 
-With Potato November 2022 version comes a full Parametric Stereo EQ on each hardware input.
+随着 Potato 2022 年 11 月版本的发布，每个硬件输入均配备了完整的参数化立体声均衡器。
 
-Right click on the small EQ button (on the right of INTELLIPAN label) to open the 6 bands Full parametric EQ graphic user interface. This is exactly the same EQ than on Master BUS, except it is applied to stereo signal (hardware input are stereo when master BUS are multi channels (8 channels).
+右键点击 EQ 按钮（位于 INTELLIPAN 标签右侧），即可打开包含 6 个频段的全参数均衡器图形用户界面。该均衡器与主总线上的均衡器完全相同，只是它作用于立体声信号（当主总线为多通道（8 通道）时，硬件输入均为立体声）。
 
 ![](../_media/potato-28-1.jpg)
 
-PEAK Gain range has been extended to -36 db - +18 dB , that's why different scale are proposed in contextual menu if required.
+峰值增益范围已扩展至 -36 dB 至 +18 dB，因此在必要时会在上下文菜单中提供不同的刻度选项。
 
-Channel parameters are compatible with all EQ and can be copied from an EQ strip to an EQ master or in the other way.
+通道（Channel）参数与所有均衡器兼容，且可在均衡器条带与均衡器主控之间相互复制。
 
-EQ settings can also be saved / loaded by the dialog box sys-menu (click on icon on top-left) or the Strip menu (see next page).
+均衡器设置也可以通过系统菜单对话框（单击左上角图标）或条带菜单（Strip menu）进行保存与加载（详见下一页）。
 
-### Strip Menu
+### 条带菜单
 
-Right click on top of the input strip to display the Strip Menu (Right Click on INTELLIPAN label for hardware inputs, Click on EQUALIZER label for virtual Inputs).
+在输入通道条带的顶部单击右键即可显示条带菜单（Strip Menu）（对于硬件输入，请右键单击“INTELLIPAN”标签；对于虚拟输入，请单击“EQUALIZER”标签）。
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
   <div>
@@ -753,63 +753,63 @@ Right click on top of the input strip to display the Strip Menu (Right Click on 
   </div>
   <div>
 
-  The strip Menu allows performing 3 kinds of operation on all parameters of the strip (except slider, Solo / Mute and BUS assignation).
+  条带菜单允许对条带的所有参数执行三种操作（滑块、独奏/静音以及总线分配除外）。
 
-  **RESET:** to reset all parameters or just a particular effect to default values.
+  **RESET（重置）:** 重置所有参数或仅将特定效果重置为默认值。
 
-  **COPY / PASTE:** to copy / paste all parameters or just a particular effect from a strip to another.
+  **COPY / PASTE（复制/粘贴）:** 用于将所有参数或仅将某个特定效果从一个条带复制/粘贴到另一个条带。
 
-  **LOAD / SAVE:** to save / load all parameters or just a particular effect from a strip to another, through a xml file, that you can also share with other users / computers.
+  **LOAD / SAVE（加载/保存）:** 通过 XML 文件，将所有参数或仅将特定效果从一个条带保存/加载到另一个条带，该 XML 文件还可与其他用户或计算机共享。
 
-  Strip menu is different for Virtual Input than for Hardware input since it offers different strip tools.
-
+  虚拟输入与硬件输入的条带菜单有所不同，因为两者提供的条带工具各不相同。
+  
   ![](../_media/potato-29-2.jpg)
   </div>
 </div>
 
-### Applications shown on Virtual Input Strip
+### 虚拟输入条带上显示的应用程序
 
-With Voicemeeter Potato, the virtual input strips are showing the 4 first applications connected to the related virtual input (through the windows audio interface). It does not list application connected by ASIO interface). Then for each application, it displays the volume and the mute control coming directly from the Windows Volume Mixer.
+借助 Voicemeeter Potato，虚拟输入条带会显示与相应虚拟输入（通过 Windows 音频接口）相连的前 4 个应用程序。它不会列出通过 ASIO 接口连接的应用程序。随后，对于每个应用程序，它还会直接显示来自 Windows 音量混音器的音量和静音控制。
 
 ![](../_media/potato-30-1.jpg)
 
-If you move the cursor on the Windows Volume Mixer, it will be shown on the Voicemeeter virtual strip and vice versa. The Mute control is represented by the "M" button and is also related to the Mute control on the Windows Volume Mixer.
+如果在 Windows 音量混音器中移动光标，该设置也会同步显示在 Voicemeeter 的虚拟条带上，反之亦然。静音控制由“M”按钮表示，并且与 Windows 音量混音器中的静音控件相互关联。
 
-Generally speaking, the virtual inputs strip should reflect the related Windows Volume Mixer state (without the System Sounds Control) up to 32 applications. If an application is disconnected, Voicemeeter should be notified and will remove it from the list. If it remains in the list, a "Restart Audio Engine" should correctly refresh the list of connected applications.
+通常情况下，虚拟输入条带反映与 Windows 音量混音器相关联的状态（不包括系统声音控制），最多支持 32 个应用程序。如果某个应用程序被断开连接，Voicemeeter 会收到通知并将其从列表中移除；若该应用程序仍保留在列表中，则执行“重启音频引擎（Restart Audio Engine）”操作后，应能正确刷新已连接应用程序的列表。
 
-Some applications like Discord can open all available device and appears in All Windows Volume mixers. This is confusing and must be notified to the software manufacturer, it makes no sense to open all audio devices. Just the one selected is enough.
+某些应用程序（如 Discord）会将所有可用的音频设备都打开，并显示在所有 Windows 音量混音器中。这令人困惑，应当及时通知相关软件厂商；让所有音频设备同时开启毫无意义，只需启用已选中的那一个即可。
 
-With last version of Voicemeeter Potato, the level meter is also displayed in real time. It helps to see what application is sending audio in Voicemeeter virtual inputs. A right click allows extending area to show up to 32 connected applications.
+在最新版本的 Voicemeeter Potato 中，电平表（level meter）也能够实时显示。这有助于查看哪个应用程序正在通过 Voicemeeter 的虚拟输入发送音频。右键单击可扩展显示区域，最多显示 32 个已连接的应用程序。
 
-Note also that the 4 first applications can be handled by a MIDI controller thanks to the MIDI mapping.
+还要注意的是，得益于MIDI映射，前四个应用程序可以通过MIDI控制器来处理。
 
 ![](../_media/potato-31-1.jpg)
 
-### Master Section: BUS Assignation
+### 主控部分：总线分配
 
-Banana: The Master section allows managing all outputs BUS. BUS A1, A2, A3 are connected to physical audio device while BUS B1, B2 are connected to related virtual audio output (appearing as recording device in Windows system).
+Banana：主控部分（Master section）可用于管理所有输出总线。总线 A1、A2、A3 连接至物理音频设备，而总线 B1、B2 则连接至相应的虚拟音频输出（在 Windows 系统中显示为录音设备）。
 
-Potato: The Master section allows managing all outputs BUS. BUS A1, A2, A3, A4, A5 are connected to physical audio device while BUS B1, B2, B3 are connected to related virtual audio output (appearing as recording devices in Windows system).
+Potato：主控部分可用于管理所有输出总线。总线 A1、A2、A3、A4、A5 连接至物理音频设备，而总线 B1、B2、B3 则连接至相应的虚拟音频输出（在 Windows 系统中显示为录音设备）。
 
 ![](../_media/banana-26-1.png)
 
-### Master Section: Output BUS
+### 主控部分：输出总线
 
-Each BUS offers different function to manage audio output behavior:
+每个总线都提供不同的功能来管理音频输出行为：
 
 ![](../_media/potato-31-2.jpg)
 
-**SELECT MIX:** SEL button allows selecting the mix assigned to a particular BUS. CTL+CLICK allows to select several BUS in the same time. When a BUS is selected, Input Sliders are displaying the related MIX.
+**SELECT MIX（选择混音）:** SEL（选择）按钮可用于选择分配给特定总线的混音。按住 CTL + 单击，可同时选中多个总线。当选中某个总线时，输入推子（Gain Slider）将显示与该总线相关的混音（MIX）。
 
-**BUS Mode:** BUS Mode can change the contents or the channel organization of the BUS (see MODE next pages). Normal mode is just letting the 8 channels AS IS.
+**BUS Mode（总线模式）:** 总线模式（BUS Mode）可更改总线的内容或通道布局（详见后续的“模式”部分）。在普通模式下，8 个通道保持原样。
 
-**Mono / Cross:** MONO button allow to turn stereo to mono and if you click twice, cross the channel 1 and 2 of the BUS.
+**Mono / Cross（单声道/交叉）:** MONO 按钮可将立体声切换为单声道；若连续点击两次，则会交叉总线的第 1 和第 2 通道。
 
-**Master EQ:** Master EQ button allows switching ON/OFF the Parametric EQ. Right click to open the Master EQ Dialog box.
+**Master EQ（主均衡器）:** 主均衡器按钮用于开启或关闭参量均衡器。右键单击可打开主均衡器对话框。
 
-**MUTE:** MUTE button allows to mute the BUS
+**MUTE（静音）:** 静音按钮可用于对总线进行静音处理。
 
-**Gain Slider:** Finally, the Gain Slider allows to adjust the output volume of the BUS.
+**Gain Slider（增益推子/滑块）:** 增益推子/滑块用于调节总线的输出音量。
 
 #### BUS SEL Button and sub-mix view
 
