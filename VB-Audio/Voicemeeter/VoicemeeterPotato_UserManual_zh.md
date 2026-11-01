@@ -927,7 +927,7 @@ std-26
   </div>
   <div>
 
-  **COMPOSITE**
+  **COMPOSITE（复合）**
 
   **COMPOSITE**按钮是为音频后期制作而设计的。这 8 个通道（channels）的构成方式如下：
 
@@ -947,28 +947,28 @@ std-26
 std-26
 ---
 
-#### COMPOSITE MODE
+#### COMPOSITE MODE（复合模式）
 
-This mode is made for audio post production. The 8 channels of the BUS can be composed by any pre-fader or post fader inputs (or default BUS channel): In the System Settings Dialog Box, user can define the Composite Patch.
+此模式专为音频后期制作而设计。总线的 8 个通道可由任意推子前（PRE-Fader）或推子后（POST-Fader）的输入信号（或默认总线通道）组成；在“System Settings（系统设置）”对话框中，用户可以定义复合跳线（Composite Patch）。
 
 ![](../_media/potato-36-1.jpg)
 
-With composite signal, it's possible to record up to 8 channels composed by any Voicemeeter Inputs or with a DAW connected to Voicemeeter virtual ASIO, or with the integrated recorder. for example. It allows recording VOIP interview or conference and making post production process after, with up to 8 different tracks.
+使用复合信号，可以录制多达 8 个通道，这些通道可以由任何 Voicemeeter 输入组成，或者通过连接到 Voicemeeter 虚拟 ASIO 的数字音频工作站（DAW）组成，或者通过内置录音机组成。例如，它可以录制 VOIP 采访或会议，并在之后进行后期制作，最多可录制 8 个不同的音轨。
 
 ![](../_media/potato-36-2.jpg)
 
-To switch the PRE-Fader input mode to POST-Fader input mode, just click on text here below:
+要将推子前输入模式切换为推子后输入模式，只需点击下方的文本即可：
 
 ![](../_media/potato-36-3.jpg)
 
-Since version 2.0.3.4, additional BUS modes are also present to up mix or extract specific channels:
+自 2.0.3.4 版本起，还提供了额外的总线（BUS）模式，用于上混或提取特定通道：
 
-For example
+例如
 
-- To extract LFE channel and send it to sub devices (sub woofer, Buttkicker, Subpac…).
-- To send 5.1 Rear channel to wireless speaker (Bluetooth).
-- To send Center channel on specific speaker device.
-- To use 2.1, 4.1, 5.1 or 7.1 PA system with stereo audio sources.
+- 提取低频增强（LFE）通道并将其发送至子设备（如低音炮、Buttkicker、Subpac 等）。
+- 将 5.1 声道的后置声道发送至无线扬声器（蓝牙）；
+- 将中置声道输出至指定的扬声器设备；
+- 用于让 2.1、4.1、5.1 或 7.1 扩声（PA）系统接入立体声音频源。
 
 ![](../_media/potato-37-1.jpg)
 
@@ -979,26 +979,26 @@ For example
   </div>
   <div>
 
-  **Additional application**
+  **附加应用**
 
-  It is also possible to get total control on 8 channels with a small application called **8x8 Gain Matrix**, to redistribute all 8 channels of a 5.1 or 7.1 audio signal coming from your DVD player or Video Game.
+  通过一款名为**8x8 Gain Matrix**的小型应用程序，您还可以实现对 8 个通道的完全控制，以重新分配来自 DVD 播放器或视频游戏的 5.1 或 7.1 音频信号的所有 8 个通道。
 
-  This free application for Voicemeeter can be found on our forum here:  
+  可以在论坛上找到这款免费的 Voicemeeter 应用程序，链接如下：  
   [https://forum.vb-audio.com/viewtopic.php?f=8&t=394](https://forum.vb-audio.com/viewtopic.php?f=8&t=394)
   </div>
 </div>
 
 #### All Voicemeeter BUS Mode (14)
 
-Here below the list of 14 BUS Mode to manage the 8 channels of the BUS in 14 different ways.
+以下列出了 14 种总线模式，以 14 种不同的方式管理总线的 8 个通道。
 
 ||||
 |:--|:--|:--|
-|![](../_media/potato-38-1.jpg) |**Normal Mode** |All channels are sent AS IS |
+|![](../_media/potato-38-1.jpg) |**Normal Mode** |All channels are sent AS IS <br>所有通道均原样送出|
 |![](../_media/potato-38-2.jpg) |**MIX DOWN A** |LEFT = FL + (70% FC) + SW + RL - SL <br>RIGHT = RL + (70% FC) + SW - RR + SR |
 |![](../_media/potato-38-3.jpg) |**MIX DOWN B** |LEFT = FL + (70% FC) + SW + RL + SL <br>RIGHT = RL + (70% FC) + SW + RR + SR |
 |![](../_media/potato-38-4.jpg) |**STEREO REPEAT** |ch1 = FL, ch3 = FL, ch5 = FL, ch7 = FL <br>ch2 = FR, ch4 = FR, ch6 = FR, ch8 = FR |
-|![](../_media/potato-38-5.jpg) |**COMPOSITE MODE** |Contains pre fader inputs given by the COMPOSITE PATCH |
+|![](../_media/potato-38-5.jpg) |**COMPOSITE MODE** |Contains pre fader inputs given by the COMPOSITE PATCH <br>包含由复合跳线给出的推子前输入信号|
 |![](../_media/potato-38-6.jpg) |**UP MIX TV (create 7.1 from stereo)** |FL = L, FC = 20%(L+R), RL = 70%(L-R), SL = 70%(L-R) <br>FR = R, SW=50%(L+R), RR = 70%(R-L), SR = 70%(R-L) |
 |![](../_media/potato-38-7.jpg) |**UP MIX 2.1** |FL = L, FR = R, SW=50%(L+R). |
 |![](../_media/potato-38-8.jpg) |**UP MIX 4.1** |FL = L, FR = R, SW=50%(L+R). <br>RL = L, RR = R |
