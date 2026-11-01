@@ -811,35 +811,35 @@ Potato：主控部分可用于管理所有输出总线。总线 A1、A2、A3、A
 
 **Gain Slider（增益推子/滑块）:** 增益推子/滑块用于调节总线的输出音量。
 
-#### BUS SEL Button and sub-mix view
+#### 总线选择按钮与子混音视图
 
-BUS Selector allows defining sub mix with strip gain sliders, but version 3.1.3.0 offers an overview on all sub-mix by right clicking on assignation buttons (Right click to swap view).
+总线选择器（BUS Selector）支持通过通道条带增益滑块定义子混音（sub mix），但在 3.1.3.0 版本中，您只需右键单击分配（assignation）按钮即可查看所有子混音的概览（右键单击可切换视图）。
 
 ![](../_media/potato-32-1.jpg)
 
-Then you can see all mix for all strips in the same time, and also possibly make the link with VM-Streamer View.
+然后，您就可以同时看到所有条带的所有混合，并且还可以与 VM-Streamer 视图进行链接。
 
-The Strip Gain Slider is giving the max level of all sub-mix (or of the SELected sub-mix by BUS SEL buttons).
+条带增益滑块给出所有子混音（或通过总线 SEL 按钮选择的子混音）的最大电平。
 
-The submix value can be adjusted directly by using CTRL+Wheel. The value can be edited by CTRL+Click.
+可以使用 CTRL + 滚轮直接调整子混合值。可以通过 CTRL + 单击来编辑该值。
 
-### BUS Master Parametric EQ
+### 总线主控参数均衡器
 
-Each BUS offers an EQ button to switch ON/OFF the Master 6 Cells Full Parametric EQ. Right Click on this EQ button to open the EQpro-G6 Dialog Box.
+每个总线均配备一个 EQ 按钮，用于开启或关闭主控混音的 6 段全参数均衡器。右键单击该 EQ 按钮即可打开 EQpro-G6 对话框。
 
 ![](../_media/potato-33-1.jpg)
 
-It provides 6 EQ Cells (with a master gain / delay) for the 8 possible channels of the BUS. The Channel Selector allows working on all channels in the same time or on a given channel only.
+它为总线的 8 个可用通道提供了 6 个均衡器单元（带主增益与延迟功能）。通道选择器允许同时对所有通道进行操作，或仅针对某一特定通道进行调整。
 
-FLAT button will reset the Equalizer (according the channel selector)
+**FLAT**按钮可将均衡器重置（根据通道选择器设定）。
 
-A / B provides two different memories to define 2 different equalization settings and compare them just by switching to A or B. EQ settings are always done in current selected preset (A or B).
+**A / B** 提供两个独立的存储，用于保存两套不同的均衡设置，并可通过切换至 A 或 B 来快速比较。均衡参数始终基于当前选定的预设（A 或 B）进行调整。
 
-CH COPY: copy EQ settings of the current channel (to copy current channel equalization to another channel for example).
+**CH COPY**：复制当前通道（channel）的均衡设置（例如，将当前通道的均衡配置复制到另一个通道）。
 
-COPY ALL: copy EQ settings of all channels (to copy entire equalization to another BUS for example).
+**COPY ALL**: ：复制所有通道的均衡设置（例如，将整套均衡配置复制到另一个总线）。
 
-RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter value manually / precisely.
+右键点击“**增益 / Q / 频率控制**”以打开一个小型编辑框，手动/精确地输入数值。
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -848,12 +848,12 @@ RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter va
   </div>
   <div>
 
-  The EQ button can give information about the current Equalizer state for the 8 channels
+  EQ 按钮可显示 8 个通道（channels）当前均衡器的状态信息。
 
-  **Green:** channel is equalized or gain changed.   
-  **Red:** channel is delayed.   
-  **Yellow:** channel is equalized and delayed.   
-  **Black:** nothing applied on channel.  
+  **绿色：** 通道已均衡或增益已更改。  
+  **红色：** 通道存在延迟。  
+  **黄色：** 通道同时进行了均衡和延迟处理。  
+  **黑色：** 该通道未应用任何处理。
   </div>
 </div>
 
@@ -864,17 +864,17 @@ RIGHT CLICK on Gain / Q / Frequency Control to open a small Edit Box to enter va
   </div>
   <div>
 
-  EQ Dialog Box System Menu offers two functions to simply LOAD / SAVE your EQ settings as a XML File (for the current BUS with its 8 channels).
+  EQ 对话框的系统菜单提供两项功能，可将您的 EQ 设置以 XML 文件形式轻松加载或保存（针对当前带有 8 个通道的总线）。
 
-  Then it is possible copy the BUS EQ settings from a BUS to another... or/and share it with other users.
+  随后，您可以将某个总线的 EQ 设置复制到另一个总线，甚至与其他用户共享。
 
-  Right click on graph opens a menu to change dB Scale range
+  右键点击图表会弹出一个菜单，可以更改分贝刻度范围
   </div>
 </div>
 
-### Special Routing Options on Output BUS
+### 输出总线上的特殊路由选项
 
-Voicemeeter provides additional routing modes for all Busses in order to use the possible 8 output channels in different ways.
+Voicemeeter 为所有总线提供了额外的路由模式，以便以不同方式使用可能的 8 个输出通道（output channels）。
 
 <div style="display: grid; grid-template-columns: auto 1fr; gap: 16px;">
   <div>
@@ -883,19 +883,19 @@ Voicemeeter provides additional routing modes for all Busses in order to use the
   </div>
   <div>
 
-  **MIX DOWN MODE**
+  **MIX DOWN MODE（下混模式）**
 
-  This mode is made to make a stereo mix- down with 5.1 or 7.1 sound coming from DVD player on virtual input (strip #3). Left and right channels, Center, Sub and rear are combined to output on stereo speakers.
+  此模式旨在通过虚拟输入（条带 #3）的 DVD 播放器播放的 5.1 或 7.1 声道音频，进行立体声混音。左右声道、中置声道、低音声道和后置声道将组合在一起，通过立体声扬声器输出。
 
   MIX DOWN A  
-  Rear & side Speaker are mixed out of phase to simulate surround effect in stereo
+  后置扬声器和侧置扬声器以异相混合（mixed out phase）的方式播放，以模拟立体声中的环绕音效
 
   MIX DOWN B  
-  Rear & side Speaker are mixed in phase
+  后置扬声器和侧置扬声器相位混杂（mixed in phase）
 
-  **STEREO REPEAT**
+  **STEREO REPEAT（立体声重复）**
 
-  This button is made to use possible 8 outputs channels with a stereo signal. This stereo signal is repeated to channel 3,4 / 5,6 and 7,8.
+  此按钮旨在利用可能的 8 个输出通道传输立体声信号。该立体声信号会重复到通道 3、4 / 5、6 和 7、8。
   </div>
 </div>
 
@@ -907,15 +907,15 @@ MIX DOWN B (Processing)
 - LEFT = FL + (70% FC) + SW + RL + SL 
 - RIGHT = RL + (70% FC) + SW + RR + SR
 
-#### Use Master EQ as crossover
+#### 使用主均衡器作为分频器
 
-STEREO REPEAT mode also allows using Master EQ as crossover for 2, 3 or 4 ways active speakers system (thanks to 6 full parametric cells, especially LPF or HPF filters).
+STEREO REPEAT 模式还允许使用主均衡器作为 2 路、3 路或 4 路有源音箱系统的分频器（得益于 6 个完整的参数单元，尤其是低通滤波器或高通滤波器）。
 
 ![](../_media/potato-35-1.jpg)
 
-Since the stereo signal is duplicated on channel 3+4, 5+6 and 7+8. You can connect up to 4 stereo amplifier for different speakers and use the parametric EQ (that is multichannel) to make a full crossover processing.
+由于立体声信号在 3+4、5+6 和 7+8 通道上被复制，您最多可以连接 4 个立体声放大器（功放）用于不同的扬声器，并使用参数均衡器（即多通道）进行完整的分频处理。
 
-Also master EQ are now offering a trim / delay knob per channel, so you can manage the gain compensation and the delay adjustment per channel if needed.
+此外，Master EQ 现在为每个通道（channel）提供了一个修剪/延迟（trim / delay）旋钮，以便您根据需要管理每个通道的增益补偿和延迟调整。
 
 ---
 std-26
@@ -929,18 +929,18 @@ std-26
 
   **COMPOSITE**
 
-  This last button is made for audio post production. The 8 channels are composed in this way:
+  **COMPOSITE**按钮是为音频后期制作而设计的。这 8 个通道（channels）的构成方式如下：
 
-  - ch 1,2 : usual BUS stereo output
-  - ch 3,4: Voicemeeter input #1 before gain fader
-  - ch 5,6: Voicemeeter input #2 before gain fader
-  - ch 7,8: Virtual input channel 1,2 before gain fader
+  - ch 1,2：常规总线立体声输出
+  - ch 3,4：Voicemeeter input #1，位于增益推子之前
+  - ch 5,6：Voicemeeter input #2，位于增益推子之前
+  - ch 7,8：Virtual input channel 1,2，位于增益推子之前
 
-  With composite signal, it's possible to record all Voicemeeter Inputs (each in stereo) with a DAW connected to Voicemeeter virtual ASIO for example. It allows recording VOIP interview or conference and making post production process after with the 3 audio stereo tracks.
+  借助复合信号，可以将 Voicemeeter 的所有输入（每个均为立体声），通过连接至 Voicemeeter 虚拟 ASIO 的 DAW 进行录制。这使得您能够录制 VoIP 采访或会议，并在事后利用三条音频立体声轨道进行后期处理。
 
   **MONO**
 
-  MONO button simply merges channel 1 & 2 to make mono signal in both channel 1 & 2. Made for single speaker monitoring.
+  MONO 按钮可将通道 1 和通道 2 合并，使两个通道均输出单声道信号。适用于单只扬声器监听。
   </div>
 </div>
 
