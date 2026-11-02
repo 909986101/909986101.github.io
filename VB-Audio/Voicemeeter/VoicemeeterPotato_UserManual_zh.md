@@ -1009,7 +1009,7 @@ std-26
 |![](../_media/potato-38-13.jpg) |**LFE ONLY (extract sub woofer)** |LEFT = SW <br>RIGHT = SW |
 |![](../_media/potato-38-14.jpg) |**REAR ONLY (extract rear)** |LEFT = RL <br>RIGHT = RR |
 
-## Special Fx
+## 特殊效果
 
 With Potato comes an internal Special FX section offering a stereo reverb and a stereo MutliTap Delay. Internal FX Section requires to offer SEND / RETURN knobs. One on each Strip to send the audio source in the FX , one on each BUS to get the FX result.
 
