@@ -36,7 +36,7 @@ clean 会彻底清除该磁盘所有数据，操作前确认已备份重要文�
 
 ## 完整示例
 
-```cmd
+```batch
 REM 进入命令行
 REM 启动 diskpart 并确认目标磁盘
 diskpart
