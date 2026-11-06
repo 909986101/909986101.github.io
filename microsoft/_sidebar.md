@@ -7,5 +7,6 @@
 
 - Windows
 
-  - [WinPE](windows/winpe/)
   - [Base](windows/base/)
+  - [WinPE](windows/winpe/)
+  
