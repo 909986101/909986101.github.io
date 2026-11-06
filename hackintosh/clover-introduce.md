@@ -10,39 +10,39 @@ Clover 是一款黑苹果系统引导工具。提供硬件环境仿冒、内核�
 
 ## Clover 目录结构
 
-1. `config.plist` 配置文件
+### config.plist 配置文件
 
-   这个是必须的。里面有 Clover 对于 MacOS 系统的配置。
+这个是必须的。里面有 Clover 对于 MacOS 系统的配置。
 
-1. `kexts` 目录
+### kexts 目录
 
-   这个目录放置了内核扩展（kernel extension），就是设备驱动程序。有 2 个目录可以关心一下。
+这个目录放置了内核扩展（kernel extension），就是设备驱动程序。有 2 个目录可以关心一下。
 
-   1. `other` 所有需要加载的 kext，都需要放在这个目录下。
+1. `other` 所有需要加载的 kext，都需要放在这个目录下。
 
-   1. `off` 顾名思义，放在里面的 kext 都不会被加载。
+1. `off` 顾名思义，放在里面的 kext 都不会被加载。
 
-1. `drivers` 目录
+### drivers 目录
 
-   又是“驱动”，可以这样认为，这里放置的是 `Clover` 自己用的“驱动”。
+又是“驱动”，可以这样认为，这里放置的是 `Clover` 自己用的“驱动”。
 
-   1. `UEFI` 目录，如果你使用 `uefi` 方式引导计算机，那么就把 `.efi` 文件放置在此。
+1. `UEFI` 目录，如果你使用 `uefi` 方式引导计算机，那么就把 `.efi` 文件放置在此。
 
-1. `themes` 目录
+### themes 目录
 
-   放置的都是“主题”
+放置的都是“主题”
 
-1. `tools` 目录
+### tools 目录
 
-   放置了一些工具（`.efi`），个人觉得有用的是 `UEFI Shell`。
+放置了一些工具（`.efi`），个人觉得有用的是 `UEFI Shell`。
 
-1. `CLOVERX64.efi` 文件
+### CLOVERX64.efi 文件
 
-   这个就是 Clover 的 bootloader。替换这个文件就是更新 Clover。
+这个就是 Clover 的 bootloader。替换这个文件就是更新 Clover。
 
 ## 资源
 
-1. github
+### github
 
 链接：https://github.com/CloverHackyColor/CloverBootloader/releases
 

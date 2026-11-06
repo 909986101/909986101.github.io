@@ -7,36 +7,36 @@
 
 大致步骤
 1. 确定 `ig-platform-id`
-1. 修改接口类型为 `HDMI`
-1. 禁用 `AGDC`
+2. 修改接口类型为 `HDMI`
+3. ~~禁用 `AGDC`~~
 
 ## 准备工作
 
 请仔细阅读下面链接中“**建议**”一段的内容，并对照自己的 `Clover` 或 `OC` 配置进行更改。
 
->| https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
+> https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
 
-## 确定 `ig-platform-id`
+## 确定 ig-platform-id
 
-1. 核显型号
+### 核显型号
 
-   首先要知道核显是什么型号，intel 官网可以查到
+首先要知道核显是什么型号，intel 官网可以查到
 
-   > https://ark.intel.com
+> https://ark.intel.com
 
-   查询得知我的 CPU 是 I3 9100，核显为 UHD630
+查询得知我的 CPU 是 I3 9100，核显为 UHD630
 
-1. `ig-platform-id`
+### ig-platform-id
 
-   接下来根据核显型号查询合适的 `ig-platform-id`，请详细阅读下面链接中 “UHD 610-655（Coffee Lake 微架构，下文简称 CFL）”一段的内容
+接下来根据核显型号查询合适的 `ig-platform-id`，请详细阅读下面链接中 “UHD 610-655（Coffee Lake 微架构，下文简称 CFL）”一段的内容
 
-   > https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
+> https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
 
-   因为是台式机，推荐使用 `0x3E9B0007`
+因为是台式机，推荐使用 `0x3E9B0007`
 
-   > 推荐的 FB 设置：0x3EA50000（桌面版，缺省值）或 0x3E9B0007（桌面版，推荐）；0x3EA50009（移动版，缺省值）。
+> 推荐的 FB 设置：0x3EA50000（桌面版，缺省值）或 0x3E9B0007（桌面版，推荐）；0x3EA50009（移动版，缺省值）。
 
-## 修改接口类型为 `HDMI`
+## 修改接口类型为 HDMI
 
 `ig-platform-id` 确定了，要修改接口类型为 `HDMI`，继续查表，请详细查看下面链接中“CFL 平台详细信息（点击此处以展开）”一段的内容，
 
@@ -66,9 +66,9 @@ Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
 - ~~启动参数：`igfxagdc=0`~~
 - ~~config.plist 文件中 `Devices`，`Propertise` 添加 `disable-agdc`，属性值为 `01000000`。~~
 
-## 启用 `igfxonln=1`
+## 启用 igfxonln=1
 
->In macOS 10.15.4, there were some changes made to AGPM that can cause wake issues on Coffee Lake systems. Specifically displays hooked up to the iGPU would fail to wake. To resolve this:
+> In macOS 10.15.4, there were some changes made to AGPM that can cause wake issues on Coffee Lake systems. Specifically displays hooked up to the iGPU would fail to wake. To resolve this:
 
 - Add igfxonln=1 to boot-args
 - Make sure you're using WhateverGreen v1.3.8 or newer

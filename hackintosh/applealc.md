@@ -14,13 +14,13 @@
 
 ## 部署
 
-1. applealc.kext
+### 放置 applealc.kext
 
 https://github.com/acidanthera/AppleALC/releases
 
 将 `applealc.kext` 放置在 `/EFI/CLOVER/KEXTS/OTHER/` 目录下。
 
-2. 查找 `layout-id`，确定 `alcid`
+### 查找 layout-id，确定 alcid
 
 https://github.com/acidanthera/AppleALC/wiki/Supported-codecs
 

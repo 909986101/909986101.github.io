@@ -8,19 +8,19 @@ https://support.apple.com/zh-cn/HT201372
 
 以 Catalina 为例
 
-1. 下载 macOS
+### 下载 macOS
 
-   安装器会以名为“Install macOS Catalina”的 App 的形式直接下载到您的“应用程序”文件夹。
+安装器会以名为“Install macOS Catalina”的 App 的形式直接下载到您的“应用程序”文件夹。
 
-1. 在“终端”中使用“createinstallmedia”命令
+### 在“终端”中使用“createinstallmedia”命令
 
-   U 盘
-   - 宗卷至少有 12GB 可用储存空间
-   - 并已格式化为 Mac OS 扩展格式
+U 盘
+- 宗卷至少有 12GB 可用储存空间
+- 并已格式化为 Mac OS 扩展格式
 
-   ```
-   sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
-   ```
+```
+sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+```
 
 为什么要讲白果的 U 盘安装盘呢？
 
@@ -35,14 +35,6 @@ https://support.apple.com/zh-cn/HT201372
 
 很多大佬，比如黑果小兵，会提供 dmg 镜像。这种镜像里面包含了 `ESP` 分区和 `Install macOS Catalina` 分区。只需要用工具将 dmg 镜像灌入 U 盘即可。
 
-- Windows
-
-  使用 `etcher` 软件
-
-- Linux
- 
-  `dd` 命令，so easy
-
-- mac OS
-
-  “磁盘工具”是个好工具
+- Windows：使用 `etcher` 软件
+- Linux：`dd` 命令，so easy
+- mac OS：“磁盘工具”是个好工具
