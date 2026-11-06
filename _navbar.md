@@ -3,6 +3,8 @@
 
 
 * **IT** :desktop_computer:
+  * [Hackintosh](/hackintosh/)
+  * ---
   * [Microsoft](/microsoft/)
   * ---
   * [Linux](/linux/)
