@@ -8,3 +8,4 @@
 - Windows
 
   - [WinPE](windows/winpe/)
+  - [Base](windows/base/)
