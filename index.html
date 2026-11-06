@@ -27,6 +27,9 @@
     }
   </style>
 
+  <!-- docsify-plugin-toc 插件样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-plugin-toc/dist/light.css">
+
   <!-- footer 插件样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer/dist/plugin.min.css">
 </head>
@@ -69,6 +72,13 @@
         displayMath: [['$$', '$$']]                  // 块级公式，默认值
       },
 
+      toc: {
+        tocMaxLevel: 3,      // 最大显示到 h3
+        target: 'h2, h3',    // 仅抓取 h2 和 h3
+        // 可选：忽略特定标题
+        ignoreHeaders: ['<!-- {docsify-ignore} -->'] 
+      },
+
       //docsify-plugin-footer 插件配置
       customPageFooter: {
         copyrightOwnerName: ' haona_li',
@@ -82,6 +92,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
   <script src="//cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-toc/dist/docsify-plugin-toc.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer/dist/plugin.min.js"></script>
   
   <!-- 使用 ES Module 方式引入 Mermaid v10+ -->
@@ -91,7 +102,7 @@
     window.mermaid = mermaid;
   </script>
   <!-- 引入 docsify-mermaid 插件 -->
-  <script src="//unpkg.com/docsify-mermaid/dist/docsify-mermaid.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid/dist/docsify-mermaid.js"></script>
 
   <!-- 引入 MathJax -->
   <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
