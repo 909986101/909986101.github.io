@@ -5,6 +5,7 @@
 ```bash
 $ cd <blog_folder>
 ```
+
 ```bash
 $ git config --global user.email "909986101@qq.com"
 $ git config --global user.name "909986101"

@@ -1,12 +1,13 @@
->参考：https://theme-next.org/
 
 # hexo 主题 next 配置
+
+> 参考：https://theme-next.org/
 
 自定义值
 
 ## Site Information Settings
 
->See: https://theme-next.org/docs/getting-started/
+> See: https://theme-next.org/docs/getting-started/
 
 **favicon**
 
@@ -47,7 +48,7 @@
 
 ## Sidebar Settings
 
->see: https://theme-next.org/docs/theme-settings/sidebar
+> see: https://theme-next.org/docs/theme-settings/sidebar
 
 |属性|默认值|自定义值|描述|
 |:-|:-|:-|:-|
@@ -56,11 +57,11 @@
 
 ## Post Settings
 
->See: https://theme-next.org/docs/theme-settings/posts
+> See: https://theme-next.org/docs/theme-settings/posts
 
 ## Custom Page Settings
 
->See: https://theme-next.org/docs/theme-settings/custom-pages
+> See: https://theme-next.org/docs/theme-settings/custom-pages
 
 ## Misc Theme Settings
 
@@ -73,17 +74,17 @@
 
 ## Font Settings
 
->See: https://theme-next.org/docs/theme-settings/#Fonts-Customization
+> See: https://theme-next.org/docs/theme-settings/#Fonts-Customization
 
 ## SEO Settings
 
 ## Third Party Plugins & Services Settings
 
->See: https://theme-next.org/docs/third-party-services/
+> See: https://theme-next.org/docs/third-party-services/
 
 ## Comments Settings
 
->See: https://theme-next.org/docs/third-party-services/comments
+> See: https://theme-next.org/docs/third-party-services/comments
 
 **Valine**
 
@@ -95,11 +96,11 @@
 
 ## Post Widgets & Content Sharing Services
 
->See: https://theme-next.org/docs/third-party-services/post-widgets
+> See: https://theme-next.org/docs/third-party-services/post-widgets
 
 ## Statistics and Analytics
 
->See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+> See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
 
 **busuanzi_count**
 
@@ -109,7 +110,7 @@
 
 ## Search Services
 
->See: https://theme-next.org/docs/third-party-services/search-services
+> See: https://theme-next.org/docs/third-party-services/search-services
 
 **local_search**
 
@@ -119,11 +120,11 @@
 
 ## Chat Services
 
->See: https://theme-next.org/docs/third-party-services/chat-services
+> See: https://theme-next.org/docs/third-party-services/chat-services
 
 ## Tags Settings
 
->See: https://theme-next.org/docs/tag-plugins/
+> See: https://theme-next.org/docs/tag-plugins/
 
 **mermaid Tag**
 

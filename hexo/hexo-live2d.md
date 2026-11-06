@@ -1,6 +1,6 @@
->参考：https://github.com/EYHN/hexo-helper-live2d/blob/HEAD/README.zh-CN.md
-
 # hexo 添加 Live2D 看板娘
+
+> 参考：https://github.com/EYHN/hexo-helper-live2d/blob/HEAD/README.zh-CN.md
 
 ## 安装
 
@@ -61,6 +61,6 @@ $ npm install live2d-widget-model-epsilon2_1
 ## 一个夏装妹子, 比较适合宅男
 ```
 
-# 进阶：能说话、能换装
+## 进阶：能说话、能换装
 
->https://blog.csdn.net/qq_39610915/article/details/90679768
+> https://blog.csdn.net/qq_39610915/article/details/90679768

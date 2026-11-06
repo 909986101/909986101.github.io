@@ -2,7 +2,7 @@
 
 ## mermaid
 
->https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+> https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
 
 **安装模块**
 
@@ -22,7 +22,7 @@ mermaid:
 
 ## sequence
 
->https://github.com/bubkoo/hexo-filter-sequence
+> https://github.com/bubkoo/hexo-filter-sequence
 
 **安装模块**
 
@@ -32,7 +32,7 @@ $ npm install --save hexo-filter-sequence
 
 ## flowchart
 
->https://github.com/bubkoo/hexo-filter-flowchart
+> https://github.com/bubkoo/hexo-filter-flowchart
 
 **安装模块**
 

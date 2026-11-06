@@ -1,10 +1,10 @@
->参考：https://hexo.io/zh-cn/docs/configuration
-
 # 配置
+
+>参考：https://hexo.io/zh-cn/docs/configuration
 
 您可以在 _config.yml 中修改大部分的配置。
 
-# 网站 site
+## 网站 site
 
 |参数|描述|自定义值|
 |:-|:-|:-|
@@ -18,7 +18,7 @@
 
 其中，description主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。author参数用于主题显示文章的作者。
 
-# 网址 url
+## 网址 url
 
 |参数	|描述	|默认值     |自定义值|
 |:-|:-|:-|:-|
@@ -30,7 +30,7 @@
 |pretty_urls.trailing_index	|是否在永久链接中保留尾部的 index.html，设置为 false 时去除	|true||
 |pretty_urls.trailing_html	|是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)	|true||
 
-# 目录 Directory
+## 目录 Directory
 
 |参数	|描述	|默认值|
 |:-|:-|:-|
@@ -43,7 +43,7 @@
 |i18n_dir	    |国际化（i18n）文件夹	                       |:lang|
 |skip_render	|跳过指定文件的渲染。<br>匹配到的文件将会被不做改动地复制到 public 目录中。<br>您可使用 glob 表达式来匹配路径。||
 
-# 文章 Writing
+## 文章 Writing
 
 |参数	|描述	|默认值|
 |:-|:-|:-|
@@ -68,7 +68,7 @@
 |highlight.wrap	        |Wrap the code block in \<table>	            |true|
 |highlight.hljs	        |Use the hljs-* prefix for CSS classes          |false|
 
-# 主页设置 Home page setting
+## 主页设置 Home page setting
 
 |参数	|描述	|默认值|
 |:-|:-|:-|
@@ -77,7 +77,7 @@
 |per_page |Posts displayed per page. (0 = disable pagination)|10|
 |order_by |Posts order. (Order by date descending by default)|-date|
 
-# 分类 & 标签 Category & Tag
+## 分类 & 标签 Category & Tag
 
 |参数	|描述	|默认值|
 |:-|:-|:-|
@@ -85,7 +85,7 @@
 |category_map	|分类别名	||
 |tag_map	|标签别名	||
 
-# Metadata elements
+## Metadata elements
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 
@@ -93,7 +93,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 |:-|:-|:-|
 |meta_generator |Meta generator 标签。值为 false 时 Hexo 不会在头部插入该标签|true|
 
-# 日期 / 时间格式 Date / Time format
+## 日期 / 时间格式 Date / Time format
 
 Hexo 使用 Moment.js 来解析和显示时间。
 
@@ -103,14 +103,14 @@ Hexo 使用 Moment.js 来解析和显示时间。
 |time_format	|时间格式	|HH:mm:ss|
 |use_date_for_updated	|启用以后，如果 Front Matter 中没有指定 updated，post.updated 将会使用 date 的值而不是文件的创建时间。<br>在 Git 工作流中这个选项会很有用	|true|
 
-# 分页 Pagination
+## 分页 Pagination
 
 |参数	|描述	|默认值|
 |:-|:-|:-|
 |per_page	|每页显示的文章量 (0 = 关闭分页功能)	|10|
 |pagination_dir	|分页目录	|page|
 
-# 包括或不包括目录和文件 Include / Exclude file(s)
+## 包括或不包括目录和文件 Include / Exclude file(s)
 
 在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 glob 表达式 对目录和文件进行匹配。
 
@@ -122,14 +122,14 @@ include and exclude options only apply to the source/ folder, whereas ignore opt
 |exclude	|Hexo 会忽略这些文件和目录|
 |ignore	|Ignore files/folders|
 
-# 扩展 Extensions
+## 扩展 Extensions
 
 |参数	|描述|
 |:-|:-|
 |theme	|当前主题名称。值为false时禁用主题|
 |theme_config	|主题的配置文件。在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置|
 
-# 部署 Deployment
+## 部署 Deployment
 
 |参数	|描述   |自定义值|
 |:-|:-|:-|

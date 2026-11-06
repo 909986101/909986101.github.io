@@ -5,6 +5,8 @@
 * **IT** :desktop_computer:
   * [Hackintosh](/hackintosh/)
   * ---
+  * [Hexo](/hexo/)
+  * ---
   * [Microsoft](/microsoft/)
   * ---
   * [Linux](/linux/)
