@@ -1,15 +1,3 @@
----
-title: 黑苹果显卡驱动
-date: 2020-09-24 09:14:13
-urlname: display-driver
-categories: 黑苹果
-tags: 
-  - 核显
-  - nvidia
-  - amd
----
-黑苹果显卡驱动
-<!--more-->
 # 黑苹果显卡驱动
 
 |显卡分类||
@@ -23,24 +11,24 @@ tags:
 
 1. 确定核显型号
 
-   访问 ark.intel.com，根据 CPU 型号，可查到核显型号。
+访问 ark.intel.com，根据 CPU 型号，可查到核显型号。
 
 1. 确定 `ig-platform-id`
 
-   访问 `WhateverGreen` 官方文档可以查到，不过 `OpenCore` 的文档也是不错的选择。
+访问 `WhateverGreen` 官方文档可以查到，不过 `OpenCore` 的文档也是不错的选择。
 
-   |来源|链接|
-   |:-|:-|
-   |`WhateverGreen`|https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md|
-   |`OpenCore`|https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/intel-gpu.html#native-intel-igpus<br>https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-intel.html#sandy-bridge-i3-5-7-2xxx|
+|来源|链接|
+|:-|:-|
+|`WhateverGreen`|https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md|
+|`OpenCore`|https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/intel-gpu.html#native-intel-igpus<br>https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-intel.html#sandy-bridge-i3-5-7-2xxx|
 
-   这里要注意的是，在 `WhateverGreen` 文档中“建议”那一节要仔细看看。
+这里要注意的是，在 `WhateverGreen` 文档中“建议”那一节要仔细看看。
 
 1. 确定机型
 
-   这里要感谢黑果小兵的分享
+这里要感谢黑果小兵的分享
    
-   https://blog.daliansky.net/Intel-core-display-platformID-finishing.html
+https://blog.daliansky.net/Intel-core-display-platformID-finishing.html
 
 ## Nvidia
 
@@ -48,18 +36,18 @@ tags:
 
 1. 确定显卡可以驱动
 
-   查表
+查表
 
-   OpenCore 文档
-   - https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/nvidia-gpu.html
-   - https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-nvidia.html
+OpenCore 文档
+- https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/nvidia-gpu.html
+- https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-nvidia.html
 
-   小兵
-   - https://blog.daliansky.net/Mojave-Hardware-Support-List.html
+小兵
+- https://blog.daliansky.net/Mojave-Hardware-Support-List.html
 
-   可以查到以下内容
-   - 是否“免驱”
-   - 支持的操作系统版本
+可以查到以下内容
+- 是否“免驱”
+- 支持的操作系统版本
 
 ## AMD
 
@@ -67,18 +55,18 @@ AMD 的显卡只有“免驱”和“无解” 2 中情况。当然仍旧需要 
 
 1. 确定显卡可以驱动
 
-   查表
+查表
 
-   OpenCore 文档
-   - https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/amd-gpu.html
-   - https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-amd.html
+OpenCore 文档
+- https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/amd-gpu.html
+- https://dortania.github.io/GPU-Buyers-Guide/legacy-gpus/legacy-amd.html
 
-   小兵
-   - https://blog.daliansky.net/Mojave-Hardware-Support-List.html
+小兵
+- https://blog.daliansky.net/Mojave-Hardware-Support-List.html
 
-   可以查到以下内容
-   - 是否可以驱动
-   - 支持的操作系统版本
+可以查到以下内容
+- 是否可以驱动
+- 支持的操作系统版本
 
 ## `config.plist` 文件编写
 
@@ -86,13 +74,14 @@ AMD 的显卡只有“免驱”和“无解” 2 中情况。当然仍旧需要 
 
 1. 键
 
-   阅读 `WhateverGreen` 文档中“使用 WEG 自定义 FB 和 端口 补丁”小节
+阅读 `WhateverGreen` 文档中“使用 WEG 自定义 FB 和 端口 补丁”小节
 
-   https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
+https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.cn.md
 
 1. 键值
 
-   这里会遇到 2 个问题
+这里会遇到 2 个问题
+
    1. 如果直接用“记事本”之类的文档编辑器打开 `config.plist` 文件，会发现“键值”是看不懂的，因为它经过了 `Base64` 编码，所有不是给人看的。
 
       解决方法：使用专用的编辑器，例如：`ProperTree`

@@ -1,12 +1,3 @@
----
-title: 黑苹果Clover简介
-date: 2020-09-21 14:36:10
-urlname: clover-introduce
-categories: 黑苹果
-tags: clover
----
-黑苹果 Clover 简介
-<!--more-->
 # 黑苹果 Clover 简介
 
 本文只是对 Clover 简单的介绍。
@@ -53,10 +44,10 @@ Clover 是一款黑苹果系统引导工具。提供硬件环境仿冒、内核�
 
 1. github
 
-   链接：https://github.com/CloverHackyColor/CloverBootloader/releases
+链接：https://github.com/CloverHackyColor/CloverBootloader/releases
 
-   |文件|描述|
-   |:-|:-|
-   |`CloverV2-XXXX.zip` |完整的 Clover，解开就是 `Clover`，还包括 `boot` 目录。|
-   | `CLOVERX64.efi.zip` |Clover 的 bootloader。|
-   | `Clover_rXXXX.pkg` |Clover 的安装包（macOS 下），可以自定义安装 Clover。|
+|文件|描述|
+|:-|:-|
+|`CloverV2-XXXX.zip` |完整的 Clover，解开就是 `Clover`，还包括 `boot` 目录。|
+| `CLOVERX64.efi.zip` |Clover 的 bootloader。|
+| `Clover_rXXXX.pkg` |Clover 的安装包（macOS 下），可以自定义安装 Clover。|

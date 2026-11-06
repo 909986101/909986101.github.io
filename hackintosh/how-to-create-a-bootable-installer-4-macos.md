@@ -1,12 +1,4 @@
----
-title: 黑苹果制作U盘安装盘
-date: 2020-09-15 19:52:41
-urlname: how-to-create-a-bootable-installer-4-macos
-categories:
-tags:
----
-黑苹果制作 MacOS U 盘安装盘
-<!--more-->
+
 # 黑苹果制作 MacOS U 盘安装盘
 
 ## 白果的安装盘制作

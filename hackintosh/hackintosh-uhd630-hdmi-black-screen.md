@@ -1,12 +1,3 @@
----
-title: 黑苹果UDH630核显HDMI输出黑屏解决的一点体会
-date: 2020-09-01 08:11:50
-urlname: hackintosh-uhd630-hdmi-black-screen
-categories: 黑苹果
-tags: 黑苹果
----
-黑苹果 UDH630 核显 HDMI 输出黑屏解决的一点体会
-<!--more-->
 # 黑苹果 UDH630 核显 HDMI 输出黑屏解决的一点体会
 
 硬件配置

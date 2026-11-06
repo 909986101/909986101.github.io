@@ -1,12 +1,3 @@
----
-title: 黑苹果引导
-date: 2020-09-15 12:58:40
-urlname: hackintosh-boot
-categories: 黑苹果
-tags: 黑苹果
----
-黑苹果引导
-<!--more-->
 # 黑苹果引导
 
 目前常用的黑苹果 bootloader 有 2 个，OpenCore 和 Clover。
