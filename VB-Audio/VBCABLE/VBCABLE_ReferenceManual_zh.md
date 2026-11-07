@@ -10,7 +10,7 @@ VB-CABLE 是一款 Windows 音频驱动程序（无需硬件），被称为虚�
 
 VB-CABLE 在系统中与其他音频设备无异，它会以播放和录制点的形式呈现所有音频接口：MME、WASAPI、KS 和 Direct X。
 
-<div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
 
   ![](../_media/cable-3-1.jpg)
@@ -18,8 +18,6 @@ VB-CABLE 在系统中与其他音频设备无异，它会以播放和录制点�
     </p>
     <p>与常规音频设备一样，CABLE 输入端可设置为系统首选/默认设备，并可同时被多个客户端应用程序使用。
     </p>
-  </div>
-  <div>
   </div>
   <div>
 
@@ -63,7 +61,7 @@ VB-CABLE 可安装在从 XP SP2 到最新 Win11 32 位或 64 位的所有 Window
 
 安装完成后，您可以设置或检查默认音频设备。在 Windows 10 及更高版本中，最后安装的音频驱动程序可能会自动设置为默认设备，而这可能并非您所愿。
 
-<div style="display: grid; grid-template-columns: 10fr 0.5fr 10fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div style="grid-column: 1; grid-row: 1;">
     <p>所有电脑声音将进入 VB-CABLE 输入端（因此您将听不到任何声音）。</p>
   </div>
@@ -78,33 +76,25 @@ VB-CABLE 可安装在从 XP SP2 到最新 Win11 32 位或 64 位的所有 Window
 
   ![](../_media/cable-6-3.jpg)
   </div>
-  <div style="grid-column: 2; grid-row: 1 / span 4;">
-  </div>
-  <div style="grid-column: 3; grid-row: 1;">
+  <div style="grid-column: 2; grid-row: 1;">
     <p>您的默认麦克风将设置为 VB-CABLE 输出端（因此，所有音频均将传输至 VB-CABLE 输入端）。</p>
   </div>
-  <div style="grid-column: 3; grid-row: 2;">
+  <div style="grid-column: 2; grid-row: 2;">
 
   ![](../_media/cable-6-2.jpg)
   </div>
-  <div style="grid-column: 3; grid-row: 3;">
+  <div style="grid-column: 2; grid-row: 3;">
     <p>在 Windows 的“声音”对话框（“录制”选项卡）中，可以选择默认的录音设备</p>
   </div>
-  <div style="grid-column: 3; grid-row: 4;">
+  <div style="grid-column: 2; grid-row: 4;">
 
   ![](../_media/cable-6-4.jpg)
   </div>
 </div>
 
-VB-CABLE for Win10/11 x64/Arm64 installs 2x different inputs. The first is a speaker playback device (that can be setup with configure button) limited to 8 channel (7.1 speaker config). The Second CABLE input is a Line Out pin able to manage up to 16 channels. Both are setup in stereo 48 kHz by default.
-
 适用于 Win10/11 x64/Arm64 的 VB-CABLE 安装了 2 个不同的输入设备。第一个是扬声器播放设备（可通过“配置”按钮进行设置），限制为 8 声道（7.1 扬声器配置）。第二个 CABLE 输入是线路输出引脚，最多可管理 16 声道。默认情况下，这两个设备均设置为立体声 48 kHz。
 
 # 设置 VB-Cable 音频格式
-
-The VB-CABLE default format is stereo 48 kHz (for Win10/11) and stereo 44.1 kHz for previous version. The VB-CABLE input or output format can be changed by application connected to it, but most of applications are using the current defined format. So it can be useful to change the audio format, especially the number of channels and the sample rate if needed.
-
-For "Speaker" pin, the channel number can be configured by the **configure** button.
 
 VB-CABLE 的默认格式为立体声 48 kHz（适用于 Windows 10/11）和立体声 44.1 kHz（适用于早期版本）。VB-CABLE 的输入或输出格式可通过与其连接的应用程序进行更改，但大多数应用程序都使用当前定义的格式。因此，如有需要，更改音频格式，尤其是声道数量和采样率，可能会很有用。
 
@@ -161,12 +151,11 @@ Input driver info（输入驱动信息）和 Output driver info（输出驱动�
 
 VB-CABLE 在内部工作时采用固定的采样率（由内部采样率指定）。它允许（独立地）管理输入端和输出端上的任何音频采样率格式。这样，一个 DVD 播放器可以在 VB-CABLE 输入端上发送 48 kHz的声音，而另一个音频应用程序则可以在 VB-CABLE 输出端上以 44.1 kHz的采样率进行录制。转换过程由 VB-CABLE 自动完成。
 
-<div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-11-1.jpg)
   </div>
-  <div></div>
   <div>
     <p>主菜单允许设置不同的选项。</p>
     <p>7168 作为默认缓冲区大小，通常足以满足任何常规工作流程的需求，因为如果连接的应用程序使用的缓冲区大小低于 2048 个样本，它能保证稳定的流。然而，对于高采样率用例（例如 192 kHz）而言，这可能就不够用了。
@@ -189,8 +178,6 @@ VB-CABLE（Win10/11 版）支持输入/输出采样率为 8 kHz 至 192 kHz，�
 例如，在 Windows 7 中，转换是在 Windows Media Player 进行的，而在 Windows XP 中，VB-Cable 输入采样率会发生变化。
 
 ## 配置内部延迟
-
-VB-CABLE can now let you change the latency on the fly or by editing the value on main view, or by using the latency menu.
 
 VB-CABLE 现在允许您实时更改延迟，或在主视图中编辑值，或使用 **Latency（延迟）**菜单进行更改。
 
@@ -235,12 +222,11 @@ VB-CABLE 基本上需要 3 个缓冲区来形成连续的音频流（一个用�
 <span style="color:red;">重要的是要理解，音频流缓冲取决于客户端应用程序以及这些应用程序所使用的音频接口（MME、KS、WASAPI 的行为各不相同）。如果你为使用 KS 音频接口的 DVD 播放器和 Audacity 设置了最佳延迟，那么它可能就无法再与其他播放器和录音应用程序一起使用了。
 </span>
 
-<div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-14-1.jpg)
   </div>
-  <div></div>
   <div>
     <strong>查找最大缓冲区大小：</strong>
     <p>根据左边的统计数据，音频流使用的缓冲区大小从未超过或等于512个样本。
@@ -273,12 +259,11 @@ $$
 
 **始终采用统计给出的最大缓冲区大小：**
 
-<div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-15-1.jpg)
   </div>
-  <div></div>
   <div>
     <p>据统计，音频源应用程序的音频流使用最大缓冲区大小为 512 个采样点，而音频录制应用程序的音频流则使用最大缓冲区大小为 1024 个采样点。
     </p>
@@ -291,12 +276,11 @@ $$
 
 **如果统计信息过载，请使用最大延迟：**
 
-<div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-15-2.jpg)
   </div>
-  <div></div>
   <div>
     <p>如果流式传输使用的是 1024 样本的缓冲区或更大，您就必须考虑采用最大延迟模式，尽管尚无法确定其是否能正常工作（因为流式传输也可能使用 2048 或 8192 的缓冲区，而我们在此处无法观察到，因为统计信息仅限于 1024 样本的缓冲区大小）。
     </p>
@@ -307,12 +291,11 @@ $$
 
 **Hi-Fi Cable 上的统计:**
 
-<div style="display: grid; grid-template-columns: 3.5fr 0.5fr 5fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-15-3.jpg)
   </div>
-  <div></div>
   <div>
     <p>Hi-Fi Cable 的统计数据支持高达 2048 的缓冲，因为这样可以支持更高的采样率，而音频流通常会随着采样率的提高而增加缓冲。
     </p>
@@ -379,12 +362,11 @@ ASIO Bridge 包含一项采样率测量，用于检测 ASIO 驱动程序实际�
 
 VB CABLE 是一款标准的 MME / KS / Direct X 音频驱动程序，提供播放与录音接口（与其他普通音频设备完全相同）。安装时，只需将压缩包解压至本地磁盘上的任意文件夹，并运行 **VBCABLE_Setup.exe** 程序（适用于 32 位操作系统）。
 
-<div style="display: grid; grid-template-columns: 15fr 1fr 14fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
   
   ![](../_media/cable-20-1.jpg)
   </div>
-  <div></div>
   <div>
     <p>安装程序：</p>
 
@@ -403,7 +385,7 @@ REM：（在VISTA以上版本的其他操作系统中，驱动程序名称为 VB
 
 VB-CABLE 的工作方式与普通音频设备无异，任何支持 MME、KS 或 Direct-X 音频接口的音频应用程序均可将其设为播放设备。
 
-<div style="display: grid; grid-template-columns: 15fr 1fr 14fr;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
   <div>
     <p>要录制计算机上播放的任何声音，请将 VB-AUDIO CABLE 选为默认播放设备。此后，计算机上播放的每一项音频都将被发送到 VB-CABLE 输入端。
     </p>
@@ -412,7 +394,6 @@ VB-CABLE 的工作方式与普通音频设备无异，任何支持 MME、KS 或 
     <p>提示：请别忘了点击“应用”按钮以确认您的选择。
     </p>
   </div>
-  <div></div>
   <div>
 
   ![](../_media/cable-21-1.jpg)
