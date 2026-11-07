@@ -10,7 +10,7 @@
 [Hackintosh](https://ilxy.tech/hackintosh/)
 [Blog](https://ilxy.tech/blog)
 -->
-[Docs](README)
+[Get Started](README)
 
 
 <!-- background image -->
