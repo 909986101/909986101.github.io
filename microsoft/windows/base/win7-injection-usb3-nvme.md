@@ -1,6 +1,8 @@
+# Windows 7 注入 USB3.0 和 NVMe
+
 Windows7 安装镜像注入 USB3.0 和 NVMe 驱动，支持 UEFI 启动
 
-一、制作前的准备
+## 一、制作前的准备
 
 1. 系统环境以 Windows 7 SP1 x64 为例，首先需要下载 MSDN 原版镜像。
 
@@ -14,7 +16,7 @@ Windows7 安装镜像注入 USB3.0 和 NVMe 驱动，支持 UEFI 启动
 
 4. 补丁：微软推出了适用于 Windows 7 的 Nvme 固态硬盘通用驱动  KB2990941-v3 和 KB3087873-v2 。
 
-二、开始制作
+## 二、开始制作
 
 1. 以 D 盘为例，在 D 盘根目录下建立文件夹 mkos，mkos 下分别建立drivers、hotfix、mount、os、winremount 五个文件夹，其中 drivers 和 hotfix 分别存放驱动程序和补丁。
 

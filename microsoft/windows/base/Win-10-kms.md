@@ -1,4 +1,6 @@
-### 序列号
+# Windows 激活 KMS 方式
+
+## 序列号
 
 [教育版]
 ```
@@ -15,7 +17,7 @@ W269N-WFGWX-YVC9B-4J6C9-T83GX
 NPPR9-FWDCX-D2C8J-H872K-2YT43
 ```
 
-### 命令
+## 命令
 
 ```cmd
 slmgr.vbs -upk
