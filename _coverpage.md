@@ -1,6 +1,7 @@
 <!-- _coverpage.md -->
 
-![logo](_media/Tiger25.jpg)
+<!-- ![logo](_media/Tiger25.jpg) -->
+![logo](_media/Tiger25.png)
 
 # haona_li's docs :cn:
 
