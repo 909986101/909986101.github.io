@@ -1,12 +1,3 @@
----
-title: 从 USB 闪存驱动器安装 Windows
-date: 2020-06-14 13:18:12
-urlname: use-usb-key-install-windows
-categories: windows
-tags: windows
----
-从 USB 闪存驱动器安装 Windows
-<!--more-->
 # 从 USB 闪存驱动器安装 Windows
 
 适用于 Windows 10

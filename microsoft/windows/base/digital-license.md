@@ -1,12 +1,3 @@
----
-title: 数字许可证
-date: 2020-06-12 07:40:10
-urlname: digital-license
-categories: windows
-tags: windows
----
-数字许可证
-<!--more-->
 # 数字许可证
 
 数字许可证（在 Windows 10 版本 1511 中称为数字授权）是 Windows 10 的一种激活方法，该方法不需要输入产品密钥。
@@ -19,7 +10,7 @@ tags: windows
 
 `Windows is activated with a digital lincense`
 
-## 方式
+## 获取
 
 怎样才能是数字许可证方式激活，下面 2 种方式
 1. 从已经激活的 Windows 7 或 Windows 8 、8.1 就地升级的
@@ -39,6 +30,7 @@ Windows 10 使用了数字许可证方式激活，当满足以下 2 点时，重
 
 `Windows is activated with a digital lincense linked to your Microsoft accout`
 
+## 授权转移
 
 链接微软 ID 后，数字许可证是可以转移的。
 
@@ -49,4 +41,4 @@ Windows 10 使用了数字许可证方式激活，当满足以下 2 点时，重
 
 ## 参考
 
->https://support.microsoft.com/zh-cn/help/12440/windows-10-activate?ocid=ActivationSettingsLearnMore
+> https://support.microsoft.com/zh-cn/help/12440/windows-10-activate?ocid=ActivationSettingsLearnMore

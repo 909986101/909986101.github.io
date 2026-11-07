@@ -1,4 +1,4 @@
-各种OEM品牌序列号 :
+各种 OEM 品牌序列号
 ===
 ```
 1,  Windows 7 旗舰版       (联想)         KEY : 6K2KY-BFH24-PJW6W-9GK29-TMPWP

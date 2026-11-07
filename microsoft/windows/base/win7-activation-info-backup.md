@@ -13,7 +13,7 @@ exit
 
 ## 激活
 
-```cmd
+```bat
 @echo off
 net stop sppsvc /y
 takeown /f "%WinDir%\System32\spp\tokens\pkeyconfig\pkeyconfig.xrm-ms"

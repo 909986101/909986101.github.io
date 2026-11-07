@@ -1,17 +1,4 @@
----
-title: 将 github 与你的域名绑定
-date: 2020-03-12 22:33:03
-urlname: Configuration-a-custom-domian-4-github-pages-site
-categories:
-  - [hexo]
-  - [github]
-tags:
-  - hexo
-  - github
----
-将 github 与你的域名绑定
-<!--more-->
-# 将 github 与你的域名绑定
+# 将 github pages 与你的域名绑定
 
 ## github
 

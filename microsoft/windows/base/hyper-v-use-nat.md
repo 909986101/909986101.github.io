@@ -1,16 +1,3 @@
----
-title: hyper-v NAT 网络使用固定 IP
-date: 2020-05-18 16:44:19
-urlname: hyper-v-use-nat
-categories:
-  - [windows]
-  - [hyper-v]
-tags:
-  - [windows]
-  - [hyper-v]
----
-Hyper-v NAT 网络使用固定 IP
-<!--more-->
 # Hyper-v NAT 网络使用固定 IP
 
 ## 查看 NAT 网络
