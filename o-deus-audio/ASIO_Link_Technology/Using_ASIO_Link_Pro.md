@@ -187,12 +187,11 @@ ASIO Link Pro 的用户界面支持两种将音频输入（inputs）通道连接
 
 如果在某个通道（channel）上按住鼠标并拖动，可连接的通道将会高亮显示。您只需将该通道拖放到高亮的通道上，即可建立连接。
 
-<div style="display: grid; grid-template-columns: 3fr 0.75fr 6.25fr;">
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px">
   <div>
   
   ![](../_media/15-2.jpg)
   </div>
-  <div></div>
   <div>将 ASIOVADPRO SPEAKERS IN 的通道 1 拖至 ASIO HOST IN MIX 的通道 1，即可将音频输入（audio input）连接到 MIX RACK。很简单！！！</div>
 </div>
 
@@ -226,12 +225,11 @@ _IN MIX, X, 1-1 and OUT MIX, X, 1-1 buttons_
 
 在下图中，映射窗口的矩阵显示：纵向有 4 行 8 列的通道（来自 ASIOVADPRO SPEAKERS IN），横向则有 8 个通道（来自 ASIO HOST IN MIX）。
 
-<div style="display: grid; grid-template-columns: 2fr 0.75fr 7.25fr">
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 16px">
   <div>
   
   ![](../_media/16-2.jpg)
   </div>
-  <div></div>
   <div>
     <p>在“映射窗口（Mapping Window）”中，您可以将通道（channels）分配至 ASIO 主机输入混音（ASIO HOST IN MIX）或 ASIO 驱动程序输出混音（ASIO DRIVER OUT MIX）。</p>
     <p>左侧的路由指向 ASIO 主机输入混音（ASIO HOST IN MIX），该窗口适用于所有输入和输出机架（INPUT and OUTPUT racks）。</p>
