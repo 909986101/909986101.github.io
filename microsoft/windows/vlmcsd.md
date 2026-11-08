@@ -1,5 +1,7 @@
 # vlmcsd 超简单教程
 
+**vlmcsd‌** 是一款开源的 KMS 模拟器，用于在本地或局域网内搭建密钥管理服务，模拟微软官方 KMS 服务器行为，实现 Windows 和 Office 的批量激活。
+
 ## Start Vlmcsd
 
 github 地址：https://github.com/Wind4/vlmcsd
@@ -59,7 +61,7 @@ kms 服务器只能激活 vl 版软件
 ```
 slmgr /upk
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-slmgr /skms:<kms's IP>
+slmgr /skms <kms's IP>
 slmgr /ato
 ```
 
@@ -71,3 +73,20 @@ cscript ospp.vbs /sethst:<kms's IP>
 cscript ospp.vbs /act
 cscript ospp.vbs /dstatus
 ```
+
+
+## 序列号
+
+```
+Windows 10
+
+[教育版]
+YNMGQ-8RYV3-4PGQ3-C8XTP-7CFBY
+
+[专业版]
+W269N-WFGWX-YVC9B-4J6C9-T83GX
+
+[企业版]
+NPPR9-FWDCX-D2C8J-H872K-2YT43
+```
+

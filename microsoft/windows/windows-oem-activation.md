@@ -1,14 +1,21 @@
-# Windows 7 OEM 激活
+# Windows 激活 OEM 方式
+
+## OEM 激活版本
+
+| 特性 | OA 1.0 (Windows XP) | OA 2.0 (Vista/Win7) | OA 3.0 (Win8/10/11) |
+| --- | --- | --- | --- |
+| ‌**绑定方式‌** | 仅依赖 BIOS 中的 SLP 标记 | BIOS SLIC 表 + OEM 数字证书 | 主板固件 MSDM 表 + 唯一硬件哈希 |
+| ‌**密钥类型‌** | 通用批量密钥 | 分版本的通用批量密钥 | ‌**一机一密‌**（唯一产品密钥） |
+| ‌**防伪能力‌** | 低，易被模拟 BIOS 破解 | 中，需模拟 SLIC 和证书，难度较高 | 高，密钥与硬件哈希强绑定，极难移植 |
+| ‌**激活体验‌** | 自动激活 | 自动激活 | 自动激活（数字许可证） |
+| ‌**物理标签‌** | 带有完整密钥的 COA 贴纸 | 带有完整密钥的 COA 贴纸 | 无密钥的 GML 简化标签 |
+
+
+## Windows 7 oem 激活
 
 > 使用 `cscript slmgr.vbs` 实现
 
-## 前提
-
-主板 bios 中包含 oem 信息
-
-## 命令
-
-```cmd
+```bat
 REM 导入证书
 cscript %systemroot%\system32\slmgr.vbs -ilc %oemfile%.xrm-ms
 
@@ -16,17 +23,17 @@ REM 安装密钥
 cscript %systemroot%\system32\slmgr.vbs -ipk %cdkey%
 ```
 
-## 各种 OEM 品牌序列号
+## Windows 7 oem key
 
 ```
+Windows 7 OEM
+
 1,  Windows 7 旗舰版       (联想)         KEY : 6K2KY-BFH24-PJW6W-9GK29-TMPWP
 2,  Windows 7 旗舰版       (戴尔)         KEY : 342DG-6YJR8-X92GV-V7DCV-P4K27
 3,  Windows 7 旗舰版       (宏基)         KEY : FJGCP-4DFJD-GJY49-VJBQ7-HYRR2
 4,  Windows 7 旗舰版       (三星)         kEY : 49PB6-6BJ6Y-KHGCQ-7DDY6-TF7CD
 5,  Windows 7 旗舰版       (华硕)         KEY : 2Y4WT-DHTBF-Q6MMK-KYK6X-VKM6G
-```
-***
-```
+
 6,  Windows 7 专业版       (宏基)         KEY : YKHFT-KW986-GK4PY-FDWYH-7TP9F
 7,  Windows 7 专业版       (戴尔)         KEY : 32KD2-K9CTF-M3DJT-4J3WC-733WD
 8,  Windows 7 专业版       (惠普)         KEY : 74T2M-DKDBC-788W3-H689G-6P6GT
@@ -35,9 +42,7 @@ cscript %systemroot%\system32\slmgr.vbs -ipk %cdkey%
 11, Windows 7 专业版       (华硕)         KEY : 2WCJK-R8B4Y-CWRF2-TRJKB-PV9HW
 12, Windows 7 专业版       (富士通)       KEY : PT9YK-BC2J9-WWYF9-R9DCR-QB9CK
 13, Windows 7 专业版       (联想)         KEY : 237XB-GDJ7B-MV8MH-98QJM-24367
-```
-***
-```
+
 14, Windows 7 家庭高级版   (华硕)         KEY : 2QDBX-9T8HR-2QWT6-HCQXJ-9YQTR
 15, Windows 7 家庭高级版   (华硕 Eee)     KEY : 7JQWQ-K6KWQ-BJD6C-K3YVH-DVQJG
 16, Windows 7 家庭高级版   (戴尔)         KEY : 6RBBT-F8VPQ-QCPVQ-KHRB8-RMV82
@@ -51,9 +56,7 @@ cscript %systemroot%\system32\slmgr.vbs -ipk %cdkey%
 24, Windows 7 家庭高级版   (LG)           KEY : 38GRR-KMG3D-BTP99-TC9G4-BBDJJ
 25, Windows 7 家庭高级版   (富士通)       KEY : C6MHH-TRRPT-74TDC-FHRMV-XB88W
 26, Windows 7 家庭高级版   (ADVENT)       KEY : 38JTJ-VBPFW-XFQDR-PJ794-8447M
-```
-***
-```
+
 27, Windows 7 简易版       (宏基)         KEY : RDJXR-3M32B-FJT32-QMPGB-GCFF6
 28, Windows 7 简易版       (惠普)         KEY : RH98C-M9PW4-6DHR7-X99PJ-3FGDB
 29, Windows 7 简易版       (东芝)         KEY : TGBKB-9KBGJ-3Y3J6-K8M2F-J2HJQ
@@ -61,9 +64,7 @@ cscript %systemroot%\system32\slmgr.vbs -ipk %cdkey%
 31, Windows 7 简易版       (华硕 Eee)     KEY : 6K6WB-X73TD-KG794-FJYHG-YCJVG
 32, Windows 7 简易版       (联想)         KEY : 273P4-GQ8V6-97YYM-9YTHF-DC2VP
 33, Windows 7 简易版       (诺基亚)       KEY : 2XGHP-9TQK2-8CF28-BM2P2-8FRX8
-```
-***
-```
+
 34, Windows 7 家庭普通版   (宏基)         KEY : MB4HF-2Q8V3-W88WR-K7287-2H4CP
 35, Windows 7 家庭普通版   (华硕)         KEY : 89G97-VYHYT-Y6G8H-PJXV6-77GQM
 36, Windows 7 家庭普通版   (惠普)         KEY : DX8R9-BVCGB-PPKRR-8J7T4-TJHTH
