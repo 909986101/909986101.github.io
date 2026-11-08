@@ -12,11 +12,10 @@
 
 - 激活
   - [Windows 7 OEM 激活](win7-oem-activation.md)
-  - [Windows 7 OEM 序列号](win7-oem-key.md)
-  - [数字许可证](digital-license.md)
-  - [Windows 激活 KMS 方式](Win-10-kms.md)
-  - [vlmcsd 超简单教程](vlmcsd.md)
   - [Windows 7 激活文件备份及恢复方法](win7-activation-info-backup.md)
+  - [Windows 激活 KMS 方式](Win-10-kms.md)
+  - [数字许可证](digital-license.md)
+  - [vlmcsd 超简单教程](vlmcsd.md)
 
 
 - Hyper-v
