@@ -1,5 +1,4 @@
-- VB-Audio
-  - [Return VB-Audio](/VB-Audio/)
+- [:arrow_left: Return VB-Audio](/VB-Audio/)
 
 - VBCABLE
   - [VBCABLE_ReferenceManual](VBCABLE_ReferenceManual.md)

@@ -1,5 +1,4 @@
-- O Deus Audio
-  - [Return O Deus Audio](/o-deus-audio/)
+- [:arrow_left: Return O Deus Audio](/o-deus-audio/)
 
 - ASIO Link Technology
   - [英文文档](ASIO_Link_Technology.md)

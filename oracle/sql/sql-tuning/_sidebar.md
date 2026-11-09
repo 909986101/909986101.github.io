@@ -1,6 +1,4 @@
-- Oracle
-
-  - [Return Oralce](/oracle/)
+- [:arrow_left: Return Oralce](/oracle/)
 
 - SQL 优化核心思想
   

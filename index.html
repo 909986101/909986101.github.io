@@ -33,7 +33,7 @@
   <!-- footer 插件样式 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer/dist/plugin.min.css">
 </head>
-<body class="sidebar-group-box sidebar-chevron-right">
+<body class="loading sidebar-chevron-right sidebar-group-box">
   <div id="app"></div>
 
   <!-- MathJax 3 的全局配置对象 -->
@@ -55,7 +55,10 @@
       name: '<img src="/_media/Tiger25.png" style="display:block; margin:0 auto 6px;">haona_li\'s docs',
       repo: '909986101/909986101.github.io',
 
+      collapseSidebarGroups: true,
+      collapsibleSidebarGroups: true,
       loadSidebar: true,
+      //maxLevel: 4,
       subMaxLevel: 2,
       loadNavbar: true,
       coverpage: true,
@@ -86,7 +89,7 @@
     }
   </script>
   <!-- Docsify resource -->
-  <script src="//cdn.jsdelivr.net/npm/docsify"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/dist/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/dist/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/dist/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>

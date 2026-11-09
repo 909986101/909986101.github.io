@@ -1,5 +1,4 @@
-- Microsoft
-  - [Return Microsoft](/microsoft/README.md)
+- [:arrow_left: Return Microsoft](/microsoft/README.md)
 
 - 部署
   - [DISM 命令](dism.md)

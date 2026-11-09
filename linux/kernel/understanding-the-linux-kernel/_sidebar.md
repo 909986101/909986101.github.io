@@ -1,5 +1,4 @@
-- Linux
-  - [Return Linux](/linux/)
+- [:arrow_left: Return Linux](/linux/)
 
 - Understanding The Linux Kernel
   - [前言](README.md)

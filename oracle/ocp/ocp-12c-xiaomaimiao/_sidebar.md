@@ -1,6 +1,4 @@
-- Oracle
-
-  - [Return Oralce](/oracle/)
+- [:arrow_left: Return Oralce](/oracle/)
 
 - OCP 环境搭建
 

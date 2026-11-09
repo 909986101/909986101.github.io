@@ -1,5 +1,4 @@
-- VB-Audio
-  - [Return VB-Audio](/VB-Audio/)
+- [:arrow_left: Return VB-Audio](/VB-Audio/)
 
 - VBMatrix
   - [VBMatrix_UserManual](./VBMatrix_UserManual.md)
