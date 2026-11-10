@@ -10,18 +10,18 @@ DISKPART> ATTACH VDISK
 
 ## 提取 install.wim
 
-安装光盘中source文件夹下
+位于安装光盘中 source 文件夹下
 
 ## 查看 install.wim 信息
 
 ```
-X:\image>Dism.exe /get-imageinfo /imagefile:install.wim
+dism.exe /get-imageinfo /imagefile:install.wim
 ```
 
 ## 应用镜像
 
 ```
-X:\image>dism.exe /apply-image /imagefile:install.wim /index:3 /applydir:Z:\
+dism.exe /apply-image /imagefile:install.wim /index:3 /applydir:Z:\
 ```
 
 ## 添加 boot
