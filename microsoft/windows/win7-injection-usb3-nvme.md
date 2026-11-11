@@ -40,7 +40,8 @@ mkos\
 对安装环境 `boot.wim` 加入驱动和补丁
 
 **index 1 Microsoft Windows PE**
-```powershell
+
+```
 dism /Mount-Wim /WimFile:D:\mkos\os\sources\boot.wim /index:1 /MountDir:D:\mkos\mount
 dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix\x64
 dism /Image:D:\mkos\mount /Add-Driver /Driver:D:\mkos\drivers /Recurse /Forceunsigned
