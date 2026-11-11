@@ -3,13 +3,12 @@
 - 部署
   - [DISM 命令](dism.md)
   - [DISM 制作多合一系统镜像](dism-create-multi-edition-windows-image.md)
-  - [Windows 7 注入 USB3.0 和 NVMe](win7-injection-usb3-nvme.md)
-  - [Windows 7 注入 USB3.0 和 NVMe（2）](win7-injection-usb3-nvme-2.md)
   - [Windows 安装 USB 闪存驱动器 ](install-windows-with-usb.md)
   - [Windows 安装 VHD 方式](install-windows-with-vhd.md)
   - [diskpart 命令](diskpart.md)
   - [diskpart 手动创建分区](diskpart-create-partitions.md)
   - [WinPE Base](winpe-base.md)
+  - [Windows 7 相关问题](win7-issues.md)
 
 
 - 激活
