@@ -246,7 +246,7 @@ DISKPART> set id=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7
 
 作用：为带焦点的卷分配一个驱动器号或已安装文件夹路径名称。
 
-> 你无法为启动卷或含有页面文件的卷分配驱动器号。
+> 你无法为启动卷或含有页面文件的卷分配驱动器号。  
 > 此外，你也无法为原始设备制造商(OEM)分区(除非启动到 Windows PE)或除基本数据分区以外的任何 GUID 分区表(GPT)分区、ESP 分区或恢复分区分配驱动器号。
 
 > 必须选择一个卷才能成功执行此操作。
@@ -344,7 +344,7 @@ format fs=fat32 label="EFI" quick
 
 ### 需求：将 disk 2 转换为 GPT，创建 2 个 ESP 分区并格式化为 FAT32 格式。
 
-```
+```powershell
 list disk
 select disk 2
 convert gpt
@@ -360,7 +360,7 @@ format fs=fat32 label="EFI-2" quick
 
 ### 需求2：将上面的 partition 1 设置为“基本数据分区”，并分配盘符“S”
 
-```
+```powershell
 select disk 2
 select partition 1
 set id=ebd0a0a2-b9e5-4433-87c0-68b6b72699c7

@@ -2,7 +2,7 @@
 
 ## 命令
 
-```bat
+```powershell
 slmgr -upk
 slmgr -ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 slmgr -skms <kms's IP>

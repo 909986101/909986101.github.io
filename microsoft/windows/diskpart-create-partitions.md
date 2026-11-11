@@ -46,35 +46,35 @@ convert gpt
 
 因为 EFI 分区大于 100MB，解决默认 EFI 空间不足的问题。
 
-```batch
-REM 进入命令行
-REM 启动 diskpart 并确认目标磁盘
+```powershell
+# 进入命令行
+# 启动 diskpart 并确认目标磁盘
 diskpart
 list disk
 
 
-REM 清空磁盘并转换为GPT格式
+# 清空磁盘并转换为GPT格式
 select disk 0
 clean
 convert gpt
 
 
-REM 创建分区（EFI、MSR、Recovery、Windows）
+# 创建分区（EFI、MSR、Recovery、Windows）
 create partition efi size=300
 format quick fs=fat32 label="System"
 create partition msr size=16
 create partition primary size=1024
 format quick fs=ntfs label="Recovery"
 set id="de94bba4-06d1-4d40-a16a-bfd50179d6ac"
-REM 设置属性默认隐藏（不分配盘符）
+# 设置属性默认隐藏（不分配盘符）
 gpt attributes=0x8000000000000001
-REM 若不给定大小（size），则会使用当前区域中全部未分配的空间
+# 若不给定大小（size），则会使用当前区域中全部未分配的空间
 create partition primary size=204800
 format quick fs=ntfs label="Windows"
 assign letter=C
 
 
-REM 退出工具返回安装界面
+# 退出工具返回安装界面
 exit
 exit
 ```

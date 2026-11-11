@@ -8,7 +8,7 @@ github 地址：https://github.com/Wind4/vlmcsd
 
 示例
 
-```
+```bash
 # wget https://github.com/Wind4/vlmcsd/releases/download/svn1113/binaries.tar.gz
 # tar xf binaries.tar.gz
 # ./binaries/Linux/intel/static/vlmcsd-x64-musl-static
@@ -24,7 +24,7 @@ LISTEN     0      128         :::1688                    :::*
 
 开机启动
 
-```
+```bash
 # cp ./binaries/Linux/intel/static/vlmcsd-x64-musl-static /usr/local/bin/
 # echo '/usr/local/bin/vlmcsd-x64-musl-static' >> /etc/rc.d/rc.local
 # chmod a+x /etc/rc.d/rc.local
@@ -34,13 +34,13 @@ LISTEN     0      128         :::1688                    :::*
 
 查看可用 apps
 
-```
+```shell
 # ./binaries/Linux/intel/static/vlmcs-x64-musl-static -x
 ```
 
 查看 kms 服务器 194 号 app，194 是 Office Professional Plus 2019
 
-```
+```shell
 # ./binaries/Linux/intel/static/vlmcs-x64-musl-static -v -l 194 127.0.0.1
 ```
 
@@ -58,7 +58,7 @@ kms 服务器只能激活 vl 版软件
 
 示例：Windows 10 专业版
 
-```
+```powershell
 slmgr /upk
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 slmgr /skms <kms's IP>
@@ -67,7 +67,7 @@ slmgr /ato
 
 示例：Office 2016 vl on Windows 10
 
-```
+```powershell
 cd 'C:\Program Files\Microsoft Office\Office16\'
 cscript ospp.vbs /sethst:<kms's IP>
 cscript ospp.vbs /act
