@@ -19,3 +19,21 @@ KB3140245
 KB3172605
 KB4534310
 ```
+
+# 集成补丁
+
+## 目录及文件准备
+
+详见：[使用 DISM 为 Windows 7 注入 USB3.0 和 NVMe 驱动](./win7-injection-usb3-nvme.md)
+
+## install.wim 加入补丁
+
+```powershell
+dism /Mount-WIM /WimFile:D:\mkos\os\sources\install.wim /Index:1 /MountDir:D:\mkos\mount
+dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix\<hotfix_file>
+dism /UnMount-Wim /MountDir:D:\mkos\mount /Commit
+```
+
+## 给 install.wim 瘦身
+
+详见：[使用 DISM 为 Windows 7 注入 USB3.0 和 NVMe 驱动](./win7-injection-usb3-nvme.md)
