@@ -21,3 +21,9 @@
 
 - Hyper-v
   - [Hyper-v NAT 网络使用固定 IP](hyper-v-use-nat.md)
+
+
+- Windows 7
+  - [支持 UEFI + GPT](win7-uefi.md)
+  - [支持 USB3.0 和 NVMe](win7-usb3-nvme.md)
+  - [集成 hotfix](win7-packages.md)
