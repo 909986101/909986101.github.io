@@ -2,7 +2,7 @@
 
 Windows7 安装镜像注入 USB3.0 和 NVMe 驱动
 
-# 制作前的准备
+## 制作前的准备
 
 ### 系统镜像
 
@@ -20,14 +20,20 @@ Windows7 安装镜像注入 USB3.0 和 NVMe 驱动
 
 # 开始制作
 
+- 目录准备
+- boot.wim 添加驱动和补丁
+- install.wim 添加驱动和补丁
+- install.wim 瘦身
+- 打包 ISO 镜像
+
 ## 目录及文件准备
 
-以 D 盘为例，在 D 盘根目录下建立文件夹 `mkos`，`mkos` 下分别建立`drivers`、`hotfix`、`mount`、`os`、`winremount` 五个文件夹，其中 `drivers` 和 `hotfix` 分别存放驱动程序和补丁。
+以 D 盘为例，在 D 盘根目录下建立文件夹 `mkos`，`mkos` 下分别建立`drivers`、`packages`、`mount`、`os`、`winremount` 五个文件夹，其中 `drivers` 和 `packages` 分别存放驱动程序和补丁。
 
 ```text
 mkos\
 ├── drivers         # 存放驱动
-├── hotfix          # 存放补丁
+├── packages        # 存放补丁
 ├── mount           # 
 ├── os              # 存放安装文件（系统镜像中的全部文件）
 └── winremount      # 
@@ -43,7 +49,7 @@ mkos\
 
 ```powershell
 dism /Mount-Wim /WimFile:D:\mkos\os\sources\boot.wim /index:1 /MountDir:D:\mkos\mount
-dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix
+dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\packages
 dism /Image:D:\mkos\mount /Add-Driver /Driver:D:\mkos\drivers /Recurse /Forceunsigned
 dism /UnMount-Wim /MountDir:D:\mkos\mount /Commit
 ```
@@ -51,7 +57,7 @@ dism /UnMount-Wim /MountDir:D:\mkos\mount /Commit
 **index 2 Microsoft Windows Setup**
 ```powershell
 dism /Mount-Wim /WimFile:D:\mkos\os\sources\boot.wim /index:2 /MountDir:D:\mkos\mount
-dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix
+dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\packages
 dism /Image:D:\mkos\mount /Add-Driver /Driver:D:\mkos\drivers /Recurse /Forceunsigned
 ```
 
@@ -70,11 +76,11 @@ dism /UnMount-Wim /MountDir:D:\mkos\mount /Commit
 **index 1**
 ```powershell
 dism /Mount-WIM /WimFile:D:\mkos\os\sources\install.wim /Index:1 /MountDir:D:\mkos\mount
-dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix
+dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\packages
 dism /Image:D:\mkos\mount /Add-Driver /Driver:D:\mkos\drivers /Recurse /ForceUnsigned
 
 dism /Mount-WIM /WimFile:D:\mkos\mount\windows\system32\recovery\winre.wim /Index:1 /MountDir:D:\mkos\winremount
-dism /Image:D:\mkos\winremount /Add-Package /PackagePath:D:\mkos\hotfix
+dism /Image:D:\mkos\winremount /Add-Package /PackagePath:D:\mkos\packages
 dism /Image:D:\mkos\winremount /Add-Driver /Driver:D:\mkos\drivers /Recurse /ForceUnsigned
 
 dism /Unmount-Wim /MountDir:D:\mkos\winremount /Commit
@@ -84,7 +90,7 @@ dism /Unmount-Wim /MountDir:D:\mkos\mount /Commit
 **index n（n>=2）**
 ```powershell
 dism /Mount-WIM /WimFile:D:\mkos\os\sources\install.wim /Index:n /MountDir:D:\mkos\mount
-dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\hotfix
+dism /Image:D:\mkos\mount /Add-Package /PackagePath:D:\mkos\packages
 dism /Image:D:\mkos\mount /Add-Driver /Driver:D:\mkos\drivers /Recurse /ForceUnsigned
 
 dism /Unmount-Wim /MountDir:D:\mkos\mount /Commit
