@@ -1,9 +1,5 @@
 # Windows 7 支持 UEFI + GPT
 
-- 实现对 UEFI + GPT 支持
-
-# UEFI + GPT
-
 > 通过提取 `bootmgfw.efi` 文件实现 Windows 7 支持在 UEFI + GPT 环境上安装
 
 步骤
