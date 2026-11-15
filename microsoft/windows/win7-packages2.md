@@ -168,7 +168,6 @@ D:\mkos\packages\windows-7-sp1-x64-packages\3.1.IE11\IE-Win7.CAB
 D:\mkos\packages\windows-7-sp1-x64-packages\3.1.IE11\ielangpack-zh-CN.CAB
 D:\mkos\packages\windows-7-sp1-x64-packages\3.1.IE11\IE-Spelling-en.MSU
 D:\mkos\packages\windows-7-sp1-x64-packages\3.1.IE11\IE-Hyphenation-en.MSU
-D:\mkos\packages\windows-7-sp1-x64-packages\3.1.IE11\IE_SUPPORT_amd64_zh-CN.CAB
 D:\mkos\packages\windows-7-sp1-x64-packages\4.Monthly-Rollup-2020.01\windows6.1-kb4534310-x64_4dc78a6eeb14e2eac1ede7381f4a93658c8e2cdc.msu
 D:\mkos\packages\windows-7-sp1-x64-packages\5.Security-Update\ie11-windows6.1-kb3185319-x64_fc0fd52e6ce28c212c2ce5b3dd13cf5fbcb95ca5.msu
 D:\mkos\packages\windows-7-sp1-x64-packages\5.Security-Update\windows6.1-kb2533552-x64_0ba5ac38d4e1c9588a1e53ad390d23c1e4ecd04d.msu
