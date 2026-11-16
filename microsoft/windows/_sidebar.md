@@ -8,7 +8,6 @@
   - [diskpart 命令](diskpart.md)
   - [diskpart 手动创建分区](diskpart-create-partitions.md)
   - [WinPE Base](winpe-base.md)
-  - [Windows 7 相关问题](win7-issues.md)
 
 
 - 激活
@@ -27,3 +26,4 @@
   - [支持 UEFI + GPT](win7-uefi.md)
   - [支持 USB3.0 和 NVMe](win7-usb3-nvme.md)
   - [集成 补丁](win7-packages.md)
+  - [集成 补丁2](win7-packages2.md)
